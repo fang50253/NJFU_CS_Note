@@ -10,10 +10,51 @@
 
 预先格式化 `<pre></pre>` *保留空格和换行符，原样输出里面的内容
 
-水平线 `<hr/>` 也是单标记
+水平线 `<hr/>` 也是单标签
 
-强调文本 `<b> <i> <em> <strong>`，一般`<b> <strong>`表示粗体，`<i> <em>`表示斜体
- 
+强调文本 `<b> <i> <em> <strong>`，一般`<b> <strong>`表示粗体，`<i> <em>`表示斜体，`<em>`表示有压力的强调
+
+作品标签 `<cite>` *书籍、课程名称
+
+小型文本 `<small>` *免责声明、注意事项、版权声明(旁注)
+
+标记文本 `<ins>`(插入)   `<del>`(删除)   `<sup>`(上标)   `<sub>`(下表)
+
+```html
+x<sup>2</sup>+2x-3=0
+```
+
+旁注 `<ruby> <rt> <rp>` 部分浏览器不支持ruby标签，不会正常显示注音
+
+日期时间`<time>`
+
+```html
+<time datetime="" pubdate="">元素内容</time>
+```
+* pubdate表示发布时间，datetime是正常的时间
+
+无语意的容器元素： `<div>`和`<span>`
+
+特殊符号
+
+| Column 1  | Column 2  | Column 3  |
+|:----------|:----------|:----------|
+| ©️    | &copy    | 版权符号    |
+|      | &nbsp    | 空格    |
+| <    | &lt    | 左尖括号    |
+| >    | &gt    | 右尖括号    |
+| Cell 1    | Cell 2    | Cell 3    |
+| Cell 1    | Cell 2    | Cell 3    |
+| Cell 1    | Cell 2    | Cell 3    |
+| Cell 1    | Cell 2    | Cell 3    |
+| Cell 1    | Cell 2    | Cell 3    |
+| Cell 1    | Cell 2    | Cell 3    |
+
+注释
+```
+<!--这是注释-->
+```
+
 ## 3.2 描述文本的语意化，结构化元素
 
 ## 3.3 块级元素和行内元素
