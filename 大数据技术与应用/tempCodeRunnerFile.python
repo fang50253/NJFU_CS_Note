@@ -1,0 +1,2 @@
+import numpy
+a=numpy.diag((1,2,3))
