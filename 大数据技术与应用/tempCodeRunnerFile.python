@@ -1,2 +1,4 @@
-import numpy
-a=numpy.diag((1,2,3))
+import numpy as py
+import pandas as pd
+df=pd.DataFrame(data=mp.arrange(12).reshape((4,3)),index=list("ABCD"),columns=["aa","bb","cc"])
+print(df)
