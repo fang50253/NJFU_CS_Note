@@ -15,4 +15,3 @@ merged_data = pd.merge(
 )
 
 print(merged_data)
-
