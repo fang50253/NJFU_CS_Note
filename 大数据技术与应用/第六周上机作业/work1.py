@@ -19,7 +19,7 @@ labels = ["不及格", "及格", "良好", "优秀"]
 score['等级'] = pd.cut(score['总成绩'], bins=bins, labels=labels, right=False)
 score_counts = score['等级'].value_counts().reindex(labels)
 
-plt.figure(figsize=(6, 6))
+plt.figure(figsize=(3, 3))
 plt.pie(score_counts, labels=labels, autopct='%1.1f%%', startangle=140, colors=["red", "yellow", "lightblue", "green"])
 plt.title("学生成绩分布情况")
 plt.savefig('./第六周上机作业/work1_ans/pic1.jpg')
@@ -30,7 +30,7 @@ plt.show()
 subjects = ["数学成绩", "阅读成绩", "写作成绩"]
 score_boxplot_data = score[subjects]
 
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(3, 3))
 plt.boxplot(score_boxplot_data.values, labels=subjects, patch_artist=True, boxprops=dict(facecolor="lightblue"))
 plt.title("学生各项考试成绩分布情况")
 plt.ylabel("成绩")

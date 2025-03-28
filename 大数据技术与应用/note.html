@@ -1,0 +1,736 @@
+<h1>大数据技术及应用</h1>
+<h2>一.Python语法基础</h2>
+<pre><code class="language-python">写语句
+	空语句
+	表达式语句
+	函数调用语句
+	控制语句(if else switch while do...while for continue break goto)
+	输入输出语句
+写函数(提高代码的重用性)
+写类
+
+</code></pre>
+<pre><code class="language-python">顺序 选择 循环
+数据结构+算法=程序
+数据类型
+</code></pre>
+<h3>1.Python语言基础</h3>
+<h4>1.1输入输出</h4>
+<p>input()结合eval()可以同时接受多个输入，多个输入之间的间隔符必须是逗号</p>
+<pre><code class="language-python">&gt;&gt;&gt;a,b,c=eval(input())
+1,2,3
+&gt;&gt;&gt;print(a,b,c)
+1 2 3
+</code></pre>
+<h4>1.2控制语句</h4>
+<p>单项if语句的语法格式如下：</p>
+<pre><code class="language-python">if 布尔表达式:  #这里和java类似，只允许出现布尔表达式，和c/c++/java不一样，不需要括号单需要冒号
+	语句块
+</code></pre>
+<p>eg：</p>
+<pre><code class="language-python">x=input(&quot;请输入用户名:&quot;)
+y=input(&quot;请输入密码:&quot;)
+z=input(&quot;请输入性别：(‘男’or‘女’)&quot;)
+if y==&quot;Python3.6.0&quot;:
+	if z==&quot;男&quot;:
+		print(&quot;祝贺你，%s先生，你已经成功登陆！&quot;%x)
+	if z==&quot;女&quot;:
+		print(&quot;祝贺你，%s女士，你已经成功登陆！&quot;%x)
+else:
+	print(&quot;对不起，密码错误，登录失败&quot;)
+</code></pre>
+<p><strong>while语句的语法</strong></p>
+<pre><code class="language-python">while 循环条件:
+	循环体
+</code></pre>
+<p><strong>for循环语句的语法</strong></p>
+<pre><code class="language-python">for i in range(1,101): # 这里是一个前闭后开区间
+	s+=i
+print(s)
+</code></pre>
+<p>exp输出：5050</p>
+<p><strong>for循环用于遍历元组</strong></p>
+<p>有元组<code>turple=[(1,2),(2,3)]</code></p>
+<p>可以通过<code>for i in turple</code>去遍历元组</p>
+<p>eg:判断一个数字x是否是一个素数</p>
+<pre><code class="language-python">x=119
+for i in range(1,x+1): # 看作用域！！！
+	if x%i==0:
+		break
+if i==x:
+	print(&quot;Yes&quot;)
+else:
+	print(&quot;No&quot;)	
+</code></pre>
+<p><strong>多分支</strong> <em>没有类似于<code>switch case</code>的语法结构</em></p>
+<pre><code class="language-python">if 条件1:
+	语句1
+elif 条件2:
+	语句2
+elif 条件3:
+	语句3
+else:
+	语句4 # 相当于default
+</code></pre>
+<h4>1.3对象和引用</h4>
+<p>身份：通过<code>id(变量名)</code>可以看到对象的身份</p>
+<p>类型：通过<code>type(变量名)</code>可以看到对象的类型</p>
+<p>值：通过<code>print(变量名)</code>可以看到对象的值</p>
+<p>对象和引用：在Python中赋值语句总是建立变量对对象的引用，而不是复制对象给一个变量(只有在内存空间中的对象才有类型，变量的类型就是变量所引用对象的类型)</p>
+<p>可以使用<code>del(变量名)</code>删除对一个对象的引用</p>
+<h4>1.4变量</h4>
+<p><strong>变量名的命名规则</strong>：和c/c++/java一致</p>
+<p>变量支持整型、布尔、浮点、<strong>复数</strong> (弱类型语言)</p>
+<ul>
+<li>
+<p><code>int</code>整型：用于表示整数，<code>12</code>，<code>1024</code> etc.</p>
+</li>
+<li>
+<p><code>bool</code>布尔型：对应两个布尔值，True和False，对应1和0</p>
+</li>
+<li>
+<p><code>float</code>浮点型：用于表示实数，<code>3.14</code>，<code>1.2</code>，<code>2.5e2</code> etc.</p>
+</li>
+<li>
+<p><code>complex</code>复数型：有两种表达方式，一种是<code>a+bj(a,b是实数)</code>，或者是<code>complex(a,b)</code></p>
+</li>
+</ul>
+<p><strong>一切都是对象，无需显式定义</strong></p>
+<ul>
+<li>
+<p>集合类型 <code>set</code>：{1,2,3}</p>
+</li>
+<li>
+<p>字符串类型 <code>str</code></p>
+</li>
+<li>
+<p>字典类型 <code>dist</code>：{&quot;John&quot;&quot;18&quot;,&quot;Bob&quot;&quot;20&quot;}</p>
+</li>
+<li>
+<p>元组类型 <code>tuple</code>：(1,2,3)</p>
+</li>
+<li>
+<p>列表类型 <code>list</code>：[1,2,3]</p>
+</li>
+</ul>
+<p><strong>运算符</strong></p>
+<ul>
+<li>
+<p>加法<code>+</code> 减法<code>-</code> 除法<code>/</code> 整除<code>//</code> 幂<code>**</code> 取模<code>%</code></p>
+</li>
+<li>
+<p>赋值运算符：<code>=</code>，<code>+=</code>，<code>-=</code>，<code>*=</code> etc</p>
+</li>
+<li>
+<p>内置数学函数<code>abs(x)</code> <code>max(x,y,z)</code> etc</p>
+</li>
+<li>
+<p><code>modf(x)</code>:返回整数和小数部分 <code>modf(3.25)=(0.25,3.0)</code></p>
+</li>
+</ul>
+<p><strong>随机数</strong></p>
+<ul>
+<li>
+<p><code>choice(seq)</code>:从序列(列表、元组、字符串中随机挑选一个元素)</p>
+</li>
+<li>
+<p><code>random</code>:随机生成一个[0,1)范围内的实数</p>
+</li>
+<li>
+<p><code>shuffle(seq)</code>:将序列seq中的所有元素随机排序</p>
+</li>
+<li>
+<p><code>uniform</code>:随机生成一个[x,y]范围内的实数</p>
+</li>
+<li>
+<p><code>randint</code>:随机生成一个[x,y]范围内的整数</p>
+</li>
+<li>
+<p><code>sample(sequence,k)</code>:返回一个从序列sequence中随机生成的一个长度为k的列表</p>
+</li>
+</ul>
+<p><strong>逻辑运算</strong></p>
+<p><code>and</code> <code>or</code> <code>not</code></p>
+<p><strong>关系运算</strong></p>
+<p><code>&gt;</code> <code>&lt;</code> <code>&gt;=</code> <code>&lt;=</code> <code>!=</code> <code>==</code></p>
+<p><strong>位运算</strong></p>
+<h4>1.5库的导入与扩展库的安装</h4>
+<p>常规导入：<code>import A as B</code> B是A的别名</p>
+<p>使用from导入：<code>from A import B</code> 当存在同名包时使用这种方式导入</p>
+<p>安装xxx模块：<code>pip install xxx</code></p>
+<h3>2.字符串</h3>
+<p><strong>字符串的创建：</strong></p>
+<p>单引号<code>''</code>	双引号<code>&quot;&quot;</code>	三单引号<code>''''''</code>	三双引号<code>&quot;&quot;&quot;&quot;&quot;&quot;</code></p>
+<p><strong>构造函数：</strong><code>s=str(&quot;1234&quot;)</code></p>
+<p><strong>转义字符：</strong></p>
+<ul>
+<li>
+<p>单引号里可以有双引号，不需要转译</p>
+</li>
+<li>
+<p>str3=r&quot;Hello\nworld&quot;可以让转义字符不生效</p>
+</li>
+</ul>
+<p>定义字符集：<code>bstr4=str4.encode('utf-8')</code></p>
+<p><strong>输出函数</strong>：(类似c++)</p>
+<p><code>file=open(filename,mode,encoding)</code></p>
+<p><code>print(&quot;内容&quot;,file=&quot;&quot;)</code></p>
+<p><strong>字符串的方法</strong>：</p>
+<ul>
+<li>
+<p><code>len()</code>函数可以返回字符串的长度</p>
+</li>
+<li>
+<p><code>s[index]</code>可以访问字符串s中下表为<code>index</code>的字符</p>
+</li>
+</ul>
+<p>eg：</p>
+<pre><code class="language-python">s=&quot;Hello,World&quot;
+for i in range(0,len(s)):
+	print(s[i],end=&quot;-&quot;)
+</code></pre>
+<ul>
+<li>切片操作<code>sname[start:end:step]</code>从字符串中截取部分字符并组成新的字符串(索引号为负数则是从最后开始往前截取)</li>
+</ul>
+<p>eg:</p>
+<pre><code class="language-python">sname=&quot;学习python使我快乐&quot;
+print(sname[:]) #全部缺省，输出全部
+print(sname[3:8]) #输出ython，前闭后开，索引号从0开始
+</code></pre>
+<p>eg:九九乘法表</p>
+<pre><code class="language-c++">#include&lt;stdio.h&gt;
+int main()
+{
+    for(int i=1;i&lt;=9;++i)
+    {
+        for(int j=i;j&lt;=9;++j)
+        {
+            printf(&quot;%d*%d=%d\t&quot;,i,j,i*j);
+        }
+        printf(&quot;\n&quot;);
+    }
+    return 0;
+}
+</code></pre>
+<pre><code class="language-python">for i in range(1,10):
+    for j in range(i,10):
+        print(&quot;%d*%d=%d\t&quot;%(i,j,i*j),end=&quot; &quot;)
+    print(&quot; &quot;)
+</code></pre>
+<p><strong>格式化输出</strong></p>
+<p><strong>常用方法</strong></p>
+<h3>3.列表</h3>
+<h4><strong>创建列表</strong>：</h4>
+<ul>
+<li>
+<p>列表写在方括号之间，列表中的类型可以不同，可以欧数字、字符串、字典、集合等数据类型</p>
+</li>
+<li>
+<p>将字符串转换为一个列表<code>list2=list('chemistry') #将字符串转换为列表</code></p>
+</li>
+<li>
+<p>在列表后面增加元素<code>y=y+[8]</code>,相当于是将两个列表连接起来</p>
+</li>
+</ul>
+<h4>常用方法</h4>
+<ul>
+<li>Python 列表对象的常用方法</li>
+</ul>
+<h5>1. 添加元素</h5>
+<ul>
+<li>
+<p><code>list.append(x)</code> ：在末尾添加 <code>x</code></p>
+</li>
+<li>
+<p><code>list.insert(i, x)</code> ：在索引 <code>i</code> 处插入 <code>x</code></p>
+</li>
+<li>
+<p><code>list.extend(iterable)</code> ：扩展列表</p>
+</li>
+</ul>
+<h5>2. 删除元素</h5>
+<ul>
+<li>
+<p><code>list.remove(x)</code> ：删除第一个 <code>x</code></p>
+</li>
+<li>
+<p><code>list.pop(i=-1)</code> ：删除并返回索引 <code>i</code> 处元素</p>
+</li>
+<li>
+<p><code>del list[i]</code> ：删除索引 <code>i</code> 处元素</p>
+</li>
+<li>
+<p><code>list.clear()</code> ：清空列表</p>
+</li>
+</ul>
+<h5>3. 查找元素</h5>
+<ul>
+<li>
+<p><code>list.index(x, start, end)</code> ：返回 <code>x</code> 的索引</p>
+</li>
+<li>
+<p><code>list.count(x)</code> ：统计 <code>x</code> 出现次数</p>
+</li>
+<li>
+<p><code>x in list</code> ：检查 <code>x</code> 是否存在</p>
+</li>
+</ul>
+<h5>4. 排序和反转</h5>
+<ul>
+<li>
+<p><code>list.sort(key=None, reverse=False)</code> ：原地排序</p>
+</li>
+<li>
+<p><code>list.reverse()</code> ：反转列表</p>
+</li>
+<li>
+<p><code>sorted(list, key=None, reverse=False)</code> ：返回新排序列表</p>
+</li>
+</ul>
+<h5>5. 复制列表</h5>
+<ul>
+<li>
+<p><code>list.copy()</code> ：浅拷贝</p>
+</li>
+<li>
+<p><code>list[:]</code> ：切片复制</p>
+</li>
+<li>
+<p><code>import copy; copy.deepcopy(list)</code> ：深拷贝</p>
+</li>
+</ul>
+<h5>6. 其他常用方法</h5>
+<ul>
+<li>
+<p><code>len(list)</code> ：获取长度</p>
+</li>
+<li>
+<p><code>sum(list)</code> ：求和</p>
+</li>
+<li>
+<p><code>max(list)</code> / <code>min(list)</code> ：获取最大/最小值</p>
+</li>
+<li>
+<p><code>list.count(x)</code> ：统计 <code>x</code> 次数</p>
+</li>
+<li>
+<p><code>list * n</code> ：重复列表 <code>n</code> 次</p>
+</li>
+</ul>
+<h4>列表推导/生成式</h4>
+<p><code>[2*x for x in a]</code></p>
+<p>eg:</p>
+<pre><code class="language-python">x=[1,2,3,4,5,6,7,8,9,10]
+y=[x**2 for i in x]
+print(y)
+# 预期输出：[1,4,9,16,25,36,49,64,81,100]
+y=[x**2 for i in x if i%2==0]
+# 预期输出：[4,16,36,64,100]，筛选操作
+</code></pre>
+<h4>列表排序</h4>
+<p><code>sorted([list],[迭代参数])</code></p>
+<p>eg:<code>sorted([46,15,-12,9,-21,30],key=abs) #按照绝对值大小进行排序</code></p>
+<h3>4.集合</h3>
+<h3>5.元组</h3>
+<h3>6.字典</h3>
+<h3>7.程序流程控制</h3>
+<h3>8.函数</h3>
+<p>eg：</p>
+<pre><code class="language-python">def add(a,b):
+	return a+b
+print(add(3,5)) #类似于c，除了没有类型外
+
+def swap(a,b):
+	a,b=b,a #无法实现交换的功能
+
+def swapp(a,b):
+	return b,a
+m,n=swapp(3,5)
+print(m,n) #预期输出：5 3
+</code></pre>
+<h4>定义函数</h4>
+<p><strong>Python允许嵌套定义</strong>函数，即在一个函数中定义了另一个函数。内层函数可以访问外层函数中定义的变量，但是不能重新赋值，内层函数的局部命名空间不能包含外层函数定义的变量</p>
+<h4>Python函数参数的类型</h4>
+<p><strong>位置参数</strong></p>
+<pre><code class="language-python">functionName(参数1,参数2):
+	语句：
+</code></pre>
+<p><strong>默认值参数</strong></p>
+<pre><code class="language-python">def person(name,age,sex):
+	语句
+person(age=18,sex='M',name=John) #以关键字的形式调用函数
+</code></pre>
+<p><strong>可变长度参数</strong></p>
+<pre><code class="language-python">def fun(*args,**kwargs): #args能接受所有的位置参数，kwargs可以接受所有的关键字参数(以字典的方式输出)
+	for i in args:
+		print(i)
+	for j in kwargs:
+		print(j)
+fun(1,2,3,4,name:3,age:4) # 预期输出：1 2 3 4 name age
+</code></pre>
+<p><strong>函数实参</strong></p>
+<p><strong>表现形式</strong>：关键字参数、序列解包参数</p>
+<h4>lambda表达式</h4>
+<pre><code class="language-python">f=lambda x,y,z:x+y+z # 类似于c++/java inline，c语言的宏
+</code></pre>
+<p><strong>labmda表达式匿名函数和def函数的区别</strong>:def创建的函数是有名称的，而lambda是匿名的</p>
+<p><strong>变量的作用域</strong>：在一个源代码文件中，在函数之外定义的变量成为全局变量，作用域(范围)为其所在的源代码文件(Java抛弃了全局变量，慎用、少用全局变量)；局部变量、块变量</p>
+<p>如果要在函数内访问全局变量，可以使用<code>global 变量名</code>声明全局变量</p>
+<h4>常用内置函数</h4>
+<h5><code>map(func,swq1[,seq2,...])</code>第一个参数接受一个函数名，后面的参数接受一个或者多个可迭代的序列，将func作用在</h5>
+<pre><code class="language-python">a=[1,2,3,4]
+def square(x):
+	return x**2
+b=map(square,a)
+print(list(b)) # 如果这里不写list(b)，python解释器会输出b的地址
+</code></pre>
+<h5><code>reduce(function,sequence[,initializer])</code></h5>
+<pre><code class="language-python">from functools import reduce
+reduce(add,[1,2,3,4,5]) # 计算元素之和
+</code></pre>
+<h5><code>filter(func,iterable)</code>函数</h5>
+<pre><code class="language-python">def is_odd(n):
+	return n%2==1
+
+newlist=filter(is_odd,[1,2,3,4,5])
+print(list(newlist))
+</code></pre>
+<h4>装饰器（包装）</h4>
+<ul>
+<li>应用场景：</li>
+</ul>
+<pre><code class="language-python">def func(a,b):
+	return a+b
+
+def debug(func):
+	def wrapper():
+		print(&quot;[DEBUG]:enter{}()&quot;.format(func.__name__))
+		return func()
+	return wrapper
+
+@debug
+def say_hello():
+	print(&quot;Hello!&quot;)
+
+say_hello()
+</code></pre>
+<p>代码解释</p>
+<pre><code class="language-python"># 定义一个函数 func，它接收两个参数 a 和 b，并返回它们的和
+def func(a, b):
+    return a + b
+
+# 定义一个装饰器函数 debug
+def debug(func):
+    # 在装饰器内部定义一个包装函数 wrapper
+    def wrapper():
+        # 在函数执行前打印调试信息，显示被装饰的函数名称
+        print(&quot;[DEBUG]: enter {}()&quot;.format(func.__name__))
+        # 调用被装饰的函数 func
+        return func()  # ⚠️ 这里有问题，func 可能需要参数，但 wrapper 没有传递任何参数
+    return wrapper  # 返回 wrapper 这个包装函数
+
+# 使用 @debug 语法糖（相当于 say_hello = debug(say_hello)）
+@debug
+def say_hello():
+    print(&quot;Hello!&quot;)
+
+# 调用 say_hello()，实际上执行的是 debug 装饰器内的 wrapper() 函数
+say_hello()
+# 定义一个函数 func，它接收两个参数 a 和 b，并返回它们的和
+def func(a, b):
+    return a + b
+
+# 定义一个装饰器函数 debug
+def debug(func):
+    # 在装饰器内部定义一个包装函数 wrapper
+    def wrapper():
+        # 在函数执行前打印调试信息，显示被装饰的函数名称
+        print(&quot;[DEBUG]: enter {}()&quot;.format(func.__name__))
+        # 调用被装饰的函数 func
+        return func()  # ⚠️ 这里有问题，func 可能需要参数，但 wrapper 没有传递任何参数
+    return wrapper  # 返回 wrapper 这个包装函数
+
+# 使用 @debug 语法糖（相当于 say_hello = debug(say_hello)）
+@debug
+def say_hello():
+    print(&quot;Hello!&quot;)
+
+# 调用 say_hello()，实际上执行的是 debug 装饰器内的 wrapper() 函数
+say_hello()
+</code></pre>
+<h3>9.文件与文件夹操作</h3>
+<h3>10.面向对象程序设计</h3>
+<ul>
+<li>特性：封装、继承、多态</li>
+</ul>
+<h4>面向对象的程序设计</h4>
+<ul>
+<li>
+<p>一个类中通常包含一个特殊的函数<code>__init__</code>，作为类的构造函数</p>
+</li>
+<li>
+<p>一个类中的函数都有self参数，类似于c++和java的this指针，例如定义矩形周长</p>
+</li>
+</ul>
+<pre><code class="language-python">class Rectangle:
+	def __init__(self,width1,height1): # 构造函数
+		self.width=width1
+		self.height=height1
+	def getPerimeten(self): # 用于返回矩形的周长
+		return 2*(self.width+self.height)
+</code></pre>
+<ul>
+<li>类方法</li>
+</ul>
+<pre><code class="language-python">@classmethod
+def 方法名(cls)
+</code></pre>
+<ul>
+<li>静态方法</li>
+</ul>
+<pre><code class="language-python">@staticmethod
+def 方法名([形参数列表])
+</code></pre>
+<ul>
+<li>析构函数</li>
+</ul>
+<pre><code class="language-python">def __del__(self)
+</code></pre>
+<h3>11.模块和包</h3>
+<h3>12.错误和异常处理</h3>
+<h3>13.Theimter图形用户界面设计</h3>
+<h3>14.数据可视化</h3>
+<h3>15.数据库编程】</h3>
+<h2>二.NumPy数值计算基础</h2>
+<p>(和SciPy一起对表matlab，高数、微积分、线性代数、概率、优化)</p>
+<h3>1.掌握NumPy数组对象ndarray</h3>
+<pre><code class="language-python">&gt;&gt;&gt; a=[1,2]
+&gt;&gt;&gt; 2*a
+[1, 2, 1, 2]
+&gt;&gt;&gt; import numpy
+&gt;&gt;&gt; a=numpy.array([1,2]) # 调用构造函数
+&gt;&gt;&gt; print(a)
+[1 2]
+&gt;&gt;&gt; print(2*a) # 对数组对象进行运算
+[2 4]
+</code></pre>
+<h4>1.创建数组之前了解数组的基本属性</h4>
+<ul>
+<li>
+<p>ndim 返回int，表示数组的维数</p>
+</li>
+<li>
+<p>shape 返回tuple，表示数组形状的阵列，对于n行m列的矩阵，形状为(n,m)</p>
+</li>
+<li>
+<p>size 返回int，表示数组元素的总数，数组形状的乘积</p>
+</li>
+<li>
+<p>dtype 返回data-type，表示数组中元素的类型</p>
+</li>
+<li>
+<p>itemsize 返回int，表示每个元素的大小</p>
+</li>
+</ul>
+<h4>2.数组创建</h4>
+<p>函数签名：</p>
+<pre><code class="language-python">numpy.array(object, dtype=None, *, copy=True, order='K', subok=False, ndmin=0, like=None)
+</code></pre>
+<p>生成等差数列</p>
+<pre><code class="language-python">numpy.linspace(0,1,100) # 在0到1之间生成100个x，如果第三个参数缺省，则默认为50
+</code></pre>
+<p>生成等比数列</p>
+<pre><code class="language-python">numpy.logspace(start,stop,num=50)
+</code></pre>
+<p>其他特殊的数组</p>
+<ul>
+<li>
+<p>zeros函数，创建值全部为0的数组</p>
+</li>
+<li>
+<p>eye函数，生成主对角线上全部为1的单位矩阵</p>
+</li>
+<li>
+<p>diag函数，创建类似对角的数组，即除对角线外其他元素均为0</p>
+</li>
+<li>
+<p>ones函数，创建一个元素全部为1的数组</p>
+</li>
+</ul>
+<h4>3.生成随机数</h4>
+<h4>4.变换数组形态</h4>
+<pre><code class="language-python">numpy.reshape(a,newshape,oeder='C')
+# 改变形状时不改变原始数据的值
+# 如果修改后的大小和原大小不符合，抛出异常
+</code></pre>
+<pre><code class="language-python">&gt;&gt;&gt; d=numpy.arange(1,13)
+&gt;&gt;&gt; e=d.reshape((4,3))
+&gt;&gt;&gt; print(e)
+[[ 1  2  3]
+ [ 4  5  6]
+ [ 7  8  9]
+ [10 11 12]]
+ &gt;&gt;&gt; f=d.reshape((3,4))
+&gt;&gt;&gt; print(f)
+[[ 1  2  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]]
+ &gt;&gt;&gt; d.shape=(3,4) 
+ #修改属性和reshape的区别，reshape是形成一个新的数组，但是修改属性实在原数组上的修改
+&gt;&gt;&gt; print(d)
+[[ 1  2  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]]
+</code></pre>
+<h3>2.掌握NumPy矩阵与通用函数</h3>
+<h4>常见属性</h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>T</code></td>
+<td>返回自身的转置</td>
+</tr>
+<tr>
+<td><code>H</code></td>
+<td>返回自身的共轭转置</td>
+</tr>
+<tr>
+<td><code>I</code></td>
+<td>返回自身的逆矩阵</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td>返回自身数据的二维数组的一个视图（没有做任何的复制）</td>
+</tr>
+</tbody>
+</table>
+<h4>ndarray的基本索引和切片</h4>
+<p>一位数组的索引：与Python的列表索引功能相似</p>
+<p>多维数组的索引：</p>
+<ul>
+<li>
+<p>arr[r1r2,c1c2]</p>
+</li>
+<li>
+<p>arr[1,1] 等价arr[1][1]</p>
+</li>
+<li>
+<p>[:]代表某个维度的数据 / 表示所有的维度都要</p>
+</li>
+</ul>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+data=2*np.random.rand(10000,2)-1
+x=data[:,0]
+y=data[:,1]
+idx=x**2+y**2&lt;1
+hole=x**2+y**2&lt;0.5
+idx=np.logical_and(idx,~hole)
+plt.plot(x[idx],y[idx],'go',markersize=1)
+plt.show()
+</code></pre>
+<h3>3.利用NumPy进行统计分析</h3>
+<h2>三.pandas统计分析基础</h2>
+<ul>
+<li>
+<p>背景：在c/c++语言中，一般采用结构体保存csv、xlsx文件,类似于MySQL的增删改查</p>
+</li>
+<li>
+<p>(只了解数据处理、数据分析和数据可视化)</p>
+</li>
+</ul>
+<h3>1.认识pandas库</h3>
+<ul>
+<li>
+<p>1.数据读写：csv,excel,sql</p>
+</li>
+<li>
+<p>2.数据清洗(省略)</p>
+</li>
+<li>
+<p>3.数据转换(map、apply、applymap、pipe)</p>
+</li>
+<li>
+<p>4.合并于拼接</p>
+</li>
+<li>
+<p>5.数据分析(基本统计量、分组聚合)</p>
+</li>
+<li>
+<p>6.数据的可视化</p>
+</li>
+</ul>
+<pre><code class="language-python">import pandas as pd
+pd.set_option(&quot;display.tidth&quot;,100)
+musicdata=pd.read_table(&quot;./daa/musicdata.csv&quot;,sep=&quot;,&quot;,encoding=&quot;gbk&quot;) # 返回值是dataframe类型
+print(len(musicdata))
+print(type(musicdata))
+</code></pre>
+<h3>2.构造函数</h3>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+df = pd.DataFrame(
+    data=np.arange(12).reshape((4, 3)),
+    index=list(&quot;ABCD&quot;),
+    columns=[&quot;aa&quot;, &quot;bb&quot;, &quot;cc&quot;]
+)
+print(df)
+
+print(df.describe()) # 数据摘要
+
+print(df.T) # 输出转置
+
+df[&quot;dd&quot;]=12 # 增加一列dd，设置为12
+print(df)
+
+df.drop(&quot;A&quot;,inplace=True) # 如果不设置inplace，返回值不会被接收,df数组不会被修改
+print(df)
+
+print(np.min(df[&quot;aa&quot;])) # 用np做最小值
+print(np.var(df[&quot;aa&quot;])) # 用np做方差
+print(np.std(df[&quot;aa&quot;])) # 用np做标准差
+
+print(df[&quot;aa&quot;].describe) # 对某一列进行描述
+
+s=pd.Series([1,1,1,1,2,2,2,3,3,3,34,4,4,4,4])
+print(s.value_counts()) # 统计频数
+
+x.info() # 查看字段的类型
+
+x[&quot;year&quot;]=x[&quot;data&quot;].dt.year
+x[&quot;day&quot;]=x[&quot;data&quot;].dt.day # 计算域：这一项的数值由其他项计算而来
+print(x)
+x[&quot;gap&quot;]=x[&quot;data&quot;]-x[&quot;date&quot;].min()
+print(x)
+
+m=pd.data_range(&quot;2025-2-1&quot;,&quot;2025,3-1&quot;) #使用python生成时间序列
+print(m)
+</code></pre>
+<p>预期输出</p>
+<pre><code>   aa  bb  cc
+A   0   1   2
+B   3   4   5
+C   6   7   8
+D   9  10  11
+             aa         bb         cc
+count  4.000000   4.000000   4.000000
+mean   4.500000   5.500000   6.500000  # mean统计的是平均值
+std    3.872983   3.872983   3.872983  # 标准差
+min    0.000000   1.000000   2.000000
+25%    2.250000   3.250000   4.250000  # 25百分位数
+50%    4.500000   5.500000   6.500000  # 50百分位数
+75%    6.750000   7.750000   8.750000
+max    9.000000  10.000000  11.000000
+</code></pre>
+<h3>3.透视表和交叉表</h3>
+<h2>四.使用pandas进行数据预处理</h2>
+<h3>1.合并数据</h3>
+<h3>2.清洗数据</h3>
+<h3>3.标准化数据</h3>
+<h3>4.转换数据</h3>
