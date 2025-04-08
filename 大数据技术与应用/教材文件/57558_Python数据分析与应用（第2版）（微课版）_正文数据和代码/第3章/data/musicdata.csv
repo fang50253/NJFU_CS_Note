@@ -1,0 +1,3009 @@
+format,metric,date,number_of_records,value_actual
+CD,Units,2020/7/31 22:01,1,
+CD,Units,2020/7/23 6:12,1,
+CD,Units,2020/7/13 9:30,1,
+CD,Units,2020/6/30 14:26,1,
+CD,Units,2020/6/23 20:21,1,
+CD,Units,2020/6/20 13:41,1,
+CD,Units,2020/5/24 7:03,1,
+CD,Units,2020/5/22 17:44,1,
+CD,Units,2020/5/14 9:30,1,
+CD,Units,2020/4/30 21:28,1,
+CD,Units,2020/3/11 4:51,1,0.8
+CD,Units,2020/3/9 4:16,1,5.8
+CD,Units,2020/3/8 22:21,1,22.6
+CD,Units,2020/2/25 1:22,1,53
+CD,Units,2020/2/21 18:47,1,102.1
+CD,Units,2020/2/18 19:48,1,149.7
+CD,Units,2020/2/7 17:37,1,207.2
+CD,Units,2020/2/6 6:09,1,286.5
+CD,Units,2016/12/23 3:29,1,333.3
+CD,Units,2016/12/7 4:51,1,407.5
+CD,Units,2016/11/29 8:05,1,495.4
+CD,Units,2016/11/24 14:10,1,662.1
+CD,Units,2016/11/3 17:14,1,722.9
+CD,Units,2016/10/1 20:23,1,778.9
+CD,Units,2016/9/22 4:57,1,753.1
+CD,Units,2016/9/14 15:01,1,847
+CD,Units,2016/8/27 21:45,1,938.9
+CD,Units,2016/8/11 5:59,1,942.5
+CD,Units,2016/8/5 18:02,1,881.9
+CD,Units,2016/7/21 0:48,1,803.3
+CD,Units,2016/7/5 1:24,1,746
+CD,Units,2016/6/27 10:02,1,767
+CD,Units,2016/6/5 6:12,1,705.4
+CD,Units,2016/6/2 10:56,1,619.7
+CD,Units,2016/5/29 12:14,1,499.7
+CD,Units,2016/5/20 11:59,1,368.4
+CD,Units,2016/5/16 10:09,1,296.6
+CD,Units,2016/5/13 0:34,1,253
+CD,Units,2016/4/24 5:39,1,240.8
+CD,Units,2016/4/18 11:59,1,198.1643872
+CD,Units,2016/4/12 9:51,1,173.7933029
+CD,Units,2016/4/10 14:57,1,138.7023634
+CD,Units,2016/3/16 23:54,1,117.1440518
+CD,Units,2016/3/3 1:32,1,97.5770712
+CD,Units,2016/2/23 3:59,1,87.68249997
+CD,Units,2016/2/21 5:58,1,51.95427564
+CD,Units,2016/2/19 8:15,1,46.50649558
+CD Single,Units,2016/2/6 13:55,1,
+CD Single,Units,2016/1/27 9:59,1,
+CD Single,Units,2016/1/21 16:44,1,
+CD Single,Units,2015/12/30 13:07,1,
+CD Single,Units,2015/12/21 2:32,1,
+CD Single,Units,2015/12/8 0:34,1,
+CD Single,Units,2015/11/13 14:59,1,
+CD Single,Units,2015/11/2 21:34,1,
+CD Single,Units,2015/10/31 11:34,1,
+CD Single,Units,2015/10/13 12:23,1,
+CD Single,Units,2015/10/11 0:07,1,
+CD Single,Units,2015/10/10 9:57,1,
+CD Single,Units,2015/10/4 21:02,1,
+CD Single,Units,2015/9/17 21:03,1,
+CD Single,Units,2015/9/14 23:50,1,
+CD Single,Units,2015/9/8 13:46,1,1.6
+CD Single,Units,2015/9/7 1:41,1,-0.1
+CD Single,Units,2015/9/2 20:10,1,1.1
+CD Single,Units,2015/7/19 7:06,1,5.7
+CD Single,Units,2015/7/12 22:23,1,7.3
+CD Single,Units,2015/7/4 1:40,1,7.8
+CD Single,Units,2015/6/14 3:03,1,9.3
+CD Single,Units,2015/6/12 17:03,1,21.5
+CD Single,Units,2015/6/10 17:43,1,43.2
+CD Single,Units,2015/6/2 8:44,1,66.7
+CD Single,Units,2015/5/20 10:20,1,56
+CD Single,Units,2015/5/18 17:13,1,55.9
+CD Single,Units,2015/5/10 7:45,1,34.2
+CD Single,Units,2015/5/7 20:34,1,17.3
+CD Single,Units,2015/4/30 10:21,1,4.5
+CD Single,Units,2015/4/21 1:42,1,8.3
+CD Single,Units,2015/4/10 1:14,1,3.1
+CD Single,Units,2015/4/8 4:06,1,2.8
+CD Single,Units,2015/4/3 1:39,1,1.7
+CD Single,Units,2015/3/30 21:33,1,2.6
+CD Single,Units,2015/3/18 0:04,1,0.7
+CD Single,Units,2015/3/11 6:18,1,0.9
+CD Single,Units,2015/3/8 4:26,1,1
+CD Single,Units,2015/3/4 4:30,1,1.3
+CD Single,Units,2015/2/26 22:06,1,1.072870407
+CD Single,Units,2015/2/25 10:53,1,0.628895398
+CD Single,Units,2015/2/17 13:19,1,0.928725116
+CD Single,Units,2015/1/9 17:31,1,0.386721563
+CD Single,Units,2015/1/9 10:41,1,0.121745255
+CD Single,Units,2015/1/7 1:05,1,0.13261663
+CD Single,Units,2015/1/2 13:39,1,0.020854078
+CD Single,Units,2014/12/13 2:53,1,0.026257455
+Cassette,Units,2014/12/12 6:48,1,15
+Cassette,Units,2014/12/9 21:19,1,15.3
+Cassette,Units,2014/11/28 11:47,1,16.2
+Cassette,Units,2014/11/27 12:12,1,21.8
+Cassette,Units,2014/11/26 23:16,1,36.9
+Cassette,Units,2014/11/26 17:40,1,61.3
+Cassette,Units,2014/11/4 20:13,1,78.5
+Cassette,Units,2014/10/21 18:55,1,99
+Cassette,Units,2014/10/17 14:07,1,124
+Cassette,Units,2014/10/14 10:25,1,183.2
+Cassette,Units,2014/10/6 20:02,1,236.8
+Cassette,Units,2014/9/9 18:55,1,332
+Cassette,Units,2014/9/5 21:37,1,339.1
+Cassette,Units,2014/8/29 23:15,1,344.5
+Cassette,Units,2014/8/28 3:07,1,410
+Cassette,Units,2014/8/23 6:29,1,450.1
+Cassette,Units,2014/7/29 7:38,1,446.2
+Cassette,Units,2014/7/29 3:07,1,442.2
+Cassette,Units,2014/6/28 2:40,1,360.1
+Cassette,Units,2014/6/26 5:54,1,366.4
+Cassette,Units,2014/5/29 1:12,1,339.5
+Cassette,Units,2014/5/16 20:06,1,345.4
+Cassette,Units,2014/5/16 12:42,1,272.6
+Cassette,Units,2014/5/8 19:42,1,225.3
+Cassette,Units,2014/3/29 13:45,1,172.6
+Cassette,Units,2014/3/18 11:02,1,158.5
+Cassette,Units,2014/3/3 15:00,1,123.6
+Cassette,Units,2014/2/18 12:50,1,76
+Cassette,Units,2014/2/13 6:47,1,45
+Cassette,Units,2014/1/15 2:46,1,31.1
+Cassette,Units,2014/1/12 16:00,1,17.2
+Cassette,Units,2014/1/8 17:05,1,5.2
+Cassette,Units,2013/12/23 8:30,1,2.5
+Cassette,Units,2013/12/8 3:10,1,0.7
+Cassette,Units,2013/11/21 1:50,1,0.4
+Cassette,Units,2013/10/12 16:06,1,0.1
+Cassette,Units,2013/10/9 17:27,1,0
+Cassette,Units,2013/9/24 15:31,1,0
+Cassette,Units,2013/8/12 18:08,1,0
+Cassette,Units,2013/7/31 7:00,1,
+Cassette,Units,2013/7/31 3:50,1,
+Cassette,Units,2013/7/30 2:36,1,
+Cassette,Units,2013/7/27 8:30,1,
+Cassette,Units,2013/7/26 11:32,1,
+Cassette,Units,2013/7/18 0:46,1,
+Cassette,Units,2013/6/13 2:51,1,
+Cassette,Units,2013/6/1 22:49,1,
+Cassette Single,Units,2013/5/14 23:20,1,
+Cassette Single,Units,2013/4/30 8:40,1,
+Cassette Single,Units,2013/4/21 6:23,1,
+Cassette Single,Units,2013/3/12 10:32,1,
+Cassette Single,Units,2013/2/20 13:13,1,
+Cassette Single,Units,2013/2/15 3:20,1,
+Cassette Single,Units,2013/2/7 13:12,1,
+Cassette Single,Units,2013/1/25 7:40,1,
+Cassette Single,Units,2013/1/12 3:04,1,
+Cassette Single,Units,2012/12/30 7:25,1,
+Cassette Single,Units,2012/12/18 11:19,1,
+Cassette Single,Units,2012/11/20 20:37,1,
+Cassette Single,Units,2012/11/20 6:25,1,
+Cassette Single,Units,2012/10/25 15:57,1,
+Cassette Single,Units,2012/10/19 16:26,1,5.1
+Cassette Single,Units,2012/10/9 0:54,1,22.5
+Cassette Single,Units,2012/10/3 22:50,1,76.2
+Cassette Single,Units,2012/10/2 16:38,1,87.4
+Cassette Single,Units,2012/9/28 5:44,1,69
+Cassette Single,Units,2012/9/18 19:34,1,84.6
+Cassette Single,Units,2012/9/11 22:07,1,85.6
+Cassette Single,Units,2012/9/10 1:03,1,81.1
+Cassette Single,Units,2012/8/27 6:57,1,70.7
+Cassette Single,Units,2012/8/26 14:55,1,59.9
+Cassette Single,Units,2012/8/13 5:31,1,42.2
+Cassette Single,Units,2012/7/27 4:19,1,26.4
+Cassette Single,Units,2012/7/25 7:48,1,14.2
+Cassette Single,Units,2012/6/5 7:44,1,1.3
+Cassette Single,Units,2012/5/25 11:31,1,-1.5
+Cassette Single,Units,2012/5/22 8:31,1,-0.5
+Cassette Single,Units,2012/5/15 11:04,1,0
+Cassette Single,Units,2012/5/4 21:54,1,0
+Cassette Single,Units,2012/4/23 22:01,1,0
+Cassette Single,Units,2012/4/21 16:08,1,0
+Cassette Single,Units,2012/4/19 22:12,1,0
+Cassette Single,Units,2012/4/2 16:50,1,0
+Cassette Single,Units,2012/3/12 6:40,1,0
+Cassette Single,Units,2012/3/3 21:28,1,0
+Cassette Single,Units,2012/3/1 3:12,1,0
+Cassette Single,Units,2012/2/24 19:11,1,
+Cassette Single,Units,2012/2/17 10:47,1,
+Cassette Single,Units,2012/2/12 5:25,1,
+Cassette Single,Units,2012/2/4 14:42,1,
+Cassette Single,Units,2012/1/15 12:26,1,
+Cassette Single,Units,2012/1/11 2:23,1,
+Cassette Single,Units,2011/12/19 11:35,1,
+Cassette Single,Units,2011/12/14 5:01,1,
+LP/EP,Units,2011/12/11 17:29,1,280
+LP/EP,Units,2011/11/20 5:25,1,276
+LP/EP,Units,2011/10/12 7:13,1,257
+LP/EP,Units,2011/9/13 23:36,1,273
+LP/EP,Units,2011/8/31 9:44,1,344
+LP/EP,Units,2011/8/20 20:01,1,341.3
+LP/EP,Units,2011/8/18 14:55,1,290
+LP/EP,Units,2011/8/11 2:56,1,308
+LP/EP,Units,2011/8/4 7:25,1,295.2
+LP/EP,Units,2011/7/27 23:00,1,243.9
+LP/EP,Units,2011/7/7 23:25,1,209.6
+LP/EP,Units,2011/7/5 15:42,1,204.6
+LP/EP,Units,2011/7/4 9:18,1,167
+LP/EP,Units,2011/6/16 11:51,1,125.2
+LP/EP,Units,2011/5/25 5:40,1,107
+LP/EP,Units,2011/5/16 13:39,1,72.4
+LP/EP,Units,2011/4/27 20:38,1,34.6
+LP/EP,Units,2011/4/27 11:21,1,11.7
+LP/EP,Units,2011/4/17 11:21,1,4.8
+LP/EP,Units,2011/4/6 8:30,1,2.3
+LP/EP,Units,2011/3/24 20:23,1,1.2
+LP/EP,Units,2011/3/23 4:24,1,1.9
+LP/EP,Units,2011/3/23 4:16,1,2.2
+LP/EP,Units,2011/3/1 10:37,1,2.9
+LP/EP,Units,2011/2/21 5:07,1,2.7
+LP/EP,Units,2011/2/12 11:00,1,3.4
+LP/EP,Units,2011/1/21 15:11,1,2.9
+LP/EP,Units,2011/1/8 19:38,1,2.2
+LP/EP,Units,2010/12/25 23:24,1,2.3
+LP/EP,Units,2010/12/14 0:27,1,1.743
+LP/EP,Units,2010/12/9 2:54,1,1.5
+LP/EP,Units,2010/12/1 6:31,1,1.4
+LP/EP,Units,2010/11/21 14:45,1,1
+LP/EP,Units,2010/11/19 7:25,1,0.9
+LP/EP,Units,2010/11/10 8:26,1,1.3
+LP/EP,Units,2010/11/9 13:05,1,2.9
+LP/EP,Units,2010/11/9 6:56,1,3.5
+LP/EP,Units,2010/10/27 11:27,1,4.2
+LP/EP,Units,2010/10/8 9:58,1,5.5
+LP/EP,Units,2010/9/24 12:02,1,6.915365189
+LP/EP,Units,2010/9/18 5:04,1,9.35128587
+LP/EP,Units,2010/9/8 19:51,1,10.31556391
+LP/EP,Units,2010/9/5 23:37,1,13.68102972
+LP/EP,Units,2010/9/3 12:04,1,14.77088603
+LP/EP,Units,2010/8/17 4:19,1,15.55608917
+LP/EP,Units,2010/7/15 1:49,1,16.67012733
+LP/EP,Units,2010/7/6 23:54,1,19.10316283
+Vinyl Single,Units,2010/6/26 6:04,1,228
+Vinyl Single,Units,2010/6/21 6:42,1,204
+Vinyl Single,Units,2010/6/17 4:24,1,164
+Vinyl Single,Units,2010/4/17 2:21,1,190
+Vinyl Single,Units,2010/4/16 4:38,1,190
+Vinyl Single,Units,2010/4/6 18:33,1,190
+Vinyl Single,Units,2010/3/18 16:11,1,212
+Vinyl Single,Units,2010/3/15 15:55,1,157
+Vinyl Single,Units,2010/3/14 18:44,1,154.7
+Vinyl Single,Units,2010/3/8 22:44,1,137.2
+Vinyl Single,Units,2010/3/8 22:02,1,124.8
+Vinyl Single,Units,2010/2/28 22:24,1,131.5
+Vinyl Single,Units,2010/2/26 22:46,1,120.7
+Vinyl Single,Units,2010/2/24 19:55,1,93.9
+Vinyl Single,Units,2010/1/15 19:17,1,82
+Vinyl Single,Units,2009/12/31 16:24,1,65.6
+Vinyl Single,Units,2009/12/31 12:50,1,36.6
+Vinyl Single,Units,2009/11/25 1:36,1,27.6
+Vinyl Single,Units,2009/11/21 20:53,1,22
+Vinyl Single,Units,2009/11/18 17:36,1,19.8
+Vinyl Single,Units,2009/11/18 7:07,1,15.1
+Vinyl Single,Units,2009/11/14 19:58,1,11.7
+Vinyl Single,Units,2009/11/7 11:31,1,10.2
+Vinyl Single,Units,2009/11/7 10:41,1,10.1
+Vinyl Single,Units,2009/10/11 12:49,1,7.5
+Vinyl Single,Units,2009/10/8 2:57,1,5.4
+Vinyl Single,Units,2009/9/27 22:22,1,5.3
+Vinyl Single,Units,2009/9/18 20:13,1,4.8
+Vinyl Single,Units,2009/9/4 2:23,1,5.5
+Vinyl Single,Units,2009/8/23 21:17,1,4.4
+Vinyl Single,Units,2009/7/31 2:13,1,3.8
+Vinyl Single,Units,2009/7/16 6:39,1,3.5
+Vinyl Single,Units,2009/7/3 4:02,1,2.3
+Vinyl Single,Units,2009/6/27 13:08,1,1.5
+Vinyl Single,Units,2009/6/20 11:04,1,0.6
+Vinyl Single,Units,2009/6/18 4:39,1,0.4
+Vinyl Single,Units,2009/6/9 22:42,1,0.3
+Vinyl Single,Units,2009/5/31 6:05,1,0.3
+Vinyl Single,Units,2009/5/13 20:20,1,0.4
+Vinyl Single,Units,2009/5/4 11:39,1,0.388573687
+Vinyl Single,Units,2009/4/20 4:01,1,0.315817054
+Vinyl Single,Units,2009/4/10 18:42,1,0.481198278
+Vinyl Single,Units,2009/3/4 0:38,1,0.50786991
+Vinyl Single,Units,2009/2/20 12:15,1,0.404330651
+Vinyl Single,Units,2009/2/7 19:51,1,0.402959365
+Vinyl Single,Units,2009/1/12 22:24,1,0.346165002
+Vinyl Single,Units,2009/1/10 7:42,1,0.336120488
+8 - Track,Units,2008/12/24 15:51,1,91
+8 - Track,Units,2008/12/12 11:36,1,96.7
+8 - Track,Units,2008/12/9 6:08,1,94.6
+8 - Track,Units,2008/11/24 22:01,1,106.1
+8 - Track,Units,2008/11/21 0:26,1,127.3
+8 - Track,Units,2008/11/18 9:41,1,133.6
+8 - Track,Units,2008/11/9 2:38,1,102.3
+8 - Track,Units,2008/10/21 2:20,1,85
+8 - Track,Units,2008/10/10 9:34,1,50
+8 - Track,Units,2008/10/7 2:45,1,13.7
+8 - Track,Units,2008/9/9 9:49,1,0
+8 - Track,Units,2008/8/16 14:40,1,0
+8 - Track,Units,2008/8/12 11:44,1,0
+8 - Track,Units,2008/8/7 6:07,1,0
+8 - Track,Units,2008/7/23 14:45,1,0
+8 - Track,Units,2008/7/22 19:34,1,0
+8 - Track,Units,2008/7/11 14:35,1,0
+8 - Track,Units,2008/7/8 15:55,1,0
+8 - Track,Units,2008/7/1 17:40,1,0
+8 - Track,Units,2008/6/27 2:01,1,0
+8 - Track,Units,2008/6/18 13:45,1,0
+8 - Track,Units,2008/5/29 21:23,1,0
+8 - Track,Units,2008/5/24 10:18,1,0
+8 - Track,Units,2008/5/22 20:50,1,0
+8 - Track,Units,2008/5/6 1:08,1,0
+8 - Track,Units,2008/4/30 1:18,1,0
+8 - Track,Units,2008/4/6 16:03,1,0
+8 - Track,Units,2008/3/15 11:29,1,0
+8 - Track,Units,2008/2/24 19:33,1,0
+8 - Track,Units,2008/2/19 13:30,1,0
+8 - Track,Units,2008/2/18 8:51,1,0
+8 - Track,Units,2008/2/17 12:19,1,0
+8 - Track,Units,2008/2/16 8:38,1,0
+8 - Track,Units,2008/1/18 1:17,1,0
+8 - Track,Units,2008/1/9 3:53,1,0
+8 - Track,Units,2007/12/26 6:46,1,0
+8 - Track,Units,2007/12/20 17:00,1,0
+8 - Track,Units,2007/10/25 19:35,1,0
+8 - Track,Units,2007/10/12 9:14,1,0
+8 - Track,Units,2007/10/7 13:31,1,
+8 - Track,Units,2007/9/22 17:57,1,
+8 - Track,Units,2007/6/11 9:47,1,
+8 - Track,Units,2007/6/8 13:32,1,
+8 - Track,Units,2007/6/7 21:28,1,
+8 - Track,Units,2007/5/16 16:20,1,
+8 - Track,Units,2007/5/16 4:45,1,
+8 - Track,Units,2007/5/4 17:52,1,
+Other Tapes,Units,2007/4/18 12:44,1,2.2
+Other Tapes,Units,2007/4/16 14:56,1,1.9
+Other Tapes,Units,2007/3/17 6:48,1,1.5
+Other Tapes,Units,2007/3/15 2:20,1,0.7
+Other Tapes,Units,2007/3/7 15:16,1,0
+Other Tapes,Units,2007/2/2 12:48,1,0
+Other Tapes,Units,2007/1/26 22:22,1,0
+Other Tapes,Units,2007/1/22 7:24,1,0
+Other Tapes,Units,2007/1/18 13:51,1,0
+Other Tapes,Units,2007/1/17 9:50,1,0
+Other Tapes,Units,2007/1/1 11:43,1,0
+Other Tapes,Units,2006/12/9 6:31,1,0
+Other Tapes,Units,2006/12/7 11:42,1,0
+Other Tapes,Units,2006/12/1 6:09,1,0
+Other Tapes,Units,2006/11/13 15:16,1,0
+Other Tapes,Units,2006/10/24 8:42,1,0
+Other Tapes,Units,2006/10/14 18:10,1,0
+Other Tapes,Units,2006/10/9 4:45,1,0
+Other Tapes,Units,2006/10/7 12:18,1,0
+Other Tapes,Units,2006/10/2 19:10,1,0
+Other Tapes,Units,2006/9/27 8:33,1,0
+Other Tapes,Units,2006/9/23 18:52,1,0
+Other Tapes,Units,2006/9/2 17:57,1,0
+Other Tapes,Units,2006/9/2 4:26,1,0
+Other Tapes,Units,2006/8/29 1:38,1,0
+Other Tapes,Units,2006/8/18 0:03,1,0
+Other Tapes,Units,2006/8/17 10:43,1,0
+Other Tapes,Units,2006/8/15 10:52,1,0
+Other Tapes,Units,2006/8/9 4:30,1,0
+Other Tapes,Units,2006/7/15 23:55,1,0
+Other Tapes,Units,2006/7/15 15:22,1,0
+Other Tapes,Units,2006/6/7 0:06,1,0
+Other Tapes,Units,2006/5/28 1:32,1,0
+Other Tapes,Units,2006/5/21 7:51,1,0
+Other Tapes,Units,2006/5/7 17:45,1,0
+Other Tapes,Units,2006/5/6 15:39,1,0
+Other Tapes,Units,2006/4/25 18:46,1,0
+Other Tapes,Units,2006/4/8 13:16,1,0
+Other Tapes,Units,2006/4/4 11:30,1,0
+Other Tapes,Units,2006/3/14 3:21,1,
+Other Tapes,Units,2006/2/26 7:30,1,
+Other Tapes,Units,2006/2/6 1:57,1,
+Other Tapes,Units,2006/2/4 8:38,1,
+Other Tapes,Units,2006/1/28 3:33,1,
+Other Tapes,Units,2006/1/27 1:27,1,
+Other Tapes,Units,2006/1/26 0:00,1,
+Other Tapes,Units,2006/1/10 23:25,1,
+Music Video (Physical),Units,2006/1/8 5:20,1,
+Music Video (Physical),Units,2005/12/29 10:05,1,
+Music Video (Physical),Units,2005/12/24 15:30,1,
+Music Video (Physical),Units,2005/12/3 12:45,1,
+Music Video (Physical),Units,2005/12/1 10:40,1,
+Music Video (Physical),Units,2005/11/29 7:33,1,
+Music Video (Physical),Units,2005/11/15 5:19,1,
+Music Video (Physical),Units,2005/11/11 20:34,1,
+Music Video (Physical),Units,2005/11/9 7:33,1,
+Music Video (Physical),Units,2005/11/2 7:04,1,
+Music Video (Physical),Units,2005/11/2 5:16,1,
+Music Video (Physical),Units,2005/10/26 21:30,1,
+Music Video (Physical),Units,2005/9/30 19:04,1,
+Music Video (Physical),Units,2005/9/14 1:08,1,
+Music Video (Physical),Units,2005/9/2 7:59,1,
+Music Video (Physical),Units,2005/8/20 12:10,1,
+Music Video (Physical),Units,2005/8/9 14:35,1,6.1
+Music Video (Physical),Units,2005/7/1 22:36,1,9.2
+Music Video (Physical),Units,2005/6/18 19:40,1,6.1
+Music Video (Physical),Units,2005/6/5 1:56,1,7.6
+Music Video (Physical),Units,2005/6/3 8:15,1,11
+Music Video (Physical),Units,2005/5/27 14:12,1,11.2
+Music Video (Physical),Units,2005/5/14 13:02,1,12.6
+Music Video (Physical),Units,2005/5/7 9:31,1,16.9
+Music Video (Physical),Units,2005/5/2 20:10,1,18.6
+Music Video (Physical),Units,2005/4/22 11:18,1,27.2
+Music Video (Physical),Units,2005/4/19 7:37,1,19.8
+Music Video (Physical),Units,2005/4/16 10:40,1,18.2
+Music Video (Physical),Units,2005/4/15 6:54,1,17.7
+Music Video (Physical),Units,2005/4/14 14:05,1,14.7
+Music Video (Physical),Units,2005/4/11 5:20,1,19.9
+Music Video (Physical),Units,2005/4/6 1:30,1,32.8
+Music Video (Physical),Units,2005/4/5 17:48,1,33.8
+Music Video (Physical),Units,2005/4/3 1:45,1,23.2
+Music Video (Physical),Units,2005/4/2 22:52,1,27.5
+Music Video (Physical),Units,2005/3/31 22:15,1,13.2
+Music Video (Physical),Units,2005/3/18 16:48,1,11.6
+Music Video (Physical),Units,2005/3/12 22:16,1,9.1
+Music Video (Physical),Units,2005/3/9 15:47,1,7.7
+Music Video (Physical),Units,2005/3/9 12:49,1,6.032725467
+Music Video (Physical),Units,2005/3/6 17:32,1,4.814626524
+Music Video (Physical),Units,2005/2/17 22:52,1,4.065323601
+Music Video (Physical),Units,2005/1/19 1:43,1,3.133228006
+Music Video (Physical),Units,2005/1/2 23:09,1,2.495531725
+Music Video (Physical),Units,2005/1/1 3:44,1,1.87712837
+Music Video (Physical),Units,2004/12/29 7:11,1,1.395058021
+Music Video (Physical),Units,2004/12/13 11:35,1,1.32294236
+DVD Audio,Units,2004/12/11 15:36,1,
+DVD Audio,Units,2004/11/30 8:32,1,
+DVD Audio,Units,2004/11/17 3:13,1,
+DVD Audio,Units,2004/10/14 11:41,1,
+DVD Audio,Units,2004/10/10 11:05,1,
+DVD Audio,Units,2004/10/7 13:14,1,
+DVD Audio,Units,2004/10/4 4:39,1,
+DVD Audio,Units,2004/9/28 8:57,1,
+DVD Audio,Units,2004/9/3 12:07,1,
+DVD Audio,Units,2004/8/22 10:01,1,
+DVD Audio,Units,2004/7/29 12:41,1,
+DVD Audio,Units,2004/7/25 5:29,1,
+DVD Audio,Units,2004/7/22 3:34,1,
+DVD Audio,Units,2004/7/16 0:11,1,
+DVD Audio,Units,2004/7/4 16:58,1,
+DVD Audio,Units,2004/7/3 20:47,1,
+DVD Audio,Units,2004/6/12 7:13,1,
+DVD Audio,Units,2004/6/11 15:41,1,
+DVD Audio,Units,2004/6/5 20:34,1,
+DVD Audio,Units,2004/6/4 13:41,1,
+DVD Audio,Units,2004/6/3 21:59,1,
+DVD Audio,Units,2004/6/3 9:40,1,
+DVD Audio,Units,2004/5/18 11:12,1,
+DVD Audio,Units,2004/5/17 2:08,1,
+DVD Audio,Units,2004/5/6 2:22,1,
+DVD Audio,Units,2004/4/23 0:33,1,
+DVD Audio,Units,2004/4/22 21:19,1,
+DVD Audio,Units,2004/4/22 4:21,1,
+DVD Audio,Units,2004/4/6 3:24,1,0.263
+DVD Audio,Units,2004/3/26 16:35,1,0.43
+DVD Audio,Units,2004/3/25 9:39,1,0.4
+DVD Audio,Units,2004/2/27 1:18,1,0.3
+DVD Audio,Units,2004/2/2 18:52,1,0.5
+DVD Audio,Units,2004/1/22 1:06,1,0.1
+DVD Audio,Units,2004/1/17 20:11,1,0.2
+DVD Audio,Units,2004/1/16 11:17,1,0.04
+DVD Audio,Units,2004/1/2 4:27,1,0.1
+DVD Audio,Units,2003/12/9 22:36,1,0.04
+DVD Audio,Units,2003/11/26 2:00,1,0.01
+DVD Audio,Units,2003/11/10 13:54,1,0.008533145
+DVD Audio,Units,2003/11/1 14:09,1,-0.054735168
+DVD Audio,Units,2003/10/16 0:47,1,0.066542722
+DVD Audio,Units,2003/10/13 14:06,1,0.179506738
+DVD Audio,Units,2003/10/7 0:23,1,0.085898932
+DVD Audio,Units,2003/9/27 12:59,1,0.061332251
+DVD Audio,Units,2003/9/22 3:45,1,0.092803246
+DVD Audio,Units,2003/9/21 7:40,1,0.027982262
+SACD,Units,2003/9/20 19:04,1,
+SACD,Units,2003/9/2 20:00,1,
+SACD,Units,2003/8/26 22:08,1,
+SACD,Units,2003/8/26 8:44,1,
+SACD,Units,2003/8/17 13:16,1,
+SACD,Units,2003/8/1 4:09,1,
+SACD,Units,2003/7/21 5:11,1,
+SACD,Units,2003/6/22 22:53,1,
+SACD,Units,2003/6/21 14:49,1,
+SACD,Units,2003/6/16 17:17,1,
+SACD,Units,2003/6/10 14:11,1,
+SACD,Units,2003/5/27 23:32,1,
+SACD,Units,2003/5/19 3:38,1,
+SACD,Units,2003/5/18 7:51,1,
+SACD,Units,2003/5/15 6:28,1,
+SACD,Units,2003/4/28 13:06,1,
+SACD,Units,2003/4/13 17:58,1,
+SACD,Units,2003/4/7 9:25,1,
+SACD,Units,2003/4/1 4:40,1,
+SACD,Units,2003/3/27 5:50,1,
+SACD,Units,2003/2/25 23:13,1,
+SACD,Units,2003/2/12 23:45,1,
+SACD,Units,2003/2/12 2:37,1,
+SACD,Units,2003/2/6 17:00,1,
+SACD,Units,2003/2/5 6:16,1,
+SACD,Units,2003/2/4 14:07,1,
+SACD,Units,2003/1/30 6:02,1,
+SACD,Units,2002/11/28 15:41,1,
+SACD,Units,2002/11/21 0:11,1,
+SACD,Units,2002/11/12 21:49,1,
+SACD,Units,2002/11/10 22:13,1,1.3
+SACD,Units,2002/10/9 12:00,1,0.8
+SACD,Units,2002/10/4 10:08,1,0.5
+SACD,Units,2002/9/24 16:48,1,0.3
+SACD,Units,2002/8/14 7:48,1,0.2
+SACD,Units,2002/8/11 20:42,1,0.1
+SACD,Units,2002/8/10 18:01,1,0.1
+SACD,Units,2002/7/25 15:57,1,0.1
+SACD,Units,2002/7/22 11:16,1,0.1
+SACD,Units,2002/6/29 16:31,1,0.065446
+SACD,Units,2002/6/15 11:51,1,0.044683
+SACD,Units,2002/6/13 15:29,1,0.030486
+SACD,Units,2002/6/2 4:28,1,0.041633
+SACD,Units,2002/4/3 19:10,1,0.045272
+SACD,Units,2002/4/2 2:36,1,0.032749
+SACD,Units,2002/3/28 21:29,1,0.032804
+SACD,Units,2002/3/19 5:56,1,0.017654
+Download Single,Units,2002/3/19 2:56,1,
+Download Single,Units,2002/3/18 14:44,1,
+Download Single,Units,2002/3/9 1:20,1,
+Download Single,Units,2002/3/3 21:10,1,
+Download Single,Units,2002/3/1 3:53,1,
+Download Single,Units,2002/2/9 19:50,1,
+Download Single,Units,2002/2/1 19:07,1,
+Download Single,Units,2002/1/20 16:42,1,
+Download Single,Units,2002/1/3 12:19,1,
+Download Single,Units,2001/12/14 17:58,1,
+Download Single,Units,2001/12/12 16:56,1,
+Download Single,Units,2001/11/26 6:51,1,
+Download Single,Units,2001/11/13 10:58,1,
+Download Single,Units,2001/11/11 12:14,1,
+Download Single,Units,2001/10/27 19:20,1,
+Download Single,Units,2001/10/14 12:03,1,
+Download Single,Units,2001/10/12 3:11,1,
+Download Single,Units,2001/10/6 6:29,1,
+Download Single,Units,2001/9/25 11:54,1,
+Download Single,Units,2001/8/26 16:08,1,
+Download Single,Units,2001/8/18 13:57,1,
+Download Single,Units,2001/7/26 21:20,1,
+Download Single,Units,2001/7/23 22:19,1,
+Download Single,Units,2001/5/6 4:30,1,
+Download Single,Units,2001/4/27 9:46,1,
+Download Single,Units,2001/4/23 6:12,1,
+Download Single,Units,2001/4/14 6:40,1,
+Download Single,Units,2001/4/13 0:29,1,
+Download Single,Units,2001/2/9 21:27,1,
+Download Single,Units,2001/2/4 5:53,1,
+Download Single,Units,2001/1/28 16:19,1,
+Download Single,Units,2000/12/15 13:22,1,139.4
+Download Single,Units,2000/12/15 3:46,1,366.9
+Download Single,Units,2000/11/28 12:20,1,586.4
+Download Single,Units,2000/11/13 0:28,1,819.4
+Download Single,Units,2000/11/6 7:18,1,1042.7
+Download Single,Units,2000/10/11 23:29,1,1124.4
+Download Single,Units,2000/9/24 6:57,1,1177.4
+Download Single,Units,2000/9/23 4:00,1,1332.3
+Download Single,Units,2000/9/19 22:12,1,1402.739373
+Download Single,Units,2000/8/25 1:12,1,1332.795366
+Download Single,Units,2000/8/13 3:00,1,1154.379327
+Download Single,Units,2000/8/1 16:48,1,986.2550359
+Download Single,Units,2000/7/31 7:06,1,743.0034138
+Download Single,Units,2000/7/19 17:40,1,553.5161518
+Download Single,Units,2000/7/9 1:08,1,399.7738523
+Download Single,Units,2000/7/7 1:34,1,335.3391935
+Download Album,Units,2000/6/27 10:06,1,
+Download Album,Units,2000/6/23 9:03,1,
+Download Album,Units,2000/6/22 20:02,1,
+Download Album,Units,2000/6/18 13:40,1,
+Download Album,Units,2000/6/14 16:39,1,
+Download Album,Units,2000/6/4 3:17,1,
+Download Album,Units,2000/6/3 3:24,1,
+Download Album,Units,2000/6/2 18:44,1,
+Download Album,Units,2000/5/29 16:46,1,
+Download Album,Units,2000/5/6 11:51,1,
+Download Album,Units,2000/5/3 10:40,1,
+Download Album,Units,2000/4/21 13:42,1,
+Download Album,Units,2000/4/4 13:38,1,
+Download Album,Units,2000/3/28 15:27,1,
+Download Album,Units,2000/3/19 5:11,1,
+Download Album,Units,2000/3/6 8:29,1,
+Download Album,Units,2000/2/18 9:25,1,
+Download Album,Units,2000/2/17 14:22,1,
+Download Album,Units,2000/1/18 16:43,1,
+Download Album,Units,2000/1/18 8:33,1,
+Download Album,Units,1999/12/16 0:07,1,
+Download Album,Units,1999/12/11 17:31,1,
+Download Album,Units,1999/12/10 18:56,1,
+Download Album,Units,1999/12/3 17:24,1,
+Download Album,Units,1999/12/1 19:38,1,
+Download Album,Units,1999/11/30 2:18,1,
+Download Album,Units,1999/11/15 20:01,1,
+Download Album,Units,1999/11/7 17:53,1,
+Download Album,Units,1999/10/26 17:19,1,
+Download Album,Units,1999/9/8 23:55,1,
+Download Album,Units,1999/9/8 14:41,1,
+Download Album,Units,1999/8/16 5:18,1,4.6
+Download Album,Units,1999/8/6 3:22,1,13.6
+Download Album,Units,1999/8/3 18:25,1,27.6
+Download Album,Units,1999/7/10 8:11,1,49.8
+Download Album,Units,1999/7/7 4:14,1,63.6
+Download Album,Units,1999/6/25 6:27,1,74.5
+Download Album,Units,1999/5/23 7:02,1,85.8
+Download Album,Units,1999/4/26 11:33,1,103.9
+Download Album,Units,1999/4/26 9:49,1,116.7336318
+Download Album,Units,1999/3/31 23:54,1,117.979213
+Download Album,Units,1999/3/28 15:37,1,114.2304708
+Download Album,Units,1999/3/2 22:23,1,106.7838841
+Download Album,Units,1999/2/18 23:15,1,85.12334989
+Download Album,Units,1999/2/1 14:24,1,66.38610376
+Download Album,Units,1999/1/19 2:32,1,49.73492454
+Download Album,Units,1999/1/14 8:06,1,40.20271234
+Kiosk,Units,1999/1/12 19:24,1,
+Kiosk,Units,1999/1/11 5:18,1,
+Kiosk,Units,1999/1/2 18:25,1,
+Kiosk,Units,1998/12/22 9:24,1,
+Kiosk,Units,1998/11/23 20:20,1,
+Kiosk,Units,1998/11/11 16:46,1,
+Kiosk,Units,1998/10/3 12:58,1,
+Kiosk,Units,1998/9/4 9:16,1,
+Kiosk,Units,1998/9/1 11:15,1,
+Kiosk,Units,1998/8/30 0:20,1,
+Kiosk,Units,1998/8/8 12:55,1,
+Kiosk,Units,1998/7/28 14:16,1,
+Kiosk,Units,1998/3/24 9:08,1,
+Kiosk,Units,1998/3/22 22:25,1,
+Kiosk,Units,1998/1/8 16:10,1,
+Kiosk,Units,1998/1/4 23:00,1,
+Kiosk,Units,1997/12/28 3:58,1,
+Kiosk,Units,1997/12/9 8:15,1,
+Kiosk,Units,1997/11/7 7:46,1,
+Kiosk,Units,1997/10/9 18:47,1,
+Kiosk,Units,1997/10/1 14:26,1,
+Kiosk,Units,1997/9/30 12:31,1,
+Kiosk,Units,1997/9/5 11:41,1,
+Kiosk,Units,1997/8/20 17:16,1,
+Kiosk,Units,1997/8/15 1:05,1,
+Kiosk,Units,1997/7/30 3:01,1,
+Kiosk,Units,1997/7/4 12:22,1,
+Kiosk,Units,1997/5/22 8:30,1,
+Kiosk,Units,1997/4/27 22:34,1,
+Kiosk,Units,1997/2/19 4:31,1,
+Kiosk,Units,1997/2/15 15:23,1,
+Kiosk,Units,1997/2/6 18:28,1,
+Kiosk,Units,1997/1/28 17:49,1,0.7
+Kiosk,Units,1997/1/23 10:03,1,1.4
+Kiosk,Units,1997/1/22 21:13,1,1.8
+Kiosk,Units,1997/1/4 6:46,1,1.6
+Kiosk,Units,1997/1/3 15:08,1,1.7
+Kiosk,Units,1996/12/17 4:16,1,1.7
+Kiosk,Units,1996/12/10 6:09,1,1.3
+Kiosk,Units,1996/12/4 17:00,1,1.95507
+Kiosk,Units,1996/12/1 13:19,1,3.7442
+Kiosk,Units,1996/11/22 10:06,1,1.592073358
+Kiosk,Units,1996/11/8 16:02,1,2.202659889
+Kiosk,Units,1996/10/30 12:48,1,1.74878121
+Kiosk,Units,1996/10/28 4:46,1,1.322377717
+Kiosk,Units,1996/10/23 8:28,1,1.097856529
+Kiosk,Units,1996/10/19 19:01,1,0.899703865
+Download Music Video,Units,1996/10/7 17:43,1,
+Download Music Video,Units,1996/10/5 19:21,1,
+Download Music Video,Units,1996/8/17 15:46,1,
+Download Music Video,Units,1996/8/15 16:07,1,
+Download Music Video,Units,1996/8/9 18:14,1,
+Download Music Video,Units,1996/8/7 3:16,1,
+Download Music Video,Units,1996/8/6 4:50,1,
+Download Music Video,Units,1996/8/5 19:27,1,
+Download Music Video,Units,1996/8/5 15:19,1,
+Download Music Video,Units,1996/7/17 3:16,1,
+Download Music Video,Units,1996/7/12 14:04,1,
+Download Music Video,Units,1996/6/25 11:22,1,
+Download Music Video,Units,1996/5/8 1:02,1,
+Download Music Video,Units,1996/5/1 13:19,1,
+Download Music Video,Units,1996/3/31 0:53,1,
+Download Music Video,Units,1996/3/30 4:03,1,
+Download Music Video,Units,1996/3/29 20:30,1,
+Download Music Video,Units,1996/3/25 17:00,1,
+Download Music Video,Units,1996/3/13 8:31,1,
+Download Music Video,Units,1996/2/16 7:03,1,
+Download Music Video,Units,1996/2/15 2:38,1,
+Download Music Video,Units,1996/1/18 17:10,1,
+Download Music Video,Units,1996/1/15 13:44,1,
+Download Music Video,Units,1995/12/27 12:55,1,
+Download Music Video,Units,1995/12/22 13:26,1,
+Download Music Video,Units,1995/12/9 19:54,1,
+Download Music Video,Units,1995/11/25 5:29,1,
+Download Music Video,Units,1995/11/13 3:10,1,
+Download Music Video,Units,1995/10/1 2:42,1,
+Download Music Video,Units,1995/9/9 7:38,1,
+Download Music Video,Units,1995/8/24 21:54,1,
+Download Music Video,Units,1995/8/17 16:39,1,
+Download Music Video,Units,1995/8/6 4:38,1,1.9
+Download Music Video,Units,1995/8/5 17:14,1,9.9
+Download Music Video,Units,1995/7/11 18:38,1,14.2
+Download Music Video,Units,1995/7/9 18:20,1,20.8
+Download Music Video,Units,1995/7/7 17:33,1,20.5
+Download Music Video,Units,1995/6/9 9:28,1,18.4
+Download Music Video,Units,1995/4/2 12:32,1,16.3
+Download Music Video,Units,1995/2/16 13:05,1,10.473489
+Download Music Video,Units,1995/1/18 10:17,1,8.412464
+Download Music Video,Units,1995/1/10 21:08,1,6.82264392
+Download Music Video,Units,1995/1/2 20:41,1,3.223325002
+Download Music Video,Units,1994/12/18 12:45,1,2.145427196
+Download Music Video,Units,1994/12/16 9:41,1,1.399889693
+Download Music Video,Units,1994/11/3 20:01,1,1.115985226
+Download Music Video,Units,1994/11/1 6:50,1,0.93412583
+Ringtones & Ringbacks,Units,1994/10/27 4:21,1,
+Ringtones & Ringbacks,Units,1994/10/20 0:11,1,
+Ringtones & Ringbacks,Units,1994/10/8 3:24,1,
+Ringtones & Ringbacks,Units,1994/9/22 4:22,1,
+Ringtones & Ringbacks,Units,1994/8/15 23:16,1,
+Ringtones & Ringbacks,Units,1994/6/15 0:02,1,
+Ringtones & Ringbacks,Units,1994/6/3 20:48,1,
+Ringtones & Ringbacks,Units,1994/5/29 9:30,1,
+Ringtones & Ringbacks,Units,1994/2/1 22:38,1,
+Ringtones & Ringbacks,Units,1993/11/29 17:48,1,
+Ringtones & Ringbacks,Units,1993/10/31 3:39,1,
+Ringtones & Ringbacks,Units,1991/10/4 9:22,1,
+Ringtones & Ringbacks,Units,1990/10/1 3:51,1,
+Ringtones & Ringbacks,Units,1988/4/15 3:03,1,
+Ringtones & Ringbacks,Units,2020/7/31 22:01,1,
+Ringtones & Ringbacks,Units,2020/7/23 6:12,1,
+Ringtones & Ringbacks,Units,2020/7/13 9:30,1,
+Ringtones & Ringbacks,Units,2020/6/30 14:26,1,
+Ringtones & Ringbacks,Units,2020/6/23 20:21,1,
+Ringtones & Ringbacks,Units,2020/6/20 13:41,1,
+Ringtones & Ringbacks,Units,2020/5/24 7:03,1,
+Ringtones & Ringbacks,Units,2020/5/22 17:44,1,
+Ringtones & Ringbacks,Units,2020/5/14 9:30,1,
+Ringtones & Ringbacks,Units,2020/4/30 21:28,1,
+Ringtones & Ringbacks,Units,2020/3/11 4:51,1,
+Ringtones & Ringbacks,Units,2020/3/9 4:16,1,
+Ringtones & Ringbacks,Units,2020/3/8 22:21,1,
+Ringtones & Ringbacks,Units,2020/2/25 1:22,1,
+Ringtones & Ringbacks,Units,2020/2/21 18:47,1,
+Ringtones & Ringbacks,Units,2020/2/18 19:48,1,
+Ringtones & Ringbacks,Units,2020/2/7 17:37,1,
+Ringtones & Ringbacks,Units,2020/2/6 6:09,1,
+Ringtones & Ringbacks,Units,2016/12/23 3:29,1,170
+Ringtones & Ringbacks,Units,2016/12/7 4:51,1,315
+Ringtones & Ringbacks,Units,2016/11/29 8:05,1,433.8
+Ringtones & Ringbacks,Units,2016/11/24 14:10,1,405.1
+Ringtones & Ringbacks,Units,2016/11/3 17:14,1,294.3
+Ringtones & Ringbacks,Units,2016/10/1 20:23,1,188.5
+Ringtones & Ringbacks,Units,2016/9/22 4:57,1,115.4
+Ringtones & Ringbacks,Units,2016/9/14 15:01,1,58.75740356
+Ringtones & Ringbacks,Units,2016/8/27 21:45,1,39.36623578
+Ringtones & Ringbacks,Units,2016/8/11 5:59,1,26.63232368
+Ringtones & Ringbacks,Units,2016/8/5 18:02,1,21.92486605
+Ringtones & Ringbacks,Units,2016/7/21 0:48,1,22.62078539
+Ringtones & Ringbacks,Units,2016/7/5 1:24,1,14.26286994
+Ringtones & Ringbacks,Units,2016/6/27 10:02,1,10.02628673
+Ringtones & Ringbacks,Units,2016/6/5 6:12,1,8.605769716
+Paid Subscriptions,Units,2016/6/2 10:56,1,
+Paid Subscriptions,Units,2016/5/29 12:14,1,
+Paid Subscriptions,Units,2016/5/20 11:59,1,
+Paid Subscriptions,Units,2016/5/16 10:09,1,
+Paid Subscriptions,Units,2016/5/13 0:34,1,
+Paid Subscriptions,Units,2016/4/24 5:39,1,
+Paid Subscriptions,Units,2016/4/18 11:59,1,
+Paid Subscriptions,Units,2016/4/12 9:51,1,
+Paid Subscriptions,Units,2016/4/10 14:57,1,
+Paid Subscriptions,Units,2016/3/16 23:54,1,
+Paid Subscriptions,Units,2016/3/3 1:32,1,
+Paid Subscriptions,Units,2016/2/23 3:59,1,
+Paid Subscriptions,Units,2016/2/21 5:58,1,
+Paid Subscriptions,Units,2016/2/19 8:15,1,
+Paid Subscriptions,Units,2016/2/6 13:55,1,
+Paid Subscriptions,Units,2016/1/27 9:59,1,
+Paid Subscriptions,Units,2016/1/21 16:44,1,
+Paid Subscriptions,Units,2015/12/30 13:07,1,
+Paid Subscriptions,Units,2015/12/21 2:32,1,
+Paid Subscriptions,Units,2015/12/8 0:34,1,
+Paid Subscriptions,Units,2015/11/13 14:59,1,
+Paid Subscriptions,Units,2015/11/2 21:34,1,
+Paid Subscriptions,Units,2015/10/31 11:34,1,
+Paid Subscriptions,Units,2015/10/13 12:23,1,
+Paid Subscriptions,Units,2015/10/11 0:07,1,
+Paid Subscriptions,Units,2015/10/10 9:57,1,
+Paid Subscriptions,Units,2015/10/4 21:02,1,
+Paid Subscriptions,Units,2015/9/17 21:03,1,
+Paid Subscriptions,Units,2015/9/14 23:50,1,
+Paid Subscriptions,Units,2015/9/8 13:46,1,
+Paid Subscriptions,Units,2015/9/7 1:41,1,
+Paid Subscriptions,Units,2015/9/2 20:10,1,
+Paid Subscriptions,Units,2015/7/19 7:06,1,1.3
+Paid Subscriptions,Units,2015/7/12 22:23,1,1.7
+Paid Subscriptions,Units,2015/7/4 1:40,1,1.8
+Paid Subscriptions,Units,2015/6/14 3:03,1,1.6
+Paid Subscriptions,Units,2015/6/12 17:03,1,1.2
+Paid Subscriptions,Units,2015/6/10 17:43,1,1.5
+Paid Subscriptions,Units,2015/6/2 8:44,1,1.8
+Paid Subscriptions,Units,2015/5/20 10:20,1,3.36
+Paid Subscriptions,Units,2015/5/18 17:13,1,6.16
+Paid Subscriptions,Units,2015/5/10 7:45,1,7.73
+Paid Subscriptions,Units,2015/5/7 20:34,1,10.84
+Paid Subscriptions,Units,2015/4/30 10:21,1,22.68
+Paid Subscriptions,Units,2015/4/21 1:42,1,35.27350122
+Paid Subscriptions,Units,2015/4/10 1:14,1,46.91132324
+Paid Subscriptions,Units,2015/4/8 4:06,1,60.38194761
+Paid Subscriptions,Units,2015/4/3 1:39,1,
+Paid Subscriptions,Units,2015/3/30 21:33,1,
+Paid Subscriptions,Units,2015/3/18 0:04,1,
+Paid Subscriptions,Units,2015/3/11 6:18,1,
+Paid Subscriptions,Units,2015/3/8 4:26,1,
+Paid Subscriptions,Units,2015/3/4 4:30,1,
+Paid Subscriptions,Units,2015/2/26 22:06,1,
+Paid Subscriptions,Units,2015/2/25 10:53,1,
+Paid Subscriptions,Units,2015/2/17 13:19,1,
+Paid Subscriptions,Units,2015/1/9 17:31,1,
+Paid Subscriptions,Units,2015/1/9 10:41,1,
+Paid Subscriptions,Units,2015/1/7 1:05,1,
+Paid Subscriptions,Units,2015/1/2 13:39,1,
+Paid Subscriptions,Units,2014/12/13 2:53,1,
+Paid Subscriptions,Units,2014/12/12 6:48,1,
+Paid Subscriptions,Units,2014/12/9 21:19,1,
+Paid Subscriptions,Units,2014/11/28 11:47,1,
+Paid Subscriptions,Units,2014/11/27 12:12,1,
+Paid Subscriptions,Units,2014/11/26 23:16,1,
+Paid Subscriptions,Units,2014/11/26 17:40,1,
+Paid Subscriptions,Units,2014/11/4 20:13,1,
+Paid Subscriptions,Units,2014/10/21 18:55,1,
+Paid Subscriptions,Units,2014/10/17 14:07,1,
+Paid Subscriptions,Units,2014/10/14 10:25,1,
+Paid Subscriptions,Units,2014/10/6 20:02,1,
+Paid Subscriptions,Units,2014/9/9 18:55,1,
+Paid Subscriptions,Units,2014/9/5 21:37,1,
+Paid Subscriptions,Units,2014/8/29 23:15,1,
+Paid Subscriptions,Units,2014/8/28 3:07,1,
+Paid Subscriptions,Units,2014/8/23 6:29,1,
+Paid Subscriptions,Units,2014/7/29 7:38,1,
+Paid Subscriptions,Units,2014/7/29 3:07,1,
+Paid Subscriptions,Units,2014/6/28 2:40,1,1.3
+Paid Subscriptions,Units,2014/6/26 5:54,1,1.7
+Paid Subscriptions,Units,2014/5/29 1:12,1,1.8
+Paid Subscriptions,Units,2014/5/16 20:06,1,1.6
+Paid Subscriptions,Units,2014/5/16 12:42,1,1.2
+Paid Subscriptions,Units,2014/5/8 19:42,1,1.5
+Paid Subscriptions,Units,2014/3/29 13:45,1,1.8
+Paid Subscriptions,Units,2014/3/18 11:02,1,3.4
+Paid Subscriptions,Units,2014/3/3 15:00,1,6.2
+Paid Subscriptions,Units,2014/2/18 12:50,1,7.7
+Paid Subscriptions,Units,2014/2/13 6:47,1,10.8
+Paid Subscriptions,Units,2014/1/15 2:46,1,22.7
+Paid Subscriptions,Units,2014/1/12 16:00,1,35.3
+Paid Subscriptions,Units,2014/1/8 17:05,1,50.2
+Paid Subscriptions,Units,2013/12/23 8:30,1,
+CD,Value,2013/12/8 3:10,1,
+CD,Value,2013/11/21 1:50,1,
+CD,Value,2013/10/12 16:06,1,
+CD,Value,2013/10/9 17:27,1,
+CD,Value,2013/9/24 15:31,1,
+CD,Value,2013/8/12 18:08,1,
+CD,Value,2013/7/31 7:00,1,
+CD,Value,2013/7/31 3:50,1,
+CD,Value,2013/7/30 2:36,1,
+CD,Value,2013/7/27 8:30,1,
+CD,Value,2013/7/26 11:32,1,17.2
+CD,Value,2013/7/18 0:46,1,103.3
+CD,Value,2013/6/13 2:51,1,389.5
+CD,Value,2013/6/1 22:49,1,930.1
+CD,Value,2013/5/14 23:20,1,1593.6
+CD,Value,2013/4/30 8:40,1,2089.9
+CD,Value,2013/4/21 6:23,1,2587.7
+CD,Value,2013/3/12 10:32,1,3451.6
+CD,Value,2013/2/20 13:13,1,4337.7
+CD,Value,2013/2/15 3:20,1,5326.5
+CD,Value,2013/2/7 13:12,1,6511.4
+CD,Value,2013/1/25 7:40,1,8464.5
+CD,Value,2013/1/12 3:04,1,9377.4
+CD,Value,2012/12/30 7:25,1,9934.7
+CD,Value,2012/12/18 11:19,1,9915.1
+CD,Value,2012/11/20 20:37,1,11416
+CD,Value,2012/11/20 6:25,1,12816.3
+CD,Value,2012/10/25 15:57,1,13214.5
+CD,Value,2012/10/19 16:26,1,12909.4
+CD,Value,2012/10/9 0:54,1,12044.1
+CD,Value,2012/10/3 22:50,1,11232.9
+CD,Value,2012/10/2 16:38,1,11446.5
+CD,Value,2012/9/28 5:44,1,10520.2
+CD,Value,2012/9/18 19:34,1,9372.6
+CD,Value,2012/9/11 22:07,1,7452.3
+CD,Value,2012/9/10 1:03,1,5471.3
+CD,Value,2012/8/27 6:57,1,4318.8
+CD,Value,2012/8/26 14:55,1,3389.4
+CD,Value,2012/8/13 5:31,1,3100.7
+CD,Value,2012/7/27 4:19,1,2485.614699
+CD,Value,2012/7/25 7:48,1,2140.917718
+CD,Value,2012/6/5 7:44,1,1776.249324
+CD,Value,2012/5/25 11:31,1,1444.993194
+CD,Value,2012/5/22 8:31,1,1130.764651
+CD,Value,2012/5/15 11:04,1,1057.32309
+CD,Value,2012/5/4 21:54,1,698.3866372
+CD,Value,2012/4/23 22:01,1,614.5097799
+CD Single,Value,2012/4/21 16:08,1,
+CD Single,Value,2012/4/19 22:12,1,
+CD Single,Value,2012/4/2 16:50,1,
+CD Single,Value,2012/3/12 6:40,1,
+CD Single,Value,2012/3/3 21:28,1,
+CD Single,Value,2012/3/1 3:12,1,
+CD Single,Value,2012/2/24 19:11,1,
+CD Single,Value,2012/2/17 10:47,1,
+CD Single,Value,2012/2/12 5:25,1,
+CD Single,Value,2012/2/4 14:42,1,
+CD Single,Value,2012/1/15 12:26,1,
+CD Single,Value,2012/1/11 2:23,1,
+CD Single,Value,2011/12/19 11:35,1,
+CD Single,Value,2011/12/14 5:01,1,
+CD Single,Value,2011/12/11 17:29,1,
+CD Single,Value,2011/11/20 5:25,1,9.8
+CD Single,Value,2011/10/12 7:13,1,-0.7
+CD Single,Value,2011/9/13 23:36,1,6
+CD Single,Value,2011/8/31 9:44,1,35.1
+CD Single,Value,2011/8/20 20:01,1,45.1
+CD Single,Value,2011/8/18 14:55,1,45.8
+CD Single,Value,2011/8/11 2:56,1,56.1
+CD Single,Value,2011/8/4 7:25,1,110.9
+CD Single,Value,2011/7/27 23:00,1,184.1
+CD Single,Value,2011/7/7 23:25,1,272.7
+CD Single,Value,2011/7/5 15:42,1,213.2
+CD Single,Value,2011/7/4 9:18,1,222.4
+CD Single,Value,2011/6/16 11:51,1,142.7
+CD Single,Value,2011/5/25 5:40,1,79.4
+CD Single,Value,2011/5/16 13:39,1,19.6
+CD Single,Value,2011/4/27 20:38,1,36
+CD Single,Value,2011/4/27 11:21,1,15
+CD Single,Value,2011/4/17 11:21,1,10.9
+CD Single,Value,2011/4/6 8:30,1,7.7
+CD Single,Value,2011/3/24 20:23,1,12.2
+CD Single,Value,2011/3/23 4:24,1,3.5
+CD Single,Value,2011/3/23 4:16,1,3.1
+CD Single,Value,2011/3/1 10:37,1,2.9
+CD Single,Value,2011/2/21 5:07,1,3.5
+CD Single,Value,2011/2/12 11:00,1,3.225092945
+CD Single,Value,2011/1/21 15:11,1,2.445737226
+CD Single,Value,2011/1/8 19:38,1,3.616015547
+CD Single,Value,2010/12/25 23:24,1,1.19694661
+CD Single,Value,2010/12/14 0:27,1,0.263199082
+CD Single,Value,2010/12/9 2:54,1,1.478694184
+CD Single,Value,2010/12/1 6:31,1,0.15516984
+CD Single,Value,2010/11/21 14:45,1,0.181678878
+Cassette,Value,2010/11/19 7:25,1,76
+Cassette,Value,2010/11/10 8:26,1,87.2
+Cassette,Value,2010/11/9 13:05,1,98.8
+Cassette,Value,2010/11/9 6:56,1,145.7
+Cassette,Value,2010/10/27 11:27,1,249.6
+Cassette,Value,2010/10/8 9:58,1,449.8
+Cassette,Value,2010/9/24 12:02,1,580.6
+Cassette,Value,2010/9/18 5:04,1,705
+Cassette,Value,2010/9/8 19:51,1,1062.8
+Cassette,Value,2010/9/5 23:37,1,1384.5
+Cassette,Value,2010/9/3 12:04,1,1810.9
+Cassette,Value,2010/8/17 4:19,1,2383.9
+Cassette,Value,2010/7/15 1:49,1,2411.5
+Cassette,Value,2010/7/6 23:54,1,2499.5
+Cassette,Value,2010/6/26 6:04,1,2959.7
+Cassette,Value,2010/6/21 6:42,1,3385.1
+Cassette,Value,2010/6/17 4:24,1,3345.8
+Cassette,Value,2010/4/17 2:21,1,3472.4
+Cassette,Value,2010/4/16 4:38,1,3019.6
+Cassette,Value,2010/4/6 18:33,1,3116.3
+Cassette,Value,2010/3/18 16:11,1,2915.8
+Cassette,Value,2010/3/15 15:55,1,2976.4
+Cassette,Value,2010/3/14 18:44,1,2303.6
+Cassette,Value,2010/3/8 22:44,1,1905.3
+Cassette,Value,2010/3/8 22:02,1,1522.7
+Cassette,Value,2010/2/28 22:24,1,1419.9
+Cassette,Value,2010/2/26 22:46,1,1061.6
+Cassette,Value,2010/2/24 19:55,1,626
+Cassette,Value,2010/1/15 19:17,1,363.4
+Cassette,Value,2009/12/31 16:24,1,209.8
+Cassette,Value,2009/12/31 12:50,1,108.1
+Cassette,Value,2009/11/25 1:36,1,23.7
+Cassette,Value,2009/11/21 20:53,1,13.1
+Cassette,Value,2009/11/18 17:36,1,3.7
+Cassette,Value,2009/11/18 7:07,1,3
+Cassette,Value,2009/11/14 19:58,1,0.9
+Cassette,Value,2009/11/7 11:31,1,0
+Cassette,Value,2009/11/7 10:41,1,
+Cassette,Value,2009/10/11 12:49,1,
+Cassette,Value,2009/10/8 2:57,1,
+Cassette,Value,2009/9/27 22:22,1,
+Cassette,Value,2009/9/18 20:13,1,
+Cassette,Value,2009/9/4 2:23,1,
+Cassette,Value,2009/8/23 21:17,1,
+Cassette,Value,2009/7/31 2:13,1,
+Cassette,Value,2009/7/16 6:39,1,
+Cassette,Value,2009/7/3 4:02,1,
+Cassette Single,Value,2009/6/27 13:08,1,
+Cassette Single,Value,2009/6/20 11:04,1,
+Cassette Single,Value,2009/6/18 4:39,1,
+Cassette Single,Value,2009/6/9 22:42,1,
+Cassette Single,Value,2009/5/31 6:05,1,
+Cassette Single,Value,2009/5/13 20:20,1,
+Cassette Single,Value,2009/5/4 11:39,1,
+Cassette Single,Value,2009/4/20 4:01,1,
+Cassette Single,Value,2009/4/10 18:42,1,
+Cassette Single,Value,2009/3/4 0:38,1,
+Cassette Single,Value,2009/2/20 12:15,1,
+Cassette Single,Value,2009/2/7 19:51,1,
+Cassette Single,Value,2009/1/12 22:24,1,
+8 - Track,Value,2009/1/10 7:42,1,489
+8 - Track,Value,2008/12/24 15:51,1,549.2
+8 - Track,Value,2008/12/12 11:36,1,583
+8 - Track,Value,2008/12/9 6:08,1,678.2
+8 - Track,Value,2008/11/24 22:01,1,811
+8 - Track,Value,2008/11/21 0:26,1,948
+8 - Track,Value,2008/11/18 9:41,1,684.3
+8 - Track,Value,2008/11/9 2:38,1,527
+8 - Track,Value,2008/10/21 2:20,1,313
+8 - Track,Value,2008/10/10 9:34,1,36
+8 - Track,Value,2008/10/7 2:45,1,
+8 - Track,Value,2008/9/9 9:49,1,
+8 - Track,Value,2008/8/16 14:40,1,
+8 - Track,Value,2008/8/12 11:44,1,
+8 - Track,Value,2008/8/7 6:07,1,
+8 - Track,Value,2008/7/23 14:45,1,
+8 - Track,Value,2008/7/22 19:34,1,
+8 - Track,Value,2008/7/11 14:35,1,
+8 - Track,Value,2008/7/8 15:55,1,
+8 - Track,Value,2008/7/1 17:40,1,
+8 - Track,Value,2008/6/27 2:01,1,
+8 - Track,Value,2008/6/18 13:45,1,
+8 - Track,Value,2008/5/29 21:23,1,
+8 - Track,Value,2008/5/24 10:18,1,
+8 - Track,Value,2008/5/22 20:50,1,
+8 - Track,Value,2008/5/6 1:08,1,
+8 - Track,Value,2008/4/30 1:18,1,
+8 - Track,Value,2008/4/6 16:03,1,
+8 - Track,Value,2008/3/15 11:29,1,
+8 - Track,Value,2008/2/24 19:33,1,
+8 - Track,Value,2008/2/19 13:30,1,
+8 - Track,Value,2008/2/18 8:51,1,
+8 - Track,Value,2008/2/17 12:19,1,
+8 - Track,Value,2008/2/16 8:38,1,
+8 - Track,Value,2008/1/18 1:17,1,
+8 - Track,Value,2008/1/9 3:53,1,
+8 - Track,Value,2007/12/26 6:46,1,
+8 - Track,Value,2007/12/20 17:00,1,
+8 - Track,Value,2007/10/25 19:35,1,
+8 - Track,Value,2007/10/12 9:14,1,
+8 - Track,Value,2007/10/7 13:31,1,
+8 - Track,Value,2007/9/22 17:57,1,
+8 - Track,Value,2007/6/11 9:47,1,
+8 - Track,Value,2007/6/8 13:32,1,
+8 - Track,Value,2007/6/7 21:28,1,
+8 - Track,Value,2007/5/16 16:20,1,
+8 - Track,Value,2007/5/16 4:45,1,
+Cassette Single,Value,2007/5/4 17:52,1,
+Cassette Single,Value,2007/4/18 12:44,1,14.3
+Cassette Single,Value,2007/4/16 14:56,1,57.3
+Cassette Single,Value,2007/3/17 6:48,1,194.6
+Cassette Single,Value,2007/3/15 2:20,1,257.9
+Cassette Single,Value,2007/3/7 15:16,1,230.4
+Cassette Single,Value,2007/2/2 12:48,1,298.8
+Cassette Single,Value,2007/1/26 22:22,1,298.5
+Cassette Single,Value,2007/1/22 7:24,1,274.9
+Cassette Single,Value,2007/1/18 13:51,1,236.3
+Cassette Single,Value,2007/1/17 9:50,1,189.3
+Cassette Single,Value,2007/1/1 11:43,1,133.5
+Cassette Single,Value,2006/12/9 6:31,1,94.4
+Cassette Single,Value,2006/12/7 11:42,1,48
+Cassette Single,Value,2006/12/1 6:09,1,4.6
+Cassette Single,Value,2006/11/13 15:16,1,-5.3
+Cassette Single,Value,2006/10/24 8:42,1,-1.6
+Cassette Single,Value,2006/10/14 18:10,1,
+Cassette Single,Value,2006/10/9 4:45,1,
+Cassette Single,Value,2006/10/7 12:18,1,
+Cassette Single,Value,2006/10/2 19:10,1,
+Cassette Single,Value,2006/9/27 8:33,1,
+Cassette Single,Value,2006/9/23 18:52,1,
+Cassette Single,Value,2006/9/2 17:57,1,
+Cassette Single,Value,2006/9/2 4:26,1,
+Cassette Single,Value,2006/8/29 1:38,1,
+Cassette Single,Value,2006/8/18 0:03,1,
+Cassette Single,Value,2006/8/17 10:43,1,
+Cassette Single,Value,2006/8/15 10:52,1,
+Cassette Single,Value,2006/8/9 4:30,1,
+Cassette Single,Value,2006/7/15 23:55,1,
+Cassette Single,Value,2006/7/15 15:22,1,
+Cassette Single,Value,2006/6/7 0:06,1,
+Cassette Single,Value,2006/5/28 1:32,1,
+DVD Audio,Value,2006/5/21 7:51,1,
+DVD Audio,Value,2006/5/7 17:45,1,
+DVD Audio,Value,2006/5/6 15:39,1,
+DVD Audio,Value,2006/4/25 18:46,1,
+DVD Audio,Value,2006/4/8 13:16,1,
+DVD Audio,Value,2006/4/4 11:30,1,
+DVD Audio,Value,2006/3/14 3:21,1,
+DVD Audio,Value,2006/2/26 7:30,1,
+DVD Audio,Value,2006/2/6 1:57,1,
+DVD Audio,Value,2006/2/4 8:38,1,
+DVD Audio,Value,2006/1/28 3:33,1,
+DVD Audio,Value,2006/1/27 1:27,1,
+DVD Audio,Value,2006/1/26 0:00,1,
+DVD Audio,Value,2006/1/10 23:25,1,
+DVD Audio,Value,2006/1/8 5:20,1,
+DVD Audio,Value,2005/12/29 10:05,1,
+DVD Audio,Value,2005/12/24 15:30,1,
+DVD Audio,Value,2005/12/3 12:45,1,
+DVD Audio,Value,2005/12/1 10:40,1,
+DVD Audio,Value,2005/11/29 7:33,1,
+DVD Audio,Value,2005/11/15 5:19,1,
+DVD Audio,Value,2005/11/11 20:34,1,
+DVD Audio,Value,2005/11/9 7:33,1,
+DVD Audio,Value,2005/11/2 7:04,1,
+DVD Audio,Value,2005/11/2 5:16,1,
+DVD Audio,Value,2005/10/26 21:30,1,
+DVD Audio,Value,2005/9/30 19:04,1,
+DVD Audio,Value,2005/9/14 1:08,1,
+DVD Audio,Value,2005/9/2 7:59,1,6
+DVD Audio,Value,2005/8/20 12:10,1,8.5
+DVD Audio,Value,2005/8/9 14:35,1,8
+DVD Audio,Value,2005/7/1 22:36,1,6.5
+DVD Audio,Value,2005/6/18 19:40,1,11.2
+DVD Audio,Value,2005/6/5 1:56,1,2.4
+DVD Audio,Value,2005/6/3 8:15,1,2.8
+DVD Audio,Value,2005/5/27 14:12,1,1.2
+DVD Audio,Value,2005/5/14 13:02,1,1.6
+DVD Audio,Value,2005/5/7 9:31,1,0.9
+DVD Audio,Value,2005/5/2 20:10,1,0.3
+DVD Audio,Value,2005/4/22 11:18,1,0.183106992
+DVD Audio,Value,2005/4/19 7:37,1,-0.495804191
+DVD Audio,Value,2005/4/16 10:40,1,2.139460944
+DVD Audio,Value,2005/4/15 6:54,1,5.416232673
+DVD Audio,Value,2005/4/14 14:05,1,2.83553587
+DVD Audio,Value,2005/4/11 5:20,1,2.606840648
+DVD Audio,Value,2005/4/6 1:30,1,3.317383752
+DVD Audio,Value,2005/4/5 17:48,1,1.067303184
+Download Album,Value,2005/4/3 1:45,1,
+Download Album,Value,2005/4/2 22:52,1,
+Download Album,Value,2005/3/31 22:15,1,
+Download Album,Value,2005/3/18 16:48,1,
+Download Album,Value,2005/3/12 22:16,1,
+Download Album,Value,2005/3/9 15:47,1,
+Download Album,Value,2005/3/9 12:49,1,
+Download Album,Value,2005/3/6 17:32,1,
+Download Album,Value,2005/2/17 22:52,1,
+Download Album,Value,2005/1/19 1:43,1,
+Download Album,Value,2005/1/2 23:09,1,
+Download Album,Value,2005/1/1 3:44,1,
+Download Album,Value,2004/12/29 7:11,1,
+Download Album,Value,2004/12/13 11:35,1,
+Download Album,Value,2004/12/11 15:36,1,
+Download Album,Value,2004/11/30 8:32,1,
+Download Album,Value,2004/11/17 3:13,1,
+Download Album,Value,2004/10/14 11:41,1,
+Download Album,Value,2004/10/10 11:05,1,
+Download Album,Value,2004/10/7 13:14,1,
+Download Album,Value,2004/10/4 4:39,1,
+Download Album,Value,2004/9/28 8:57,1,
+Download Album,Value,2004/9/3 12:07,1,
+Download Album,Value,2004/8/22 10:01,1,
+Download Album,Value,2004/7/29 12:41,1,
+Download Album,Value,2004/7/25 5:29,1,
+Download Album,Value,2004/7/22 3:34,1,
+Download Album,Value,2004/7/16 0:11,1,
+Download Album,Value,2004/7/4 16:58,1,
+Download Album,Value,2004/7/3 20:47,1,
+Download Album,Value,2004/6/12 7:13,1,
+Download Album,Value,2004/6/11 15:41,1,45.5
+Download Album,Value,2004/6/5 20:34,1,135.7
+Download Album,Value,2004/6/4 13:41,1,275.9
+Download Album,Value,2004/6/3 21:59,1,497.4
+Download Album,Value,2004/6/3 9:40,1,635.3
+Download Album,Value,2004/5/18 11:12,1,744.3
+Download Album,Value,2004/5/17 2:08,1,872.4
+Download Album,Value,2004/5/6 2:22,1,1070.8
+Download Album,Value,2004/4/23 0:33,1,1204.822243
+Download Album,Value,2004/4/22 21:19,1,1232.139716
+Download Album,Value,2004/4/22 4:21,1,1117.900009
+Download Album,Value,2004/4/6 3:24,1,1064.433607
+Download Album,Value,2004/3/26 16:35,1,868.5942684
+Download Album,Value,2004/3/25 9:39,1,668.5007059
+Download Album,Value,2004/2/27 1:18,1,499.6508324
+Download Album,Value,2004/2/2 18:52,1,394.5330062
+Download Music Video,Value,2004/1/22 1:06,1,
+Download Music Video,Value,2004/1/17 20:11,1,
+Download Music Video,Value,2004/1/16 11:17,1,
+Download Music Video,Value,2004/1/2 4:27,1,
+Download Music Video,Value,2003/12/9 22:36,1,
+Download Music Video,Value,2003/11/26 2:00,1,
+Download Music Video,Value,2003/11/10 13:54,1,
+Download Music Video,Value,2003/11/1 14:09,1,
+Download Music Video,Value,2003/10/16 0:47,1,
+Download Music Video,Value,2003/10/13 14:06,1,
+Download Music Video,Value,2003/10/7 0:23,1,
+Download Music Video,Value,2003/9/27 12:59,1,
+Download Music Video,Value,2003/9/22 3:45,1,
+Download Music Video,Value,2003/9/21 7:40,1,
+Download Music Video,Value,2003/9/20 19:04,1,
+Download Music Video,Value,2003/9/2 20:00,1,
+Download Music Video,Value,2003/8/26 22:08,1,
+Download Music Video,Value,2003/8/26 8:44,1,
+Download Music Video,Value,2003/8/17 13:16,1,
+Download Music Video,Value,2003/8/1 4:09,1,
+Download Music Video,Value,2003/7/21 5:11,1,
+Download Music Video,Value,2003/6/22 22:53,1,
+Download Music Video,Value,2003/6/21 14:49,1,
+Download Music Video,Value,2003/6/16 17:17,1,
+Download Music Video,Value,2003/6/10 14:11,1,
+Download Music Video,Value,2003/5/27 23:32,1,
+Download Music Video,Value,2003/5/19 3:38,1,
+Download Music Video,Value,2003/5/18 7:51,1,
+Download Music Video,Value,2003/5/15 6:28,1,
+Download Music Video,Value,2003/4/28 13:06,1,
+Download Music Video,Value,2003/4/13 17:58,1,
+Download Music Video,Value,2003/4/7 9:25,1,
+Download Music Video,Value,2003/4/1 4:40,1,3.7
+Download Music Video,Value,2003/3/27 5:50,1,19.7
+Download Music Video,Value,2003/2/25 23:13,1,28.2
+Download Music Video,Value,2003/2/12 23:45,1,41.3
+Download Music Video,Value,2003/2/12 2:37,1,40.9
+Download Music Video,Value,2003/2/6 17:00,1,36.6
+Download Music Video,Value,2003/2/5 6:16,1,32.4
+Download Music Video,Value,2003/2/4 14:07,1,20.842242
+Download Music Video,Value,2003/1/30 6:02,1,16.740803
+Download Music Video,Value,2002/11/28 15:41,1,13.577058
+Download Music Video,Value,2002/11/21 0:11,1,6.414419
+Download Music Video,Value,2002/11/12 21:49,1,4.26940012
+Download Music Video,Value,2002/11/10 22:13,1,2.785780489
+Download Music Video,Value,2002/10/9 12:00,1,2.2208106
+Download Music Video,Value,2002/10/4 10:08,1,1.858910402
+Download Single,Value,2002/9/24 16:48,1,
+Download Single,Value,2002/8/14 7:48,1,
+Download Single,Value,2002/8/11 20:42,1,
+Download Single,Value,2002/8/10 18:01,1,
+Download Single,Value,2002/7/25 15:57,1,
+Download Single,Value,2002/7/22 11:16,1,
+Download Single,Value,2002/6/29 16:31,1,
+Download Single,Value,2002/6/15 11:51,1,
+Download Single,Value,2002/6/13 15:29,1,
+Download Single,Value,2002/6/2 4:28,1,
+Download Single,Value,2002/4/3 19:10,1,
+Download Single,Value,2002/4/2 2:36,1,
+Download Single,Value,2002/3/28 21:29,1,
+Download Single,Value,2002/3/19 5:56,1,
+Download Single,Value,2002/3/19 2:56,1,
+Download Single,Value,2002/3/18 14:44,1,
+Download Single,Value,2002/3/9 1:20,1,
+Download Single,Value,2002/3/3 21:10,1,
+Download Single,Value,2002/3/1 3:53,1,
+Download Single,Value,2002/2/9 19:50,1,
+Download Single,Value,2002/2/1 19:07,1,
+Download Single,Value,2002/1/20 16:42,1,
+Download Single,Value,2002/1/3 12:19,1,
+Download Single,Value,2001/12/14 17:58,1,
+Download Single,Value,2001/12/12 16:56,1,
+Download Single,Value,2001/11/26 6:51,1,
+Download Single,Value,2001/11/13 10:58,1,
+Download Single,Value,2001/11/11 12:14,1,
+Download Single,Value,2001/10/27 19:20,1,
+Download Single,Value,2001/10/14 12:03,1,
+Download Single,Value,2001/10/12 3:11,1,
+Download Single,Value,2001/10/6 6:29,1,138
+Download Single,Value,2001/9/25 11:54,1,363.3
+Download Single,Value,2001/8/26 16:08,1,580.6
+Download Single,Value,2001/8/18 13:57,1,811
+Download Single,Value,2001/7/26 21:20,1,1032.2
+Download Single,Value,2001/7/23 22:19,1,1172
+Download Single,Value,2001/5/6 4:30,1,1336.4
+Download Single,Value,2001/4/27 9:46,1,1522.4
+Download Single,Value,2001/4/23 6:12,1,1644.570645
+Download Single,Value,2001/4/14 6:40,1,1573.420534
+Download Single,Value,2001/4/13 0:29,1,1355.331251
+Download Single,Value,2001/2/9 21:27,1,1185.237595
+Download Single,Value,2001/2/4 5:53,1,900.1814811
+Download Single,Value,2001/1/28 16:19,1,678.5248883
+Download Single,Value,2000/12/15 13:22,1,490.4304887
+Download Single,Value,2000/12/15 3:46,1,414.804251
+Kiosk,Value,2000/11/28 12:20,1,
+Kiosk,Value,2000/11/13 0:28,1,
+Kiosk,Value,2000/11/6 7:18,1,
+Kiosk,Value,2000/10/11 23:29,1,
+Kiosk,Value,2000/9/24 6:57,1,
+Kiosk,Value,2000/9/23 4:00,1,
+Kiosk,Value,2000/9/19 22:12,1,
+Kiosk,Value,2000/8/25 1:12,1,
+Kiosk,Value,2000/8/13 3:00,1,
+Kiosk,Value,2000/8/1 16:48,1,
+Kiosk,Value,2000/7/31 7:06,1,
+Kiosk,Value,2000/7/19 17:40,1,
+Kiosk,Value,2000/7/9 1:08,1,
+Kiosk,Value,2000/7/7 1:34,1,
+Kiosk,Value,2000/6/27 10:06,1,
+Kiosk,Value,2000/6/23 9:03,1,
+Kiosk,Value,2000/6/22 20:02,1,
+Kiosk,Value,2000/6/18 13:40,1,
+Kiosk,Value,2000/6/14 16:39,1,
+Kiosk,Value,2000/6/4 3:17,1,
+Kiosk,Value,2000/6/3 3:24,1,
+Kiosk,Value,2000/6/2 18:44,1,
+Kiosk,Value,2000/5/29 16:46,1,
+Kiosk,Value,2000/5/6 11:51,1,
+Kiosk,Value,2000/5/3 10:40,1,
+Kiosk,Value,2000/4/21 13:42,1,
+Kiosk,Value,2000/4/4 13:38,1,
+Kiosk,Value,2000/3/28 15:27,1,
+Kiosk,Value,2000/3/19 5:11,1,
+Kiosk,Value,2000/3/6 8:29,1,
+Kiosk,Value,2000/2/18 9:25,1,
+Kiosk,Value,2000/2/17 14:22,1,
+Kiosk,Value,2000/1/18 16:43,1,1
+Kiosk,Value,2000/1/18 8:33,1,1.9
+Kiosk,Value,1999/12/16 0:07,1,2.6
+Kiosk,Value,1999/12/11 17:31,1,2.6
+Kiosk,Value,1999/12/10 18:56,1,6.3
+Kiosk,Value,1999/12/3 17:24,1,6.4
+Kiosk,Value,1999/12/1 19:38,1,2.7
+Kiosk,Value,1999/11/30 2:18,1,3.654065
+Kiosk,Value,1999/11/15 20:01,1,6.183604
+Kiosk,Value,1999/11/7 17:53,1,2.582636
+Kiosk,Value,1999/10/26 17:19,1,3.700455
+Kiosk,Value,1999/9/8 23:55,1,2.943916801
+Kiosk,Value,1999/9/8 14:41,1,2.25474315
+Kiosk,Value,1999/8/16 5:18,1,1.965045799
+Kiosk,Value,1999/8/6 3:22,1,1.586470587
+LP/EP,Value,1999/8/3 18:25,1,1246
+LP/EP,Value,1999/7/10 8:11,1,1356
+LP/EP,Value,1999/7/7 4:14,1,1485
+LP/EP,Value,1999/6/25 6:27,1,1663
+LP/EP,Value,1999/5/23 7:02,1,2195.1
+LP/EP,Value,1999/4/26 11:33,1,2473.3
+LP/EP,Value,1999/4/26 9:49,1,2057
+LP/EP,Value,1999/3/31 23:54,1,2200
+LP/EP,Value,1999/3/28 15:37,1,2341.7
+LP/EP,Value,1999/3/2 22:23,1,1925.1
+LP/EP,Value,1999/2/18 23:15,1,1689
+LP/EP,Value,1999/2/1 14:24,1,1548.8
+LP/EP,Value,1999/1/19 2:32,1,1280.5
+LP/EP,Value,1999/1/14 8:06,1,983
+LP/EP,Value,1999/1/12 19:24,1,793.1
+LP/EP,Value,1999/1/11 5:18,1,532.2
+LP/EP,Value,1999/1/2 18:25,1,220.3
+LP/EP,Value,1998/12/22 9:24,1,86.5
+LP/EP,Value,1998/11/23 20:20,1,29.4
+LP/EP,Value,1998/11/11 16:46,1,13.5
+LP/EP,Value,1998/10/3 12:58,1,10.6
+LP/EP,Value,1998/9/4 9:16,1,17.8
+LP/EP,Value,1998/9/1 11:15,1,25.1
+LP/EP,Value,1998/8/30 0:20,1,36.8
+LP/EP,Value,1998/8/8 12:55,1,33.3
+LP/EP,Value,1998/7/28 14:16,1,34
+LP/EP,Value,1998/3/24 9:08,1,31.8
+LP/EP,Value,1998/3/22 22:25,1,27.7
+LP/EP,Value,1998/1/8 16:10,1,27.4
+LP/EP,Value,1998/1/4 23:00,1,20.5
+LP/EP,Value,1997/12/28 3:58,1,21.7
+LP/EP,Value,1997/12/9 8:15,1,19.3
+LP/EP,Value,1997/11/7 7:46,1,14.2
+LP/EP,Value,1997/10/9 18:47,1,15.7
+LP/EP,Value,1997/10/1 14:26,1,22.9
+LP/EP,Value,1997/9/30 12:31,1,56.7
+LP/EP,Value,1997/9/5 11:41,1,63.8
+LP/EP,Value,1997/8/20 17:16,1,88.9
+LP/EP,Value,1997/8/15 1:05,1,119.4
+LP/EP,Value,1997/7/30 3:01,1,160.7230583
+LP/EP,Value,1997/7/4 12:22,1,210.739051
+LP/EP,Value,1997/5/22 8:30,1,243.8468483
+LP/EP,Value,1997/4/27 22:34,1,333.3797931
+LP/EP,Value,1997/2/19 4:31,1,355.430891
+LP/EP,Value,1997/2/15 15:23,1,388.5111082
+LP/EP,Value,1997/2/6 18:28,1,419.223947
+LP/EP,Value,1997/1/28 17:49,1,497.5889208
+Limited Tier Paid Subscription,Value,1997/1/23 10:03,1,
+Limited Tier Paid Subscription,Value,1997/1/22 21:13,1,
+Limited Tier Paid Subscription,Value,1997/1/4 6:46,1,
+Limited Tier Paid Subscription,Value,1997/1/3 15:08,1,
+Limited Tier Paid Subscription,Value,1996/12/17 4:16,1,
+Limited Tier Paid Subscription,Value,1996/12/10 6:09,1,
+Limited Tier Paid Subscription,Value,1996/12/4 17:00,1,
+Limited Tier Paid Subscription,Value,1996/12/1 13:19,1,
+Limited Tier Paid Subscription,Value,1996/11/22 10:06,1,
+Limited Tier Paid Subscription,Value,1996/11/8 16:02,1,
+Limited Tier Paid Subscription,Value,1996/10/30 12:48,1,
+Limited Tier Paid Subscription,Value,1996/10/28 4:46,1,
+Limited Tier Paid Subscription,Value,1996/10/23 8:28,1,
+Limited Tier Paid Subscription,Value,1996/10/19 19:01,1,
+Limited Tier Paid Subscription,Value,1996/10/7 17:43,1,
+Limited Tier Paid Subscription,Value,1996/10/5 19:21,1,
+Limited Tier Paid Subscription,Value,1996/8/17 15:46,1,
+Limited Tier Paid Subscription,Value,1996/8/15 16:07,1,
+Limited Tier Paid Subscription,Value,1996/8/9 18:14,1,
+Limited Tier Paid Subscription,Value,1996/8/7 3:16,1,
+Limited Tier Paid Subscription,Value,1996/8/6 4:50,1,
+Limited Tier Paid Subscription,Value,1996/8/5 19:27,1,
+Limited Tier Paid Subscription,Value,1996/8/5 15:19,1,
+Limited Tier Paid Subscription,Value,1996/7/17 3:16,1,
+Limited Tier Paid Subscription,Value,1996/7/12 14:04,1,
+Limited Tier Paid Subscription,Value,1996/6/25 11:22,1,
+Limited Tier Paid Subscription,Value,1996/5/8 1:02,1,
+Limited Tier Paid Subscription,Value,1996/5/1 13:19,1,
+Limited Tier Paid Subscription,Value,1996/3/31 0:53,1,
+Limited Tier Paid Subscription,Value,1996/3/30 4:03,1,
+Limited Tier Paid Subscription,Value,1996/3/29 20:30,1,
+Limited Tier Paid Subscription,Value,1996/3/25 17:00,1,
+Limited Tier Paid Subscription,Value,1996/3/13 8:31,1,
+Limited Tier Paid Subscription,Value,1996/2/16 7:03,1,
+Limited Tier Paid Subscription,Value,1996/2/15 2:38,1,
+Limited Tier Paid Subscription,Value,1996/1/18 17:10,1,
+Limited Tier Paid Subscription,Value,1996/1/15 13:44,1,
+Limited Tier Paid Subscription,Value,1995/12/27 12:55,1,
+Limited Tier Paid Subscription,Value,1995/12/22 13:26,1,
+Limited Tier Paid Subscription,Value,1995/12/9 19:54,1,
+Limited Tier Paid Subscription,Value,1995/11/25 5:29,1,
+Limited Tier Paid Subscription,Value,1995/11/13 3:10,1,
+Limited Tier Paid Subscription,Value,1995/10/1 2:42,1,
+Limited Tier Paid Subscription,Value,1995/9/9 7:38,1,263.3636852
+Limited Tier Paid Subscription,Value,1995/8/24 21:54,1,591.6010975
+Limited Tier Paid Subscription,Value,1995/8/17 16:39,1,747.0549062
+Limited Tier Paid Subscription,Value,1995/8/6 4:38,1,829.4987397
+Music Video (Physical),Value,1995/8/5 17:14,1,
+Music Video (Physical),Value,1995/7/11 18:38,1,
+Music Video (Physical),Value,1995/7/9 18:20,1,
+Music Video (Physical),Value,1995/7/7 17:33,1,
+Music Video (Physical),Value,1995/6/9 9:28,1,
+Music Video (Physical),Value,1995/4/2 12:32,1,
+Music Video (Physical),Value,1995/2/16 13:05,1,
+Music Video (Physical),Value,1995/1/18 10:17,1,
+Music Video (Physical),Value,1995/1/10 21:08,1,
+Music Video (Physical),Value,1995/1/2 20:41,1,
+Music Video (Physical),Value,1994/12/18 12:45,1,
+Music Video (Physical),Value,1994/12/16 9:41,1,
+Music Video (Physical),Value,1994/11/3 20:01,1,
+Music Video (Physical),Value,1994/11/1 6:50,1,
+Music Video (Physical),Value,1994/10/27 4:21,1,
+Music Video (Physical),Value,1994/10/20 0:11,1,
+Music Video (Physical),Value,1994/10/8 3:24,1,115.4
+Music Video (Physical),Value,1994/9/22 4:22,1,172.3
+Music Video (Physical),Value,1994/8/15 23:16,1,118.1
+Music Video (Physical),Value,1994/6/15 0:02,1,157.4
+Music Video (Physical),Value,1994/6/3 20:48,1,213.3
+Music Video (Physical),Value,1994/5/29 9:30,1,231.1
+Music Video (Physical),Value,1994/2/1 22:38,1,220.3
+Music Video (Physical),Value,1993/11/29 17:48,1,236.1
+Music Video (Physical),Value,1993/10/31 3:39,1,323.9
+Music Video (Physical),Value,1991/10/4 9:22,1,508
+Music Video (Physical),Value,1990/10/1 3:51,1,376.7
+Music Video (Physical),Value,1988/4/15 3:03,1,281.9
+Music Video (Physical),Value,2020/7/31 22:01,1,329.2
+Music Video (Physical),Value,2020/7/23 6:12,1,288.4
+Music Video (Physical),Value,2020/7/13 9:30,1,399.9
+Music Video (Physical),Value,2020/6/30 14:26,1,607.2
+Music Video (Physical),Value,2020/6/23 20:21,1,602.2
+Music Video (Physical),Value,2020/6/20 13:41,1,451.1
+Music Video (Physical),Value,2020/5/24 7:03,1,484.9
+Music Video (Physical),Value,2020/5/22 17:44,1,227.3
+Music Video (Physical),Value,2020/5/14 9:30,1,209.6
+Music Video (Physical),Value,2020/4/30 21:28,1,177.6
+Music Video (Physical),Value,2020/3/11 4:51,1,151
+Music Video (Physical),Value,2020/3/9 4:16,1,116.6136546
+Music Video (Physical),Value,2020/3/8 22:21,1,106.2831378
+Music Video (Physical),Value,2020/2/25 1:22,1,89.70557988
+Music Video (Physical),Value,2020/2/21 18:47,1,70.43436396
+Music Video (Physical),Value,2020/2/18 19:48,1,56.92290281
+Music Video (Physical),Value,2020/2/7 17:37,1,38.619447
+Music Video (Physical),Value,2020/2/6 6:09,1,27.5612603
+Music Video (Physical),Value,2016/12/23 3:29,1,27.70524678
+On-Demand Streaming (Ad-Supported),Value,2016/12/7 4:51,1,
+On-Demand Streaming (Ad-Supported),Value,2016/11/29 8:05,1,
+On-Demand Streaming (Ad-Supported),Value,2016/11/24 14:10,1,
+On-Demand Streaming (Ad-Supported),Value,2016/11/3 17:14,1,
+On-Demand Streaming (Ad-Supported),Value,2016/10/1 20:23,1,
+On-Demand Streaming (Ad-Supported),Value,2016/9/22 4:57,1,
+On-Demand Streaming (Ad-Supported),Value,2016/9/14 15:01,1,
+On-Demand Streaming (Ad-Supported),Value,2016/8/27 21:45,1,
+On-Demand Streaming (Ad-Supported),Value,2016/8/11 5:59,1,
+On-Demand Streaming (Ad-Supported),Value,2016/8/5 18:02,1,
+On-Demand Streaming (Ad-Supported),Value,2016/7/21 0:48,1,
+On-Demand Streaming (Ad-Supported),Value,2016/7/5 1:24,1,
+On-Demand Streaming (Ad-Supported),Value,2016/6/27 10:02,1,
+On-Demand Streaming (Ad-Supported),Value,2016/6/5 6:12,1,
+On-Demand Streaming (Ad-Supported),Value,2016/6/2 10:56,1,
+On-Demand Streaming (Ad-Supported),Value,2016/5/29 12:14,1,
+On-Demand Streaming (Ad-Supported),Value,2016/5/20 11:59,1,
+On-Demand Streaming (Ad-Supported),Value,2016/5/16 10:09,1,
+On-Demand Streaming (Ad-Supported),Value,2016/5/13 0:34,1,
+On-Demand Streaming (Ad-Supported),Value,2016/4/24 5:39,1,
+On-Demand Streaming (Ad-Supported),Value,2016/4/18 11:59,1,
+On-Demand Streaming (Ad-Supported),Value,2016/4/12 9:51,1,
+On-Demand Streaming (Ad-Supported),Value,2016/4/10 14:57,1,
+On-Demand Streaming (Ad-Supported),Value,2016/3/16 23:54,1,
+On-Demand Streaming (Ad-Supported),Value,2016/3/3 1:32,1,
+On-Demand Streaming (Ad-Supported),Value,2016/2/23 3:59,1,
+On-Demand Streaming (Ad-Supported),Value,2016/2/21 5:58,1,
+On-Demand Streaming (Ad-Supported),Value,2016/2/19 8:15,1,
+On-Demand Streaming (Ad-Supported),Value,2016/2/6 13:55,1,
+On-Demand Streaming (Ad-Supported),Value,2016/1/27 9:59,1,
+On-Demand Streaming (Ad-Supported),Value,2016/1/21 16:44,1,
+On-Demand Streaming (Ad-Supported),Value,2015/12/30 13:07,1,
+On-Demand Streaming (Ad-Supported),Value,2015/12/21 2:32,1,
+On-Demand Streaming (Ad-Supported),Value,2015/12/8 0:34,1,
+On-Demand Streaming (Ad-Supported),Value,2015/11/13 14:59,1,
+On-Demand Streaming (Ad-Supported),Value,2015/11/2 21:34,1,
+On-Demand Streaming (Ad-Supported),Value,2015/10/31 11:34,1,
+On-Demand Streaming (Ad-Supported),Value,2015/10/13 12:23,1,
+On-Demand Streaming (Ad-Supported),Value,2015/10/11 0:07,1,113.8
+On-Demand Streaming (Ad-Supported),Value,2015/10/10 9:57,1,170.9354084
+On-Demand Streaming (Ad-Supported),Value,2015/10/4 21:02,1,220.8735445
+On-Demand Streaming (Ad-Supported),Value,2015/9/17 21:03,1,283.7934094
+On-Demand Streaming (Ad-Supported),Value,2015/9/14 23:50,1,371.9903964
+On-Demand Streaming (Ad-Supported),Value,2015/9/8 13:46,1,489.3776076
+On-Demand Streaming (Ad-Supported),Value,2015/9/7 1:41,1,658.6064926
+On-Demand Streaming (Ad-Supported),Value,2015/9/2 20:10,1,759.5323682
+On-Demand Streaming (Ad-Supported),Value,2015/7/19 7:06,1,908.1493305
+Other Ad-Supported Streaming,Value,2015/7/12 22:23,1,
+Other Ad-Supported Streaming,Value,2015/7/4 1:40,1,
+Other Ad-Supported Streaming,Value,2015/6/14 3:03,1,
+Other Ad-Supported Streaming,Value,2015/6/12 17:03,1,
+Other Ad-Supported Streaming,Value,2015/6/10 17:43,1,
+Other Ad-Supported Streaming,Value,2015/6/2 8:44,1,
+Other Ad-Supported Streaming,Value,2015/5/20 10:20,1,
+Other Ad-Supported Streaming,Value,2015/5/18 17:13,1,
+Other Ad-Supported Streaming,Value,2015/5/10 7:45,1,
+Other Ad-Supported Streaming,Value,2015/5/7 20:34,1,
+Other Ad-Supported Streaming,Value,2015/4/30 10:21,1,
+Other Ad-Supported Streaming,Value,2015/4/21 1:42,1,
+Other Ad-Supported Streaming,Value,2015/4/10 1:14,1,
+Other Ad-Supported Streaming,Value,2015/4/8 4:06,1,
+Other Ad-Supported Streaming,Value,2015/4/3 1:39,1,
+Other Ad-Supported Streaming,Value,2015/3/30 21:33,1,
+Other Ad-Supported Streaming,Value,2015/3/18 0:04,1,
+Other Ad-Supported Streaming,Value,2015/3/11 6:18,1,
+Other Ad-Supported Streaming,Value,2015/3/8 4:26,1,
+Other Ad-Supported Streaming,Value,2015/3/4 4:30,1,
+Other Ad-Supported Streaming,Value,2015/2/26 22:06,1,
+Other Ad-Supported Streaming,Value,2015/2/25 10:53,1,
+Other Ad-Supported Streaming,Value,2015/2/17 13:19,1,
+Other Ad-Supported Streaming,Value,2015/1/9 17:31,1,
+Other Ad-Supported Streaming,Value,2015/1/9 10:41,1,
+Other Ad-Supported Streaming,Value,2015/1/7 1:05,1,
+Other Ad-Supported Streaming,Value,2015/1/2 13:39,1,
+Other Ad-Supported Streaming,Value,2014/12/13 2:53,1,
+Other Ad-Supported Streaming,Value,2014/12/12 6:48,1,
+Other Ad-Supported Streaming,Value,2014/12/9 21:19,1,
+Other Ad-Supported Streaming,Value,2014/11/28 11:47,1,
+Other Ad-Supported Streaming,Value,2014/11/27 12:12,1,
+Other Ad-Supported Streaming,Value,2014/11/26 23:16,1,
+Other Ad-Supported Streaming,Value,2014/11/26 17:40,1,
+Other Ad-Supported Streaming,Value,2014/11/4 20:13,1,
+Other Ad-Supported Streaming,Value,2014/10/21 18:55,1,
+Other Ad-Supported Streaming,Value,2014/10/17 14:07,1,
+Other Ad-Supported Streaming,Value,2014/10/14 10:25,1,
+Other Ad-Supported Streaming,Value,2014/10/6 20:02,1,
+Other Ad-Supported Streaming,Value,2014/9/9 18:55,1,
+Other Ad-Supported Streaming,Value,2014/9/5 21:37,1,
+Other Ad-Supported Streaming,Value,2014/8/29 23:15,1,
+Other Ad-Supported Streaming,Value,2014/8/28 3:07,1,
+Other Ad-Supported Streaming,Value,2014/8/23 6:29,1,81.26086562
+Other Ad-Supported Streaming,Value,2014/7/29 7:38,1,261.786859
+Other Ad-Supported Streaming,Value,2014/7/29 3:07,1,251.4119188
+Other Ad-Supported Streaming,Value,2014/6/28 2:40,1,251.0647101
+Other Digital,Value,2014/6/26 5:54,1,
+Other Digital,Value,2014/5/29 1:12,1,
+Other Digital,Value,2014/5/16 20:06,1,
+Other Digital,Value,2014/5/16 12:42,1,
+Other Digital,Value,2014/5/8 19:42,1,
+Other Digital,Value,2014/3/29 13:45,1,
+Other Digital,Value,2014/3/18 11:02,1,
+Other Digital,Value,2014/3/3 15:00,1,
+Other Digital,Value,2014/2/18 12:50,1,
+Other Digital,Value,2014/2/13 6:47,1,
+Other Digital,Value,2014/1/15 2:46,1,
+Other Digital,Value,2014/1/12 16:00,1,
+Other Digital,Value,2014/1/8 17:05,1,
+Other Digital,Value,2013/12/23 8:30,1,
+Other Digital,Value,2013/12/8 3:10,1,
+Other Digital,Value,2013/11/21 1:50,1,
+Other Digital,Value,2013/10/12 16:06,1,
+Other Digital,Value,2013/10/9 17:27,1,
+Other Digital,Value,2013/9/24 15:31,1,
+Other Digital,Value,2013/8/12 18:08,1,
+Other Digital,Value,2013/7/31 7:00,1,
+Other Digital,Value,2013/7/31 3:50,1,
+Other Digital,Value,2013/7/30 2:36,1,
+Other Digital,Value,2013/7/27 8:30,1,
+Other Digital,Value,2013/7/26 11:32,1,
+Other Digital,Value,2013/7/18 0:46,1,
+Other Digital,Value,2013/6/13 2:51,1,
+Other Digital,Value,2013/6/1 22:49,1,
+Other Digital,Value,2013/5/14 23:20,1,
+Other Digital,Value,2013/4/30 8:40,1,
+Other Digital,Value,2013/4/21 6:23,1,
+Other Digital,Value,2013/3/12 10:32,1,
+Other Digital,Value,2013/2/20 13:13,1,
+Other Digital,Value,2013/2/15 3:20,1,
+Other Digital,Value,2013/2/7 13:12,1,
+Other Digital,Value,2013/1/25 7:40,1,
+Other Digital,Value,2013/1/12 3:04,1,
+Other Digital,Value,2012/12/30 7:25,1,
+Other Digital,Value,2012/12/18 11:19,1,
+Other Digital,Value,2012/11/20 20:37,1,
+Other Digital,Value,2012/11/20 6:25,1,
+Other Digital,Value,2012/10/25 15:57,1,
+Other Digital,Value,2012/10/19 16:26,1,
+Other Digital,Value,2012/10/9 0:54,1,17.14166287
+Other Digital,Value,2012/10/3 22:50,1,16.88510987
+Other Digital,Value,2012/10/2 16:38,1,19.83957487
+Other Digital,Value,2012/9/28 5:44,1,21.51717501
+Other Tapes,Value,2012/9/18 19:34,1,15.6
+Other Tapes,Value,2012/9/11 22:07,1,13.3
+Other Tapes,Value,2012/9/10 1:03,1,10.2
+Other Tapes,Value,2012/8/27 6:57,1,5.1
+Other Tapes,Value,2012/8/26 14:55,1,
+Other Tapes,Value,2012/8/13 5:31,1,
+Other Tapes,Value,2012/7/27 4:19,1,
+Other Tapes,Value,2012/7/25 7:48,1,
+Other Tapes,Value,2012/6/5 7:44,1,
+Other Tapes,Value,2012/5/25 11:31,1,
+Other Tapes,Value,2012/5/22 8:31,1,
+Other Tapes,Value,2012/5/15 11:04,1,
+Other Tapes,Value,2012/5/4 21:54,1,
+Other Tapes,Value,2012/4/23 22:01,1,
+Other Tapes,Value,2012/4/21 16:08,1,
+Other Tapes,Value,2012/4/19 22:12,1,
+Other Tapes,Value,2012/4/2 16:50,1,
+Other Tapes,Value,2012/3/12 6:40,1,
+Other Tapes,Value,2012/3/3 21:28,1,
+Other Tapes,Value,2012/3/1 3:12,1,
+Other Tapes,Value,2012/2/24 19:11,1,
+Other Tapes,Value,2012/2/17 10:47,1,
+Other Tapes,Value,2012/2/12 5:25,1,
+Other Tapes,Value,2012/2/4 14:42,1,
+Other Tapes,Value,2012/1/15 12:26,1,
+Other Tapes,Value,2012/1/11 2:23,1,
+Other Tapes,Value,2011/12/19 11:35,1,
+Other Tapes,Value,2011/12/14 5:01,1,
+Other Tapes,Value,2011/12/11 17:29,1,
+Other Tapes,Value,2011/11/20 5:25,1,
+Other Tapes,Value,2011/10/12 7:13,1,
+Other Tapes,Value,2011/9/13 23:36,1,
+Other Tapes,Value,2011/8/31 9:44,1,
+Other Tapes,Value,2011/8/20 20:01,1,
+Other Tapes,Value,2011/8/18 14:55,1,
+Other Tapes,Value,2011/8/11 2:56,1,
+Other Tapes,Value,2011/8/4 7:25,1,
+Other Tapes,Value,2011/7/27 23:00,1,
+Other Tapes,Value,2011/7/7 23:25,1,
+Other Tapes,Value,2011/7/5 15:42,1,
+Other Tapes,Value,2011/7/4 9:18,1,
+Other Tapes,Value,2011/6/16 11:51,1,
+Other Tapes,Value,2011/5/25 5:40,1,
+Other Tapes,Value,2011/5/16 13:39,1,
+Other Tapes,Value,2011/4/27 20:38,1,
+Other Tapes,Value,2011/4/27 11:21,1,
+Other Tapes,Value,2011/4/17 11:21,1,
+Paid Subscription,Value,2011/4/6 8:30,1,
+Paid Subscription,Value,2011/3/24 20:23,1,
+Paid Subscription,Value,2011/3/23 4:24,1,
+Paid Subscription,Value,2011/3/23 4:16,1,
+Paid Subscription,Value,2011/3/1 10:37,1,
+Paid Subscription,Value,2011/2/21 5:07,1,
+Paid Subscription,Value,2011/2/12 11:00,1,
+Paid Subscription,Value,2011/1/21 15:11,1,
+Paid Subscription,Value,2011/1/8 19:38,1,
+Paid Subscription,Value,2010/12/25 23:24,1,
+Paid Subscription,Value,2010/12/14 0:27,1,
+Paid Subscription,Value,2010/12/9 2:54,1,
+Paid Subscription,Value,2010/12/1 6:31,1,
+Paid Subscription,Value,2010/11/21 14:45,1,
+Paid Subscription,Value,2010/11/19 7:25,1,
+Paid Subscription,Value,2010/11/10 8:26,1,
+Paid Subscription,Value,2010/11/9 13:05,1,
+Paid Subscription,Value,2010/11/9 6:56,1,
+Paid Subscription,Value,2010/10/27 11:27,1,
+Paid Subscription,Value,2010/10/8 9:58,1,
+Paid Subscription,Value,2010/9/24 12:02,1,
+Paid Subscription,Value,2010/9/18 5:04,1,
+Paid Subscription,Value,2010/9/8 19:51,1,
+Paid Subscription,Value,2010/9/5 23:37,1,
+Paid Subscription,Value,2010/9/3 12:04,1,
+Paid Subscription,Value,2010/8/17 4:19,1,
+Paid Subscription,Value,2010/7/15 1:49,1,
+Paid Subscription,Value,2010/7/6 23:54,1,
+Paid Subscription,Value,2010/6/26 6:04,1,
+Paid Subscription,Value,2010/6/21 6:42,1,
+Paid Subscription,Value,2010/6/17 4:24,1,
+Paid Subscription,Value,2010/4/17 2:21,1,
+Paid Subscription,Value,2010/4/16 4:38,1,149.2
+Paid Subscription,Value,2010/4/6 18:33,1,206.2
+Paid Subscription,Value,2010/3/18 16:11,1,234
+Paid Subscription,Value,2010/3/15 15:55,1,221.4
+Paid Subscription,Value,2010/3/14 18:44,1,206.2
+Paid Subscription,Value,2010/3/8 22:44,1,212.4
+Paid Subscription,Value,2010/3/8 22:02,1,247.8
+Paid Subscription,Value,2010/2/28 22:24,1,399.8825311
+Paid Subscription,Value,2010/2/26 22:46,1,643.3242888
+Paid Subscription,Value,2010/2/24 19:55,1,770.2705591
+Paid Subscription,Value,2010/1/15 19:17,1,1156.708514
+Paid Subscription,Value,2009/12/31 16:24,1,2244.154254
+Paid Subscription,Value,2009/12/31 12:50,1,3500.549813
+Paid Subscription,Value,2009/11/25 1:36,1,4655.968522
+Paid Subscription,Value,2009/11/21 20:53,1,5934.397625
+Ringtones & Ringbacks,Value,2009/11/18 17:36,1,
+Ringtones & Ringbacks,Value,2009/11/18 7:07,1,
+Ringtones & Ringbacks,Value,2009/11/14 19:58,1,
+Ringtones & Ringbacks,Value,2009/11/7 11:31,1,
+Ringtones & Ringbacks,Value,2009/11/7 10:41,1,
+Ringtones & Ringbacks,Value,2009/10/11 12:49,1,
+Ringtones & Ringbacks,Value,2009/10/8 2:57,1,
+Ringtones & Ringbacks,Value,2009/9/27 22:22,1,
+Ringtones & Ringbacks,Value,2009/9/18 20:13,1,
+Ringtones & Ringbacks,Value,2009/9/4 2:23,1,
+Ringtones & Ringbacks,Value,2009/8/23 21:17,1,
+Ringtones & Ringbacks,Value,2009/7/31 2:13,1,
+Ringtones & Ringbacks,Value,2009/7/16 6:39,1,
+Ringtones & Ringbacks,Value,2009/7/3 4:02,1,
+Ringtones & Ringbacks,Value,2009/6/27 13:08,1,
+Ringtones & Ringbacks,Value,2009/6/20 11:04,1,
+Ringtones & Ringbacks,Value,2009/6/18 4:39,1,
+Ringtones & Ringbacks,Value,2009/6/9 22:42,1,
+Ringtones & Ringbacks,Value,2009/5/31 6:05,1,
+Ringtones & Ringbacks,Value,2009/5/13 20:20,1,
+Ringtones & Ringbacks,Value,2009/5/4 11:39,1,
+Ringtones & Ringbacks,Value,2009/4/20 4:01,1,
+Ringtones & Ringbacks,Value,2009/4/10 18:42,1,
+Ringtones & Ringbacks,Value,2009/3/4 0:38,1,
+Ringtones & Ringbacks,Value,2009/2/20 12:15,1,
+Ringtones & Ringbacks,Value,2009/2/7 19:51,1,
+Ringtones & Ringbacks,Value,2009/1/12 22:24,1,
+Ringtones & Ringbacks,Value,2009/1/10 7:42,1,
+Ringtones & Ringbacks,Value,2008/12/24 15:51,1,
+Ringtones & Ringbacks,Value,2008/12/12 11:36,1,
+Ringtones & Ringbacks,Value,2008/12/9 6:08,1,
+Ringtones & Ringbacks,Value,2008/11/24 22:01,1,
+Ringtones & Ringbacks,Value,2008/11/21 0:26,1,421.6
+Ringtones & Ringbacks,Value,2008/11/18 9:41,1,773.8
+Ringtones & Ringbacks,Value,2008/11/9 2:38,1,1055.8
+Ringtones & Ringbacks,Value,2008/10/21 2:20,1,977.1
+Ringtones & Ringbacks,Value,2008/10/10 9:34,1,702.8
+Ringtones & Ringbacks,Value,2008/10/7 2:45,1,448
+Ringtones & Ringbacks,Value,2008/9/9 9:49,1,276.2
+Ringtones & Ringbacks,Value,2008/8/16 14:40,1,145.9929351
+Ringtones & Ringbacks,Value,2008/8/12 11:44,1,97.99961233
+Ringtones & Ringbacks,Value,2008/8/7 6:07,1,66.31137067
+Ringtones & Ringbacks,Value,2008/7/23 14:45,1,54.58202422
+Ringtones & Ringbacks,Value,2008/7/22 19:34,1,56.32529913
+Ringtones & Ringbacks,Value,2008/7/11 14:35,1,35.51373565
+Ringtones & Ringbacks,Value,2008/7/8 15:55,1,24.9578598
+Ringtones & Ringbacks,Value,2008/7/1 17:40,1,21.4267369
+SACD,Value,2008/6/27 2:01,1,
+SACD,Value,2008/6/18 13:45,1,
+SACD,Value,2008/5/29 21:23,1,
+SACD,Value,2008/5/24 10:18,1,
+SACD,Value,2008/5/22 20:50,1,
+SACD,Value,2008/5/6 1:08,1,
+SACD,Value,2008/4/30 1:18,1,
+SACD,Value,2008/4/6 16:03,1,
+SACD,Value,2008/3/15 11:29,1,
+SACD,Value,2008/2/24 19:33,1,
+SACD,Value,2008/2/19 13:30,1,
+SACD,Value,2008/2/18 8:51,1,
+SACD,Value,2008/2/17 12:19,1,
+SACD,Value,2008/2/16 8:38,1,
+SACD,Value,2008/1/18 1:17,1,
+SACD,Value,2008/1/9 3:53,1,
+SACD,Value,2007/12/26 6:46,1,
+SACD,Value,2007/12/20 17:00,1,
+SACD,Value,2007/10/25 19:35,1,
+SACD,Value,2007/10/12 9:14,1,
+SACD,Value,2007/10/7 13:31,1,
+SACD,Value,2007/9/22 17:57,1,
+SACD,Value,2007/6/11 9:47,1,
+SACD,Value,2007/6/8 13:32,1,
+SACD,Value,2007/6/7 21:28,1,
+SACD,Value,2007/5/16 16:20,1,
+SACD,Value,2007/5/16 4:45,1,
+SACD,Value,2007/5/4 17:52,1,
+SACD,Value,2007/4/18 12:44,1,
+SACD,Value,2007/4/16 14:56,1,
+SACD,Value,2007/3/17 6:48,1,26.3
+SACD,Value,2007/3/15 2:20,1,16.6
+SACD,Value,2007/3/7 15:16,1,10
+SACD,Value,2007/2/2 12:48,1,5.5
+SACD,Value,2007/1/26 22:22,1,3.6
+SACD,Value,2007/1/22 7:24,1,3.1
+SACD,Value,2007/1/18 13:51,1,2.4
+SACD,Value,2007/1/17 9:50,1,1.7
+SACD,Value,2007/1/1 11:43,1,1.5
+SACD,Value,2006/12/9 6:31,1,1.3425
+SACD,Value,2006/12/7 11:42,1,0.9783826
+SACD,Value,2006/12/1 6:09,1,0.76344539
+SACD,Value,2006/11/13 15:16,1,1.04346656
+SACD,Value,2006/10/24 8:42,1,1.20686148
+SACD,Value,2006/10/14 18:10,1,0.85057856
+SACD,Value,2006/10/9 4:45,1,0.85969971
+SACD,Value,2006/10/7 12:18,1,0.433302292
+SoundExchange Distributions,Value,2006/10/2 19:10,1,
+SoundExchange Distributions,Value,2006/9/27 8:33,1,
+SoundExchange Distributions,Value,2006/9/23 18:52,1,
+SoundExchange Distributions,Value,2006/9/2 17:57,1,
+SoundExchange Distributions,Value,2006/9/2 4:26,1,
+SoundExchange Distributions,Value,2006/8/29 1:38,1,
+SoundExchange Distributions,Value,2006/8/18 0:03,1,
+SoundExchange Distributions,Value,2006/8/17 10:43,1,
+SoundExchange Distributions,Value,2006/8/15 10:52,1,
+SoundExchange Distributions,Value,2006/8/9 4:30,1,
+SoundExchange Distributions,Value,2006/7/15 23:55,1,
+SoundExchange Distributions,Value,2006/7/15 15:22,1,
+SoundExchange Distributions,Value,2006/6/7 0:06,1,
+SoundExchange Distributions,Value,2006/5/28 1:32,1,
+SoundExchange Distributions,Value,2006/5/21 7:51,1,
+SoundExchange Distributions,Value,2006/5/7 17:45,1,
+SoundExchange Distributions,Value,2006/5/6 15:39,1,
+SoundExchange Distributions,Value,2006/4/25 18:46,1,
+SoundExchange Distributions,Value,2006/4/8 13:16,1,
+SoundExchange Distributions,Value,2006/4/4 11:30,1,
+SoundExchange Distributions,Value,2006/3/14 3:21,1,
+SoundExchange Distributions,Value,2006/2/26 7:30,1,
+SoundExchange Distributions,Value,2006/2/6 1:57,1,
+SoundExchange Distributions,Value,2006/2/4 8:38,1,
+SoundExchange Distributions,Value,2006/1/28 3:33,1,
+SoundExchange Distributions,Value,2006/1/27 1:27,1,
+SoundExchange Distributions,Value,2006/1/26 0:00,1,
+SoundExchange Distributions,Value,2006/1/10 23:25,1,
+SoundExchange Distributions,Value,2006/1/8 5:20,1,
+SoundExchange Distributions,Value,2005/12/29 10:05,1,
+SoundExchange Distributions,Value,2005/12/24 15:30,1,
+SoundExchange Distributions,Value,2005/12/3 12:45,1,6.9
+SoundExchange Distributions,Value,2005/12/1 10:40,1,20.4
+SoundExchange Distributions,Value,2005/11/29 7:33,1,32.8
+SoundExchange Distributions,Value,2005/11/15 5:19,1,36.2
+SoundExchange Distributions,Value,2005/11/11 20:34,1,100
+SoundExchange Distributions,Value,2005/11/9 7:33,1,155.5
+SoundExchange Distributions,Value,2005/11/2 7:04,1,249.2
+SoundExchange Distributions,Value,2005/11/2 5:16,1,292
+SoundExchange Distributions,Value,2005/10/26 21:30,1,462
+SoundExchange Distributions,Value,2005/9/30 19:04,1,590.4
+SoundExchange Distributions,Value,2005/9/14 1:08,1,773.4
+SoundExchange Distributions,Value,2005/9/2 7:59,1,802.6
+SoundExchange Distributions,Value,2005/8/20 12:10,1,883.9
+SoundExchange Distributions,Value,2005/8/9 14:35,1,652
+SoundExchange Distributions,Value,2005/7/1 22:36,1,952.8
+SoundExchange Distributions,Value,2005/6/18 19:40,1,908.2
+Synchronization,Value,2005/6/5 1:56,1,
+Synchronization,Value,2005/6/3 8:15,1,
+Synchronization,Value,2005/5/27 14:12,1,
+Synchronization,Value,2005/5/14 13:02,1,
+Synchronization,Value,2005/5/7 9:31,1,
+Synchronization,Value,2005/5/2 20:10,1,
+Synchronization,Value,2005/4/22 11:18,1,
+Synchronization,Value,2005/4/19 7:37,1,
+Synchronization,Value,2005/4/16 10:40,1,
+Synchronization,Value,2005/4/15 6:54,1,
+Synchronization,Value,2005/4/14 14:05,1,
+Synchronization,Value,2005/4/11 5:20,1,
+Synchronization,Value,2005/4/6 1:30,1,
+Synchronization,Value,2005/4/5 17:48,1,
+Synchronization,Value,2005/4/3 1:45,1,
+Synchronization,Value,2005/4/2 22:52,1,
+Synchronization,Value,2005/3/31 22:15,1,
+Synchronization,Value,2005/3/18 16:48,1,
+Synchronization,Value,2005/3/12 22:16,1,
+Synchronization,Value,2005/3/9 15:47,1,
+Synchronization,Value,2005/3/9 12:49,1,
+Synchronization,Value,2005/3/6 17:32,1,
+Synchronization,Value,2005/2/17 22:52,1,
+Synchronization,Value,2005/1/19 1:43,1,
+Synchronization,Value,2005/1/2 23:09,1,
+Synchronization,Value,2005/1/1 3:44,1,
+Synchronization,Value,2004/12/29 7:11,1,
+Synchronization,Value,2004/12/13 11:35,1,
+Synchronization,Value,2004/12/11 15:36,1,
+Synchronization,Value,2004/11/30 8:32,1,
+Synchronization,Value,2004/11/17 3:13,1,
+Synchronization,Value,2004/10/14 11:41,1,
+Synchronization,Value,2004/10/10 11:05,1,
+Synchronization,Value,2004/10/7 13:14,1,
+Synchronization,Value,2004/10/4 4:39,1,
+Synchronization,Value,2004/9/28 8:57,1,
+Synchronization,Value,2004/9/3 12:07,1,201.2
+Synchronization,Value,2004/8/22 10:01,1,188.7
+Synchronization,Value,2004/7/29 12:41,1,196.5
+Synchronization,Value,2004/7/25 5:29,1,190.597753
+Synchronization,Value,2004/7/22 3:34,1,189.679434
+Synchronization,Value,2004/7/16 0:11,1,189.713099
+Synchronization,Value,2004/7/4 16:58,1,202.934888
+Synchronization,Value,2004/7/3 20:47,1,214.8389765
+Synchronization,Value,2004/6/12 7:13,1,232.0865229
+Synchronization,Value,2004/6/11 15:41,1,285.5134913
+Synchronization,Value,2004/6/5 20:34,1,276.2623602
+Vinyl Single,Value,2004/6/4 13:41,1,190
+Vinyl Single,Value,2004/6/3 21:59,1,194
+Vinyl Single,Value,2004/6/3 9:40,1,211.5
+Vinyl Single,Value,2004/5/18 11:12,1,245.1
+Vinyl Single,Value,2004/5/17 2:08,1,245.1
+Vinyl Single,Value,2004/5/6 2:22,1,260.3
+Vinyl Single,Value,2004/4/23 0:33,1,353.6
+Vinyl Single,Value,2004/4/22 21:19,1,250
+Vinyl Single,Value,2004/4/22 4:21,1,256.4
+Vinyl Single,Value,2004/4/6 3:24,1,283
+Vinyl Single,Value,2004/3/26 16:35,1,269.3
+Vinyl Single,Value,2004/3/25 9:39,1,298.7
+Vinyl Single,Value,2004/2/27 1:18,1,281
+Vinyl Single,Value,2004/2/2 18:52,1,228.1
+Vinyl Single,Value,2004/1/22 1:06,1,203.3
+Vinyl Single,Value,2004/1/17 20:11,1,180.4
+Vinyl Single,Value,2004/1/16 11:17,1,116.4
+Vinyl Single,Value,2004/1/2 4:27,1,94.4
+Vinyl Single,Value,2003/12/9 22:36,1,63.9
+Vinyl Single,Value,2003/11/26 2:00,1,66.4
+Vinyl Single,Value,2003/11/10 13:54,1,51.2
+Vinyl Single,Value,2003/11/1 14:09,1,47.2
+Vinyl Single,Value,2003/10/16 0:47,1,46.7
+Vinyl Single,Value,2003/10/13 14:06,1,47.5
+Vinyl Single,Value,2003/10/7 0:23,1,35.6
+Vinyl Single,Value,2003/9/27 12:59,1,25.7
+Vinyl Single,Value,2003/9/22 3:45,1,27.9
+Vinyl Single,Value,2003/9/21 7:40,1,26.3
+Vinyl Single,Value,2003/9/20 19:04,1,31.4
+Vinyl Single,Value,2003/9/2 20:00,1,24.9
+Vinyl Single,Value,2003/8/26 22:08,1,21.5
+Vinyl Single,Value,2003/8/26 8:44,1,19.9
+Vinyl Single,Value,2003/8/17 13:16,1,13.2
+Vinyl Single,Value,2003/8/1 4:09,1,9.9
+Vinyl Single,Value,2003/7/21 5:11,1,4
+Vinyl Single,Value,2003/6/22 22:53,1,2.9
+Vinyl Single,Value,2003/6/21 14:49,1,2.5
+Vinyl Single,Value,2003/6/16 17:17,1,2.3
+Vinyl Single,Value,2003/6/10 14:11,1,4.6
+Vinyl Single,Value,2003/5/27 23:32,1,4.743055893
+Vinyl Single,Value,2003/5/19 3:38,1,2.978937179
+Vinyl Single,Value,2003/5/18 7:51,1,5.49935429
+Vinyl Single,Value,2003/5/15 6:28,1,5.752954082
+Vinyl Single,Value,2003/4/28 13:06,1,4.880679689
+Vinyl Single,Value,2003/4/13 17:58,1,6.07838535
+Vinyl Single,Value,2003/4/7 9:25,1,5.290337079
+Vinyl Single,Value,2003/4/1 4:40,1,6.795945687
+8 - Track,Value (Adjusted),2003/3/27 5:50,1,2815.681824
+8 - Track,Value (Adjusted),2003/2/25 23:13,1,2848.008609
+8 - Track,Value (Adjusted),2003/2/12 23:45,1,2770.409498
+8 - Track,Value (Adjusted),2003/2/12 2:37,1,3047.215772
+8 - Track,Value (Adjusted),2003/2/6 17:00,1,3421.416287
+8 - Track,Value (Adjusted),2003/2/5 6:16,1,3717.221411
+8 - Track,Value (Adjusted),2003/2/4 14:07,1,2409.72569
+8 - Track,Value (Adjusted),2003/1/30 6:02,1,1635.087852
+8 - Track,Value (Adjusted),2002/11/28 15:41,1,880.3150825
+8 - Track,Value (Adjusted),2002/11/21 0:11,1,95.37463212
+8 - Track,Value (Adjusted),2002/11/12 21:49,1,
+8 - Track,Value (Adjusted),2002/11/10 22:13,1,
+8 - Track,Value (Adjusted),2002/10/9 12:00,1,
+8 - Track,Value (Adjusted),2002/10/4 10:08,1,
+8 - Track,Value (Adjusted),2002/9/24 16:48,1,
+8 - Track,Value (Adjusted),2002/8/14 7:48,1,
+8 - Track,Value (Adjusted),2002/8/11 20:42,1,
+8 - Track,Value (Adjusted),2002/8/10 18:01,1,
+8 - Track,Value (Adjusted),2002/7/25 15:57,1,
+8 - Track,Value (Adjusted),2002/7/22 11:16,1,
+8 - Track,Value (Adjusted),2002/6/29 16:31,1,
+8 - Track,Value (Adjusted),2002/6/15 11:51,1,
+8 - Track,Value (Adjusted),2002/6/13 15:29,1,
+8 - Track,Value (Adjusted),2002/6/2 4:28,1,
+8 - Track,Value (Adjusted),2002/4/3 19:10,1,
+8 - Track,Value (Adjusted),2002/4/2 2:36,1,
+8 - Track,Value (Adjusted),2002/3/28 21:29,1,
+8 - Track,Value (Adjusted),2002/3/19 5:56,1,
+8 - Track,Value (Adjusted),2002/3/19 2:56,1,
+8 - Track,Value (Adjusted),2002/3/18 14:44,1,
+8 - Track,Value (Adjusted),2002/3/9 1:20,1,
+8 - Track,Value (Adjusted),2002/3/3 21:10,1,
+8 - Track,Value (Adjusted),2002/3/1 3:53,1,
+8 - Track,Value (Adjusted),2002/2/9 19:50,1,
+8 - Track,Value (Adjusted),2002/2/1 19:07,1,
+8 - Track,Value (Adjusted),2002/1/20 16:42,1,
+8 - Track,Value (Adjusted),2002/1/3 12:19,1,
+8 - Track,Value (Adjusted),2001/12/14 17:58,1,
+8 - Track,Value (Adjusted),2001/12/12 16:56,1,
+8 - Track,Value (Adjusted),2001/11/26 6:51,1,
+8 - Track,Value (Adjusted),2001/11/13 10:58,1,
+8 - Track,Value (Adjusted),2001/11/11 12:14,1,
+8 - Track,Value (Adjusted),2001/10/27 19:20,1,
+8 - Track,Value (Adjusted),2001/10/14 12:03,1,
+8 - Track,Value (Adjusted),2001/10/12 3:11,1,
+8 - Track,Value (Adjusted),2001/10/6 6:29,1,
+8 - Track,Value (Adjusted),2001/9/25 11:54,1,
+CD,Value (Adjusted),2001/8/26 16:08,1,
+CD,Value (Adjusted),2001/8/18 13:57,1,
+CD,Value (Adjusted),2001/7/26 21:20,1,
+CD,Value (Adjusted),2001/7/23 22:19,1,
+CD,Value (Adjusted),2001/5/6 4:30,1,
+CD,Value (Adjusted),2001/4/27 9:46,1,
+CD,Value (Adjusted),2001/4/23 6:12,1,
+CD,Value (Adjusted),2001/4/14 6:40,1,
+CD,Value (Adjusted),2001/4/13 0:29,1,
+CD,Value (Adjusted),2001/2/9 21:27,1,
+CD,Value (Adjusted),2001/2/4 5:53,1,44.14960241
+CD,Value (Adjusted),2001/1/28 16:19,1,254.1806362
+CD,Value (Adjusted),2000/12/15 13:22,1,925.4498281
+CD,Value (Adjusted),2000/12/15 3:46,1,2169.585545
+CD,Value (Adjusted),2000/11/28 12:20,1,3586.399606
+CD,Value (Adjusted),2000/11/13 0:28,1,4516.462927
+CD,Value (Adjusted),2000/11/6 7:18,1,5335.190475
+CD,Value (Adjusted),2000/10/11 23:29,1,6751.535587
+CD,Value (Adjusted),2000/9/24 6:57,1,8142.168641
+CD,Value (Adjusted),2000/9/23 4:00,1,9706.037138
+CD,Value (Adjusted),2000/9/19 22:12,1,11520.31135
+CD,Value (Adjusted),2000/8/25 1:12,1,14601.94788
+CD,Value (Adjusted),2000/8/13 3:00,1,15730.95769
+CD,Value (Adjusted),2000/8/1 16:48,1,16187.86232
+CD,Value (Adjusted),2000/7/31 7:06,1,15793.54966
+CD,Value (Adjusted),2000/7/19 17:40,1,17905.40069
+CD,Value (Adjusted),2000/7/9 1:08,1,19667.32779
+CD,Value (Adjusted),2000/7/7 1:34,1,19618.92814
+CD,Value (Adjusted),2000/6/27 10:06,1,18635.67745
+CD,Value (Adjusted),2000/6/23 9:03,1,17115.94482
+CD,Value (Adjusted),2000/6/22 20:02,1,15607.44302
+CD,Value (Adjusted),2000/6/18 13:40,1,15491.67735
+CD,Value (Adjusted),2000/6/14 16:39,1,13771.44276
+CD,Value (Adjusted),2000/6/4 3:17,1,11885.76785
+CD,Value (Adjusted),2000/6/3 3:24,1,9190.702658
+CD,Value (Adjusted),2000/6/2 18:44,1,6496.779627
+CD,Value (Adjusted),2000/5/29 16:46,1,5146.57822
+CD,Value (Adjusted),2000/5/6 11:51,1,3973.859173
+CD,Value (Adjusted),2000/5/3 10:40,1,3524.136143
+CD,Value (Adjusted),2000/4/21 13:42,1,2767.776149
+CD,Value (Adjusted),2000/4/4 13:38,1,2349.534897
+CD,Value (Adjusted),2000/3/28 15:27,1,1918.215115
+CD,Value (Adjusted),2000/3/19 5:11,1,1558.633452
+CD,Value (Adjusted),2000/3/6 8:29,1,1204.497778
+CD,Value (Adjusted),2000/2/18 9:25,1,1102.774352
+CD,Value (Adjusted),2000/2/17 14:22,1,711.0412395
+CD,Value (Adjusted),2000/1/18 16:43,1,614.5097799
+CD Single,Value (Adjusted),2000/1/18 8:33,1,
+CD Single,Value (Adjusted),1999/12/16 0:07,1,
+CD Single,Value (Adjusted),1999/12/11 17:31,1,
+CD Single,Value (Adjusted),1999/12/10 18:56,1,
+CD Single,Value (Adjusted),1999/12/3 17:24,1,
+CD Single,Value (Adjusted),1999/12/1 19:38,1,
+CD Single,Value (Adjusted),1999/11/30 2:18,1,
+CD Single,Value (Adjusted),1999/11/15 20:01,1,
+CD Single,Value (Adjusted),1999/11/7 17:53,1,
+CD Single,Value (Adjusted),1999/10/26 17:19,1,
+CD Single,Value (Adjusted),1999/9/8 23:55,1,
+CD Single,Value (Adjusted),1999/9/8 14:41,1,
+CD Single,Value (Adjusted),1999/8/16 5:18,1,
+CD Single,Value (Adjusted),1999/8/6 3:22,1,
+CD Single,Value (Adjusted),1999/8/3 18:25,1,
+CD Single,Value (Adjusted),1999/7/10 8:11,1,21.17868639
+CD Single,Value (Adjusted),1999/7/7 4:14,1,-1.443225
+CD Single,Value (Adjusted),1999/6/25 6:27,1,11.73635807
+CD Single,Value (Adjusted),1999/5/23 7:02,1,65.88517401
+CD Single,Value (Adjusted),1999/4/26 11:33,1,82.1819722
+CD Single,Value (Adjusted),1999/4/26 9:49,1,81.03176886
+CD Single,Value (Adjusted),1999/3/31 23:54,1,96.77704251
+CD Single,Value (Adjusted),1999/3/28 15:37,1,186.0391161
+CD Single,Value (Adjusted),1999/3/2 22:23,1,299.9773977
+CD Single,Value (Adjusted),1999/2/18 23:15,1,434.3779682
+CD Single,Value (Adjusted),1999/2/1 14:24,1,334.3930822
+CD Single,Value (Adjusted),1999/1/19 2:32,1,341.2852149
+CD Single,Value (Adjusted),1999/1/14 8:06,1,211.8597787
+CD Single,Value (Adjusted),1999/1/12 19:24,1,114.6197956
+CD Single,Value (Adjusted),1999/1/11 5:18,1,27.85368093
+CD Single,Value (Adjusted),1999/1/2 18:25,1,50.01984783
+CD Single,Value (Adjusted),1998/12/22 9:24,1,20.30097935
+CD Single,Value (Adjusted),1998/11/23 20:20,1,14.26861905
+CD Single,Value (Adjusted),1998/11/11 16:46,1,9.764677083
+CD Single,Value (Adjusted),1998/10/3 12:58,1,15.04590159
+CD Single,Value (Adjusted),1998/9/4 9:16,1,4.156001078
+CD Single,Value (Adjusted),1998/9/1 11:15,1,3.694172567
+CD Single,Value (Adjusted),1998/8/30 0:20,1,3.400068331
+CD Single,Value (Adjusted),1998/8/8 12:55,1,3.977965137
+CD Single,Value (Adjusted),1998/7/28 14:16,1,3.59119832
+CD Single,Value (Adjusted),1998/3/24 9:08,1,2.684056894
+CD Single,Value (Adjusted),1998/3/22 22:25,1,3.905023683
+CD Single,Value (Adjusted),1998/1/8 16:10,1,1.291079457
+CD Single,Value (Adjusted),1998/1/4 23:00,1,0.280361354
+CD Single,Value (Adjusted),1997/12/28 3:58,1,1.542258972
+CD Single,Value (Adjusted),1997/12/9 8:15,1,0.157981482
+CD Single,Value (Adjusted),1997/11/7 7:46,1,0.181678878
+Cassette,Value (Adjusted),1997/10/9 18:47,1,437.6110811
+Cassette,Value (Adjusted),1997/10/1 14:26,1,452.1965598
+Cassette,Value (Adjusted),1997/9/30 12:31,1,469.4964981
+Cassette,Value (Adjusted),1997/9/5 11:41,1,654.6436714
+Cassette,Value (Adjusted),1997/8/20 17:16,1,1053.003089
+Cassette,Value (Adjusted),1997/8/15 1:05,1,1763.71961
+Cassette,Value (Adjusted),1997/7/30 3:01,1,2044.551711
+Cassette,Value (Adjusted),1997/7/4 12:22,1,2187.356614
+Cassette,Value (Adjusted),1997/5/22 8:30,1,2989.133769
+Cassette,Value (Adjusted),1997/4/27 22:34,1,3667.949394
+Cassette,Value (Adjusted),1997/2/19 4:31,1,4648.285756
+Cassette,Value (Adjusted),1997/2/15 15:23,1,5865.839483
+Cassette,Value (Adjusted),1997/2/6 18:28,1,5729.710553
+Cassette,Value (Adjusted),1997/1/28 17:49,1,5830.425835
+Cassette,Value (Adjusted),1997/1/23 10:03,1,6660.810061
+Cassette,Value (Adjusted),1997/1/22 21:13,1,7315.507276
+Cassette,Value (Adjusted),1997/1/4 6:46,1,6898.20315
+Cassette,Value (Adjusted),1997/1/3 15:08,1,6792.221628
+Cassette,Value (Adjusted),1996/12/17 4:16,1,5668.002035
+Cassette,Value (Adjusted),1996/12/10 6:09,1,5678.573835
+Cassette,Value (Adjusted),1996/12/4 17:00,1,5158.786717
+Cassette,Value (Adjusted),1996/12/1 13:19,1,5134.531004
+Cassette,Value (Adjusted),1996/11/22 10:06,1,3864.379693
+Cassette,Value (Adjusted),1996/11/8 16:02,1,3104.546094
+Cassette,Value (Adjusted),1996/10/30 12:48,1,2425.476099
+Cassette,Value (Adjusted),1996/10/28 4:46,1,2227.039106
+Cassette,Value (Adjusted),1996/10/23 8:28,1,1629.084461
+Cassette,Value (Adjusted),1996/10/19 19:01,1,929.3918815
+Cassette,Value (Adjusted),1996/10/7 17:43,1,524.5948831
+Cassette,Value (Adjusted),1996/10/5 19:21,1,298.1480745
+Cassette,Value (Adjusted),1996/8/17 15:46,1,150.1984875
+Cassette,Value (Adjusted),1996/8/15 16:07,1,32.07554738
+Cassette,Value (Adjusted),1996/8/9 18:14,1,17.14852381
+Cassette,Value (Adjusted),1996/8/7 3:16,1,4.69211756
+Cassette,Value (Adjusted),1996/8/6 4:50,1,3.699811867
+Cassette,Value (Adjusted),1996/8/5 19:27,1,1.068685991
+Cassette,Value (Adjusted),1996/8/5 15:19,1,
+Cassette,Value (Adjusted),1996/7/17 3:16,1,
+Cassette,Value (Adjusted),1996/7/12 14:04,1,
+Cassette,Value (Adjusted),1996/6/25 11:22,1,
+Cassette,Value (Adjusted),1996/5/8 1:02,1,
+Cassette,Value (Adjusted),1996/5/1 13:19,1,
+Cassette,Value (Adjusted),1996/3/31 0:53,1,
+Cassette,Value (Adjusted),1996/3/30 4:03,1,
+Cassette,Value (Adjusted),1996/3/29 20:30,1,
+Cassette,Value (Adjusted),1996/3/25 17:00,1,
+Cassette,Value (Adjusted),1996/3/13 8:31,1,
+Cassette Single,Value (Adjusted),1996/2/16 7:03,1,
+Cassette Single,Value (Adjusted),1996/2/15 2:38,1,
+Cassette Single,Value (Adjusted),1996/1/18 17:10,1,
+Cassette Single,Value (Adjusted),1996/1/15 13:44,1,
+Cassette Single,Value (Adjusted),1995/12/27 12:55,1,
+Cassette Single,Value (Adjusted),1995/12/22 13:26,1,
+Cassette Single,Value (Adjusted),1995/12/9 19:54,1,
+Cassette Single,Value (Adjusted),1995/11/25 5:29,1,
+Cassette Single,Value (Adjusted),1995/11/13 3:10,1,
+Cassette Single,Value (Adjusted),1995/10/1 2:42,1,
+Cassette Single,Value (Adjusted),1995/9/9 7:38,1,
+Cassette Single,Value (Adjusted),1995/8/24 21:54,1,
+Cassette Single,Value (Adjusted),1995/8/17 16:39,1,
+Cassette Single,Value (Adjusted),1995/8/6 4:38,1,
+Cassette Single,Value (Adjusted),1995/8/5 17:14,1,32.18217518
+Cassette Single,Value (Adjusted),1995/7/11 18:38,1,123.8304827
+Cassette Single,Value (Adjusted),1995/7/9 18:20,1,401.21655
+Cassette Single,Value (Adjusted),1995/7/7 17:33,1,504.4677911
+Cassette Single,Value (Adjusted),1995/6/9 9:28,1,432.4770396
+Cassette Single,Value (Adjusted),1995/4/2 12:32,1,544.4783436
+Cassette Single,Value (Adjusted),1995/2/16 13:05,1,528.1218997
+Cassette Single,Value (Adjusted),1995/1/18 10:17,1,474.2247591
+Cassette Single,Value (Adjusted),1995/1/10 21:08,1,396.4025532
+Cassette Single,Value (Adjusted),1995/1/2 20:41,1,308.4504149
+Cassette Single,Value (Adjusted),1994/12/18 12:45,1,212.6492804
+Cassette Single,Value (Adjusted),1994/12/16 9:41,1,148.0614773
+Cassette Single,Value (Adjusted),1994/11/3 20:01,1,73.65867947
+Cassette Single,Value (Adjusted),1994/11/1 6:50,1,6.829397213
+Cassette Single,Value (Adjusted),1994/10/27 4:21,1,-7.650943535
+Cassette Single,Value (Adjusted),1994/10/20 0:11,1,-2.273769872
+Cassette Single,Value (Adjusted),1994/10/8 3:24,1,
+Cassette Single,Value (Adjusted),1994/9/22 4:22,1,
+Cassette Single,Value (Adjusted),1994/8/15 23:16,1,
+Cassette Single,Value (Adjusted),1994/6/15 0:02,1,
+Cassette Single,Value (Adjusted),1994/6/3 20:48,1,
+Cassette Single,Value (Adjusted),1994/5/29 9:30,1,
+Cassette Single,Value (Adjusted),1994/2/1 22:38,1,
+Cassette Single,Value (Adjusted),1993/11/29 17:48,1,
+Cassette Single,Value (Adjusted),1993/10/31 3:39,1,
+Cassette Single,Value (Adjusted),1991/10/4 9:22,1,
+Cassette Single,Value (Adjusted),1990/10/1 3:51,1,
+Cassette Single,Value (Adjusted),1988/4/15 3:03,1,
+Cassette Single,Value (Adjusted),2020/7/31 22:01,1,
+Cassette Single,Value (Adjusted),2020/7/23 6:12,1,
+Cassette Single,Value (Adjusted),2020/7/13 9:30,1,
+Cassette Single,Value (Adjusted),2020/6/30 14:26,1,
+Cassette Single,Value (Adjusted),2020/6/23 20:21,1,
+DVD Audio,Value (Adjusted),2020/6/20 13:41,1,
+DVD Audio,Value (Adjusted),2020/5/24 7:03,1,
+DVD Audio,Value (Adjusted),2020/5/22 17:44,1,
+DVD Audio,Value (Adjusted),2020/5/14 9:30,1,
+DVD Audio,Value (Adjusted),2020/4/30 21:28,1,
+DVD Audio,Value (Adjusted),2020/3/11 4:51,1,
+DVD Audio,Value (Adjusted),2020/3/9 4:16,1,
+DVD Audio,Value (Adjusted),2020/3/8 22:21,1,
+DVD Audio,Value (Adjusted),2020/2/25 1:22,1,
+DVD Audio,Value (Adjusted),2020/2/21 18:47,1,
+DVD Audio,Value (Adjusted),2020/2/18 19:48,1,
+DVD Audio,Value (Adjusted),2020/2/7 17:37,1,
+DVD Audio,Value (Adjusted),2020/2/6 6:09,1,
+DVD Audio,Value (Adjusted),2016/12/23 3:29,1,
+DVD Audio,Value (Adjusted),2016/12/7 4:51,1,
+DVD Audio,Value (Adjusted),2016/11/29 8:05,1,
+DVD Audio,Value (Adjusted),2016/11/24 14:10,1,
+DVD Audio,Value (Adjusted),2016/11/3 17:14,1,
+DVD Audio,Value (Adjusted),2016/10/1 20:23,1,
+DVD Audio,Value (Adjusted),2016/9/22 4:57,1,
+DVD Audio,Value (Adjusted),2016/9/14 15:01,1,
+DVD Audio,Value (Adjusted),2016/8/27 21:45,1,
+DVD Audio,Value (Adjusted),2016/8/11 5:59,1,
+DVD Audio,Value (Adjusted),2016/8/5 18:02,1,
+DVD Audio,Value (Adjusted),2016/7/21 0:48,1,
+DVD Audio,Value (Adjusted),2016/7/5 1:24,1,
+DVD Audio,Value (Adjusted),2016/6/27 10:02,1,
+DVD Audio,Value (Adjusted),2016/6/5 6:12,1,
+DVD Audio,Value (Adjusted),2016/6/2 10:56,1,8.661445511
+DVD Audio,Value (Adjusted),2016/5/29 12:14,1,12.07940245
+DVD Audio,Value (Adjusted),2016/5/20 11:59,1,11.11552174
+DVD Audio,Value (Adjusted),2016/5/16 10:09,1,8.797091053
+DVD Audio,Value (Adjusted),2016/5/13 0:34,1,14.66133333
+DVD Audio,Value (Adjusted),2016/4/24 5:39,1,3.043535714
+DVD Audio,Value (Adjusted),2016/4/18 11:59,1,3.453157742
+DVD Audio,Value (Adjusted),2016/4/12 9:51,1,1.424914655
+DVD Audio,Value (Adjusted),2016/4/10 14:57,1,1.906669712
+DVD Audio,Value (Adjusted),2016/3/16 23:54,1,1.05519362
+DVD Audio,Value (Adjusted),2016/3/3 1:32,1,0.34096844
+DVD Audio,Value (Adjusted),2016/2/23 3:59,1,0.20389289
+DVD Audio,Value (Adjusted),2016/2/21 5:58,1,-0.544116778
+DVD Audio,Value (Adjusted),2016/2/19 8:15,1,2.310456232
+DVD Audio,Value (Adjusted),2016/2/6 13:55,1,5.842187676
+DVD Audio,Value (Adjusted),2016/1/27 9:59,1,3.020431045
+DVD Audio,Value (Adjusted),2016/1/21 16:44,1,2.718901189
+DVD Audio,Value (Adjusted),2015/12/30 13:07,1,3.377493968
+DVD Audio,Value (Adjusted),2015/12/21 2:32,1,1.067303184
+Download Album,Value (Adjusted),2015/12/8 0:34,1,
+Download Album,Value (Adjusted),2015/11/13 14:59,1,
+Download Album,Value (Adjusted),2015/11/2 21:34,1,
+Download Album,Value (Adjusted),2015/10/31 11:34,1,
+Download Album,Value (Adjusted),2015/10/13 12:23,1,
+Download Album,Value (Adjusted),2015/10/11 0:07,1,
+Download Album,Value (Adjusted),2015/10/10 9:57,1,
+Download Album,Value (Adjusted),2015/10/4 21:02,1,
+Download Album,Value (Adjusted),2015/9/17 21:03,1,
+Download Album,Value (Adjusted),2015/9/14 23:50,1,
+Download Album,Value (Adjusted),2015/9/8 13:46,1,
+Download Album,Value (Adjusted),2015/9/7 1:41,1,
+Download Album,Value (Adjusted),2015/9/2 20:10,1,
+Download Album,Value (Adjusted),2015/7/19 7:06,1,
+Download Album,Value (Adjusted),2015/7/12 22:23,1,
+Download Album,Value (Adjusted),2015/7/4 1:40,1,
+Download Album,Value (Adjusted),2015/6/14 3:03,1,
+Download Album,Value (Adjusted),2015/6/12 17:03,1,
+Download Album,Value (Adjusted),2015/6/10 17:43,1,
+Download Album,Value (Adjusted),2015/6/2 8:44,1,
+Download Album,Value (Adjusted),2015/5/20 10:20,1,
+Download Album,Value (Adjusted),2015/5/18 17:13,1,
+Download Album,Value (Adjusted),2015/5/10 7:45,1,
+Download Album,Value (Adjusted),2015/5/7 20:34,1,
+Download Album,Value (Adjusted),2015/4/30 10:21,1,
+Download Album,Value (Adjusted),2015/4/21 1:42,1,
+Download Album,Value (Adjusted),2015/4/10 1:14,1,
+Download Album,Value (Adjusted),2015/4/8 4:06,1,
+Download Album,Value (Adjusted),2015/4/3 1:39,1,
+Download Album,Value (Adjusted),2015/3/30 21:33,1,
+Download Album,Value (Adjusted),2015/3/18 0:04,1,
+Download Album,Value (Adjusted),2015/3/11 6:18,1,61.57963737
+Download Album,Value (Adjusted),2015/3/8 4:26,1,177.6377619
+Download Album,Value (Adjusted),2015/3/4 4:30,1,349.8797932
+Download Album,Value (Adjusted),2015/2/26 22:06,1,613.4288075
+Download Album,Value (Adjusted),2015/2/25 10:53,1,754.373567
+Download Album,Value (Adjusted),2015/2/17 13:19,1,886.9589166
+Download Album,Value (Adjusted),2015/1/9 17:31,1,1022.834349
+Download Album,Value (Adjusted),2015/1/9 10:41,1,1217.03002
+Download Album,Value (Adjusted),2015/1/7 1:05,1,1341.590983
+Download Album,Value (Adjusted),2015/1/2 13:39,1,1352.202953
+Download Album,Value (Adjusted),2014/12/13 2:53,1,1207.247578
+Download Album,Value (Adjusted),2014/12/12 6:48,1,1148.145081
+Download Album,Value (Adjusted),2014/12/9 21:19,1,925.232201
+Download Album,Value (Adjusted),2014/11/28 11:47,1,697.2376182
+Download Album,Value (Adjusted),2014/11/27 12:12,1,508.7043884
+Download Album,Value (Adjusted),2014/11/26 23:16,1,394.5330062
+Download Music Video,Value (Adjusted),2014/11/26 17:40,1,
+Download Music Video,Value (Adjusted),2014/11/4 20:13,1,
+Download Music Video,Value (Adjusted),2014/10/21 18:55,1,
+Download Music Video,Value (Adjusted),2014/10/17 14:07,1,
+Download Music Video,Value (Adjusted),2014/10/14 10:25,1,
+Download Music Video,Value (Adjusted),2014/10/6 20:02,1,
+Download Music Video,Value (Adjusted),2014/9/9 18:55,1,
+Download Music Video,Value (Adjusted),2014/9/5 21:37,1,
+Download Music Video,Value (Adjusted),2014/8/29 23:15,1,
+Download Music Video,Value (Adjusted),2014/8/28 3:07,1,
+Download Music Video,Value (Adjusted),2014/8/23 6:29,1,
+Download Music Video,Value (Adjusted),2014/7/29 7:38,1,
+Download Music Video,Value (Adjusted),2014/7/29 3:07,1,
+Download Music Video,Value (Adjusted),2014/6/28 2:40,1,
+Download Music Video,Value (Adjusted),2014/6/26 5:54,1,
+Download Music Video,Value (Adjusted),2014/5/29 1:12,1,
+Download Music Video,Value (Adjusted),2014/5/16 20:06,1,
+Download Music Video,Value (Adjusted),2014/5/16 12:42,1,
+Download Music Video,Value (Adjusted),2014/5/8 19:42,1,
+Download Music Video,Value (Adjusted),2014/3/29 13:45,1,
+Download Music Video,Value (Adjusted),2014/3/18 11:02,1,
+Download Music Video,Value (Adjusted),2014/3/3 15:00,1,
+Download Music Video,Value (Adjusted),2014/2/18 12:50,1,
+Download Music Video,Value (Adjusted),2014/2/13 6:47,1,
+Download Music Video,Value (Adjusted),2014/1/15 2:46,1,
+Download Music Video,Value (Adjusted),2014/1/12 16:00,1,
+Download Music Video,Value (Adjusted),2014/1/8 17:05,1,
+Download Music Video,Value (Adjusted),2013/12/23 8:30,1,
+Download Music Video,Value (Adjusted),2013/12/8 3:10,1,
+Download Music Video,Value (Adjusted),2013/11/21 1:50,1,
+Download Music Video,Value (Adjusted),2013/10/12 16:06,1,
+Download Music Video,Value (Adjusted),2013/10/9 17:27,1,
+Download Music Video,Value (Adjusted),2013/9/24 15:31,1,4.84347619
+Download Music Video,Value (Adjusted),2013/8/12 18:08,1,24.98235566
+Download Music Video,Value (Adjusted),2013/7/31 7:00,1,34.77823155
+Download Music Video,Value (Adjusted),2013/7/31 3:50,1,49.04081272
+Download Music Video,Value (Adjusted),2013/7/30 2:36,1,48.73924451
+Download Music Video,Value (Adjusted),2013/7/27 8:30,1,42.91120721
+Download Music Video,Value (Adjusted),2013/7/26 11:32,1,36.82459156
+Download Music Video,Value (Adjusted),2013/7/18 0:46,1,23.20820694
+Download Music Video,Value (Adjusted),2013/6/13 2:51,1,18.37207499
+Download Music Video,Value (Adjusted),2013/6/1 22:49,1,14.6621972
+Download Music Video,Value (Adjusted),2013/5/14 23:20,1,6.918875516
+Download Music Video,Value (Adjusted),2013/4/30 8:40,1,4.547792467
+Download Music Video,Value (Adjusted),2013/4/21 6:23,1,2.905533136
+Download Music Video,Value (Adjusted),2013/3/12 10:32,1,2.261051168
+Download Music Video,Value (Adjusted),2013/2/20 13:13,1,1.858910402
+Download Single,Value (Adjusted),2013/2/15 3:20,1,
+Download Single,Value (Adjusted),2013/2/7 13:12,1,
+Download Single,Value (Adjusted),2013/1/25 7:40,1,
+Download Single,Value (Adjusted),2013/1/12 3:04,1,
+Download Single,Value (Adjusted),2012/12/30 7:25,1,
+Download Single,Value (Adjusted),2012/12/18 11:19,1,
+Download Single,Value (Adjusted),2012/11/20 20:37,1,
+Download Single,Value (Adjusted),2012/11/20 6:25,1,
+Download Single,Value (Adjusted),2012/10/25 15:57,1,
+Download Single,Value (Adjusted),2012/10/19 16:26,1,
+Download Single,Value (Adjusted),2012/10/9 0:54,1,
+Download Single,Value (Adjusted),2012/10/3 22:50,1,
+Download Single,Value (Adjusted),2012/10/2 16:38,1,
+Download Single,Value (Adjusted),2012/9/28 5:44,1,
+Download Single,Value (Adjusted),2012/9/18 19:34,1,
+Download Single,Value (Adjusted),2012/9/11 22:07,1,
+Download Single,Value (Adjusted),2012/9/10 1:03,1,
+Download Single,Value (Adjusted),2012/8/27 6:57,1,
+Download Single,Value (Adjusted),2012/8/26 14:55,1,
+Download Single,Value (Adjusted),2012/8/13 5:31,1,
+Download Single,Value (Adjusted),2012/7/27 4:19,1,
+Download Single,Value (Adjusted),2012/7/25 7:48,1,
+Download Single,Value (Adjusted),2012/6/5 7:44,1,
+Download Single,Value (Adjusted),2012/5/25 11:31,1,
+Download Single,Value (Adjusted),2012/5/22 8:31,1,
+Download Single,Value (Adjusted),2012/5/15 11:04,1,
+Download Single,Value (Adjusted),2012/5/4 21:54,1,
+Download Single,Value (Adjusted),2012/4/23 22:01,1,
+Download Single,Value (Adjusted),2012/4/21 16:08,1,
+Download Single,Value (Adjusted),2012/4/19 22:12,1,
+Download Single,Value (Adjusted),2012/4/2 16:50,1,
+Download Single,Value (Adjusted),2012/3/12 6:40,1,186.7690101
+Download Single,Value (Adjusted),2012/3/3 21:28,1,475.577
+Download Single,Value (Adjusted),2012/3/1 3:12,1,736.2820149
+Download Single,Value (Adjusted),2012/2/24 19:11,1,1000.182475
+Download Single,Value (Adjusted),2012/2/17 10:47,1,1225.664089
+Download Single,Value (Adjusted),2012/2/12 5:25,1,1396.635564
+Download Single,Value (Adjusted),2012/2/4 14:42,1,1566.845282
+Download Single,Value (Adjusted),2012/1/15 12:26,1,1730.301179
+Download Single,Value (Adjusted),2012/1/11 2:23,1,1831.258646
+Download Single,Value (Adjusted),2011/12/19 11:35,1,1726.739156
+Download Single,Value (Adjusted),2011/12/14 5:01,1,1463.655387
+Download Single,Value (Adjusted),2011/12/11 17:29,1,1278.449595
+Download Single,Value (Adjusted),2011/11/20 5:25,1,958.8791031
+Download Single,Value (Adjusted),2011/10/12 7:13,1,707.6927112
+Download Single,Value (Adjusted),2011/9/13 23:36,1,499.3169742
+Download Single,Value (Adjusted),2011/8/31 9:44,1,414.804251
+Kiosk,Value (Adjusted),2011/8/20 20:01,1,
+Kiosk,Value (Adjusted),2011/8/18 14:55,1,
+Kiosk,Value (Adjusted),2011/8/11 2:56,1,
+Kiosk,Value (Adjusted),2011/8/4 7:25,1,
+Kiosk,Value (Adjusted),2011/7/27 23:00,1,
+Kiosk,Value (Adjusted),2011/7/7 23:25,1,
+Kiosk,Value (Adjusted),2011/7/5 15:42,1,
+Kiosk,Value (Adjusted),2011/7/4 9:18,1,
+Kiosk,Value (Adjusted),2011/6/16 11:51,1,
+Kiosk,Value (Adjusted),2011/5/25 5:40,1,
+Kiosk,Value (Adjusted),2011/5/16 13:39,1,
+Kiosk,Value (Adjusted),2011/4/27 20:38,1,
+Kiosk,Value (Adjusted),2011/4/27 11:21,1,
+Kiosk,Value (Adjusted),2011/4/17 11:21,1,
+Kiosk,Value (Adjusted),2011/4/6 8:30,1,
+Kiosk,Value (Adjusted),2011/3/24 20:23,1,
+Kiosk,Value (Adjusted),2011/3/23 4:24,1,
+Kiosk,Value (Adjusted),2011/3/23 4:16,1,
+Kiosk,Value (Adjusted),2011/3/1 10:37,1,
+Kiosk,Value (Adjusted),2011/2/21 5:07,1,
+Kiosk,Value (Adjusted),2011/2/12 11:00,1,
+Kiosk,Value (Adjusted),2011/1/21 15:11,1,
+Kiosk,Value (Adjusted),2011/1/8 19:38,1,
+Kiosk,Value (Adjusted),2010/12/25 23:24,1,
+Kiosk,Value (Adjusted),2010/12/14 0:27,1,
+Kiosk,Value (Adjusted),2010/12/9 2:54,1,
+Kiosk,Value (Adjusted),2010/12/1 6:31,1,
+Kiosk,Value (Adjusted),2010/11/21 14:45,1,
+Kiosk,Value (Adjusted),2010/11/19 7:25,1,
+Kiosk,Value (Adjusted),2010/11/10 8:26,1,
+Kiosk,Value (Adjusted),2010/11/9 13:05,1,
+Kiosk,Value (Adjusted),2010/11/9 6:56,1,
+Kiosk,Value (Adjusted),2010/10/27 11:27,1,1.309047619
+Kiosk,Value (Adjusted),2010/10/8 9:58,1,2.409465774
+Kiosk,Value (Adjusted),2010/9/24 12:02,1,3.206503618
+Kiosk,Value (Adjusted),2010/9/18 5:04,1,3.087315086
+Kiosk,Value (Adjusted),2010/9/8 19:51,1,7.507511991
+Kiosk,Value (Adjusted),2010/9/5 23:37,1,7.503599075
+Kiosk,Value (Adjusted),2010/9/3 12:04,1,3.068715963
+Kiosk,Value (Adjusted),2010/8/17 4:19,1,4.068866328
+Kiosk,Value (Adjusted),2010/7/15 1:49,1,6.786152156
+Kiosk,Value (Adjusted),2010/7/6 23:54,1,2.789051821
+Kiosk,Value (Adjusted),2010/6/26 6:04,1,3.99147413
+Kiosk,Value (Adjusted),2010/6/21 6:42,1,3.13587911
+Kiosk,Value (Adjusted),2010/6/17 4:24,1,2.351668038
+Kiosk,Value (Adjusted),2010/4/17 2:21,1,2.000651969
+Kiosk,Value (Adjusted),2010/4/16 4:38,1,1.586470587
+LP/EP,Value (Adjusted),2010/4/6 18:33,1,7174.518514
+LP/EP,Value (Adjusted),2010/3/18 16:11,1,7031.863935
+LP/EP,Value (Adjusted),2010/3/15 15:55,1,7056.703439
+LP/EP,Value (Adjusted),2010/3/14 18:44,1,7472.013902
+LP/EP,Value (Adjusted),2010/3/8 22:44,1,9260.605292
+LP/EP,Value (Adjusted),2010/3/8 22:02,1,9698.105186
+LP/EP,Value (Adjusted),2010/2/28 22:24,1,7243.615
+LP/EP,Value (Adjusted),2010/2/26 22:46,1,6825.793689
+LP/EP,Value (Adjusted),2010/2/24 19:55,1,6586.050571
+LP/EP,Value (Adjusted),2010/1/15 19:17,1,5100.158453
+LP/EP,Value (Adjusted),2009/12/31 16:24,1,4335.388283
+LP/EP,Value (Adjusted),2009/12/31 12:50,1,3810.987118
+LP/EP,Value (Adjusted),2009/11/25 1:36,1,3042.46086
+LP/EP,Value (Adjusted),2009/11/21 20:53,1,2292.982035
+LP/EP,Value (Adjusted),2009/11/18 17:36,1,1784.872946
+LP/EP,Value (Adjusted),2009/11/18 7:07,1,1150.132336
+LP/EP,Value (Adjusted),2009/11/14 19:58,1,454.203525
+LP/EP,Value (Adjusted),2009/11/7 11:31,1,169.1991622
+LP/EP,Value (Adjusted),2009/11/7 10:41,1,55.18587225
+LP/EP,Value (Adjusted),2009/10/11 12:49,1,24.59992516
+LP/EP,Value (Adjusted),2009/10/8 2:57,1,18.75407751
+LP/EP,Value (Adjusted),2009/9/27 22:22,1,30.7064413
+LP/EP,Value (Adjusted),2009/9/18 20:13,1,42.10623819
+LP/EP,Value (Adjusted),2009/9/4 2:23,1,59.96289101
+LP/EP,Value (Adjusted),2009/8/23 21:17,1,53.04285421
+LP/EP,Value (Adjusted),2009/7/31 2:13,1,53.32722699
+LP/EP,Value (Adjusted),2009/7/16 6:39,1,48.79887515
+LP/EP,Value (Adjusted),2009/7/3 4:02,1,41.12484843
+LP/EP,Value (Adjusted),2009/6/27 13:08,1,39.5539345
+LP/EP,Value (Adjusted),2009/6/20 11:04,1,29.13267649
+LP/EP,Value (Adjusted),2009/6/18 4:39,1,30.15085272
+LP/EP,Value (Adjusted),2009/6/9 22:42,1,26.12059344
+LP/EP,Value (Adjusted),2009/5/31 6:05,1,18.58847619
+LP/EP,Value (Adjusted),2009/5/13 20:20,1,19.90979613
+LP/EP,Value (Adjusted),2009/5/4 11:39,1,28.24189725
+LP/EP,Value (Adjusted),2009/4/20 4:01,1,67.32721746
+LP/EP,Value (Adjusted),2009/4/10 18:42,1,76.02845477
+LP/EP,Value (Adjusted),2009/3/4 0:38,1,104.2296809
+LP/EP,Value (Adjusted),2009/2/20 12:15,1,135.7054393
+LP/EP,Value (Adjusted),2009/2/7 19:51,1,178.9679822
+LP/EP,Value (Adjusted),2009/1/12 22:24,1,231.2740702
+LP/EP,Value (Adjusted),2009/1/10 7:42,1,263.3361791
+LP/EP,Value (Adjusted),2008/12/24 15:51,1,359.5981629
+LP/EP,Value (Adjusted),2008/12/12 11:36,1,378.607271
+LP/EP,Value (Adjusted),2008/12/9 6:08,1,405.2120773
+LP/EP,Value (Adjusted),2008/11/24 22:01,1,426.8201866
+LP/EP,Value (Adjusted),2008/11/21 0:26,1,497.5889208
+Limited Tier Paid Subscription,Value (Adjusted),2008/11/18 9:41,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/11/9 2:38,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/10/21 2:20,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/10/10 9:34,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/10/7 2:45,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/9/9 9:49,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/8/16 14:40,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/8/12 11:44,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/8/7 6:07,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/7/23 14:45,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/7/22 19:34,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/7/11 14:35,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/7/8 15:55,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/7/1 17:40,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/6/27 2:01,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/6/18 13:45,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/5/29 21:23,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/5/24 10:18,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/5/22 20:50,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/5/6 1:08,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/4/30 1:18,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/4/6 16:03,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/3/15 11:29,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/2/24 19:33,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/2/19 13:30,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/2/18 8:51,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/2/17 12:19,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/2/16 8:38,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/1/18 1:17,1,
+Limited Tier Paid Subscription,Value (Adjusted),2008/1/9 3:53,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/12/26 6:46,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/12/20 17:00,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/10/25 19:35,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/10/12 9:14,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/10/7 13:31,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/9/22 17:57,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/6/11 9:47,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/6/8 13:32,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/6/7 21:28,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/5/16 16:20,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/5/16 4:45,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/5/4 17:52,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/4/18 12:44,1,
+Limited Tier Paid Subscription,Value (Adjusted),2007/4/16 14:56,1,280.5366913
+Limited Tier Paid Subscription,Value (Adjusted),2007/3/17 6:48,1,617.032318
+Limited Tier Paid Subscription,Value (Adjusted),2007/3/15 2:20,1,760.591366
+Limited Tier Paid Subscription,Value (Adjusted),2007/3/7 15:16,1,829.4987397
+Music Video (Physical),Value (Adjusted),2007/2/2 12:48,1,
+Music Video (Physical),Value (Adjusted),2007/1/26 22:22,1,
+Music Video (Physical),Value (Adjusted),2007/1/22 7:24,1,
+Music Video (Physical),Value (Adjusted),2007/1/18 13:51,1,
+Music Video (Physical),Value (Adjusted),2007/1/17 9:50,1,
+Music Video (Physical),Value (Adjusted),2007/1/1 11:43,1,
+Music Video (Physical),Value (Adjusted),2006/12/9 6:31,1,
+Music Video (Physical),Value (Adjusted),2006/12/7 11:42,1,
+Music Video (Physical),Value (Adjusted),2006/12/1 6:09,1,
+Music Video (Physical),Value (Adjusted),2006/11/13 15:16,1,
+Music Video (Physical),Value (Adjusted),2006/10/24 8:42,1,
+Music Video (Physical),Value (Adjusted),2006/10/14 18:10,1,
+Music Video (Physical),Value (Adjusted),2006/10/9 4:45,1,
+Music Video (Physical),Value (Adjusted),2006/10/7 12:18,1,
+Music Video (Physical),Value (Adjusted),2006/10/2 19:10,1,
+Music Video (Physical),Value (Adjusted),2006/9/27 8:33,1,
+Music Video (Physical),Value (Adjusted),2006/9/23 18:52,1,237.92595
+Music Video (Physical),Value (Adjusted),2006/9/2 17:57,1,337.0290826
+Music Video (Physical),Value (Adjusted),2006/9/2 4:26,1,221.6820242
+Music Video (Physical),Value (Adjusted),2006/8/29 1:38,1,286.8169052
+Music Video (Physical),Value (Adjusted),2006/8/18 0:03,1,377.3815785
+Music Video (Physical),Value (Adjusted),2006/8/17 10:43,1,398.6662126
+Music Video (Physical),Value (Adjusted),2006/8/15 10:52,1,369.5619232
+Music Video (Physical),Value (Adjusted),2006/8/9 4:30,1,384.7075698
+Music Video (Physical),Value (Adjusted),2006/7/15 23:55,1,515.9333477
+Music Video (Physical),Value (Adjusted),2006/7/15 15:22,1,796.7715092
+Music Video (Physical),Value (Adjusted),2006/6/7 0:06,1,578.0671783
+Music Video (Physical),Value (Adjusted),2006/5/28 1:32,1,418.523277
+Music Video (Physical),Value (Adjusted),2006/5/21 7:51,1,475.2246437
+Music Video (Physical),Value (Adjusted),2006/5/7 17:45,1,409.8470195
+Music Video (Physical),Value (Adjusted),2006/5/6 15:39,1,555.6371429
+Music Video (Physical),Value (Adjusted),2006/4/25 18:46,1,821.7836443
+Music Video (Physical),Value (Adjusted),2006/4/8 13:16,1,788.3084762
+Music Video (Physical),Value (Adjusted),2006/4/4 11:30,1,572.0579003
+Music Video (Physical),Value (Adjusted),2006/3/14 3:21,1,598.0129247
+Music Video (Physical),Value (Adjusted),2006/2/26 7:30,1,269.9025843
+Music Video (Physical),Value (Adjusted),2006/2/6 1:57,1,249.7737323
+Music Video (Physical),Value (Adjusted),2006/2/4 8:38,1,208.2248743
+Music Video (Physical),Value (Adjusted),2006/1/28 3:33,1,171.6207816
+Music Video (Physical),Value (Adjusted),2006/1/27 1:27,1,129.8513772
+Music Video (Physical),Value (Adjusted),2006/1/26 0:00,1,116.6396724
+Music Video (Physical),Value (Adjusted),2006/1/10 23:25,1,96.87525106
+Music Video (Physical),Value (Adjusted),2006/1/8 5:20,1,75.97361449
+Music Video (Physical),Value (Adjusted),2005/12/29 10:05,1,60.63464218
+Music Video (Physical),Value (Adjusted),2005/12/24 15:30,1,40.27958535
+Music Video (Physical),Value (Adjusted),2005/12/3 12:45,1,28.06066388
+Music Video (Physical),Value (Adjusted),2005/12/1 10:40,1,27.70524678
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/11/29 7:33,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/11/15 5:19,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/11/11 20:34,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/11/9 7:33,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/11/2 7:04,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/11/2 5:16,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/10/26 21:30,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/9/30 19:04,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/9/14 1:08,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/9/2 7:59,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/8/20 12:10,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/8/9 14:35,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/7/1 22:36,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/6/18 19:40,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/6/5 1:56,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/6/3 8:15,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/5/27 14:12,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/5/14 13:02,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/5/7 9:31,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/5/2 20:10,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/4/22 11:18,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/4/19 7:37,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/4/16 10:40,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/4/15 6:54,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/4/14 14:05,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/4/11 5:20,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/4/6 1:30,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/4/5 17:48,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/4/3 1:45,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/4/2 22:52,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/3/31 22:15,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/3/18 16:48,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/3/12 22:16,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/3/9 15:47,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/3/9 12:49,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/3/6 17:32,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/2/17 22:52,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/1/19 1:43,1,
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/1/2 23:09,1,129.340695
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2005/1/1 3:44,1,190.3396156
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2004/12/29 7:11,1,242.3960978
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2004/12/13 11:35,1,306.475448
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2004/12/11 15:36,1,401.2452641
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2004/11/30 8:32,1,521.288175
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2004/11/17 3:13,1,686.9180813
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2004/10/14 11:41,1,773.2949167
+On-Demand Streaming (Ad-Supported),Value (Adjusted),2004/10/10 11:05,1,908.1493305
+Other Ad-Supported Streaming,Value (Adjusted),2004/10/7 13:14,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/10/4 4:39,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/9/28 8:57,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/9/3 12:07,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/8/22 10:01,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/7/29 12:41,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/7/25 5:29,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/7/22 3:34,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/7/16 0:11,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/7/4 16:58,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/7/3 20:47,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/6/12 7:13,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/6/11 15:41,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/6/5 20:34,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/6/4 13:41,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/6/3 21:59,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/6/3 9:40,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/5/18 11:12,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/5/17 2:08,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/5/6 2:22,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/4/23 0:33,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/4/22 21:19,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/4/22 4:21,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/4/6 3:24,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/3/26 16:35,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/3/25 9:39,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/2/27 1:18,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/2/2 18:52,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/1/22 1:06,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/1/17 20:11,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/1/16 11:17,1,
+Other Ad-Supported Streaming,Value (Adjusted),2004/1/2 4:27,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/12/9 22:36,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/11/26 2:00,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/11/10 13:54,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/11/1 14:09,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/10/16 0:47,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/10/13 14:06,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/10/7 0:23,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/9/27 12:59,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/9/22 3:45,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/9/21 7:40,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/9/20 19:04,1,
+Other Ad-Supported Streaming,Value (Adjusted),2003/9/2 20:00,1,86.55959668
+Other Ad-Supported Streaming,Value (Adjusted),2003/8/26 22:08,1,273.040319
+Other Ad-Supported Streaming,Value (Adjusted),2003/8/26 8:44,1,255.9674439
+Other Ad-Supported Streaming,Value (Adjusted),2003/8/17 13:16,1,251.0647101
+Other Digital,Value (Adjusted),2003/8/1 4:09,1,
+Other Digital,Value (Adjusted),2003/7/21 5:11,1,
+Other Digital,Value (Adjusted),2003/6/22 22:53,1,
+Other Digital,Value (Adjusted),2003/6/21 14:49,1,
+Other Digital,Value (Adjusted),2003/6/16 17:17,1,
+Other Digital,Value (Adjusted),2003/6/10 14:11,1,
+Other Digital,Value (Adjusted),2003/5/27 23:32,1,
+Other Digital,Value (Adjusted),2003/5/19 3:38,1,
+Other Digital,Value (Adjusted),2003/5/18 7:51,1,
+Other Digital,Value (Adjusted),2003/5/15 6:28,1,
+Other Digital,Value (Adjusted),2003/4/28 13:06,1,
+Other Digital,Value (Adjusted),2003/4/13 17:58,1,
+Other Digital,Value (Adjusted),2003/4/7 9:25,1,
+Other Digital,Value (Adjusted),2003/4/1 4:40,1,
+Other Digital,Value (Adjusted),2003/3/27 5:50,1,
+Other Digital,Value (Adjusted),2003/2/25 23:13,1,
+Other Digital,Value (Adjusted),2003/2/12 23:45,1,
+Other Digital,Value (Adjusted),2003/2/12 2:37,1,
+Other Digital,Value (Adjusted),2003/2/6 17:00,1,
+Other Digital,Value (Adjusted),2003/2/5 6:16,1,
+Other Digital,Value (Adjusted),2003/2/4 14:07,1,
+Other Digital,Value (Adjusted),2003/1/30 6:02,1,
+Other Digital,Value (Adjusted),2002/11/28 15:41,1,
+Other Digital,Value (Adjusted),2002/11/21 0:11,1,
+Other Digital,Value (Adjusted),2002/11/12 21:49,1,
+Other Digital,Value (Adjusted),2002/11/10 22:13,1,
+Other Digital,Value (Adjusted),2002/10/9 12:00,1,
+Other Digital,Value (Adjusted),2002/10/4 10:08,1,
+Other Digital,Value (Adjusted),2002/9/24 16:48,1,
+Other Digital,Value (Adjusted),2002/8/14 7:48,1,
+Other Digital,Value (Adjusted),2002/8/11 20:42,1,
+Other Digital,Value (Adjusted),2002/8/10 18:01,1,
+Other Digital,Value (Adjusted),2002/7/25 15:57,1,
+Other Digital,Value (Adjusted),2002/7/22 11:16,1,
+Other Digital,Value (Adjusted),2002/6/29 16:31,1,
+Other Digital,Value (Adjusted),2002/6/15 11:51,1,
+Other Digital,Value (Adjusted),2002/6/13 15:29,1,
+Other Digital,Value (Adjusted),2002/6/2 4:28,1,
+Other Digital,Value (Adjusted),2002/4/3 19:10,1,
+Other Digital,Value (Adjusted),2002/4/2 2:36,1,
+Other Digital,Value (Adjusted),2002/3/28 21:29,1,
+Other Digital,Value (Adjusted),2002/3/19 5:56,1,
+Other Digital,Value (Adjusted),2002/3/19 2:56,1,
+Other Digital,Value (Adjusted),2002/3/18 14:44,1,18.25940954
+Other Digital,Value (Adjusted),2002/3/9 1:20,1,17.61095192
+Other Digital,Value (Adjusted),2002/3/3 21:10,1,20.19906331
+Other Digital,Value (Adjusted),2002/3/1 3:53,1,21.51717501
+Other Tapes,Value (Adjusted),2002/2/9 19:50,1,89.82543243
+Other Tapes,Value (Adjusted),2002/2/1 19:07,1,68.97034686
+Other Tapes,Value (Adjusted),2002/1/20 16:42,1,48.47028625
+Other Tapes,Value (Adjusted),2002/1/3 12:19,1,22.91477504
+Other Tapes,Value (Adjusted),2001/12/14 17:58,1,
+Other Tapes,Value (Adjusted),2001/12/12 16:56,1,
+Other Tapes,Value (Adjusted),2001/11/26 6:51,1,
+Other Tapes,Value (Adjusted),2001/11/13 10:58,1,
+Other Tapes,Value (Adjusted),2001/11/11 12:14,1,
+Other Tapes,Value (Adjusted),2001/10/27 19:20,1,
+Other Tapes,Value (Adjusted),2001/10/14 12:03,1,
+Other Tapes,Value (Adjusted),2001/10/12 3:11,1,
+Other Tapes,Value (Adjusted),2001/10/6 6:29,1,
+Other Tapes,Value (Adjusted),2001/9/25 11:54,1,
+Other Tapes,Value (Adjusted),2001/8/26 16:08,1,
+Other Tapes,Value (Adjusted),2001/8/18 13:57,1,
+Other Tapes,Value (Adjusted),2001/7/26 21:20,1,
+Other Tapes,Value (Adjusted),2001/7/23 22:19,1,
+Other Tapes,Value (Adjusted),2001/5/6 4:30,1,
+Other Tapes,Value (Adjusted),2001/4/27 9:46,1,
+Other Tapes,Value (Adjusted),2001/4/23 6:12,1,
+Other Tapes,Value (Adjusted),2001/4/14 6:40,1,
+Other Tapes,Value (Adjusted),2001/4/13 0:29,1,
+Other Tapes,Value (Adjusted),2001/2/9 21:27,1,
+Other Tapes,Value (Adjusted),2001/2/4 5:53,1,
+Other Tapes,Value (Adjusted),2001/1/28 16:19,1,
+Other Tapes,Value (Adjusted),2000/12/15 13:22,1,
+Other Tapes,Value (Adjusted),2000/12/15 3:46,1,
+Other Tapes,Value (Adjusted),2000/11/28 12:20,1,
+Other Tapes,Value (Adjusted),2000/11/13 0:28,1,
+Other Tapes,Value (Adjusted),2000/11/6 7:18,1,
+Other Tapes,Value (Adjusted),2000/10/11 23:29,1,
+Other Tapes,Value (Adjusted),2000/9/24 6:57,1,
+Other Tapes,Value (Adjusted),2000/9/23 4:00,1,
+Other Tapes,Value (Adjusted),2000/9/19 22:12,1,
+Other Tapes,Value (Adjusted),2000/8/25 1:12,1,
+Other Tapes,Value (Adjusted),2000/8/13 3:00,1,
+Other Tapes,Value (Adjusted),2000/8/1 16:48,1,
+Other Tapes,Value (Adjusted),2000/7/31 7:06,1,
+Other Tapes,Value (Adjusted),2000/7/19 17:40,1,
+Other Tapes,Value (Adjusted),2000/7/9 1:08,1,
+Other Tapes,Value (Adjusted),2000/7/7 1:34,1,
+Other Tapes,Value (Adjusted),2000/6/27 10:06,1,
+Other Tapes,Value (Adjusted),2000/6/23 9:03,1,
+Other Tapes,Value (Adjusted),2000/6/22 20:02,1,
+Other Tapes,Value (Adjusted),2000/6/18 13:40,1,
+Other Tapes,Value (Adjusted),2000/6/14 16:39,1,
+Paid Subscription,Value (Adjusted),2000/6/4 3:17,1,
+Paid Subscription,Value (Adjusted),2000/6/3 3:24,1,
+Paid Subscription,Value (Adjusted),2000/6/2 18:44,1,
+Paid Subscription,Value (Adjusted),2000/5/29 16:46,1,
+Paid Subscription,Value (Adjusted),2000/5/6 11:51,1,
+Paid Subscription,Value (Adjusted),2000/5/3 10:40,1,
+Paid Subscription,Value (Adjusted),2000/4/21 13:42,1,
+Paid Subscription,Value (Adjusted),2000/4/4 13:38,1,
+Paid Subscription,Value (Adjusted),2000/3/28 15:27,1,
+Paid Subscription,Value (Adjusted),2000/3/19 5:11,1,
+Paid Subscription,Value (Adjusted),2000/3/6 8:29,1,
+Paid Subscription,Value (Adjusted),2000/2/18 9:25,1,
+Paid Subscription,Value (Adjusted),2000/2/17 14:22,1,
+Paid Subscription,Value (Adjusted),2000/1/18 16:43,1,
+Paid Subscription,Value (Adjusted),2000/1/18 8:33,1,
+Paid Subscription,Value (Adjusted),1999/12/16 0:07,1,
+Paid Subscription,Value (Adjusted),1999/12/11 17:31,1,
+Paid Subscription,Value (Adjusted),1999/12/10 18:56,1,
+Paid Subscription,Value (Adjusted),1999/12/3 17:24,1,
+Paid Subscription,Value (Adjusted),1999/12/1 19:38,1,
+Paid Subscription,Value (Adjusted),1999/11/30 2:18,1,
+Paid Subscription,Value (Adjusted),1999/11/15 20:01,1,
+Paid Subscription,Value (Adjusted),1999/11/7 17:53,1,
+Paid Subscription,Value (Adjusted),1999/10/26 17:19,1,
+Paid Subscription,Value (Adjusted),1999/9/8 23:55,1,
+Paid Subscription,Value (Adjusted),1999/9/8 14:41,1,
+Paid Subscription,Value (Adjusted),1999/8/16 5:18,1,
+Paid Subscription,Value (Adjusted),1999/8/6 3:22,1,
+Paid Subscription,Value (Adjusted),1999/8/3 18:25,1,
+Paid Subscription,Value (Adjusted),1999/7/10 8:11,1,
+Paid Subscription,Value (Adjusted),1999/7/7 4:14,1,
+Paid Subscription,Value (Adjusted),1999/6/25 6:27,1,
+Paid Subscription,Value (Adjusted),1999/5/23 7:02,1,195.3099048
+Paid Subscription,Value (Adjusted),1999/4/26 11:33,1,261.4904435
+Paid Subscription,Value (Adjusted),1999/4/26 9:49,1,288.5853256
+Paid Subscription,Value (Adjusted),1999/3/31 23:54,1,262.8967539
+Paid Subscription,Value (Adjusted),1999/3/28 15:37,1,245.7220591
+Paid Subscription,Value (Adjusted),1999/3/2 22:23,1,249.0256943
+Paid Subscription,Value (Adjusted),1999/2/18 23:15,1,281.6399317
+Paid Subscription,Value (Adjusted),1999/2/1 14:24,1,445.2763062
+Paid Subscription,Value (Adjusted),1999/1/19 2:32,1,706.0116575
+Paid Subscription,Value (Adjusted),1999/1/14 8:06,1,831.8340275
+Paid Subscription,Value (Adjusted),1999/1/12 19:24,1,1247.676869
+Paid Subscription,Value (Adjusted),1999/1/11 5:18,1,2390.487545
+Paid Subscription,Value (Adjusted),1999/1/2 18:25,1,3651.028327
+Paid Subscription,Value (Adjusted),1998/12/22 9:24,1,4740.333581
+Paid Subscription,Value (Adjusted),1998/11/23 20:20,1,5934.397625
+Ringtones & Ringbacks,Value (Adjusted),1998/11/11 16:46,1,
+Ringtones & Ringbacks,Value (Adjusted),1998/10/3 12:58,1,
+Ringtones & Ringbacks,Value (Adjusted),1998/9/4 9:16,1,
+Ringtones & Ringbacks,Value (Adjusted),1998/9/1 11:15,1,
+Ringtones & Ringbacks,Value (Adjusted),1998/8/30 0:20,1,
+Ringtones & Ringbacks,Value (Adjusted),1998/8/8 12:55,1,
+Ringtones & Ringbacks,Value (Adjusted),1998/7/28 14:16,1,
+Ringtones & Ringbacks,Value (Adjusted),1998/3/24 9:08,1,
+Ringtones & Ringbacks,Value (Adjusted),1998/3/22 22:25,1,
+Ringtones & Ringbacks,Value (Adjusted),1998/1/8 16:10,1,
+Ringtones & Ringbacks,Value (Adjusted),1998/1/4 23:00,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/12/28 3:58,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/12/9 8:15,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/11/7 7:46,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/10/9 18:47,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/10/1 14:26,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/9/30 12:31,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/9/5 11:41,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/8/20 17:16,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/8/15 1:05,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/7/30 3:01,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/7/4 12:22,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/5/22 8:30,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/4/27 22:34,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/2/19 4:31,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/2/15 15:23,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/2/6 18:28,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/1/28 17:49,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/1/23 10:03,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/1/22 21:13,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/1/4 6:46,1,
+Ringtones & Ringbacks,Value (Adjusted),1997/1/3 15:08,1,
+Ringtones & Ringbacks,Value (Adjusted),1996/12/17 4:16,1,551.8944762
+Ringtones & Ringbacks,Value (Adjusted),1996/12/10 6:09,1,981.2866399
+Ringtones & Ringbacks,Value (Adjusted),1996/12/4 17:00,1,1302.087123
+Ringtones & Ringbacks,Value (Adjusted),1996/12/1 13:19,1,1160.236758
+Ringtones & Ringbacks,Value (Adjusted),1996/11/22 10:06,1,837.504671
+Ringtones & Ringbacks,Value (Adjusted),1996/11/8 16:02,1,525.2519353
+Ringtones & Ringbacks,Value (Adjusted),1996/10/30 12:48,1,313.9182774
+Ringtones & Ringbacks,Value (Adjusted),1996/10/28 4:46,1,162.5657282
+Ringtones & Ringbacks,Value (Adjusted),1996/10/23 8:28,1,107.5489764
+Ringtones & Ringbacks,Value (Adjusted),1996/10/19 19:01,1,71.61127201
+Ringtones & Ringbacks,Value (Adjusted),1996/10/7 17:43,1,58.87458101
+Ringtones & Ringbacks,Value (Adjusted),1996/10/5 19:21,1,59.99807088
+Ringtones & Ringbacks,Value (Adjusted),1996/8/17 15:46,1,37.04036846
+Ringtones & Ringbacks,Value (Adjusted),1996/8/15 16:07,1,25.41009037
+Ringtones & Ringbacks,Value (Adjusted),1996/8/9 18:14,1,21.4267369
+SACD,Value (Adjusted),1996/8/7 3:16,1,
+SACD,Value (Adjusted),1996/8/6 4:50,1,
+SACD,Value (Adjusted),1996/8/5 19:27,1,
+SACD,Value (Adjusted),1996/8/5 15:19,1,
+SACD,Value (Adjusted),1996/7/17 3:16,1,
+SACD,Value (Adjusted),1996/7/12 14:04,1,
+SACD,Value (Adjusted),1996/6/25 11:22,1,
+SACD,Value (Adjusted),1996/5/8 1:02,1,
+SACD,Value (Adjusted),1996/5/1 13:19,1,
+SACD,Value (Adjusted),1996/3/31 0:53,1,
+SACD,Value (Adjusted),1996/3/30 4:03,1,
+SACD,Value (Adjusted),1996/3/29 20:30,1,
+SACD,Value (Adjusted),1996/3/25 17:00,1,
+SACD,Value (Adjusted),1996/3/13 8:31,1,
+SACD,Value (Adjusted),1996/2/16 7:03,1,
+SACD,Value (Adjusted),1996/2/15 2:38,1,
+SACD,Value (Adjusted),1996/1/18 17:10,1,
+SACD,Value (Adjusted),1996/1/15 13:44,1,
+SACD,Value (Adjusted),1995/12/27 12:55,1,
+SACD,Value (Adjusted),1995/12/22 13:26,1,
+SACD,Value (Adjusted),1995/12/9 19:54,1,
+SACD,Value (Adjusted),1995/11/25 5:29,1,
+SACD,Value (Adjusted),1995/11/13 3:10,1,
+SACD,Value (Adjusted),1995/10/1 2:42,1,
+SACD,Value (Adjusted),1995/9/9 7:38,1,
+SACD,Value (Adjusted),1995/8/24 21:54,1,
+SACD,Value (Adjusted),1995/8/17 16:39,1,
+SACD,Value (Adjusted),1995/8/6 4:38,1,
+SACD,Value (Adjusted),1995/8/5 17:14,1,
+SACD,Value (Adjusted),1995/7/11 18:38,1,
+SACD,Value (Adjusted),1995/7/9 18:20,1,36.54227772
+SACD,Value (Adjusted),1995/7/7 17:33,1,22.46641715
+SACD,Value (Adjusted),1995/6/9 9:28,1,13.09047619
+SACD,Value (Adjusted),1995/4/2 12:32,1,6.974769345
+SACD,Value (Adjusted),1995/2/16 13:05,1,4.43977424
+SACD,Value (Adjusted),1995/1/18 10:17,1,3.681029526
+SACD,Value (Adjusted),1995/1/10 21:08,1,2.860004568
+SACD,Value (Adjusted),1995/1/2 20:41,1,1.993143504
+SACD,Value (Adjusted),1994/12/18 12:45,1,1.704842202
+SACD,Value (Adjusted),1994/12/16 9:41,1,1.494897613
+SACD,Value (Adjusted),1994/11/3 20:01,1,1.073719014
+SACD,Value (Adjusted),1994/11/1 6:50,1,0.82446336
+SACD,Value (Adjusted),1994/10/27 4:21,1,1.125529098
+SACD,Value (Adjusted),1994/10/20 0:11,1,1.28555661
+SACD,Value (Adjusted),1994/10/8 3:24,1,0.887142473
+SACD,Value (Adjusted),1994/9/22 4:22,1,0.875277267
+SACD,Value (Adjusted),1994/8/15 23:16,1,0.433302292
+SoundExchange Distributions,Value (Adjusted),1994/6/15 0:02,1,
+SoundExchange Distributions,Value (Adjusted),1994/6/3 20:48,1,
+SoundExchange Distributions,Value (Adjusted),1994/5/29 9:30,1,
+SoundExchange Distributions,Value (Adjusted),1994/2/1 22:38,1,
+SoundExchange Distributions,Value (Adjusted),1993/11/29 17:48,1,
+SoundExchange Distributions,Value (Adjusted),1993/10/31 3:39,1,
+SoundExchange Distributions,Value (Adjusted),1991/10/4 9:22,1,
+SoundExchange Distributions,Value (Adjusted),1990/10/1 3:51,1,
+SoundExchange Distributions,Value (Adjusted),1988/4/15 3:03,1,
+SoundExchange Distributions,Value (Adjusted),2020/7/31 22:01,1,
+SoundExchange Distributions,Value (Adjusted),2020/7/23 6:12,1,
+SoundExchange Distributions,Value (Adjusted),2020/7/13 9:30,1,
+SoundExchange Distributions,Value (Adjusted),2020/6/30 14:26,1,
+SoundExchange Distributions,Value (Adjusted),2020/6/23 20:21,1,
+SoundExchange Distributions,Value (Adjusted),2020/6/20 13:41,1,
+SoundExchange Distributions,Value (Adjusted),2020/5/24 7:03,1,
+SoundExchange Distributions,Value (Adjusted),2020/5/22 17:44,1,
+SoundExchange Distributions,Value (Adjusted),2020/5/14 9:30,1,
+SoundExchange Distributions,Value (Adjusted),2020/4/30 21:28,1,
+SoundExchange Distributions,Value (Adjusted),2020/3/11 4:51,1,
+SoundExchange Distributions,Value (Adjusted),2020/3/9 4:16,1,
+SoundExchange Distributions,Value (Adjusted),2020/3/8 22:21,1,
+SoundExchange Distributions,Value (Adjusted),2020/2/25 1:22,1,
+SoundExchange Distributions,Value (Adjusted),2020/2/21 18:47,1,
+SoundExchange Distributions,Value (Adjusted),2020/2/18 19:48,1,
+SoundExchange Distributions,Value (Adjusted),2020/2/7 17:37,1,
+SoundExchange Distributions,Value (Adjusted),2020/2/6 6:09,1,
+SoundExchange Distributions,Value (Adjusted),2016/12/23 3:29,1,
+SoundExchange Distributions,Value (Adjusted),2016/12/7 4:51,1,
+SoundExchange Distributions,Value (Adjusted),2016/11/29 8:05,1,
+SoundExchange Distributions,Value (Adjusted),2016/11/24 14:10,1,
+SoundExchange Distributions,Value (Adjusted),2016/11/3 17:14,1,9.338450503
+SoundExchange Distributions,Value (Adjusted),2016/10/1 20:23,1,26.70457143
+SoundExchange Distributions,Value (Adjusted),2016/9/22 4:57,1,41.5949881
+SoundExchange Distributions,Value (Adjusted),2016/9/14 15:01,1,44.64439653
+SoundExchange Distributions,Value (Adjusted),2016/8/27 21:45,1,118.7428879
+SoundExchange Distributions,Value (Adjusted),2016/8/11 5:59,1,185.3044626
+SoundExchange Distributions,Value (Adjusted),2016/8/5 18:02,1,292.171389
+SoundExchange Distributions,Value (Adjusted),2016/7/21 0:48,1,331.8759486
+SoundExchange Distributions,Value (Adjusted),2016/7/5 1:24,1,514.445212
+SoundExchange Distributions,Value (Adjusted),2016/6/27 10:02,1,647.9302738
+SoundExchange Distributions,Value (Adjusted),2016/6/5 6:12,1,835.2135873
+SoundExchange Distributions,Value (Adjusted),2016/6/2 10:56,1,865.7197931
+SoundExchange Distributions,Value (Adjusted),2016/5/29 12:14,1,941.5359648
+SoundExchange Distributions,Value (Adjusted),2016/5/20 11:59,1,680.0275946
+SoundExchange Distributions,Value (Adjusted),2016/5/16 10:09,1,970.0645127
+SoundExchange Distributions,Value (Adjusted),2016/5/13 0:34,1,908.2
+Synchronization,Value (Adjusted),2016/4/24 5:39,1,
+Synchronization,Value (Adjusted),2016/4/18 11:59,1,
+Synchronization,Value (Adjusted),2016/4/12 9:51,1,
+Synchronization,Value (Adjusted),2016/4/10 14:57,1,
+Synchronization,Value (Adjusted),2016/3/16 23:54,1,
+Synchronization,Value (Adjusted),2016/3/3 1:32,1,
+Synchronization,Value (Adjusted),2016/2/23 3:59,1,
+Synchronization,Value (Adjusted),2016/2/21 5:58,1,
+Synchronization,Value (Adjusted),2016/2/19 8:15,1,
+Synchronization,Value (Adjusted),2016/2/6 13:55,1,
+Synchronization,Value (Adjusted),2016/1/27 9:59,1,
+Synchronization,Value (Adjusted),2016/1/21 16:44,1,
+Synchronization,Value (Adjusted),2015/12/30 13:07,1,
+Synchronization,Value (Adjusted),2015/12/21 2:32,1,
+Synchronization,Value (Adjusted),2015/12/8 0:34,1,
+Synchronization,Value (Adjusted),2015/11/13 14:59,1,
+Synchronization,Value (Adjusted),2015/11/2 21:34,1,
+Synchronization,Value (Adjusted),2015/10/31 11:34,1,
+Synchronization,Value (Adjusted),2015/10/13 12:23,1,
+Synchronization,Value (Adjusted),2015/10/11 0:07,1,
+Synchronization,Value (Adjusted),2015/10/10 9:57,1,
+Synchronization,Value (Adjusted),2015/10/4 21:02,1,
+Synchronization,Value (Adjusted),2015/9/17 21:03,1,
+Synchronization,Value (Adjusted),2015/9/14 23:50,1,
+Synchronization,Value (Adjusted),2015/9/8 13:46,1,
+Synchronization,Value (Adjusted),2015/9/7 1:41,1,
+Synchronization,Value (Adjusted),2015/9/2 20:10,1,
+Synchronization,Value (Adjusted),2015/7/19 7:06,1,
+Synchronization,Value (Adjusted),2015/7/12 22:23,1,
+Synchronization,Value (Adjusted),2015/7/4 1:40,1,
+Synchronization,Value (Adjusted),2015/6/14 3:03,1,
+Synchronization,Value (Adjusted),2015/6/12 17:03,1,
+Synchronization,Value (Adjusted),2015/6/10 17:43,1,
+Synchronization,Value (Adjusted),2015/6/2 8:44,1,
+Synchronization,Value (Adjusted),2015/5/20 10:20,1,
+Synchronization,Value (Adjusted),2015/5/18 17:13,1,
+Synchronization,Value (Adjusted),2015/5/10 7:45,1,239.7637163
+Synchronization,Value (Adjusted),2015/5/7 20:34,1,221.238929
+Synchronization,Value (Adjusted),2015/4/30 10:21,1,223.3343284
+Synchronization,Value (Adjusted),2015/4/21 1:42,1,212.2339858
+Synchronization,Value (Adjusted),2015/4/10 1:14,1,208.1623435
+Synchronization,Value (Adjusted),2015/4/8 4:06,1,204.8758184
+Synchronization,Value (Adjusted),2015/4/3 1:39,1,218.8945293
+Synchronization,Value (Adjusted),2015/3/30 21:33,1,228.8478595
+Synchronization,Value (Adjusted),2015/3/18 0:04,1,242.0632514
+Synchronization,Value (Adjusted),2015/3/11 6:18,1,290.6869289
+Synchronization,Value (Adjusted),2015/3/8 4:26,1,276.2623602
+Vinyl Single,Value (Adjusted),2015/3/4 4:30,1,1094.027703
+Vinyl Single,Value (Adjusted),2015/2/26 22:06,1,1006.033631
+Vinyl Single,Value (Adjusted),2015/2/25 10:53,1,1005.045641
+Vinyl Single,Value (Adjusted),2015/2/17 13:19,1,1101.25713
+Vinyl Single,Value (Adjusted),2015/1/9 17:31,1,1034.018658
+Vinyl Single,Value (Adjusted),2015/1/9 10:41,1,1020.66744
+Vinyl Single,Value (Adjusted),2015/1/7 1:05,1,1245.183405
+Vinyl Single,Value (Adjusted),2015/1/2 13:39,1,775.6583738
+Vinyl Single,Value (Adjusted),2014/12/13 2:53,1,721.1271155
+Vinyl Single,Value (Adjusted),2014/12/12 6:48,1,749.7505803
+Vinyl Single,Value (Adjusted),2014/12/9 21:19,1,691.2492982
+Vinyl Single,Value (Adjusted),2014/11/28 11:47,1,734.9831174
+Vinyl Single,Value (Adjusted),2014/11/27 12:12,1,667.6544331
+Vinyl Single,Value (Adjusted),2014/11/26 23:16,1,532.0744681
+Vinyl Single,Value (Adjusted),2014/11/26 17:40,1,457.5270079
+Vinyl Single,Value (Adjusted),2014/11/4 20:13,1,389.8607168
+Vinyl Single,Value (Adjusted),2014/10/21 18:55,1,239.9877
+Vinyl Single,Value (Adjusted),2014/10/17 14:07,1,184.6520337
+Vinyl Single,Value (Adjusted),2014/10/14 10:25,1,119.944804
+Vinyl Single,Value (Adjusted),2014/10/6 20:02,1,120.9951875
+Vinyl Single,Value (Adjusted),2014/9/9 18:55,1,90.58573287
+Vinyl Single,Value (Adjusted),2014/9/5 21:37,1,81.42382186
+Vinyl Single,Value (Adjusted),2014/8/29 23:15,1,78.34108858
+Vinyl Single,Value (Adjusted),2014/8/28 3:07,1,77.39775335
+Vinyl Single,Value (Adjusted),2014/8/23 6:29,1,56.70647477
+Vinyl Single,Value (Adjusted),2014/7/29 7:38,1,40.30910982
+Vinyl Single,Value (Adjusted),2014/7/29 3:07,1,42.81410744
+Vinyl Single,Value (Adjusted),2014/6/28 2:40,1,39.04633624
+Vinyl Single,Value (Adjusted),2014/6/26 5:54,1,45.32823151
+Vinyl Single,Value (Adjusted),2014/5/29 1:12,1,35.38554364
+Vinyl Single,Value (Adjusted),2014/5/16 20:06,1,29.87296467
+Vinyl Single,Value (Adjusted),2014/5/16 12:42,1,26.93263261
+Vinyl Single,Value (Adjusted),2014/5/8 19:42,1,17.27942857
+Vinyl Single,Value (Adjusted),2014/3/29 13:45,1,12.55458482
+Vinyl Single,Value (Adjusted),2014/3/18 11:02,1,4.933082489
+Vinyl Single,Value (Adjusted),2014/3/3 15:00,1,3.44354375
+Vinyl Single,Value (Adjusted),2014/2/18 12:50,1,2.979171425
+Vinyl Single,Value (Adjusted),2014/2/13 6:47,1,2.696605918
+Vinyl Single,Value (Adjusted),2014/1/15 2:46,1,5.228182752
+Vinyl Single,Value (Adjusted),2014/1/12 16:00,1,5.281477044
+Vinyl Single,Value (Adjusted),2014/1/8 17:05,1,3.269213385
+Vinyl Single,Value (Adjusted),2013/12/23 8:30,1,5.938887283
+Vinyl Single,Value (Adjusted),2013/12/8 3:10,1,6.205390253
+Vinyl Single,Value (Adjusted),2013/11/21 1:50,1,5.198931395
+Vinyl Single,Value (Adjusted),2013/10/12 16:06,1,6.33967756
+Vinyl Single,Value (Adjusted),2013/10/9 17:27,1,5.386196747
+Vinyl Single,Value (Adjusted),2013/9/24 15:31,1,6.795945687
