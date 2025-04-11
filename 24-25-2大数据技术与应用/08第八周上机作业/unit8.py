@@ -35,3 +35,8 @@ diabetes_trainPca_df = pd.DataFrame(diabetes_trainPca)
 diabetes_trainPca_df.to_csv('diabetes_trainPca.csv', index=False, header=False)
 diabetes_testPca_df = pd.DataFrame(diabetes_testPca)
 diabetes_testPca_df.to_csv('diabetes_testPca.csv', index=False, header=False)
+
+
+
+
+
