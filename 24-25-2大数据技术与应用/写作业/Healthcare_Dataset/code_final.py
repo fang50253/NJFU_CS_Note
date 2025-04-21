@@ -2,6 +2,12 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.svm import SVC
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.pipeline import make_pipeline
 
 # 0.设置中文字体和负号显示
 plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']  # 设置中文字体
@@ -53,4 +59,51 @@ quantiles.columns = ['25%', '50%', '75%']
 quantiles = quantiles.round(2)
 print("各医院账单金额的分位数统计：")
 print(quantiles)
+
+# 6.其他的类似分析
+# 保险公司
+plt.figure(figsize=(12, 6))
+sns.boxplot(data=data_cleaned, x='Insurance Provider', y='Billing Amount')
+plt.title('各保险公司账单金额分布（箱线图）')
+plt.xlabel('保险公司')
+plt.ylabel('账单金额')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('billing_boxplot_by_insurance.png')
+quantiles_insurance = data_cleaned.groupby('Insurance Provider')['Billing Amount'].quantile([0.25, 0.5, 0.75]).unstack()
+quantiles_insurance.columns = ['25%', '50%', '75%']
+quantiles_insurance = quantiles_insurance.round(2)
+print("各保险公司账单金额的分位数统计：")
+print(quantiles_insurance)
+
+# 检查结果
+plt.figure(figsize=(12, 6))
+sns.boxplot(data=data_cleaned, x='Test Results', y='Billing Amount')
+plt.title('各类检查结果对应账单金额分布（箱线图）')
+plt.xlabel('检查结果')
+plt.ylabel('账单金额')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('billing_boxplot_by_test_results.png')
+quantiles_tests = data_cleaned.groupby('Test Results')['Billing Amount'].quantile([0.25, 0.5, 0.75]).unstack()
+quantiles_tests.columns = ['25%', '50%', '75%']
+quantiles_tests = quantiles_tests.round(2)
+print("各类检查结果账单金额的分位数统计：")
+print(quantiles_tests)
+
+# 用药情况
+plt.figure(figsize=(12, 6))
+medication_order = data_cleaned.groupby('Medication')['Billing Amount'].mean().sort_values().index
+sns.boxplot(data=data_cleaned, x='Medication', y='Billing Amount')
+plt.title('不同用药情况账单金额分布（箱线图）')
+plt.xlabel('用药情况')
+plt.ylabel('账单金额')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('billing_boxplot_by_medication.png')
+quantiles_medication = data_cleaned.groupby('Medication')['Billing Amount'].quantile([0.25, 0.5, 0.75]).unstack()
+quantiles_medication.columns = ['25%', '50%', '75%']
+quantiles_medication = quantiles_medication.round(2)
+print("不同用药情况账单金额的分位数统计：")
+print(quantiles_medication)
 
