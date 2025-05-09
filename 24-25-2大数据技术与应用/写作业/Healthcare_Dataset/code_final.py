@@ -10,6 +10,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.metrics import classification_report, cohen_kappa_score, roc_curve, auc, roc_auc_score
 
 
