@@ -61,6 +61,8 @@ print(data)
 
 
 
+
+
 # 实训3:
 # 拆分输入特征与标签
 data_x=data.drop(['蓝方获胜情况'], axis=1)
@@ -79,7 +81,7 @@ data_x_test=(data_x_test-data_x_train.mean())/data_x_train.std()
 # 构建SVR模型，并进行模型的训练和预测
 data_x_train=data_x_train.values
 data_x_test=data_x_test.values
-svr=SVR(kernel='linear',C=1.0,epsilon=0.2)
+svr=SVR(kernel='linear',C=1.0,epsilon=0.33)
 svr.fit(data_x_train,data_y_train)
 data_y_predict=svr.predict(data_x_test)
 

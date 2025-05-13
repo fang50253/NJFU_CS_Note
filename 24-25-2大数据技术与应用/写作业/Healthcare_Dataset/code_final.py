@@ -1,3 +1,6 @@
+import scipy
+import sklearn
+import matplotlib
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -14,7 +17,12 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.metrics import classification_report, cohen_kappa_score, roc_curve, auc, roc_auc_score
 
 
-
+print("numpy version:", np.__version__)
+print("pandas version:", pd.__version__)
+print("seaborn version:", sns.__version__)
+print("matplotlib version:", matplotlib.__version__)
+print("scikit-learn version:", sklearn.__version__)
+print("scipy version:", scipy.__version__)
 
 # 0.设置中文字体和负号显示
 plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']  # 设置中文字体
