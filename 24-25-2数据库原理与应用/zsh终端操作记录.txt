@@ -1,0 +1,1363 @@
+Last login: Sun May 25 12:47:55 on ttys004
+(base) fang50253@MacBook_Pro ~ % cd /Users/fang50253/Desktop/Files/CPP_Files/CodeForces/2110/       
+(base) fang50253@MacBook_Pro 2110 % pwd
+/Users/fang50253/Desktop/Files/CPP_Files/CodeForces/2110
+(base) fang50253@MacBook_Pro 2110 % g++ -x c++ -O2 -std=gnu++20 -static A_1.cpp
+ld: library not found for -lcrt0.o
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+(base) fang50253@MacBook_Pro 2110 % g++ -x c++ -O2 -std=gnu++20 A_1.cpp        
+(base) fang50253@MacBook_Pro 2110 % ./a.out
+6
+2
+5 2
+1
+^C
+(base) fang50253@MacBook_Pro 2110 % ./a.out
+^[[A^C
+(base) fang50253@MacBook_Pro 2110 % g++ -x c++ -O2 -std=gnu++20 A_1.cpp -o A_1
+(base) fang50253@MacBook_Pro 2110 % /Users/fang50253/Desktop/Files/CPP_Files/CodeForces/2110/A_1
+6
+2
+5 2
+1
+^C
+(base) fang50253@MacBook_Pro 2110 % g++ -std=c++20 /Users/fang50253/Desktop/Files/CPP_Files/CodeForces/2110/A_1.cpp
+(base) fang50253@MacBook_Pro 2110 % ffmpeg -i /Users/fang50253/Movies/2025-05-25\ 12-51-20.mkv -c copy /Users/fang50253/Movies/2025-05-25\ 12-51-20.mp4 
+ffmpeg version N-116130-gcf7e2c5e05-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 15.0.0 (clang-1500.3.9.4)
+  configuration: --cc=/usr/bin/clang --prefix=/opt/ffmpeg --extra-version=tessus --enable-avisynth --enable-fontconfig --enable-gpl --enable-libaom --enable-libass --enable-libbluray --enable-libdav1d --enable-libfreetype --enable-libgsm --enable-libharfbuzz --enable-libmodplug --enable-libmp3lame --enable-libmysofa --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvmaf --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-version3 --pkg-config-flags=--static --disable-ffplay
+  libavutil      59. 28.100 / 59. 28.100
+  libavcodec     61.  9.100 / 61.  9.100
+  libavformat    61.  4.100 / 61.  4.100
+  libavdevice    61.  2.100 / 61.  2.100
+  libavfilter    10.  2.102 / 10.  2.102
+  libswscale      8.  2.100 /  8.  2.100
+  libswresample   5.  2.100 /  5.  2.100
+  libpostproc    58.  2.100 / 58.  2.100
+Input #0, matroska,webm, from '/Users/fang50253/Movies/2025-05-25 12-51-20.mkv':
+  Metadata:
+    ENCODER         : Lavf61.1.100
+  Duration: 00:05:33.57, start: 0.000000, bitrate: 1084 kb/s
+  Stream #0:0: Video: h264 (High), yuv420p(tv, bt709, progressive), 1812x1178 [SAR 1:1 DAR 906:589], 60 fps, 60 tbr, 1k tbn
+      Metadata:
+        DURATION        : 00:05:33.568000000
+  Stream #0:1: Audio: aac (HE-AAC), 48000 Hz, stereo, fltp
+      Metadata:
+        title           : simple_aac
+        DURATION        : 00:05:33.568000000
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Output #0, mp4, to '/Users/fang50253/Movies/2025-05-25 12-51-20.mp4':
+  Metadata:
+    encoder         : Lavf61.4.100
+  Stream #0:0: Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1812x1178 [SAR 1:1 DAR 906:589], q=2-31, 60 fps, 60 tbr, 16k tbn
+      Metadata:
+        DURATION        : 00:05:33.568000000
+  Stream #0:1: Audio: aac (HE-AAC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp
+      Metadata:
+        title           : simple_aac
+        DURATION        : 00:05:33.568000000
+Press [q] to stop, [?] for help
+[out#0/mp4 @ 0x7f7e46010540] video:40716KiB audio:3258KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.165372%
+size=   44486KiB time=00:05:33.53 bitrate=1092.6kbits/s speed=2.43e+03x    
+(base) fang50253@MacBook_Pro 2110 % cd /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/24-25-2数据库原理与应用/jxgl.sql
+cd: not a directory: /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/24-25-2数据库原理与应用/jxgl.sql
+(base) fang50253@MacBook_Pro 2110 % cd /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/24-25-2数据库原理与应用/        
+(base) fang50253@MacBook_Pro 24-25-2数据库原理与应用 % mysql
+ERROR 1045 (28000): Access denied for user 'fang50253'@'localhost' (using password: NO)
+(base) fang50253@MacBook_Pro 24-25-2数据库原理与应用 % mysql -uroot -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 9.1.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show table
+    -> ^C
+mysql> show table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> show databases
+    -> ^C
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.01 sec)
+
+mysql> create databases jxgl;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databases jxgl' at line 1
+mysql> create databases jxgl
+    -> ^C
+mysql> create database jxgl
+    -> ^C
+mysql> create database jxgl;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> show database
+    -> show database^C
+mysql> show database;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database' at line 1
+mysql> ^C
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| jxgl               |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.01 sec)
+
+mysql> use jxgl;
+Database changed
+mysql> show tables
+    -> ^C
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> create table student(sno char(10),sname char(8),ssex char(2),sbirthday date,sdept char(10),speciality varchar(20));
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> show tables;
++----------------+
+| Tables_in_jxgl |
++----------------+
+| student        |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> Create table course(cno char(5),cname varchar(20));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> show tables;
++----------------+
+| Tables_in_jxgl |
++----------------+
+| course         |
+| student        |
++----------------+
+2 rows in set (0.01 sec)
+
+mysql> Create table sc(sno char(10),cno char(5),degree decimal(5,1));
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> show tables;
++----------------+
+| Tables_in_jxgl |
++----------------+
+| course         |
+| sc             |
+| student        |
++----------------+
+3 rows in set (0.00 sec)
+
+mysql> Desc student;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| sno        | char(10)    | YES  |     | NULL    |       |
+| sname      | char(8)     | YES  |     | NULL    |       |
+| ssex       | char(2)     | YES  |     | NULL    |       |
+| sbirthday  | date        | YES  |     | NULL    |       |
+| sdept      | char(10)    | YES  |     | NULL    |       |
+| speciality | varchar(20) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> mysqldump -u root -p jxgl> homesork1_jxgl.sql
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysqldump -u root -p jxgl> homesork1_jxgl.sql' at line 1
+mysql> mysqldump -u root -p jxgl> homesork1_jxgl.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysqldump -u root -p jxgl> homesork1_jxgl.sql' at line 1
+mysql> ? contents
+You asked for help about help category: "Contents"
+For more information, type 'help <item>', where <item> is one of the following
+categories:
+   Account Management
+   Administration
+   Components
+   Compound Statements
+   Contents
+   Data Definition
+   Data Manipulation
+   Data Types
+   Functions
+   Geographic Features
+   Help Metadata
+   Language Structure
+   Loadable Functions
+   Plugins
+   Prepared Statements
+   Replication Statements
+   Storage Engines
+   Table Maintenance
+   Transactions
+   Utility
+
+mysql> ? data types
+You asked for help about help category: "Data Types"
+For more information, type 'help <item>', where <item> is one of the following
+topics:
+   AUTO_INCREMENT
+   BIGINT
+   BINARY
+   BIT
+   BLOB
+   BLOB DATA TYPE
+   BOOLEAN
+   CHAR
+   CHAR BYTE
+   DATE
+   DATETIME
+   DEC
+   DECIMAL
+   DOUBLE
+   DOUBLE PRECISION
+   ENUM
+   FLOAT
+   INT
+   INTEGER
+   LONGBLOB
+   LONGTEXT
+   MEDIUMBLOB
+   MEDIUMINT
+   MEDIUMTEXT
+   SET DATA TYPE
+   SMALLINT
+   TEXT
+   TIME
+   TIMESTAMP
+   TINYBLOB
+   TINYINT
+   TINYTEXT
+   VARBINARY
+   VARCHAR
+   VECTOR DATA TYPE
+   YEAR DATA TYPE
+
+mysql> ? int
+Name: 'INT'
+Description:
+INT[(M)] [UNSIGNED] [ZEROFILL]
+
+A normal-size integer. The signed range is -2147483648 to 2147483647.
+The unsigned range is 0 to 4294967295.
+
+URL: https://dev.mysql.com/doc/refman/9.1/en/numeric-type-syntax.html
+
+
+mysql> ?char
+    -> ^C
+mysql> ? char
+Name: 'CHAR'
+Description:
+[NATIONAL] CHAR[(M)] [CHARACTER SET charset_name] [COLLATE
+collation_name]
+
+A fixed-length string that is always right-padded with spaces to the
+specified length when stored. M represents the column length in
+characters. The range of M is 0 to 255. If M is omitted, the length is
+1.
+
+*Note*:
+
+Trailing spaces are removed when CHAR values are retrieved unless the
+PAD_CHAR_TO_FULL_LENGTH SQL mode is enabled.
+
+URL: https://dev.mysql.com/doc/refman/9.1/en/string-type-syntax.html
+
+
+mysql> ? varchar
+Name: 'VARCHAR'
+Description:
+[NATIONAL] VARCHAR(M) [CHARACTER SET charset_name] [COLLATE
+collation_name]
+
+A variable-length string. M represents the maximum column length in
+characters. The range of M is 0 to 65,535. The effective maximum length
+of a VARCHAR is subject to the maximum row size (65,535 bytes, which is
+shared among all columns) and the character set used. For example,
+utf8mb3 characters can require up to three bytes per character, so a
+VARCHAR column that uses the utf8mb3 character set can be declared to
+be a maximum of 21,844 characters. See
+https://dev.mysql.com/doc/refman/9.1/en/column-count-limit.html.
+
+MySQL stores VARCHAR values as a 1-byte or 2-byte length prefix plus
+data. The length prefix indicates the number of bytes in the value. A
+VARCHAR column uses one length byte if values require no more than 255
+bytes, two length bytes if values may require more than 255 bytes.
+
+*Note*:
+
+MySQL follows the standard SQL specification, and does not remove
+trailing spaces from VARCHAR values.
+
+VARCHAR is shorthand for CHARACTER VARYING. NATIONAL VARCHAR is the
+standard SQL way to define that a VARCHAR column should use some
+predefined character set. MySQL uses utf8mb3 as this predefined
+character set.
+https://dev.mysql.com/doc/refman/9.1/en/charset-national.html. NVARCHAR
+is shorthand for NATIONAL VARCHAR.
+
+URL: https://dev.mysql.com/doc/refman/9.1/en/string-type-syntax.html
+
+
+mysql> mysql> show databases;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql> show databases' at line 1
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| jxgl               |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> use mysql;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++------------------------------------------------------+
+| Tables_in_mysql                                      |
++------------------------------------------------------+
+| columns_priv                                         |
+| component                                            |
+| db                                                   |
+| default_roles                                        |
+| engine_cost                                          |
+| func                                                 |
+| general_log                                          |
+| global_grants                                        |
+| gtid_executed                                        |
+| help_category                                        |
+| help_keyword                                         |
+| help_relation                                        |
+| help_topic                                           |
+| innodb_index_stats                                   |
+| innodb_table_stats                                   |
+| ndb_binlog_index                                     |
+| password_history                                     |
+| plugin                                               |
+| procs_priv                                           |
+| proxies_priv                                         |
+| replication_asynchronous_connection_failover         |
+| replication_asynchronous_connection_failover_managed |
+| replication_group_configuration_version              |
+| replication_group_member_actions                     |
+| role_edges                                           |
+| server_cost                                          |
+| servers                                              |
+| slave_master_info                                    |
+| slave_relay_log_info                                 |
+| slave_worker_info                                    |
+| slow_log                                             |
+| tables_priv                                          |
+| time_zone                                            |
+| time_zone_leap_second                                |
+| time_zone_name                                       |
+| time_zone_transition                                 |
+| time_zone_transition_type                            |
+| user                                                 |
++------------------------------------------------------+
+38 rows in set (0.00 sec)
+
+mysql> desc user;
++--------------------------+-----------------------------------+------+-----+-----------------------+-------+
+| Field                    | Type                              | Null | Key | Default               | Extra |
++--------------------------+-----------------------------------+------+-----+-----------------------+-------+
+| Host                     | char(255)                         | NO   | PRI |                       |       |
+| User                     | char(32)                          | NO   | PRI |                       |       |
+| Select_priv              | enum('N','Y')                     | NO   |     | N                     |       |
+| Insert_priv              | enum('N','Y')                     | NO   |     | N                     |       |
+| Update_priv              | enum('N','Y')                     | NO   |     | N                     |       |
+| Delete_priv              | enum('N','Y')                     | NO   |     | N                     |       |
+| Create_priv              | enum('N','Y')                     | NO   |     | N                     |       |
+| Drop_priv                | enum('N','Y')                     | NO   |     | N                     |       |
+| Reload_priv              | enum('N','Y')                     | NO   |     | N                     |       |
+| Shutdown_priv            | enum('N','Y')                     | NO   |     | N                     |       |
+| Process_priv             | enum('N','Y')                     | NO   |     | N                     |       |
+| File_priv                | enum('N','Y')                     | NO   |     | N                     |       |
+| Grant_priv               | enum('N','Y')                     | NO   |     | N                     |       |
+| References_priv          | enum('N','Y')                     | NO   |     | N                     |       |
+| Index_priv               | enum('N','Y')                     | NO   |     | N                     |       |
+| Alter_priv               | enum('N','Y')                     | NO   |     | N                     |       |
+| Show_db_priv             | enum('N','Y')                     | NO   |     | N                     |       |
+| Super_priv               | enum('N','Y')                     | NO   |     | N                     |       |
+| Create_tmp_table_priv    | enum('N','Y')                     | NO   |     | N                     |       |
+| Lock_tables_priv         | enum('N','Y')                     | NO   |     | N                     |       |
+| Execute_priv             | enum('N','Y')                     | NO   |     | N                     |       |
+| Repl_slave_priv          | enum('N','Y')                     | NO   |     | N                     |       |
+| Repl_client_priv         | enum('N','Y')                     | NO   |     | N                     |       |
+| Create_view_priv         | enum('N','Y')                     | NO   |     | N                     |       |
+| Show_view_priv           | enum('N','Y')                     | NO   |     | N                     |       |
+| Create_routine_priv      | enum('N','Y')                     | NO   |     | N                     |       |
+| Alter_routine_priv       | enum('N','Y')                     | NO   |     | N                     |       |
+| Create_user_priv         | enum('N','Y')                     | NO   |     | N                     |       |
+| Event_priv               | enum('N','Y')                     | NO   |     | N                     |       |
+| Trigger_priv             | enum('N','Y')                     | NO   |     | N                     |       |
+| Create_tablespace_priv   | enum('N','Y')                     | NO   |     | N                     |       |
+| ssl_type                 | enum('','ANY','X509','SPECIFIED') | NO   |     |                       |       |
+| ssl_cipher               | blob                              | NO   |     | NULL                  |       |
+| x509_issuer              | blob                              | NO   |     | NULL                  |       |
+| x509_subject             | blob                              | NO   |     | NULL                  |       |
+| max_questions            | int unsigned                      | NO   |     | 0                     |       |
+| max_updates              | int unsigned                      | NO   |     | 0                     |       |
+| max_connections          | int unsigned                      | NO   |     | 0                     |       |
+| max_user_connections     | int unsigned                      | NO   |     | 0                     |       |
+| plugin                   | char(64)                          | NO   |     | caching_sha2_password |       |
+| authentication_string    | text                              | YES  |     | NULL                  |       |
+| password_expired         | enum('N','Y')                     | NO   |     | N                     |       |
+| password_last_changed    | timestamp                         | YES  |     | NULL                  |       |
+| password_lifetime        | smallint unsigned                 | YES  |     | NULL                  |       |
+| account_locked           | enum('N','Y')                     | NO   |     | N                     |       |
+| Create_role_priv         | enum('N','Y')                     | NO   |     | N                     |       |
+| Drop_role_priv           | enum('N','Y')                     | NO   |     | N                     |       |
+| Password_reuse_history   | smallint unsigned                 | YES  |     | NULL                  |       |
+| Password_reuse_time      | smallint unsigned                 | YES  |     | NULL                  |       |
+| Password_require_current | enum('N','Y')                     | YES  |     | NULL                  |       |
+| User_attributes          | json                              | YES  |     | NULL                  |       |
++--------------------------+-----------------------------------+------+-----+-----------------------+-------+
+51 rows in set (0.00 sec)
+
+mysql> select user from user;
++------------------+
+| user             |
++------------------+
+| mysql.infoschema |
+| mysql.session    |
+| mysql.sys        |
+| root             |
++------------------+
+4 rows in set (0.00 sec)
+
+mysql> select host ,user,password_last_changed from user;
++-----------+------------------+-----------------------+
+| host      | user             | password_last_changed |
++-----------+------------------+-----------------------+
+| localhost | mysql.infoschema | 2024-12-15 12:41:47   |
+| localhost | mysql.session    | 2024-12-15 12:41:47   |
+| localhost | mysql.sys        | 2024-12-15 12:41:47   |
+| localhost | root             | 2024-12-15 12:41:48   |
++-----------+------------------+-----------------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT User, Host, Select_priv FROM mysql.user;
++------------------+-----------+-------------+
+| User             | Host      | Select_priv |
++------------------+-----------+-------------+
+| mysql.infoschema | localhost | Y           |
+| mysql.session    | localhost | N           |
+| mysql.sys        | localhost | N           |
+| root             | localhost | Y           |
++------------------+-----------+-------------+
+4 rows in set (0.01 sec)
+
+mysql> use jxgl;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> source /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/24-25-2数据库原理与应用/homesork1_jxgl.sql 
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> ALTER TABLE student ADD jiguan varchar(20);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> show student
+    -> ^C
+mysql> show student;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'student' at line 1
+mysql> use xjgl;
+ERROR 1049 (42000): Unknown database 'xjgl'
+mysql> use jxgl;
+Database changed
+mysql> show student;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'student' at line 1
+mysql> show tables;
++----------------+
+| Tables_in_jxgl |
++----------------+
+| course         |
+| sc             |
+| student        |
++----------------+
+3 rows in set (0.00 sec)
+
+mysql> ›ALTER TABLE student CHANGE jiguan jg varchar(20);^C
+mysql> ALTER TABLE student CHANGE jiguan jg varchar(20);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE student DROP jg;
+Query OK, 0 rows affected (0.00 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table student modify sdept char(20);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE student ADD PRIMARY KEY(sno);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE course ADD PRIMARY KEY (cno);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE SC ADD FOREIGN KEY sno_cno(sno) REFERENCES student(sno);
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from student;
+Empty set (0.00 sec)
+
+mysql> insert into student values('20180101','李勇','男',2000-01-12,'CS','计算机应用')
+    -> ^C
+mysql> insert into student values('20180101','李勇','男',2000-01-12,'CS','计算机应用');
+ERROR 1292 (22007): Incorrect date value: '1987' for column 'sbirthday' at row 1
+mysql> insert into student values('20180101','李勇','男','2000-01-12','CS','计算机应用');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from student;
++----------+--------+------+------------+-------+-----------------+
+| sno      | sname  | ssex | sbirthday  | sdept | speciality      |
++----------+--------+------+------------+-------+-----------------+
+| 20180101 | 李勇   | 男   | 2000-01-12 | CS    | 计算机应用      |
++----------+--------+------+------------+-------+-----------------+
+1 row in set (0.00 sec)
+
+mysql> insert into student values('20180201','刘晨','女','2001-06-04','IS','电子商务');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student values('20180301','王敏','女','2002-12-23','MA','数学');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student values('20180202','李勇','男','2001-08-25','IS','电子商务');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from student;
++----------+--------+------+------------+-------+-----------------+
+| sno      | sname  | ssex | sbirthday  | sdept | speciality      |
++----------+--------+------+------------+-------+-----------------+
+| 20180101 | 李勇   | 男   | 2000-01-12 | CS    | 计算机应用      |
+| 20180201 | 刘晨   | 女   | 2001-06-04 | IS    | 电子商务        |
+| 20180202 | 李勇   | 男   | 2001-08-25 | IS    | 电子商务        |
+| 20180301 | 王敏   | 女   | 2002-12-23 | MA    | 数学            |
++----------+--------+------+------------+-------+-----------------+
+4 rows in set (0.00 sec)
+
+mysql> insert into course(cno,cname) values ('C01','数据库'),('C02','数学'),('C03','信息系统'),('C04','操作系统');
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> select * from course;
++-----+--------------+
+| cno | cname        |
++-----+--------------+
+| C01 | 数据库       |
+| C02 | 数学         |
+| C03 | 信息系统     |
+| C04 | 操作系统     |
++-----+--------------+
+4 rows in set (0.00 sec)
+
+mysql> update SC SET Degree=Degree+5 WHERE Cno=’C02’;
+ERROR 1054 (42S22): Unknown column '’C02’' in 'where clause'
+mysql> update SC SET Degree=Degree+5 WHERE Cno=’C02’;^C
+mysql> insert into sc values ('20180101','C01',92),('20180101','C02',85),('20180101','C03',88),('20180201','C02',90),('20180201','C03',80),('20180301','C01',91),('20180301','C02',75),('20180202','C01',87);
+Query OK, 8 rows affected (0.00 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+mysql> update SC SET Degree=Degree+5 WHERE Cno=’C02’;
+ERROR 1054 (42S22): Unknown column '’C02’' in 'where clause'
+mysql> update SC SET Degree=Degree+5 WHERE Cno='C02';
+Query OK, 3 rows affected (0.00 sec)
+Rows matched: 3  Changed: 3  Warnings: 0
+
+mysql> SELECT * FROM SC；
+    -> ^C
+mysql> SELECT * FROM SC;
++----------+------+--------+
+| sno      | cno  | degree |
++----------+------+--------+
+| 20180101 | C01  |   92.0 |
+| 20180101 | C02  |   90.0 |
+| 20180101 | C03  |   88.0 |
+| 20180201 | C02  |   95.0 |
+| 20180201 | C03  |   80.0 |
+| 20180301 | C01  |   91.0 |
+| 20180301 | C02  |   80.0 |
+| 20180202 | C01  |   87.0 |
++----------+------+--------+
+8 rows in set (0.00 sec)
+
+mysql> source
+ERROR: 
+Usage: \. <filename> | source <filename>
+mysql> source /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/24-25-2数据库原理与应用/jxgl.sql 
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 8 rows affected (0.00 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 3 warnings (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 6 rows affected (0.00 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 2 warnings (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 2 warnings (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 3 rows affected (0.00 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| jxgl               |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> use jxgl;
+Database changed
+mysql> show tables;
++----------------+
+| Tables_in_jxgl |
++----------------+
+| course         |
+| sc             |
+| store          |
+| student        |
+| studentcount   |
+| studentinfo    |
+| teacher        |
+| teaching       |
++----------------+
+8 rows in set (0.00 sec)
+
+mysql> select sname from student where dept in (select sdept from student where sname='李勇') and sname!='李勇';
+ERROR 1054 (42S22): Unknown column 'dept' in 'IN/ALL/ANY subquery'
+mysql> select sname from student where dept in (select sdept from student where sname='刘晨') and sname!='刘晨';
+ERROR 1054 (42S22): Unknown column 'dept' in 'IN/ALL/ANY subquery'
+mysql> select sname from student where sdept in (select sdept from
+student where sname='刘晨') and sname!='刘晨';
++--------+
+| sname  |
++--------+
+| 张立   |
++--------+
+1 row in set (0.00 sec)
+
+mysql> select sname from student where sno> (select sno from where sname='刘晨' ) and (year(sysdate())-year(sbirthday))from student where sname='刘晨';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where sname='刘晨' ) and (year(sysdate())-year(sbirthday))from student where s' at line 1
+mysql> select sname from student where sno> (select sno from where
+sname='刘晨' ) and (year(sysdate())-year(sbirthday))from student where sname='刘晨');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where sname='刘晨' ) and (year(sysdate())-year(sbirthday))from student where s' at line 1
+mysql> select sname from student where sno> (select sno from student where sname='刘晨' ) and (year(sysdate())-year(sbirthday))from student where sname='刘晨');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from student where sname='刘晨')' at line 1
+mysql> select sname from student where sno> (select sno from student where sname='刘晨') and (year(sysdate())-year(sbirthday))from student where sname='刘晨');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from student where sname='刘晨')' at line 1
+mysql> select sname from student where sno> (select sno from student where sname='刘晨') and (year(sysdate())-year(sbirthday)from student where sname='刘晨');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from student where sname='刘晨')' at line 1
+mysql> select sname from student where sno> (select sno from student whe^C sname='刘晨') and (year(sysdate())-year(sbirthday)from studmysql> ^C sname='刘晨');
+mysql> ^C
+mysql> SELECT sname 
+    -> FROM student 
+    -> WHERE sno > (SELECT sno FROM student WHERE sname='刘晨') 
+    ->   AND (YEAR(SYSDATE())-YEAR(sbirthday)) = (SELECT (YEAR(SYSDATE())-YEAR(sbirthday)) FROM student WHERE sname='刘晨');
++--------+
+| sname  |
++--------+
+| 张立   |
++--------+
+1 row in set (0.00 sec)
+
+mysql> select sname,sdept
+    -> from student
+    -> where year(sbirthday) > all
+    -> (select year(sbirthday)
+    -> from student where ssex='男'
+    -> and ssex='女');
++--------+-------+
+| sname  | sdept |
++--------+-------+
+| 李勇   | cs    |
+| 刘晨   | is    |
+| 张立   | is    |
+| 王敏   | ma    |
++--------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select *
+    -> from sc 
+    -> where exists
+    -> from sc^C
+mysql> select *
+    -> from sc a
+    -> where exists
+    -> from sc b
+    -> where a.degree>
+    -> (select avg(degree)
+    -> from sc c
+    -> where c.cno=a.cno));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sc b
+where a.degree>
+(select avg(degree)
+from sc c
+where c.cno=a.cno))' at line 4
+mysql> select *
+    -> from sc a
+    -> where exists(
+    -> from sc b
+    -> where a.degree>
+    -> (select avg(degree)
+    -> from sc c
+    -> where c.cno=a.cno));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sc b
+where a.degree>
+(select avg(degree)
+from sc c
+where c.cno=a.cno))' at line 4
+mysql> SELECT * FROM sc a WHERE EXISTS (SELECT *  FROM sc b WHERE a.degree>( SELECT avg(degree) FROM sc c WHERE c.cno=a.cno  ) );
++----------+-----+--------+
+| sno      | cno | degree |
++----------+-----+--------+
+| 20180101 | c03 |   88.0 |
+| 20180202 | c01 |   98.0 |
+| 20180301 | c02 |   98.0 |
++----------+-----+--------+
+3 rows in set (0.00 sec)
+
+mysql> 
+mysql> select tname from teacher where tno not in (select tno from teaching where cno ='C01');
++-----------+
+| tname     |
++-----------+
+| 钱军      |
+| 王小华    |
+| 张小青    |
++-----------+
+3 rows in set (0.00 sec)
+
+mysql> select sno,sname from student
+    -> where sno in (select sno from sc where cno!='C02');
++----------+--------+
+| sno      | sname  |
++----------+--------+
+| 20180101 | 李勇   |
+| 20180201 | 刘晨   |
+| 20180202 | 张立   |
+| 20180301 | 王敏   |
++----------+--------+
+4 rows in set (0.00 sec)
+
+mysql> select sno,sname,sdept from student where sno in (select sno from sc where cno in (select cno from course where cname='数据库'));
++----------+--------+-------+
+| sno      | sname  | sdept |
++----------+--------+-------+
+| 20180101 | 李勇   | cs    |
+| 20180202 | 张立   | is    |
+| 20180301 | 王敏   | ma    |
++----------+--------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select sname fro student where sno in (select sno from sc froup by sno having count(sno)=(select count(cno)from course));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'student where sno in (select sno from sc froup by sno having count(sno)=(select ' at line 1
+mysql> select sname from student where sno in (select sno from sc froup by sno having count(sno)=(select count(cno)from course));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by sno having count(sno)=(select count(cno)from course))' at line 1
+mysql> select sname from student where sno in (select sno from sc group by sno having count(sno)=(select count(cno)from course));
+Empty set (0.00 sec)
+
+mysql> select * from student where sno in (select sno from sc where degree>80 and cno='C01');
++----------+--------+------+------------+-------+-----------------+
+| sno      | sname  | ssex | sbirthday  | sdept | speciality      |
++----------+--------+------+------------+-------+-----------------+
+| 20180101 | 李勇   | 男   | 2000-01-12 | cs    | 计算机应用      |
+| 20180202 | 张立   | 男   | 2001-08-25 | is    | 电子商务        |
+| 20180301 | 王敏   | 女   | 2002-12-23 | ma    | 数学            |
++----------+--------+------+------------+-------+-----------------+
+3 rows in set (0.00 sec)
+
+mysql> select student.sno,sname,ssex,sbirthday,sdept,speciality from student,sc where cno ='C01' and degree>80 and student.sno=sc.sno; 
++----------+--------+------+------------+-------+-----------------+
+| sno      | sname  | ssex | sbirthday  | sdept | speciality      |
++----------+--------+------+------------+-------+-----------------+
+| 20180101 | 李勇   | 男   | 2000-01-12 | cs    | 计算机应用      |
+| 20180202 | 张立   | 男   | 2001-08-25 | is    | 电子商务        |
+| 20180301 | 王敏   | 女   | 2002-12-23 | ma    | 数学            |
++----------+--------+------+------------+-------+-----------------+
+3 rows in set (0.00 sec)
+
+mysql> insert into student (Sno,Sname,Ssex,Sbirthday,sdept,Speciality) values('20180203','张静','女','2005-3-21','CS' ,'电子商务');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student (sno,sname) values('20180302','李四');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> create table ts(select * from student where ssex='男');
+Query OK, 2 rows affected (0.01 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> update student set sname='张华',sdept='CS',speciality='多媒 体技术' where sno='20180202';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update sc set degree=(select * from (select ave(degree from sc a where cno='03') b)where sno='20180201' and cno='C03');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sc a where cno='03') b)where sno='20180201' and cno='C03')' at line 1
+mysql> update sc set degree=(select * from (select ave(degree from
+sc a where cno='03') b)where sno='20180201' and cno='C03';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sc a where cno='03') b)where sno='20180201' and cno='C03'' at line 1
+mysql> update sc set degree=(select * from (select ave(degree from
+sc a where cno='03') b) where sno='20180201' and cno='C03';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sc a where cno='03') b) where sno='20180201' and cno='C03'' at line 1
+mysql> update sc set degree=(select * from (select ave(degree from
+sc a where cno='c03') b) where sno='20180201' and cno='C03';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sc a where cno='c03') b) where sno='20180201' and cno='C03'' at line 1
+mysql> update sc set degree=(select * from (select ave(degree from
+sc a where cno='c03') b ) where sno='20180201' and cno='C03';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sc a where cno='c03') b ) where sno='20180201' and cno='C03'' at line 1
+mysql> update sc set degree=(select * from (select ave(degree from
+sc a where cno='c03') b ) where sno='20180201' and cno='C03');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sc a where cno='c03') b ) where sno='20180201' and cno='C03')' at line 1
+mysql> update sc set degree=(select * from (select ave(degree from
+sc a where cno='c03') b )) where sno='20180201' and cno='C03';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sc a where cno='c03') b )) where sno='20180201' and cno='C03'' at line 1
+mysql> update sc set degree=(select * from (select ave(degree from
+sc a where cno='c03') b ) where sno='20180201' and cno='C03';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sc a where cno='c03') b ) where sno='20180201' and cno='C03'' at line 1
+mysql> update sc set degree=(select * from (select avg(degree) from
+ sc a where cno='c03') b ) where sno='20180201' and cno='C03';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update sc set degree=degree*(1+0.05) where sno in (select sno from sno from student where ssex='女');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from student where ssex='女')' at line 1
+mysql> update sc set degree=degree*(1+0.05) where sno in (select sno from student where ssex='女');
+Query OK, 4 rows affected, 1 warning (0.01 sec)
+Rows matched: 4  Changed: 4  Warnings: 1
+
+mysql> update sc set degree=NULL where cno=(select cno from course where cname='数据库');
+Query OK, 3 rows affected (0.00 sec)
+Rows matched: 3  Changed: 3  Warnings: 0
+
+mysql> delete from student where sno='20150302';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> delete from sc where sno=(select sno from student where sname='刘晨‘);
+    '> ^C
+mysql> delete from sc where sno=(select sno from student where sname=刘晨');
+    '> ^C
+mysql> delete from sc where sno=(select sno from student where sname='刘晨');
+Query OK, 2 rows affected (0.01 sec)
+
+mysql> delete from sc where sno in (select sno from student where speciality='电子商务');
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| jxgl               |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> show tables;
++----------------+
+| Tables_in_jxgl |
++----------------+
+| course         |
+| sc             |
+| store          |
+| student        |
+| studentcount   |
+| studentinfo    |
+| teacher        |
+| teaching       |
+| ts             |
++----------------+
+9 rows in set (0.00 sec)
+
+mysql> select * from course
+    -> ^C
+mysql> select * from course;
++-----+--------------+
+| cno | cname        |
++-----+--------------+
+| c01 | 数据库       |
+| c02 | 数学         |
+| c03 | 信息系统     |
+| c04 | 操作系统     |
++-----+--------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from sc;
++----------+-----+--------+
+| sno      | cno | degree |
++----------+-----+--------+
+| 20180101 | c01 |   NULL |
+| 20180101 | c02 |   85.0 |
+| 20180101 | c03 |   88.0 |
+| 20180202 | c01 |   NULL |
+| 20180301 | c01 |   NULL |
+| 20180301 | c02 |  102.9 |
++----------+-----+--------+
+6 rows in set (0.00 sec)
+
+mysql> select * from store;
++----+---------+-------+
+| id | name    | count |
++----+---------+-------+
+|  1 | android |    15 |
+|  2 | iphone  |    14 |
+|  3 | iphone  |    20 |
+|  4 | android |     5 |
+|  5 | android |    13 |
+|  6 | iphone  |    13 |
++----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> select * from store;
++----+---------+-------+
+| id | name    | count |
++----+---------+-------+
+|  1 | android |    15 |
+|  2 | iphone  |    14 |
+|  3 | iphone  |    20 |
+|  4 | android |     5 |
+|  5 | android |    13 |
+|  6 | iphone  |    13 |
++----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> select * from student;
++----------+--------+------+------------+-------+-----------------+
+| sno      | sname  | ssex | sbirthday  | sdept | speciality      |
++----------+--------+------+------------+-------+-----------------+
+| 20180101 | 李勇   | 男   | 2000-01-12 | cs    | 计算机应用      |
+| 20180201 | 刘晨   | 女   | 2001-06-04 | is    | 电子商务        |
+| 20180202 | 张华   | 男   | 2001-08-25 | CS    | 多媒体技术      |
+| 20180203 | 张静   | 女   | 2005-03-21 | CS    | 电子商务        |
+| 20180301 | 王敏   | 女   | 2002-12-23 | ma    | 数学            |
+| 20180302 | 李四   | NULL | NULL       | NULL  | NULL            |
++----------+--------+------+------------+-------+-----------------+
+6 rows in set (0.00 sec)
+
+mysql> select * from studentinfo;
++-------+---------+
+| stuno | stuname |
++-------+---------+
+|     1 | aa      |
+|     2 | bb      |
+|     3 | cc      |
++-------+---------+
+3 rows in set (0.00 sec)
+
+mysql> select * from studentinfo;
++-------+---------+
+| stuno | stuname |
++-------+---------+
+|     1 | aa      |
+|     2 | bb      |
+|     3 | cc      |
++-------+---------+
+3 rows in set (0.00 sec)
+
+mysql> select * from studentcount;
++--------------+
+| studentcount |
++--------------+
+|            3 |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> select * from teacher;
++-----+-----------+------+------------+-------+
+| tno | tname     | tsex | tbirthday  | tdept |
++-----+-----------+------+------------+-------+
+| 101 | 李新      | 男   | 1977-01-12 | cs    |
+| 102 | 钱军      | 女   | 1978-06-04 | cs    |
+| 201 | 王小华    | 女   | 1979-12-23 | is    |
+| 202 | 张小青    | 男   | 1978-08-25 | is    |
++-----+-----------+------+------------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select * from sc;
++----------+-----+--------+
+| sno      | cno | degree |
++----------+-----+--------+
+| 20180101 | c01 |   NULL |
+| 20180101 | c02 |   85.0 |
+| 20180101 | c03 |   88.0 |
+| 20180202 | c01 |   NULL |
+| 20180301 | c01 |   NULL |
+| 20180301 | c02 |  102.9 |
++----------+-----+--------+
+6 rows in set (0.00 sec)
+
+mysql> select * from ts;
++----------+--------+------+------------+-------+-----------------+
+| sno      | sname  | ssex | sbirthday  | sdept | speciality      |
++----------+--------+------+------------+-------+-----------------+
+| 20180101 | 李勇   | 男   | 2000-01-12 | cs    | 计算机应用      |
+| 20180202 | 张立   | 男   | 2001-08-25 | is    | 电子商务        |
++----------+--------+------+------------+-------+-----------------+
+2 rows in set (0.00 sec)
+
+mysql> 
