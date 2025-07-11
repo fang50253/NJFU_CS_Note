@@ -1,0 +1,57 @@
+
+<!-- saved from url=(0043)https://apps.game.qq.com/ams/logout_wx.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<script>
+function isSupportDomain() {
+    try {
+        document.domain = 'qq.com';
+        if (document.domain === 'qq.com') return true;
+        return false;
+    } catch(err) {
+        return false
+    }
+}
+var pageSupportDomain = true;
+function clearWxCodeInfoCallback(){
+	var expires=new Date(0).toGMTString();
+	document.cookie="p_skey=; expires="+expires;
+	document.cookie="p_uin=; expires="+expires;
+	document.cookie="uin=; expires="+expires;
+	document.cookie="skey=; expires="+expires;
+	document.cookie="IED_LOG_INFO2=; expires="+expires;
+	document.cookie="openid=; expires="+expires;
+	document.cookie="access_token=; expires="+expires;
+	document.cookie="acctype=; expires="+expires;
+	document.cookie="appid=; expires="+expires;
+	
+	//path涓&#65533;/涓嬮潰鍐嶆竻鐞嗕竴娆&#65533;
+	document.cookie="p_skey=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	document.cookie="p_uin=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	document.cookie="uin=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	document.cookie="skey=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	document.cookie="IED_LOG_INFO2=; expires="+expires+"; path=/;domain=apps.game.qq.com";
+	document.cookie="openid=; expires="+expires+"; path=/;domain=apps.game.qq.com";
+	document.cookie="access_token=; expires="+expires+"; path=/;domain=apps.game.qq.com";
+	document.cookie="acctype=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	document.cookie="appid=; expires="+expires+"; path=/; domain=apps.game.qq.com";
+	if (pageSupportDomain) {
+		parent.window["logoutWxCallback"]();
+	} else {
+		window.parent.postMessage(JSON.stringify({
+			action: "loginManager_logout_WX",
+			callbackName: "logoutWxCallback",
+		}), "*");
+	}
+}
+if (document.referrer.indexOf('qq.com') >= 0){
+	// document.domain = 'qq.com';
+	pageSupportDomain = isSupportDomain();
+	clearWxCodeInfoCallback();
+}
+</script>
+<style id="bv-wavy-color-style">.memorize_new_word{text-decoration-color: #ff906e;}</style></head>
+<body class="apps_game_qq_com">
+
+
+<div class="memorize_new_word_loading"></div><div class="bv-shadow-dom bv-shadow-dom-fade_out"></div></body></html>

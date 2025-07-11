@@ -1,0 +1,807 @@
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, p, form, header, section, article, footer { margin: 0; } 
+body, button, input, select, textarea { font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif } 
+h1, h2, h3, h4, h5, h6 { font-size: 100% } 
+em, b { font-style: normal; } 
+a { text-decoration: none } 
+a:hover { text-decoration: underline } 
+img { border: 0 }  
+button, input, select, textarea { font-size: 100%; outline: none } 
+table { border-collapse: collapse; border-spacing: 0 } 
+td, th, ul, ol { padding: 0 } 
+ul li { list-style: none; } 
+/*footer*/ 
+#footer_ied { color: #999; border-top: #141414; position: relative; z-index: 1; padding-top: 40px; height: 95px; text-align: center; font: normal 12px/19px Tahoma; background-color: #141414; } 
+#footer_ied .e { font: normal 10px/19px Tahoma } 
+#footer_ied, #footer_ied a { color: #999; text-decoration: none } 
+#footer_ied a:hover { color: #fff; } 
+/*????header*/
+
+.down_detail{
+    position: fixed;
+    z-index:99;  
+    top: 50%; 
+    right: 2px;
+    width:128px;
+    height:247px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.down_detail img{
+    display: block;
+}
+
+.down_detail .d_open {
+    width:128px;
+    height:247px;
+    background: url(https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/down-open.png) no-repeat center;
+    background-size: 100% auto;
+}
+.down_detail .d_open .d_qrcode{
+    width:90px;
+    height:90px;
+    position: relative;
+    top: 124px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+header {
+    width: 100%;
+    min-width: 1240px;
+    height: 80px;
+    background-color: rgba(25, 25, 25, .8);
+    margin: auto;
+    position: relative;
+    z-index: 9999;
+}
+
+header .header-top {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header .pvp-logo{
+    background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/logo.png) no-repeat center center;
+    width:200px;
+    height:54px;
+    position: absolute;
+    left:12px;
+    top:12px;
+
+}
+
+header .main-logo {
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/coming/v2/index/main-logo.png) right center no-repeat;
+    width: 120px;
+    height: 72px;
+    position: absolute;
+    left: 220px;
+    top: 8px;
+}
+
+header .main-login {
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/coming/v2/index/main-login.png) center center no-repeat;
+    width: 182px;
+    height: 49px;
+    margin: 15.5px 0 0 7%;
+    float: left;
+}
+
+header .header_nav {
+    position: relative;
+    z-index:2;
+    float: left;
+    margin-left: 130px;
+    height: 80px;
+    width:806px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header_nav a {
+    color: #6e6a63;
+    font-size: 16px;
+    padding: 0 24px;
+    height: 62px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 16px;
+}
+
+header .header_nav a cite {
+    display: block;
+    font-style: normal;
+    color: #464441;
+    font-size: 10px;
+}
+
+header .header_nav a:hover {
+    text-decoration: none;
+}
+
+header .header_nav a.on,
+.index header .header_nav a.nav-index,
+.hero header .header_nav a.nav-hero,
+.skin header .header_nav a.nav-skin,
+.adjust header .header_nav a.nav-adjust,
+.rebuild header .header_nav a.nav-rebuild,
+.mode header .header_nav a.nav-mode,
+.arts header .header_nav a.nav-arts,
+.system header .header_nav a.nav-system,
+.newsys header .header_nav a.nav-newsys
+{
+    color: #c39b5e;
+    border-bottom: 2px solid #c39b5e;
+}
+
+
+/*@media only screen and (max-width: 1500px) {header .header_nav {margin-left: 8%;}
+.header .main-login {margin: 15.5px 0 0 3%;}}*/
+
+
+/*sub-header*/
+.sub-header {
+    width: 100%;
+    position: fixed;
+    top:80px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.sub-header.scrollDis {
+    top: 0;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+}
+
+.sub-header .sub-cont {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sub-header .sub-cont .sub-text {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: 39px;
+    padding: 0 60px 0 45px;
+}
+
+.sub-header .sub-text .titF {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #c39b5e;
+}
+
+.sub-header .sub-text .titS {
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #f2d2a2;
+}
+
+.sub-header .titS span:first-child {
+    margin-right: 15px;
+}
+
+.sub-list {
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+.sub-list ul{}
+
+.sub-list li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.sub-list li.on a {
+    color: #c39b5e;
+    font-weight: bold;
+}
+
+.sub-list li a {
+    display: block;
+    line-height: 70px;
+    font-size: 14px;
+    color: #a59e94;
+    margin-right: 70px;
+}
+
+.sub-list li a::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/coming/v2/pages/heroIcon-bg.png) no-repeat;
+    background-position-x: -126px;
+    background-position-y: -159px;
+    display: block;
+    position: relative;
+    top: -36px;
+    left: 68px;
+}
+
+.sub-list li:last-child a:after {
+    content: none;
+}
+
+
+/* user-Login */
+
+.login_pannel {
+    position: absolute;
+    top: 15px;
+    left: 55%;
+    margin: 0 0 0 400px;
+    width: 182px;
+    float: left;
+}
+
+.user_pic {
+    float: left;
+    margin-right: 7px;
+}
+
+.user_pic img {
+    border: 1px solid #d9ad50;
+    border-radius: 42px;
+}
+
+.per-infor {
+    float: left;
+    width: 130px;
+}
+
+.view-btn {
+    position: absolute;
+    z-index: 999;
+    width: 500px;
+    height: 186px;
+    top: -190px;
+    left: 334px;
+    outline: none;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-decoration: none;
+}
+
+.down-nav {
+    float: left;
+    display: inline;
+    width: 100px;
+    padding: 2px 5px 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.down-nav a {
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    padding: 0;
+    font-size: 14px;
+    color: #c9c9dd;
+}
+
+.down-nav a:hover {
+    color: #f3c258;
+    text-decoration: underline;
+}
+
+.down-nav .down-nav-fans {
+    padding-right: 16px;
+}
+
+.down-nav .icon-guard,
+.down-nav .icon-health,
+.down-nav .icon-fans,
+.down-nav .icon-hot {
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat -136px -5px;
+}
+
+.down-nav .icon-health {
+    background-position: -137px -36px;
+}
+
+.down-nav .icon-fans {
+    background-position: -137px -68px;
+}
+
+.down-nav .icon-hot {
+    background-position: -163px -68px;
+    padding-right: 2px;
+}
+
+.info-box {
+    position: relative;
+    margin: 401px auto 0;
+    width: 1200px;
+    height: 115px;
+    background: url(//game.gtimg.cn/images/yxzj/web201605/top_banner/bg_header.png) no-repeat;
+}
+
+.login-box {
+    width: 408px;
+    padding: 12px 10px;
+}
+
+.unlogin_info {
+    color: #858792;
+    white-space: nowrap;
+}
+
+.unlogin_info a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.user-name {
+    color: #858792;
+    white-space: nowrap;
+}
+
+.user-name em {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.user-name a {
+    color: #8ea0b0;
+    margin-left: 10px;
+}
+
+.personal_link a {
+    color: #8ea0b0;
+}
+
+.userinfo-list {
+    display: none;
+}
+
+.userinfo-list li {
+    float: left;
+    display: inline;
+    width: 68px;
+    height: 46px;
+    margin-right: 2px;
+    background: #0b3b61;
+    border: 1px solid #0c3253;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.userinfo-list em {
+    display: block;
+    color: #b3bbc5;
+    margin-top: 3px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.userinfo-list i {
+    color: #406380;
+    font-size: 12px;
+}
+
+
+/* popup */
+
+.header-dialog .pop {
+    display: none;
+    width: 530px;
+    height: 254px;
+    background: url(//game.gtimg.cn/images/yxzj/web201605/main/login.jpg) no-repeat;
+}
+
+.header-dialog .pa {
+    position: absolute;
+}
+
+.header-dialog .ht {
+    overflow: hidden;
+    text-indent: -9999px;
+    text-decoration: none;
+}
+
+.header-dialog .pr {
+    position: relative
+}
+
+.header-dialog .ovh {
+    overflow: hidden
+}
+
+.header-dialog .db {
+    display: block
+}
+
+.header-dialog .none {
+    display: none
+}
+
+.header-dialog .fl {
+    float: left
+}
+
+.header-dialog .close {
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url(about:blank);
+}
+
+.header-dialog .wx-login {
+    top: 143px;
+    left: 60px;
+    width: 197px;
+    height: 46px;
+    background: url(about:blank);
+}
+
+.header-dialog .qq-login {
+    top: 143px;
+    left: 272px;
+    width: 197px;
+    height: 46px;
+    background: url(about:blank);
+}
+
+.header-dialog .pop2 {
+    display: none;
+    width: 530px;
+    height: 354px;
+    background: url(//game.gtimg.cn/images/yxzj/web201605/main/sec.jpg) no-repeat;
+}
+.header-dialog .pop3{width:530px;height:420px;background:url(//game.gtimg.cn/images/yxzj/web201605/main/sec2.jpg) no-repeat;} 
+
+.header-dialog .se-input {
+    padding: 117px 0 0 50px;
+}
+
+.header-dialog .se-input select {
+    display: block;
+    width: 430px;
+    height: 37px;
+    line-height: 37px;
+    margin-bottom: 10px;
+}
+
+.se-checkbox {position: relative;width: 404px;padding-left: 26px;padding-top: 10px;font-size: 14px;color: #fff;line-height: 24px;}
+.se-checkbox input {position: absolute;left: 0;top: 14px;margin:0;width: 16px;height: 16px;-webkit-appearance: auto;appearance: auto;}
+
+.header-dialog .se-btn {
+    padding: 16px 0 0 146px;
+}
+
+.header-dialog .se-btn a {
+    width: 116px;
+    height: 34px;
+    margin-right: 13px;
+    background: url(about:blank);
+}
+
+
+/*????*/
+
+.hero-posRight {
+    position: absolute;
+    top: 313px;
+    right: 40px;
+    z-index:2;
+}
+
+.posRight-txt {
+    width: 84px;
+    height: 30px;
+    background-color: #c39b5e;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.posRight-list {
+    width: 78px;
+    height: 74px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    opacity: 0.9;
+    margin-top: 10px;
+    border: 3px solid #c39b5e;
+}
+
+.posRight-list img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.posRight-list p {
+    width: 100%;
+    position: relative;
+    top: -32px;
+    font-size: 12px;
+    line-height: 28px;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, .8));
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.video-ico {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    height: 90px;
+    margin-left: -45px;
+    margin-top: -45px;
+    border: solid 4px #fff;
+    border-radius: 50%;
+    z-index: 8;
+    cursor:pointer;
+    opacity:0.8;
+}
+
+.video-ico:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-width: 15px 20px;
+    border-color: transparent transparent transparent #fff;
+    border-style: dashed dashed dashed solid;
+    margin-top: -15px;
+    margin-left: -6px;
+}
+
+.video-ico::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-width: 7px 10px;
+    border-color: transparent transparent transparent #000;
+    border-style: dashed dashed dashed solid;
+    margin-top: -7px;
+    margin-left: -2px;
+    z-index: 1;
+}
+
+
+/*pageBanner*/
+
+.pageBanner {
+    width: 100%;
+    text-align: center;
+}
+
+.banner {
+    min-width: 1200px;
+    margin: auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+}
+.banner:after{
+    content:" ";
+    position: absolute;
+    left:0;bottom:0;width:100%;height:50%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+}
+.banner img {
+    width: 100%;
+}
+.banner-grade{position: absolute;top:160px;left:50%;width:120px;margin-left:-600px;}
+.banner-grade img{width:100%;}
+/*head-title*/
+
+.head-title {
+    position: relative;
+    top: -300px;
+    width: 100%;
+    
+}
+
+.head-title .wrap {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: none;
+}
+
+.head-title .head-ph {
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/coming/v2/pages/heroIcon-bg.png)top center no-repeat;
+    width: 100%;
+    height: 144px;
+}
+
+.head-title .head-ph img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 11px;
+}
+
+.head-title .head-name {
+    font-size: 60px;
+    line-height: 60px;
+    color: #c39b5e;
+    margin-top: 32px;
+}
+
+.head-name span:first-child {
+    margin-right: 35px;
+}
+
+.head-title .head-desc {
+    font-family: Microsoft YaHei;
+    font-style: normal;
+    font-size: 20px;
+    color: #a3a19e;
+    margin-top: 45px;
+}
+
+.head-title.experiServe .head-desc {
+    display: none;
+}
+
+.wrap-tit {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 4px;
+    color: #c39b5e;
+    text-align: center;
+}
+
+.wrap-tit h3::after,.wrap-tit h1::after {
+    content: '';
+    position: absolute;
+    width: 1200px;
+    height: 9px;
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/coming/v2/pages/heroIcon-bg.png) no-repeat;
+    background-position-y: -220px;
+    top: 68px;
+    left: 0;
+}
+
+.info-btn {
+    width: 400px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 1px #c39b5e;
+    font-size: 18px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: #c39b5e;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-btn a {
+    color: #c39b5e;
+}
+
+.info-btn span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.info-btn:hover span {
+    -webkit-animation: .1s slideUp linear normal, .1s .1s slideDown linear normal;
+    animation: .1s slideUp linear normal, .1s .1s slideDown linear normal;
+}
+
+.mystery-btn {
+    position: absolute;
+    bottom: 0;
+}
+
+.mystery-btn .info-btn {
+    margin-bottom: 0;
+    width: 509px;
+}
+
+@keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-70%);
+        transform: translateY(-70%);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(70%);
+        transform: translateY(70%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.more-icon {
+    border-top: 2px solid #c39b5e;
+    border-right: 2px solid #c39b5e;
+    transform: rotate(45deg);
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+}
+
+@media only screen and (max-width: 1450px) {
+	header .header_nav {margin-left: 206px;}
+	header .header_nav a {padding: 0 18px;}
+}
+@media only screen and (max-width: 1620px) {
+	header .main-logo{display: none;}
+}
+
+/* buy qrcode dialog */
+.qrcode-dialog {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.buy-code {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 280px;
+    height: 291px;
+    margin-left: -140px;
+    margin-top: -150px;
+    background-image: url(https://game.gtimg.cn/images/yxzj/web201706/images/coming/v2/pages/buy-qrcode.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.qrcode-close {
+    position: absolute;
+    top: 0px;
+    right: -50px;
+    width: 36px;
+    height: 36px;
+    background-position: -264px -17px;
+    background-image: url(https://game.gtimg.cn/images/yxzj/web201605/page/down.png);
+    cursor: pointer;
+}
+.buy-code div {
+    width: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
