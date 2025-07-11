@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南京简介</title>
+    <!-- 添加内联CSS样式 -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #FFD700; /* 修改为金色 */
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 增加阴影效果 */
+            padding: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        .secondary-section {
+            display: none;
+            margin-top: 2rem;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>南京简介</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#history">历史</a></li>
+            <li><a href="#culture">文化</a></li>
+            <li><a href="#tourism">旅游景点</a></li>
+            <li><a href="#food">美食</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="history">
+            <h2>南京的历史</h2>
+            <p>南京是中国四大古都之一，有着悠久的历史。</p>
+        </section>
+        <section class="secondary-section" id="history-details">
+            <h2>历史详情</h2>
+            <p>南京的历史可以追溯到公元前571年，是六朝古都。</p>
+        </section>
+        <section id="culture">
+            <h2>南京的文化</h2>
+            <p>南京拥有丰富的文化遗产，如明孝陵、中山陵等。</p>
+        </section>
+        <section class="secondary-section" id="culture-details">
+            <h2>文化详情</h2>
+            <p>南京的文化遗产包括明孝陵、中山陵、夫子庙等。</p>
+        </section>
+        <section id="tourism">
+            <h2>南京的旅游景点</h2>
+            <p>南京有许多著名的旅游景点，包括夫子庙、玄武湖等。</p>
+        </section>
+        <section class="secondary-section" id="tourism-details">
+            <h2>旅游景点详情</h2>
+            <p>南京的著名旅游景点有夫子庙、玄武湖、中山陵等。</p>
+        </section>
+        <section id="food">
+            <h2>南京的美食</h2>
+            <p>南京的小吃非常有名，如盐水鸭、鸭血粉丝汤等。</p>
+        </section>
+        <section class="secondary-section" id="food-details">
+            <h2>美食详情</h2>
+            <p>南京的特色小吃有盐水鸭、鸭血粉丝汤、糖芋苗等。</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 南京简介</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
