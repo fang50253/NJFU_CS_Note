@@ -1,0 +1,4 @@
+1. node.js
+2. fs文件路径模块
+3. path模块
+4. http模块
