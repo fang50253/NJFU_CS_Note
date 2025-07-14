@@ -1,0 +1,22 @@
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+ 
+# 加载数据集
+iris = load_iris()
+X = iris.data  # 特征数据
+y = iris.target  # 目标标签
+ 
+# 划分数据集
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+ 
+# 创建决策树模型
+clf = DecisionTreeClassifier(random_state=42)
+clf.fit(X_train, y_train)  # 训练模型
+#clf = DecisionTreeClassifier(random_state=42, max_depth=3) 
+ 
+# 进行预测
+y_pred = clf.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)  # 计算准确率
+print(f'Accuracy: {accuracy:.2f}')  # 打印准确率
