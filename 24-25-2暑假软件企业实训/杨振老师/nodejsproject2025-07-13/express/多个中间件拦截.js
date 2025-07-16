@@ -34,6 +34,12 @@ app.use(mw);
 //创建路由处理函数
 app.get('/add', (req, res) => {
     res.send('hello express');
+    throw new Error('服务器内部错误');
+});
+
+app.use((err, req, res, next) => {
+    console.log(err.message);
+    res.send('错误中间件');
 });
 
 //启动服务
@@ -43,3 +49,4 @@ app.listen(3000, () => {
 
 
 //注意，中间件只能出现在路由的上面，而不能在下面。
+//错误中间件放在路由的下面
