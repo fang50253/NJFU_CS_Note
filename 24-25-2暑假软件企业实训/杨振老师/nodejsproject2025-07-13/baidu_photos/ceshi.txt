@@ -1,0 +1,134 @@
+const axios = require('axios');
+const AK = "9vFjFi****y92Urn"
+const SK = "Dlju31****6utAOx"
+
+async function main() {
+    var options = {
+        'method': 'POST',
+        'url': 'https://aip.baidubce.com/rest/2.0/image-classify/v2/advanced_general?access_token=' + await getAccessToken(),
+        'headers': {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Accept': 'application/json'
+        },
+        // image 可以通过 getFileContentAsBase64("C:\fakepath\IMG_2703.jpeg") 方法获取,
+        data: {
+                'image': //base64编码数据
+        }
+    };
+
+    axios(options)
+        .then(response => {
+            console.log(response.data);
+        })
+        .catch(error => {
+            throw new Error(error);
+        })
+}
+
+/**
+ * 使用 AK，SK 生成鉴权签名（Access Token）
+ * @return string 鉴权签名信息（Access Token）
+ */
+function getAccessToken() {
+
+    let options = {
+        'method': 'POST',
+        'url': 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=' + AK + '&client_secret=' + SK,
+    }
+    return new Promise((resolve, reject) => {
+      axios(options)
+          .then(res => {
+              resolve(res.data.access_token)
+          })
+          .catch(error => {
+              reject(error)
+          })
+    })
+}
+
+/**
+ * 获取文件base64编码
+ * @param string  path 文件路径
+ * @return string base64编码信息，不带文件头
+ */
+function getFileContentAsBase64(path) {
+    const fs = require('fs');
+    try {
+        return fs.readFileSync(path, { encoding: 'base64' });
+    } catch (err) {
+        throw new Error(err);
+    }
+}
+main();
+
+这是我的代码：
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<input type="file" id="imgid">
+<img src="" id="img" width="200px">
+<button>图像识别</button>
+<script src="./js/jquery-3.7.1.min.js"></script>
+<script>
+    $(function () {
+        var base64 = ""; // 定义全局变量存储 base64
+
+        $('#imgid').change(function () {
+            var file = this.files[0];
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#img').attr('src', e.target.result);
+                base64 = e.target.result; // 更新全局变量
+            };
+            reader.readAsDataURL(file);
+        });
+
+        $('button').click(function() {
+            if (base64) {
+                alert(base64);
+                var token=getAccessToken();
+                $.ajax({
+                    type: "POST",
+                    url: "https://aip.baidubce.com/rest/2.0/image-classify/v1/advanced_general?access_token="+token,
+                    data: {
+                        "image": base64
+                    },
+                    success: function(data) {
+                        alert(JSON.stringify(data));
+                    }
+                });
+            } else {
+                alert("请先上传图片！");
+            }
+        });
+    });
+    const AK = "9vFjFim6v5W3JjrMIvy92Urn";
+    const SK = "Dlju31njw9uxgorSM2YbnmoAyt6utAOx";
+    function getAccessToken() {
+
+        let options = {
+            'method': 'POST',
+            'url': 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=' + AK + '&client_secret=' + SK,
+        }
+        return new Promise((resolve, reject) => {
+            axios(options)
+                .then(res => {
+                    resolve(res.data.access_token)
+                })
+                .catch(error => {
+                    reject(error)
+                })
+        })
+    }
+</script>
+</body>
+</html>
+
+请帮我修改

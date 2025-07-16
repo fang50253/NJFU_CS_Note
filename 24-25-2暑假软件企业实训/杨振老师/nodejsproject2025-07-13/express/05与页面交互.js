@@ -3,6 +3,8 @@ const express = require('express');
 //创建app
 const app = express();
 
+const cors = require('cors');
+app.use(cors());
 //创建路由处理函数
 app.use(express.urlencoded({ extended: false }))
 
@@ -15,6 +17,20 @@ app.get('/add',(req,res)=>{
             {
                 name:"张三",
                 sex:"男"
+            },
+        ]
+    })
+})
+
+app.post('/get',(req,res)=>{
+    const {name,sex}=req.body;
+    res.send({
+        status:200,
+        message:"post方式获取学生信息成功",
+        data:[
+            {
+                name:name,
+                sex:sex
             },
         ]
     })

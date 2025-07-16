@@ -1,14 +1,45 @@
-<!DoCtype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <!-- 推荐使用 CDN 引入 jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-    <!-- 页面请求的三种方式-->
-    <!-- 1.a标签 -->
-    <a href="http://127.0.0.1:3000/add">请求后台</a>
-    <!-- 2.adjx -->
-    <!-- 3.form表单 -->
+<!-- 1. a标签 -->
+<a href="http://127.0.0.1:3000/add">请求后台</a>
+
+<!-- 2. form表单 -->
+<form action="http://127.0.0.1:3000/get" method="post">
+    姓名：<input type="text" name="name">
+    性别：<input type="text" name="sex">
+    <input type="submit" value="提交">
+</form>
+
+<!-- 3. AJAX 请求 -->
+<button id="ajaxBtn">AJAX请求</button>
+
+<script>
+    $(function() {
+        // 绑定点击事件
+        $("#ajaxBtn").click(function() {
+            $.ajax({
+                url: 'http://127.0.0.1:3000/get',
+                type: 'POST',
+                data: {
+                    name: '张三',
+                    sex: '男'
+                },
+                success: function(data) {
+                    alert(JSON.stringify(data));
+                },
+                error: function(xhr, status, error) {
+                    console.error("AJAX 请求失败:", error);
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
