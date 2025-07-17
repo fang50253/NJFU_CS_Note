@@ -1,0 +1,23 @@
+import pandas as pd
+from mlxtend.preprocessing import TransactionEncoder
+from mlxtend.frequent_patterns import apriori, fpmax, fpgrowth
+
+"""购物篮数据"""
+dataset = [['面包', '牛奶', '啤酒', '尿布'],
+        ['面包', '牛奶', '啤酒'],
+        ['啤酒', '尿布'],
+        ['面包', '牛奶', '花生']]
+
+te = TransactionEncoder()
+te_ary = te.fit(dataset).transform(dataset)
+df = pd.DataFrame(te_ary, columns=te.columns_)
+print(df.to_string())
+
+res2 = fpgrowth(df, min_support=0.5, use_colnames=True)
+print(res2.to_string())
+
+from mlxtend.frequent_patterns import association_rules
+
+res = association_rules(res2, metric="confidence", min_threshold=0.7)
+
+print(res.to_string())
