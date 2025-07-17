@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>人脸对比工具</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<input type="file" id="image1" accept="image/*">
+<input type="file" id="image2" accept="image/*">
+<button id="compare-btn">对比人脸</button>
+
+<div style="display:flex;margin-top:10px">
+    <img id="preview1" width="150" style="margin-right:20px;display:none">
+    <img id="preview2" width="150" style="display:none">
+</div>
+
+<div id="result"></div>
+
+<script>
+    // 图片预览
+    $('#image1').change(function(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                $('#preview1').attr('src', event.target.result).show();
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    $('#image2').change(function(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                $('#preview2').attr('src', event.target.result).show();
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // 压缩图片
+    function compressImage(file) {
+        return new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const img = new Image();
+                img.onload = function() {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    canvas.width = 800;
+                    canvas.height = 800;
+                    ctx.drawImage(img, 0, 0, 800, 800);
+                    const base64 = canvas.toDataURL('image/jpeg', 0.7).split(',')[1];
+                    resolve(base64);
+                };
+                img.src = event.target.result;
+            };
+            reader.readAsDataURL(file);
+        });
+    }
+
+    // 相似度文字描述
+    function getSimilarityText(score) {
+        if (score >= 95) return '非常可能是同一个人';
+        if (score >= 80) return '很可能是同一个人';
+        if (score >= 60) return '可能是同一个人';
+        return '可能不是同一个人';
+    }
+
+    // 人脸对比
+    async function compareFaces() {
+        const file1 = $('#image1')[0].files[0];
+        const file2 = $('#image2')[0].files[0];
+
+        if (!file1 || !file2) {
+            $('#result').text('请选择两张图片');
+            return;
+        }
+
+        $('#result').text('处理中...');
+
+        try {
+            const [image1Base64, image2Base64] = await Promise.all([
+                compressImage(file1),
+                compressImage(file2)
+            ]);
+
+            $.ajax({
+                url: 'http://localhost:3000/face/match',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    images: [
+                        { image: image1Base64, image_type: "BASE64", face_type: "LIVE" },
+                        { image: image2Base64, image_type: "BASE64", face_type: "LIVE" }
+                    ]
+                }),
+                success: function(data) {
+                    if (data.error_code === 0 && data.result) {
+                        const score = data.result.score.toFixed(1);
+                        $('#result').html(`
+                            相似度: ${score}分<br>
+                            ${getSimilarityText(data.result.score)}
+                        `);
+                    } else {
+                        $('#result').text('错误: ' + (data.error_msg || '未知错误'));
+                    }
+                },
+                error: function() {
+                    $('#result').text('请求失败');
+                }
+            });
+        } catch (error) {
+            $('#result').text('处理失败');
+        }
+    }
+
+    $('#compare-btn').click(compareFaces);
+</script>
+</body>
+</html>

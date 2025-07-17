@@ -43,8 +43,50 @@
                 else {
                     $('#result').text('无法解析响应: ' + JSON.stringify(data));
                 }
+            },        const text = $('#txt').val().trim();
+            if (!text) {
+            $('#result').text('请输入要翻译的内容');
+            return;
+        }
+
+        $('#result').text('翻译中...');
+
+        $.ajax({
+            url: 'http://localhost:3000/translate',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                text: text,  // 确保字段名与后端一致
+                from: from,
+                to: to
+            }),
+            success: function(data) {
+                console.log("API响应:", data);
+
+                if (data.error_code) {
+                    // 处理百度API返回的错误
+                    $('#result').text('翻译错误: ' + (data.error_msg || `错误代码 ${data.error_code}`));
+                }
+                else if (data.result?.trans_result?.[0]?.dst) {
+                    $('#result').text(data.result.trans_result[0].dst);
+                }
+                else {
+                    $('#result').text('无法解析响应: ' + JSON.stringify(data));
+                }
             },
             error: function(xhr) {
+                let errorMsg = '请求失败';
+                try {
+                    const err = JSON.parse(xhr.responseText);
+                    errorMsg += ': ' + (err.error || err.message || xhr.statusText);
+                } catch (e) {
+                    errorMsg += ': ' + xhr.statusText;
+                }
+                $('#result').text(errorMsg);
+            }
+        });
+
+        error: function(xhr) {
                 let errorMsg = '请求失败';
                 try {
                     const err = JSON.parse(xhr.responseText);
