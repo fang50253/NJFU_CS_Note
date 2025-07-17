@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>功能合并</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<div>
+    <h3>图像识别</h3>
+    <input type="file" id="imgid">
+    <img src="" id="img" width="200">
+    <button id="recognize-btn">识别</button>
+    <div id="image-result"></div>
+</div>
+
+<div>
+    <h3>文本翻译</h3>
+    <input type="text" id="txt">
+    <button id="to-en">中译英</button>
+    <button id="to-zh">英译中</button>
+    <div id="translate-result"></div>
+</div>
+
+<script>
+    $(function () {
+        // 图像识别
+        let base64 = "";
+        $('#imgid').change(function() {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                $('#img').attr('src', e.target.result);
+                base64 = e.target.result;
+            };
+            reader.readAsDataURL(this.files[0]);
+        });
+
+        $('#recognize-btn').click(function() {
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:3000/checkImg",
+                contentType: "application/json",
+                data: JSON.stringify({ img1: base64 }),
+                success: function(data) {
+                    $('#image-result').text(data[0].keyword);
+                }
+            });
+        });
+
+        // 翻译功能
+        function translate(from, to) {
+            $.ajax({
+                url: 'http://localhost:3000/translate',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    text: $('#txt').val(),
+                    from: from,
+                    to: to
+                }),
+                success: function(data) {
+                    $('#translate-result').text(data.result.trans_result[0].dst);
+                }
+            });
+        }
+
+        $('#to-en').click(function() { translate('zh', 'en'); });
+        $('#to-zh').click(function() { translate('en', 'zh'); });
+    });
+</script>
+</body>
+</html>

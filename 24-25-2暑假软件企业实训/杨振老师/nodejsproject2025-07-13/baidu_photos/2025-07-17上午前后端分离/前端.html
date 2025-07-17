@@ -11,37 +11,49 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
     $(function () {
-        var base64 = ""; // 定义全局变量存储 base64
-        var fpath="";
+        let base64 = "";
+
         $('#imgid').change(function () {
-            var file = this.files[0];
-            var reader = new FileReader();
-            reader.onload = function (e) {
+            const file = this.files[0];
+            if (!file) return;
+
+            // 验证图片大小（不超过4MB）
+            if (file.size > 4 * 1024 * 1024) {
+                alert('图片大小不能超过4MB');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
                 $('#img').attr('src', e.target.result);
-                console.log(e.target.result);
-                console.log("文件类型:", file.type);
-                console.log(fpath);
-                base64 = e.target.result; // 更新全局变量
+                base64 = e.target.result;
+                console.log('图片已加载，大小:', Math.round(base64.length/1024) + 'KB');
             };
             reader.readAsDataURL(file);
         });
 
         $('button').click(function() {
-            // 从 base64 中移除前缀（如 data:image/jpeg;base64,）
-            var pureBase64 = base64.split(',')[1] || base64;
+            if (!base64) {
+                alert('请先选择图片');
+                return;
+            }
 
             $.ajax({
                 type: "POST",
                 url: "http://127.0.0.1:3000/checkImg",
-                contentType: "application/x-www-form-urlencoded", // 重要
-                data: {
-                    "img1": pureBase64
+                contentType: "application/json",
+                data: JSON.stringify({ img1: base64 }),
+                success: (data) => {
+                    console.log('识别结果:', data);
+                    if (data.length > 0) {
+                        alert(`识别结果: ${data[0].keyword}\n置信度: ${data[0].score}`);
+                    } else {
+                        alert('未识别到有效内容');
+                    }
                 },
-                success: function(data) {
-                    alert(JSON.stringify(data));
-                },
-                error: function(xhr, status, error) {
-                    alert("Error: " + error);
+                error: (xhr) => {
+                    const error = xhr.responseJSON || { error: '请求失败' };
+                    alert(`错误: ${error.error}\n${error.detail || ''}`);
                 }
             });
         });

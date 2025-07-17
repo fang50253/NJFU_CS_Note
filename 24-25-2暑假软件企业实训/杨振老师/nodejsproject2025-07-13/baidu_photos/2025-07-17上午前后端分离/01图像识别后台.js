@@ -1,23 +1,34 @@
-//导入express
 const express = require('express');
-//创建应用对象
 const app = express();
-//导入图像识别模块
-const imageRouter=require('./router/ImageRouter.js')
-//导入cors
-const cors=require('cors');
+const imageRouter = require('./router/ImageRouter.js');
+const cors = require('cors');
+
+// 中间件配置（必须）
 app.use(cors());
-// 需要添加 express.json() 中间件来解析 JSON 请求体
-app.use(express.json());
+app.use(express.json({ limit: '10mb' }));  // 增加限制以适应大图
+app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
-app.post("/checkImg",(req,res)=>{
-    let file=req.query.img1;
-    imageRouter.main(file).then(result=>{
-        res.send(result);
-    })
-})
+// 路由处理
+app.post("/checkImg", async (req, res) => {
+    try {
+        console.log('收到请求，数据长度:', req.body.img1?.length || 0);
 
-//启动服务
+        if (!req.body.img1) {
+            return res.status(400).json({ error: "缺少图片参数 img1" });
+        }
+
+        const result = await imageRouter.main(req.body.img1);
+        res.json(result);
+    } catch (error) {
+        console.error('服务器错误:', error);
+        res.status(500).json({
+            error: "内部服务器错误",
+            detail: error.message,
+            stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
+        });
+    }
+});
+
 app.listen(3000, () => {
-    console.log('http://127.0.0.1:3000');
-})
+    console.log('服务已启动: http://127.0.0.1:3000');
+});
