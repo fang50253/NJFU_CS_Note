@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>视频生成器</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body style="text-align: center; padding-top: 50px;">
+<h2>MiniMax 文生视频</h2>
+<input id="promptInput" type="text" placeholder="请输入视频描述" style="width: 300px; height: 30px;">
+<button id="generateBtn">生成视频</button>
+<div id="status" style="margin-top: 20px;"></div>
+<video id="videoPlayer" controls style="margin-top: 20px; width: 80%; display: none;"></video>
+
+<script>
+  $('#generateBtn').click(function () {
+    const prompt = $('#promptInput').val();
+    if (!prompt) return alert('请输入提示词');
+
+    $('#status').text('视频生成中...');
+    $('#videoPlayer').hide();
+
+    $.post('http://127.0.0.1:3000/generate', { prompt }, function (res) {
+      const taskId = res.task_id;
+      pollStatus(taskId);
+    });
+  });
+
+  function pollStatus(taskId) {
+    const interval = setInterval(function () {
+      $.get('http://127.0.0.1:3000/status?task_id=' + taskId, function (res) {
+        if (res.status === 'Success') {
+          clearInterval(interval);
+          $('#status').text('生成完成，正在加载视频...');
+          $('#videoPlayer').attr('src', res.download_url).show();
+        } else if (res.status === 'Fail') {
+          clearInterval(interval);
+          $('#status').text('视频生成失败');
+        } else {
+          $('#status').text('状态：' + res.status + '，请稍等...');
+        }
+      });
+    }, 5000);
+  }
+</script>
+</body>
+</html>
