@@ -15,7 +15,11 @@ void fun()
 		f=1;
 		for(int i=1;i<=n;i++) cin>>a[i];
 		for(int i=1;i<=n;i++) cin>>b[i];
-		if(a[n]!=b[1]) f=0;
+		if(a[n]!=b[1])
+		{
+			printf("NO\n");
+            return;
+		}
 		for(int i=1;i<n;i++){
 			if(a[i]%a[i+1]!=0)
             {

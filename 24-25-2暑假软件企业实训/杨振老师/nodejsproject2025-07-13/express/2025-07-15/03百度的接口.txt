@@ -1,6 +1,0 @@
-api.map.baidu.com/weather/v1/?district_id=320102&data_type=all&ak=
-
-后面加上你的ak
-
-
-区分路由和接口的方式是看他有没有status返回值
