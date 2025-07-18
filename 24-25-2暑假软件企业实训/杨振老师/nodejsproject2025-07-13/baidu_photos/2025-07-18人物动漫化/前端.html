@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" class="fileup">
+    <button class="upload">上传</button>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min/"></script>
+<script>
+    var base64="";
+    $function(){
+        $('.upload').click(function(){
+            var file = $('.fileup')[0].files[0];
+            //讲文件转换为base64
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function(){
+                base64 = this.result;
+            }
+            $.ajax({
+                type:"POST",
+                url:"http://127.0.01:3000/upload",
+                data:{
+                    file:base64
+                },
+                success:function(data){
+                    console.log(data);
+                }
+            })
+        })
+    }
+</script>
+
+</html>
