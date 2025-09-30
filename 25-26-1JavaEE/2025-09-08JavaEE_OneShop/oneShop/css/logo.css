@@ -1,0 +1,165 @@
+
+/*---------------µÇÂ¼¡¢×¢²á---------------*/
+.log_bg {
+    width: 100%;
+    min-width: 1200px;
+    height: 840px;
+    overflow: hidden;
+    background-color: #fff4ef;
+}
+
+.login {
+    width: 1200px;
+    overflow: hidden;
+    margin-top: 45px;
+}
+
+.log_img {
+    width: 611px;
+    height: 425px;
+    overflow: hidden;
+    float: left;
+    margin-top: 40px;
+}
+
+.log_c {
+    width: 455px;
+    height: 385px;
+    overflow: hidden;
+    background-color: #FFF;
+    float: right;
+    display: inline;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 0 5px #e0e0e0;
+    -moz-box-shadow: 0 0 5px #e0e0e0;
+    box-shadow: 0 0 5px #e0e0e0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.l_user {
+    width: 267px;
+    height: 38px;
+    line-height: 38px ;
+    overflow: hidden;
+    background:#FFF url(../images/i_u.png) no-repeat 285px center;
+    color: #888888;
+    font-size: 14px;
+    padding: 0 40px 0 10px;
+    border: 1px solid #cccccc;
+}
+
+.l_pwd {
+    width: 267px;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    background:#FFF url(../images/i_pwd.png) no-repeat 285px center;
+    color: #888888;
+    font-size: 14px;
+    padding: 0 40px 0 10px;
+    border: 1px solid #cccccc;
+}
+
+.l_email {
+    width: 267px;
+    height: 38px;
+    line-height: 38px \9;
+    overflow: hidden;
+    background:#FFF url(../images/i_email.png) no-repeat 285px center;
+    color: #888888;
+    font-size: 14px;
+    padding: 0 40px 0 10px;
+    border: 1px solid #cccccc;
+}
+
+.l_tel {
+    width: 267px;
+    height: 38px;
+    line-height: 38px \9;
+    overflow: hidden;
+    background:#FFF url(../images/i_tel.png) 285px center no-repeat ;
+    color: #888888;
+    font-size: 14px;
+    padding: 0 40px 0 10px;
+    border: 1px solid #cccccc;
+}
+
+.l_mem {
+    width: 267px;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    background:#FFF url(../images/i_mem.png)285px center no-repeat ;
+    color: #888888;
+    font-size: 14px;
+    padding: 0 40px 0 10px;
+    border: 1px solid #cccccc;
+}
+
+.l_num {
+    width: 267px;
+    height: 38px;
+    line-height: 38px \9;
+    overflow: hidden;
+    background:#FFF url(../images/i_num.png) no-repeat 285px center;
+    color: #888888;
+    font-size: 14px;
+    padding: 0 40px 0 10px;
+    border: 1px solid #cccccc;
+}
+
+.l_ipt {
+    width: 127px;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    background-color: #FFF;
+    color: #888888;
+    font-size: 14px;
+    padding: 0 10px;
+    border: 1px solid #cccccc;
+}
+
+.log_btn {
+    width: 318px;
+    height: 42px;
+    line-height: 42px \9;
+    overflow: hidden;
+    background: url(../images/btn_log.gif) repeat-x center top;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.regist {
+    width: 1200px;
+    overflow: hidden;
+}
+
+.reg_c {
+    width: 475px;
+    height: 625px;
+    overflow: hidden;
+    background-color: #FFF;
+    float: right;
+    display: inline;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 0 5px #e0e0e0;
+    -moz-box-shadow: 0 0 5px #e0e0e0;
+    box-shadow: 0 0 5px #e0e0e0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}

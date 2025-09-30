@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水果价格计算器</title>
+</head>
+<body>
+    <form onsubmit="return calculate();">
+        <p>水果价格计算器</p>
+        <label for="apple">苹果个数：</label>
+        <input name="apple" id="apple" type="number">
+        <br>
+        <label for="orange">橘子个数：</label>
+        <input name="orange" id="orange" type="number">
+        <br>
+        <input type="submit" value="计算">
+        <br>
+        <span id="price">价格</span>
+    </form>
+</body>
+<script>
+    function calculate() 
+    {
+        let appleCount = Number(document.getElementById("apple").value) || 0;
+        let orangeCount = Number(document.getElementById("orange").value) || 0;
+        let total = appleCount * 2 + orangeCount;
+        document.getElementById("price").innerText = "价格：" + total + " 元";
+        return false;
+    }
+</script>
+</html>

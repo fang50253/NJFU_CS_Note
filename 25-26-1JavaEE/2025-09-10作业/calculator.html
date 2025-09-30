@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>计算器</title>
+  <script>
+    function inputValue(val) {
+      document.getElementById("display").value += val;
+    }
+    function clearDisplay() {
+      document.getElementById("display").value = "";
+    }
+    function calculate() {
+      let exp = document.getElementById("display").value;
+      try {
+        document.getElementById("display").value = eval(exp);
+      } catch {
+        alert("输入有误！");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>计算器</h2>
+  <input type="text" id="display" readonly>
+  <br>
+
+  <button onclick="inputValue('7')">7</button>
+  <button onclick="inputValue('8')">8</button>
+  <button onclick="inputValue('9')">9</button>
+  <button onclick="inputValue('/')">/</button>
+  <br>
+
+  <button onclick="inputValue('4')">4</button>
+  <button onclick="inputValue('5')">5</button>
+  <button onclick="inputValue('6')">6</button>
+  <button onclick="inputValue('*')">*</button>
+  <br>
+
+  <button onclick="inputValue('1')">1</button>
+  <button onclick="inputValue('2')">2</button>
+  <button onclick="inputValue('3')">3</button>
+  <button onclick="inputValue('-')">-</button>
+  <br>
+
+  <button onclick="inputValue('0')">0</button>
+  <button onclick="inputValue('.')">.</button>
+  <button onclick="calculate()">=</button>
+  <button onclick="inputValue('+')">+</button>
+  <br>
+
+  <button onclick="clearDisplay()">清空</button>
+</body>
+</html>
