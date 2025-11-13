@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ssm.test.BookMapper">
+
+    <resultMap id="BookResultMap" type="ssm.test.Book">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="author" property="author" />
+        <result column="isbn" property="isbn" />
+        <result column="price" property="price" />
+        <result column="category" property="category" />
+        <result column="publisher" property="publisher" />
+        <result column="publish_date" property="publishDate" />
+        <result column="stock_quantity" property="stockQuantity" />
+        <result column="status" property="status" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 1. 插入书籍 -->
+    <insert id="insert" parameterType="ssm.test.Book" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO book (title, author, isbn, price, category, publisher, publish_date, stock_quantity)
+        VALUES (#{title}, #{author}, #{isbn}, #{price}, #{category}, #{publisher}, #{publishDate}, #{stockQuantity})
+    </insert>
+
+    <!-- 2. if 标签示例 - 条件查询 -->
+    <select id="selectByCondition" parameterType="ssm.test.Book" resultMap="BookResultMap">
+        SELECT * FROM book WHERE status = 1
+        <if test="title != null and title != ''">
+            AND title LIKE CONCAT('%', #{title}, '%')
+        </if>
+        <if test="author != null and author != ''">
+            AND author LIKE CONCAT('%', #{author}, '%')
+        </if>
+        <if test="category != null and category != ''">
+            AND category = #{category}
+        </if>
+        <if test="publisher != null and publisher != ''">
+            AND publisher = #{publisher}
+        </if>
+        <if test="price != null">
+            AND price = #{price}
+        </if>
+        ORDER BY create_time DESC
+    </select>
+
+    <!-- 3. choose/when/otherwise 标签 -->
+    <select id="selectByChoose" parameterType="ssm.test.Book" resultMap="BookResultMap">
+        SELECT * FROM book WHERE status = 1
+        <choose>
+            <when test="title != null and title != ''">
+                AND title LIKE CONCAT('%', #{title}, '%')
+            </when>
+            <when test="author != null and author != ''">
+                AND author LIKE CONCAT('%', #{author}, '%')
+            </when>
+            <otherwise>
+                AND stock_quantity > 0
+            </otherwise>
+        </choose>
+        ORDER BY create_time DESC
+    </select>
+
+    <!-- 4. where 标签 - 自动处理WHERE条件 -->
+    <select id="selectByWhere" parameterType="ssm.test.Book" resultMap="BookResultMap">
+        SELECT * FROM book
+        <where>
+            <if test="status != null">
+                AND status = #{status}
+            </if>
+            <if test="title != null and title != ''">
+                AND title LIKE CONCAT('%', #{title}, '%')
+            </if>
+            <if test="author != null and author != ''">
+                AND author LIKE CONCAT('%', #{author}, '%')
+            </if>
+            <if test="category != null and category != ''">
+                AND category = #{category}
+            </if>
+        </where>
+        ORDER BY create_time DESC
+    </select>
+
+    <!-- 5. set 标签 - 动态更新 -->
+    <update id="updateBySet" parameterType="ssm.test.Book">
+        UPDATE book
+        <set>
+            <if test="title != null and title != ''">title = #{title},</if>
+            <if test="author != null and author != ''">author = #{author},</if>
+            <if test="price != null">price = #{price},</if>
+            <if test="category != null and category != ''">category = #{category},</if>
+            <if test="publisher != null and publisher != ''">publisher = #{publisher},</if>
+            <if test="publishDate != null">publish_date = #{publishDate},</if>
+            <if test="stockQuantity != null">stock_quantity = #{stockQuantity},</if>
+            <if test="status != null">status = #{status},</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <!-- 6. trim 标签示例 -->
+    <select id="selectByTrim" parameterType="ssm.test.Book" resultMap="BookResultMap">
+        SELECT * FROM book
+        <trim prefix="WHERE" prefixOverrides="AND |OR ">
+            <if test="status != null">
+                AND status = #{status}
+            </if>
+            <if test="title != null and title != ''">
+                AND title LIKE CONCAT('%', #{title}, '%')
+            </if>
+            <if test="category != null and category != ''">
+                AND category = #{category}
+            </if>
+        </trim>
+        ORDER BY create_time DESC
+    </select>
+
+    <update id="updateByTrim" parameterType="ssm.test.Book">
+        UPDATE book
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="title != null and title != ''">title = #{title},</if>
+            <if test="author != null and author != ''">author = #{author},</if>
+            <if test="price != null">price = #{price},</if>
+            <if test="stockQuantity != null">stock_quantity = #{stockQuantity},</if>
+        </trim>
+        WHERE id = #{id}
+    </update>
+
+    <!-- 7. foreach 标签 - 批量查询 -->
+    <select id="selectByIds" resultMap="BookResultMap">
+        SELECT * FROM book WHERE id IN
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+        AND status = 1
+        ORDER BY create_time DESC
+    </select>
+
+    <!-- 批量插入 -->
+    <insert id="batchInsert" parameterType="java.util.List">
+        INSERT INTO book (title, author, isbn, price, category, publisher, publish_date, stock_quantity)
+        VALUES
+        <foreach collection="books" item="book" separator=",">
+            (#{book.title}, #{book.author}, #{book.isbn}, #{book.price},
+            #{book.category}, #{book.publisher}, #{book.publishDate}, #{book.stockQuantity})
+        </foreach>
+    </insert>
+
+    <!-- 批量删除 -->
+    <delete id="batchDelete">
+        DELETE FROM book WHERE id IN
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <!-- 批量更新价格 -->
+    <update id="batchUpdatePrice">
+        UPDATE book SET price = #{price} WHERE id IN
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </update>
+
+    <!-- 8. bind 标签 -->
+    <select id="selectByTitleLike" resultMap="BookResultMap">
+        <bind name="pattern" value="'%' + title + '%'"/>
+        SELECT * FROM book
+        WHERE title LIKE #{pattern} AND status = 1
+        ORDER BY create_time DESC
+    </select>
+
+    <!-- 9. 复杂条件查询 -->
+    <select id="selectByComplexCondition" parameterType="map" resultMap="BookResultMap">
+        SELECT * FROM book
+        <where>
+            <if test="status != null">AND status = #{status}</if>
+            <if test="title != null and title != ''">
+                AND title LIKE CONCAT('%', #{title}, '%')
+            </if>
+            <if test="categories != null and categories.size() > 0">
+                AND category IN
+                <foreach collection="categories" item="category" open="(" separator="," close=")">
+                    #{category}
+                </foreach>
+            </if>
+            <if test="minPrice != null">AND price >= #{minPrice}</if>
+            <if test="maxPrice != null">AND price &lt;= #{maxPrice}</if>
+            <if test="publishDateStart != null">AND publish_date >= #{publishDateStart}</if>
+            <if test="publishDateEnd != null">AND publish_date &lt;= #{publishDateEnd}</if>
+            <if test="minStock != null">AND stock_quantity >= #{minStock}</if>
+        </where>
+        ORDER BY
+        <choose>
+            <when test="orderBy != null and orderBy != ''">
+                ${orderBy}
+            </when>
+            <otherwise>create_time DESC</otherwise>
+        </choose>
+    </select>
+
+    <!-- 10. 价格范围查询 -->
+    <select id="selectByPriceRange" resultMap="BookResultMap">
+        SELECT * FROM book
+        WHERE status = 1
+          AND price BETWEEN #{minPrice} AND #{maxPrice}
+        ORDER BY price ASC
+    </select>
+
+    <!-- 11. 分类统计 -->
+    <select id="countByCategory" resultType="map">
+        SELECT category, COUNT(*) as count, AVG(price) as avg_price
+        FROM book
+        WHERE status = 1
+        GROUP BY category
+        ORDER BY count DESC
+    </select>
+
+    <!-- 12. 根据ID查询 -->
+    <select id="selectById" parameterType="long" resultMap="BookResultMap">
+        SELECT * FROM book WHERE id = #{id}
+    </select>
+
+    <!-- 13. 删除书籍 -->
+    <delete id="deleteById" parameterType="long">
+        DELETE FROM book WHERE id = #{id}
+    </delete>
+
+    <!-- 14. 更新库存 -->
+    <update id="updateStock">
+        UPDATE book SET stock_quantity = #{quantity} WHERE id = #{id}
+    </update>
+
+</mapper>
