@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>词法分析器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .input-area, .output-area {
+            margin: 20px 0;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: monospace;
+            resize: vertical;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .output {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #e9ecef;
+            font-family: monospace;
+            white-space: pre-wrap;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>词法分析器</h1>
+        
+        <div class="input-area">
+            <textarea id="sourceCode">main()
+{
+    int i,j,m,n;
+    m=i+j;
+    n=i+j;
+    printf("%d,%d",m,n);
+}</textarea>
+            <div>
+                <button onclick="analyzeCode()">执行词法分析</button>
+                <button onclick="clearCode()">清空代码</button>
+                <button onclick="loadExample()">加载示例</button>
+            </div>
+        </div>
+        
+        <div class="output-area">
+            <h3>分析结果：</h3>
+            <div class="output" id="resultsOutput"></div>
+        </div>
+    </div>
+
+    <script>
+        // 关键字列表
+        const keywords = new Set([
+            'main', 'printf', 'int', 'for', 'while', 'do', 'return',
+            'break', 'continue', 'else', 'char', 'float', 'long', 'short'
+        ]);
+        
+        // 运算符列表
+        const operators = new Set([
+            '+', '-', '*', '/', '=', '>', '<', '>=', '<=', '!=',
+            '+=', '-=', '*=', '/=', '==', '&&', '||', '!', '&', '|',
+            '++', '--', '%'
+        ]);
+        
+        // 分隔符列表
+        const delimiters = new Set([',', ';', '{', '}', '(', ')', '[', ']']);
+
+        function analyzeCode() {
+            const sourceCode = document.getElementById('sourceCode').value;
+            const tokens = lexicalAnalyze(sourceCode);
+            displayResults(tokens);
+        }
+
+        function lexicalAnalyze(code) {
+            const tokens = [];
+            let pos = 0;
+
+            while (pos < code.length) {
+                // 跳过空白字符
+                if (/\s/.test(code[pos])) {
+                    pos++;
+                    continue;
+                }
+
+                // 跳过注释
+                if (code[pos] === '/' && code[pos + 1] === '/') {
+                    while (pos < code.length && code[pos] !== '\n') {
+                        pos++;
+                    }
+                    continue;
+                }
+
+                if (code[pos] === '/' && code[pos + 1] === '*') {
+                    pos += 2;
+                    while (pos < code.length - 1 && !(code[pos] === '*' && code[pos + 1] === '/')) {
+                        pos++;
+                    }
+                    pos += 2;
+                    continue;
+                }
+
+                // 字符串字面量
+                if (code[pos] === '"') {
+                    const start = pos;
+                    pos++;
+                    
+                    while (pos < code.length && code[pos] !== '"') {
+                        if (code[pos] === '\\') {
+                            pos++;
+                        }
+                        pos++;
+                    }
+                    
+                    if (pos < code.length) {
+                        pos++;
+                        tokens.push({
+                            type: 3,
+                            value: code.substring(start, pos)
+                        });
+                    }
+                    continue;
+                }
+
+                // 字符字面量
+                if (code[pos] === "'") {
+                    const start = pos;
+                    pos++;
+                    
+                    if (code[pos] === '\\') {
+                        pos++;
+                    }
+                    
+                    if (pos < code.length) {
+                        pos++;
+                    }
+                    
+                    if (pos < code.length && code[pos] === "'") {
+                        pos++;
+                        tokens.push({
+                            type: 3,
+                            value: code.substring(start, pos)
+                        });
+                    }
+                    continue;
+                }
+
+                // 数字
+                if (/\d/.test(code[pos])) {
+                    const start = pos;
+                    
+                    while (pos < code.length && /\d/.test(code[pos])) {
+                        pos++;
+                    }
+                    
+                    if (code[pos] === '.') {
+                        pos++;
+                        while (pos < code.length && /\d/.test(code[pos])) {
+                            pos++;
+                        }
+                    }
+                    
+                    tokens.push({
+                        type: 3,
+                        value: code.substring(start, pos)
+                    });
+                    continue;
+                }
+
+                // 标识符和关键字
+                if (/[a-zA-Z_]/.test(code[pos])) {
+                    const start = pos;
+                    
+                    while (pos < code.length && /[a-zA-Z0-9_]/.test(code[pos])) {
+                        pos++;
+                    }
+                    
+                    const value = code.substring(start, pos);
+                    const type = keywords.has(value) ? 1 : 2;
+                    
+                    tokens.push({
+                        type: type,
+                        value: value
+                    });
+                    continue;
+                }
+
+                // 运算符和分隔符
+                // 检查双字符运算符
+                if (pos + 1 < code.length) {
+                    const twoChar = code.substring(pos, pos + 2);
+                    if (operators.has(twoChar)) {
+                        tokens.push({
+                            type: 4,
+                            value: twoChar
+                        });
+                        pos += 2;
+                        continue;
+                    }
+                }
+
+                // 单字符
+                const char = code[pos];
+                let type = 5; // 默认分隔符
+                
+                if (operators.has(char)) {
+                    type = 4;
+                } else if (delimiters.has(char)) {
+                    type = 5;
+                }
+                
+                tokens.push({
+                    type: type,
+                    value: char
+                });
+                
+                pos++;
+            }
+
+            return tokens;
+        }
+
+        function displayResults(tokens) {
+            const output = document.getElementById('resultsOutput');
+            let result = '';
+            
+            tokens.forEach(token => {
+                result += `（${token.type}，"${token.value}"）`;
+            });
+            
+            output.textContent = result;
+        }
+
+        function clearCode() {
+            document.getElementById('sourceCode').value = '';
+            document.getElementById('resultsOutput').textContent = '';
+        }
+
+        function loadExample() {
+            const exampleCode = `main()
+{
+int i,j,m,n;
+printf("please input data to i,j");
+i=1;
+j=4;
+m=i+j;
+n=i-j;
+printf("m=%d,n=%d"
+,m,n);
+}`;
+            document.getElementById('sourceCode').value = exampleCode;
+        }
+
+        // 页面加载时自动分析示例代码
+        window.onload = function() {
+            loadExample();
+            analyzeCode();
+        };
+    </script>
+</body>
+</html>

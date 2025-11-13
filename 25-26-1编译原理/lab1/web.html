@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>词法分析器 - fzy50253</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .panel {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .panel h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-family: 'Consolas', monospace;
+            font-size: 14px;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        button.secondary {
+            background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+        }
+        
+        button.success {
+            background: linear-gradient(135deg, #27ae60, #229954);
+        }
+        
+        .results {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .token-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        .token-table th,
+        .token-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .token-table th {
+            background: #34495e;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        
+        .token-table tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        .stat-label {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        .type-keyword { color: #e74c3c; font-weight: bold; }
+        .type-identifier { color: #3498db; }
+        .type-constant { color: #9b59b6; }
+        .type-operator { color: #f39c12; }
+        .type-delimiter { color: #27ae60; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>词法分析器</h1>
+            <div class="subtitle">编译原理实验 - 2351610105方泽宇</div>
+        </div>
+        
+        <div class="content">
+            <div class="panel">
+                <h2>源代码输入</h2>
+                <textarea id="sourceCode" placeholder="请输入C语言代码...">main()
+{
+    int i,j,m,n;
+    printf("please input data to i,j");
+    i=1;
+    j=4;
+    m=i+j;
+    n=i-j;
+    printf("m=%d,n=%d",m,n);
+}</textarea>
+                
+                <div class="controls">
+                    <button onclick="analyzeCode()">执行词法分析</button>
+                    <button class="secondary" onclick="clearCode()">清空代码</button>
+                    <button class="secondary" onclick="loadExample()">加载示例</button>
+                    <button class="success" onclick="downloadResults()">导出结果</button>
+                </div>
+                
+                <div class="stats" id="stats">
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">总单词数</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">关键字</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">标识符</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">常数</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <h2>分析结果</h2>
+                <div class="results">
+                    <table class="token-table">
+                        <thead>
+                            <tr>
+                                <th>行号</th>
+                                <th>位置</th>
+                                <th>种别码</th>
+                                <th>单词值</th>
+                                <th>类型</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsBody">
+                            <!-- 结果将在这里显示 -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 关键字列表
+        const keywords = new Set([
+            'main', 'printf', 'if', 'int', 'for', 'while', 'do', 'return',
+            'break', 'continue', 'else', 'char', 'float', 'long', 'short',
+            'scanf', 'void', 'switch', 'case', 'default'
+        ]);
+        
+        // 运算符列表
+        const operators = new Set([
+            '+', '-', '*', '/', '=', '>', '<', '>=', '<=', '!=',
+            '+=', '-=', '*=', '/=', '==', '&&', '||', '!', '&', '|',
+            '++', '--', '%'
+        ]);
+        
+        // 分隔符列表
+        const delimiters = new Set([',', ';', '{', '}', '(', ')', '[', ']']);
+
+        function analyzeCode() {
+            const sourceCode = document.getElementById('sourceCode').value;
+            const tokens = lexicalAnalyze(sourceCode);
+            displayResults(tokens);
+            updateStats(tokens);
+        }
+
+        function lexicalAnalyze(code) {
+            const tokens = [];
+            let pos = 0;
+            let line = 1;
+            let column = 1;
+
+            while (pos < code.length) {
+                // 跳过空白字符
+                if (/\s/.test(code[pos])) {
+                    if (code[pos] === '\n') {
+                        line++;
+                        column = 1;
+                    } else {
+                        column++;
+                    }
+                    pos++;
+                    continue;
+                }
+
+                // 跳过注释
+                if (code[pos] === '/' && code[pos + 1] === '/') {
+                    while (pos < code.length && code[pos] !== '\n') {
+                        pos++;
+                        column++;
+                    }
+                    continue;
+                }
+
+                if (code[pos] === '/' && code[pos + 1] === '*') {
+                    pos += 2;
+                    column += 2;
+                    while (pos < code.length - 1 && !(code[pos] === '*' && code[pos + 1] === '/')) {
+                        if (code[pos] === '\n') {
+                            line++;
+                            column = 1;
+                        } else {
+                            column++;
+                        }
+                        pos++;
+                    }
+                    pos += 2;
+                    column += 2;
+                    continue;
+                }
+
+                // 字符串字面量
+                if (code[pos] === '"') {
+                    const start = pos;
+                    const startColumn = column;
+                    pos++;
+                    column++;
+                    
+                    while (pos < code.length && code[pos] !== '"') {
+                        if (code[pos] === '\\') {
+                            pos++;
+                            column++;
+                        }
+                        if (code[pos] === '\n') {
+                            line++;
+                            column = 1;
+                        } else {
+                            column++;
+                        }
+                        pos++;
+                    }
+                    
+                    if (pos < code.length) {
+                        pos++;
+                        column++;
+                        tokens.push({
+                            type: 3,
+                            value: code.substring(start, pos),
+                            line: line,
+                            position: startColumn
+                        });
+                    }
+                    continue;
+                }
+
+                // 字符字面量
+                if (code[pos] === "'") {
+                    const start = pos;
+                    const startColumn = column;
+                    pos++;
+                    column++;
+                    
+                    if (code[pos] === '\\') {
+                        pos++;
+                        column++;
+                    }
+                    
+                    if (pos < code.length) {
+                        pos++;
+                        column++;
+                    }
+                    
+                    if (pos < code.length && code[pos] === "'") {
+                        pos++;
+                        column++;
+                        tokens.push({
+                            type: 3,
+                            value: code.substring(start, pos),
+                            line: line,
+                            position: startColumn
+                        });
+                    }
+                    continue;
+                }
+
+                // 数字
+                if (/\d/.test(code[pos])) {
+                    const start = pos;
+                    const startColumn = column;
+                    
+                    while (pos < code.length && /\d/.test(code[pos])) {
+                        pos++;
+                        column++;
+                    }
+                    
+                    if (code[pos] === '.') {
+                        pos++;
+                        column++;
+                        while (pos < code.length && /\d/.test(code[pos])) {
+                            pos++;
+                            column++;
+                        }
+                    }
+                    
+                    tokens.push({
+                        type: 3,
+                        value: code.substring(start, pos),
+                        line: line,
+                        position: startColumn
+                    });
+                    continue;
+                }
+
+                // 标识符和关键字
+                if (/[a-zA-Z_]/.test(code[pos])) {
+                    const start = pos;
+                    const startColumn = column;
+                    
+                    while (pos < code.length && /[a-zA-Z0-9_]/.test(code[pos])) {
+                        pos++;
+                        column++;
+                    }
+                    
+                    const value = code.substring(start, pos);
+                    const type = keywords.has(value) ? 1 : 2;
+                    
+                    tokens.push({
+                        type: type,
+                        value: value,
+                        line: line,
+                        position: startColumn
+                    });
+                    continue;
+                }
+
+                // 运算符和分隔符
+                const startColumn = column;
+                
+                // 检查双字符运算符
+                if (pos + 1 < code.length) {
+                    const twoChar = code.substring(pos, pos + 2);
+                    if (operators.has(twoChar)) {
+                        tokens.push({
+                            type: 4,
+                            value: twoChar,
+                            line: line,
+                            position: startColumn
+                        });
+                        pos += 2;
+                        column += 2;
+                        continue;
+                    }
+                }
+
+                // 单字符
+                const char = code[pos];
+                let type = 5; // 默认分隔符
+                
+                if (operators.has(char)) {
+                    type = 4;
+                } else if (delimiters.has(char)) {
+                    type = 5;
+                }
+                
+                tokens.push({
+                    type: type,
+                    value: char,
+                    line: line,
+                    position: startColumn
+                });
+                
+                pos++;
+                column++;
+            }
+
+            return tokens;
+        }
+
+        function displayResults(tokens) {
+            const tbody = document.getElementById('resultsBody');
+            tbody.innerHTML = '';
+            
+            tokens.forEach(token => {
+                const row = document.createElement('tr');
+                
+                row.innerHTML = `
+                    <td>${token.line}</td>
+                    <td>${token.position}</td>
+                    <td>${token.type}</td>
+                    <td>"${escapeHtml(token.value)}"</td>
+                    <td class="type-${getTypeClass(token.type)}">${getTypeName(token.type)}</td>
+                `;
+                
+                tbody.appendChild(row);
+            });
+        }
+
+        function updateStats(tokens) {
+            const stats = {
+                total: tokens.length,
+                keywords: 0,
+                identifiers: 0,
+                constants: 0,
+                operators: 0,
+                delimiters: 0
+            };
+            
+            tokens.forEach(token => {
+                switch (token.type) {
+                    case 1: stats.keywords++; break;
+                    case 2: stats.identifiers++; break;
+                    case 3: stats.constants++; break;
+                    case 4: stats.operators++; break;
+                    case 5: stats.delimiters++; break;
+                }
+            });
+            
+            document.querySelectorAll('.stat-number')[0].textContent = stats.total;
+            document.querySelectorAll('.stat-number')[1].textContent = stats.keywords;
+            document.querySelectorAll('.stat-number')[2].textContent = stats.identifiers;
+            document.querySelectorAll('.stat-number')[3].textContent = stats.constants;
+        }
+
+        function getTypeName(type) {
+            const names = {
+                1: '关键字',
+                2: '标识符',
+                3: '常数',
+                4: '运算符',
+                5: '分隔符'
+            };
+            return names[type] || '未知';
+        }
+
+        function getTypeClass(type) {
+            const classes = {
+                1: 'keyword',
+                2: 'identifier',
+                3: 'constant',
+                4: 'operator',
+                5: 'delimiter'
+            };
+            return classes[type] || 'unknown';
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function clearCode() {
+            document.getElementById('sourceCode').value = '';
+            document.getElementById('resultsBody').innerHTML = '';
+            updateStats([]);
+        }
+
+        function loadExample() {
+            const exampleCode = `main()
+{
+    int i,j,m,n;
+    printf("please input data to i,j");
+    i=1;
+    j=4;
+    m=i+j;
+    n=i-j;
+    printf("m=%d,n=%d",m,n);
+}`;
+            document.getElementById('sourceCode').value = exampleCode;
+        }
+
+        function downloadResults() {
+            const tokens = lexicalAnalyze(document.getElementById('sourceCode').value);
+            let content = '词法分析结果\\n';
+            content += '行号\\t位置\\t种别码\\t单词值\\t类型\\n';
+            
+            tokens.forEach(token => {
+                content += `${token.line}\\t${token.position}\\t${token.type}\\t"${token.value}"\\t${getTypeName(token.type)}\\n`;
+            });
+            
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'lexical_analysis_result.txt';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // 页面加载时自动分析示例代码
+        window.onload = function() {
+            loadExample();
+            analyzeCode();
+        };
+    </script>
+</body>
+</html>
