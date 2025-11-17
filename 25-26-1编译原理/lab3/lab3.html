@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LL(1) 预测分析器</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        
+        .grammar {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .grammar h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .grammar ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        
+        .grammar li {
+            margin-bottom: 5px;
+            font-family: monospace;
+        }
+        
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .test-btn {
+            background-color: #2ecc71;
+        }
+        
+        .test-btn:hover {
+            background-color: #27ae60;
+        }
+        
+        .clear-btn {
+            background-color: #e74c3c;
+        }
+        
+        .clear-btn:hover {
+            background-color: #c0392b;
+        }
+        
+        .results {
+            margin-top: 25px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f6fc;
+            font-weight: 600;
+        }
+        
+        tr:hover {
+            background-color: #f5f9ff;
+        }
+        
+        .success {
+            color: #27ae60;
+            font-weight: bold;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #d4edda;
+            border-radius: 5px;
+        }
+        
+        .error {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f8d7da;
+            border-radius: 5px;
+        }
+        
+        .step-counter {
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .test-cases {
+            margin-top: 30px;
+        }
+        
+        .test-case {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .test-case:hover {
+            background-color: #e9ecef;
+        }
+        
+        .test-result {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        
+        .test-success {
+            color: #27ae60;
+        }
+        
+        .test-failure {
+            color: #e74c3c;
+        }
+        
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LL(1) 预测分析器</h1>
+            <p class="subtitle">编制人：方泽宇，2351610105，23508014</p>
+        </header>
+        
+        <section class="grammar">
+            <h2>文法规则</h2>
+            <ul>
+                <li>E → T G</li>
+                <li>G → + T G | - T G | ε</li>
+                <li>T → F S</li>
+                <li>S → * F S | / F S | ε</li>
+                <li>F → ( E ) | i</li>
+            </ul>
+        </section>
+        
+        <section class="controls">
+            <div class="input-group">
+                <input type="text" id="inputString" placeholder="请输入要分析的符号串 (以#结束，例如: i+i*i#)" value="i*i#">
+                <button id="parseBtn">分析</button>
+            </div>
+            
+            <div class="button-group">
+                <button id="testBtn" class="test-btn">运行测试用例</button>
+                <button id="clearBtn" class="clear-btn">清空结果</button>
+            </div>
+        </section>
+        
+        <section class="results">
+            <h2>分析结果</h2>
+            <div id="resultInfo"></div>
+            <div id="parsingTable"></div>
+        </section>
+        
+        <section class="test-cases">
+            <h2>测试用例</h2>
+            <div id="testCasesList"></div>
+        </section>
+        
+        <footer>
+            <p>预测分析法 (LL(1)分析器) - 编译原理课程设计</p>
+        </footer>
+    </div>
+
+    <script>
+        // 符号定义
+        const Symbol = {
+            E: 'E',
+            G: 'G',
+            T: 'T',
+            S: 'S',
+            F: 'F',
+            PLUS: '+',
+            MINUS: '-',
+            MULTIPLY: '*',
+            DIVIDE: '/',
+            LPAREN: '(',
+            RPAREN: ')',
+            ID: 'i',
+            END: '#',
+            EMPTY: 'ε',
+            ERROR: '?'
+        };
+
+        class PredictiveParser {
+            constructor() {
+                this.table = {};
+                this.analysisStack = [];
+                this.inputSymbols = [];
+                this.step = 1;
+                this.initializeParsingTable();
+            }
+
+            // 初始化分析表
+            initializeParsingTable() {
+                // E -> T G
+                this.addToTable(Symbol.E, Symbol.ID, [Symbol.T, Symbol.G]);
+                this.addToTable(Symbol.E, Symbol.LPAREN, [Symbol.T, Symbol.G]);
+
+                // G -> + T G
+                this.addToTable(Symbol.G, Symbol.PLUS, [Symbol.PLUS, Symbol.T, Symbol.G]);
+                // G -> - T G
+                this.addToTable(Symbol.G, Symbol.MINUS, [Symbol.MINUS, Symbol.T, Symbol.G]);
+                // G -> ε
+                this.addToTable(Symbol.G, Symbol.RPAREN, [Symbol.EMPTY]);
+                this.addToTable(Symbol.G, Symbol.END, [Symbol.EMPTY]);
+
+                // T -> F S
+                this.addToTable(Symbol.T, Symbol.ID, [Symbol.F, Symbol.S]);
+                this.addToTable(Symbol.T, Symbol.LPAREN, [Symbol.F, Symbol.S]);
+
+                // S -> * F S
+                this.addToTable(Symbol.S, Symbol.MULTIPLY, [Symbol.MULTIPLY, Symbol.F, Symbol.S]);
+                // S -> / F S
+                this.addToTable(Symbol.S, Symbol.DIVIDE, [Symbol.DIVIDE, Symbol.F, Symbol.S]);
+                // S -> ε
+                this.addToTable(Symbol.S, Symbol.PLUS, [Symbol.EMPTY]);
+                this.addToTable(Symbol.S, Symbol.MINUS, [Symbol.EMPTY]);
+                this.addToTable(Symbol.S, Symbol.RPAREN, [Symbol.EMPTY]);
+                this.addToTable(Symbol.S, Symbol.END, [Symbol.EMPTY]);
+
+                // F -> ( E )
+                this.addToTable(Symbol.F, Symbol.LPAREN, [Symbol.LPAREN, Symbol.E, Symbol.RPAREN]);
+                // F -> i
+                this.addToTable(Symbol.F, Symbol.ID, [Symbol.ID]);
+            }
+
+            addToTable(nonTerminal, terminal, production) {
+                if (!this.table[nonTerminal]) {
+                    this.table[nonTerminal] = {};
+                }
+                this.table[nonTerminal][terminal] = production;
+            }
+
+            // 字符到符号的映射
+            charToSymbol(c) {
+                switch(c) {
+                    case '+': return Symbol.PLUS;
+                    case '-': return Symbol.MINUS;
+                    case '*': return Symbol.MULTIPLY;
+                    case '/': return Symbol.DIVIDE;
+                    case '(': return Symbol.LPAREN;
+                    case ')': return Symbol.RPAREN;
+                    case 'i': return Symbol.ID;
+                    case '#': return Symbol.END;
+                    default: return Symbol.ERROR;
+                }
+            }
+
+            // 获取产生式字符串
+            getProductionString(nonTerminal, production) {
+                if (production.length === 0 || production[0] === Symbol.EMPTY) {
+                    return `${nonTerminal} → ε`;
+                } else {
+                    return `${nonTerminal} → ${production.join(' ')}`;
+                }
+            }
+
+            // 分析函数
+            parse(inputStr) {
+                // 重置状态
+                this.step = 1;
+                this.analysisStack = [];
+                this.inputSymbols = [];
+
+                // 初始化栈
+                this.analysisStack.push(Symbol.END);
+                this.analysisStack.push(Symbol.E);
+
+                // 初始化输入符号串
+                for (let c of inputStr) {
+                    if (c !== ' ' && c !== '\t' && c !== '\n') {
+                        const symbol = this.charToSymbol(c);
+                        if (symbol === Symbol.ERROR) {
+                            return {
+                                success: false,
+                                error: `错误: 非法字符 '${c}'`,
+                                steps: []
+                            };
+                        }
+                        this.inputSymbols.push(symbol);
+                    }
+                }
+
+                // 开始分析
+                const steps = [];
+                let success = false;
+                
+                while (this.analysisStack.length > 0 && this.inputSymbols.length > 0) {
+                    const stackTop = this.analysisStack[this.analysisStack.length - 1];
+                    const currentInput = this.inputSymbols[0];
+                    
+                    let action = "";
+                    
+                    if (stackTop === currentInput) {
+                        // 匹配终结符
+                        if (stackTop === Symbol.END) {
+                            action = "分析成功";
+                            steps.push({
+                                step: this.step,
+                                stack: [...this.analysisStack].join(''),
+                                input: this.inputSymbols.join(''),
+                                action: action
+                            });
+                            // 清空栈和输入串，标记成功
+                            this.analysisStack = [];
+                            this.inputSymbols = [];
+                            success = true;
+                            break;
+                        }
+                        
+                        action = `匹配 ${stackTop}`;
+                        steps.push({
+                            step: this.step,
+                            stack: [...this.analysisStack].join(''),
+                            input: this.inputSymbols.join(''),
+                            action: action
+                        });
+                        
+                        this.analysisStack.pop();
+                        this.inputSymbols.shift();
+                        this.step++;
+                    }
+                    else if (stackTop === Symbol.EMPTY) {
+                        // 空产生式
+                        action = "ε";
+                        steps.push({
+                            step: this.step,
+                            stack: [...this.analysisStack].join(''),
+                            input: this.inputSymbols.join(''),
+                            action: action
+                        });
+                        
+                        this.analysisStack.pop();
+                        this.step++;
+                    }
+                    else if (this.table[stackTop] && this.table[stackTop][currentInput]) {
+                        // 查表得到产生式
+                        const production = this.table[stackTop][currentInput];
+                        action = this.getProductionString(stackTop, production);
+                        
+                        steps.push({
+                            step: this.step,
+                            stack: [...this.analysisStack].join(''),
+                            input: this.inputSymbols.join(''),
+                            action: action
+                        });
+                        
+                        this.analysisStack.pop();
+                        // 将产生式右部逆序入栈
+                        for (let i = production.length - 1; i >= 0; i--) {
+                            if (production[i] !== Symbol.EMPTY) {
+                                this.analysisStack.push(production[i]);
+                            }
+                        }
+                        this.step++;
+                    }
+                    else {
+                        // 分析错误
+                        return {
+                            success: false,
+                            error: `错误: 分析表[${stackTop}][${currentInput}] 无定义`,
+                            steps: steps
+                        };
+                    }
+                }
+
+                // 最终检查
+                success = success || (this.analysisStack.length === 0 && this.inputSymbols.length === 0);
+                return {
+                    success: success,
+                    error: success ? "" : "分析失败",
+                    steps: steps
+                };
+            }
+        }
+
+        // DOM 操作
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputString = document.getElementById('inputString');
+            const parseBtn = document.getElementById('parseBtn');
+            const testBtn = document.getElementById('testBtn');
+            const clearBtn = document.getElementById('clearBtn');
+            const resultInfo = document.getElementById('resultInfo');
+            const parsingTable = document.getElementById('parsingTable');
+            const testCasesList = document.getElementById('testCasesList');
+            
+            // 测试用例
+            const testCases = [
+                "i+i*i#",
+                "i*i+i#",
+                "(i+i)*i#",
+                "i#",
+                "i+i*i+i#",
+                "i+*i#",
+                "i+i#",
+                "(i+i#"
+            ];
+            
+            // 显示测试用例
+            function displayTestCases() {
+                testCasesList.innerHTML = '';
+                testCases.forEach(testCase => {
+                    const testCaseElement = document.createElement('div');
+                    testCaseElement.className = 'test-case';
+                    testCaseElement.textContent = testCase;
+                    testCaseElement.addEventListener('click', function() {
+                        inputString.value = testCase;
+                        parseInput();
+                    });
+                    testCasesList.appendChild(testCaseElement);
+                });
+            }
+            
+            // 分析输入
+            function parseInput() {
+                const input = inputString.value.trim();
+                if (!input) {
+                    alert('请输入要分析的符号串');
+                    return;
+                }
+                
+                const parser = new PredictiveParser();
+                const result = parser.parse(input);
+                
+                // 显示结果信息
+                if (result.success) {
+                    resultInfo.innerHTML = `<div class="success">✓ 分析成功: "${input}" 为合法符号串</div>`;
+                } else {
+                    resultInfo.innerHTML = `<div class="error">✗ ${result.error}</div>`;
+                }
+                
+                // 显示分析步骤
+                if (result.steps.length > 0) {
+                    let tableHTML = `
+                        <h3>分析步骤</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>步骤</th>
+                                    <th>分析栈</th>
+                                    <th>剩余输入串</th>
+                                    <th>所用产生式</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    `;
+                    
+                    result.steps.forEach(step => {
+                        tableHTML += `
+                            <tr>
+                                <td>${step.step}</td>
+                                <td>${step.stack}</td>
+                                <td>${step.input}</td>
+                                <td>${step.action}</td>
+                            </tr>
+                        `;
+                    });
+                    
+                    tableHTML += `
+                            </tbody>
+                        </table>
+                    `;
+                    
+                    parsingTable.innerHTML = tableHTML;
+                } else {
+                    parsingTable.innerHTML = '<p>无分析步骤</p>';
+                }
+            }
+            
+            // 运行测试用例
+            function runTests() {
+                resultInfo.innerHTML = '<h3>测试结果</h3>';
+                parsingTable.innerHTML = '';
+                testCasesList.innerHTML = '';
+                
+                testCases.forEach(testCase => {
+                    const parser = new PredictiveParser();
+                    const result = parser.parse(testCase);
+                    
+                    const testResult = document.createElement('div');
+                    testResult.className = 'test-case';
+                    
+                    if (result.success) {
+                        testResult.innerHTML = `
+                            <div>${testCase}</div>
+                            <div class="test-result test-success">✓ 合法</div>
+                        `;
+                    } else {
+                        testResult.innerHTML = `
+                            <div>${testCase}</div>
+                            <div class="test-result test-failure">✗ 非法 - ${result.error}</div>
+                        `;
+                    }
+                    
+                    testCasesList.appendChild(testResult);
+                });
+            }
+            
+            // 清空结果
+            function clearResults() {
+                resultInfo.innerHTML = '';
+                parsingTable.innerHTML = '';
+                displayTestCases();
+            }
+            
+            // 事件监听
+            parseBtn.addEventListener('click', parseInput);
+            testBtn.addEventListener('click', runTests);
+            clearBtn.addEventListener('click', clearResults);
+            
+            // 初始化显示测试用例
+            displayTestCases();
+            
+            // 初始分析示例
+            parseInput();
+        });
+    </script>
+</body>
+</html>
