@@ -1,0 +1,46 @@
+<html><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head><title>普通POST表单</title></head>
+
+<body><center>
+<form name="form1" method="POST" action="servlet/NormFormPostServlet">
+    <table width="100%" border="1">
+      <tr>
+        <td width="30%" align="right">用户名:</td>
+        <td width="70%"><input name="suser" type="text" id="suser"></td>
+      </tr>
+      <tr>
+        <td align="right">密&nbsp; 码:</td>
+        <td><input name="spwd" type="password" id="spwd"></td>
+      </tr>
+      <tr>
+        <td align="right">性&nbsp; 别:</td>
+        <td><input type="radio" name="ssex" value="1">
+          男
+           &nbsp; <input type="radio" name="ssex" value="2">
+        女</td>
+      </tr>
+<tr><td align="right">学&nbsp; 历:</td>
+        <td><select name="sxl" id="sxl">
+          <option value="11">小学</option> <option value="12">初中</option>
+          <option value="13">高中</option> <option value="14">大学</option>
+        </select>
+        </td>
+      </tr><tr>
+        <td align="right">爱&nbsp; 好:</td>
+        <td><input name="sah" type="checkbox" id="sah" value="21">     上网
+        &nbsp; <input name="sah" type="checkbox" id="sah" value="22">    游戏
+          &nbsp; <input name="sah" type="checkbox" id="sah" value="23">   聊天
+          &nbsp; <input name="sah" type="checkbox" id="sah" value="24">    旅游
+          &nbsp; <input name="sah" type="checkbox" id="sah" value="25">   逛街</td>
+      </tr><tr>
+        <td align="right">简&nbsp; 介:</td>
+        <td><textarea name="sjj" id="sjj">这个家伙很懒...</textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="submit" name="Submit" value="提交">         &nbsp;&nbsp;&nbsp;&nbsp; <input type="reset" name="Submit2" value="重置"></td>
+      </tr>
+    </table>
+  </form>
+</center></body>
+</html>
+      

@@ -1,0 +1,93 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="第 1 页" id="1SJlHz5OsUeW7W2wyUUg">
+    <mxGraphModel dx="582" dy="395" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--5" value="旅客安检" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="200" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--30" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="YDMy4r6DNIJ9hxIkP84--5">
+          <mxGeometry x="90" y="375" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="YDMy4r6DNIJ9hxIkP84--5" source="YDMy4r6DNIJ9hxIkP84--7" target="YDMy4r6DNIJ9hxIkP84--9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--7" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#330000;fillStyle=hatch;gradientColor=default;strokeColor=default;shadow=0;" vertex="1" parent="YDMy4r6DNIJ9hxIkP84--5">
+          <mxGeometry x="95" y="30" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="YDMy4r6DNIJ9hxIkP84--5" source="YDMy4r6DNIJ9hxIkP84--9" target="YDMy4r6DNIJ9hxIkP84--12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--9" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;进入候机大厅，出示机票、身份证&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="YDMy4r6DNIJ9hxIkP84--5">
+          <mxGeometry x="10" y="50" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="YDMy4r6DNIJ9hxIkP84--5" source="YDMy4r6DNIJ9hxIkP84--10" target="YDMy4r6DNIJ9hxIkP84--18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--10" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;办理登机手续&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="YDMy4r6DNIJ9hxIkP84--5">
+          <mxGeometry x="10" y="140" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="YDMy4r6DNIJ9hxIkP84--5" source="YDMy4r6DNIJ9hxIkP84--12" target="YDMy4r6DNIJ9hxIkP84--10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--12" value="身份无误？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="YDMy4r6DNIJ9hxIkP84--5">
+          <mxGeometry x="10" y="100" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--16" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="YDMy4r6DNIJ9hxIkP84--5">
+          <mxGeometry x="80" y="110" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="YDMy4r6DNIJ9hxIkP84--5" source="YDMy4r6DNIJ9hxIkP84--18" target="YDMy4r6DNIJ9hxIkP84--22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--25" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YDMy4r6DNIJ9hxIkP84--23">
+          <mxGeometry x="-0.4735" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--18" value="是否有行李？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="YDMy4r6DNIJ9hxIkP84--5">
+          <mxGeometry x="10" y="190" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="YDMy4r6DNIJ9hxIkP84--5" source="YDMy4r6DNIJ9hxIkP84--22" target="YDMy4r6DNIJ9hxIkP84--26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--22" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;旅客安检&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="YDMy4r6DNIJ9hxIkP84--5">
+          <mxGeometry x="10" y="280" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="YDMy4r6DNIJ9hxIkP84--5" source="YDMy4r6DNIJ9hxIkP84--26" target="YDMy4r6DNIJ9hxIkP84--30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--26" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;登机&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="YDMy4r6DNIJ9hxIkP84--5">
+          <mxGeometry x="10" y="330" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--29" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;gradientColor=default;gradientDirection=west;fillColor=#330000;" vertex="1" parent="YDMy4r6DNIJ9hxIkP84--5">
+          <mxGeometry x="95" y="380" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--6" value="行李托运" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="200" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="YDMy4r6DNIJ9hxIkP84--6" source="YDMy4r6DNIJ9hxIkP84--11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-100" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="100" y="260" />
+              <mxPoint x="-99" y="260" />
+              <mxPoint x="-99" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--11" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;行李托运手续&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="YDMy4r6DNIJ9hxIkP84--6">
+          <mxGeometry x="10" y="220" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="YDMy4r6DNIJ9hxIkP84--18" target="YDMy4r6DNIJ9hxIkP84--11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDMy4r6DNIJ9hxIkP84--21" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YDMy4r6DNIJ9hxIkP84--20">
+          <mxGeometry x="-0.1998" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

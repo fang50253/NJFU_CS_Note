@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ssm.crud.ClassMapper">
+
+    <!-- ========== 结果映射配置 ========== -->
+    <resultMap type="ssm.crud.Classes" id="ClassResultMap">
+        <id property="id" column="c_id"/>
+        <result property="name" column="c_name"/>
+        <association property="teacher" javaType="ssm.crud.Teacher">
+            <id property="id" column="t_id"/>
+            <result property="name" column="t_name"/>
+        </association>
+    </resultMap>
+
+    <resultMap type="ssm.crud.Classes" id="ClassResultMap2">
+        <id property="id" column="c_id"/>
+        <result property="name" column="c_name"/>
+        <association property="teacher" column="teacher_id" select="getTeacher"/>
+    </resultMap>
+
+    <resultMap type="ssm.crud.Classes" id="ClassResultMap3">
+        <id property="id" column="c_id"/>
+        <result property="name" column="c_name"/>
+        <association property="teacher" column="teacher_id" javaType="ssm.crud.Teacher">
+            <id property="id" column="t_id"/>
+            <result property="name" column="t_name"/>
+        </association>
+        <collection property="students" ofType="ssm.crud.Student">
+            <id property="id" column="s_id"/>
+            <result property="name" column="s_name"/>
+            <result property="classId" column="class_id"/>
+        </collection>
+    </resultMap>
+
+    <resultMap type="ssm.crud.Classes" id="ClassResultMap4">
+        <id property="id" column="c_id"/>
+        <result property="name" column="c_name"/>
+        <association property="teacher" column="teacher_id" javaType="ssm.crud.Teacher" select="getTeacher2"/>
+        <collection property="students" ofType="ssm.crud.Student" column="c_id" select="getStudent"/>
+    </resultMap>
+
+    <!-- ========== 查询操作 ========== -->
+    <select id="getClass" parameterType="int" resultMap="ClassResultMap">
+        SELECT * FROM class c, teacher t WHERE c.teacher_id=t.t_id AND c.c_id=#{id}
+    </select>
+
+    <select id="getClass2" parameterType="int" resultMap="ClassResultMap2">
+        SELECT * FROM class WHERE c_id=#{id}
+    </select>
+
+    <select id="getClass3" parameterType="int" resultMap="ClassResultMap3">
+        SELECT * FROM class c, teacher t, student s
+        WHERE c.teacher_id=t.t_id AND c.c_id=s.class_id AND c.c_id=#{id}
+    </select>
+
+    <select id="getClass4" parameterType="int" resultMap="ClassResultMap4">
+        SELECT * FROM class WHERE c_id=#{id}
+    </select>
+
+    <select id="getTeacher" parameterType="int" resultType="ssm.crud.Teacher">
+        SELECT t_id as id, t_name as name FROM teacher WHERE t_id=#{id}
+    </select>
+
+    <select id="getTeacher2" parameterType="int" resultType="ssm.crud.Teacher">
+        SELECT t_id as id, t_name as name FROM teacher WHERE t_id=#{id}
+    </select>
+
+    <select id="getStudent" parameterType="int" resultType="ssm.crud.Student">
+        SELECT s_id as id, s_name as name, class_id as classId
+        FROM student WHERE class_id=#{id}
+    </select>
+
+    <select id="getAllClasses" resultMap="ClassResultMap">
+        SELECT * FROM class c, teacher t WHERE c.teacher_id = t.t_id
+    </select>
+
+    <select id="getClassesByName" parameterType="string" resultMap="ClassResultMap">
+        SELECT * FROM class c, teacher t
+        WHERE c.teacher_id = t.t_id AND c.c_name LIKE CONCAT('%', #{name}, '%')
+    </select>
+
+    <select id="getClassesByPage" parameterType="map" resultMap="ClassResultMap">
+        SELECT * FROM class c, teacher t
+        WHERE c.teacher_id = t.t_id
+        ORDER BY c.c_id
+            LIMIT #{offset}, #{pageSize}
+    </select>
+
+    <select id="countClasses" resultType="int">
+        SELECT COUNT(*) FROM class
+    </select>
+
+    <select id="checkClassNameExists" parameterType="string" resultType="int">
+        SELECT COUNT(*) FROM class WHERE c_name = #{name}
+    </select>
+
+    <!-- ========== 新增操作 ========== -->
+    <insert id="insertClass" parameterType="ssm.crud.Classes" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO class (c_name, teacher_id)
+        VALUES (#{name}, #{teacher.id})
+    </insert>
+
+    <insert id="batchInsertClasses" parameterType="list">
+        INSERT INTO class (c_name, teacher_id)
+        VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.name}, #{item.teacher.id})
+        </foreach>
+    </insert>
+
+    <!-- ========== 修改操作 ========== -->
+    <update id="updateClass" parameterType="ssm.crud.Classes">
+        UPDATE class
+        SET
+            c_name = #{name},
+            teacher_id = #{teacher.id}
+        WHERE c_id = #{id}
+    </update>
+
+    <update id="updateClassName" parameterType="map">
+        UPDATE class
+        SET c_name = #{name}
+        WHERE c_id = #{id}
+    </update>
+
+    <update id="updateClassTeacher" parameterType="map">
+        UPDATE class
+        SET teacher_id = #{teacherId}
+        WHERE c_id = #{classId}
+    </update>
+
+    <!-- ========== 删除操作 ========== -->
+    <delete id="deleteClassById" parameterType="int">
+        DELETE FROM class WHERE c_id = #{id}
+    </delete>
+
+    <delete id="deleteClassByName" parameterType="string">
+        DELETE FROM class WHERE c_name = #{name}
+    </delete>
+
+    <delete id="batchDeleteClasses" parameterType="list">
+        DELETE FROM class WHERE c_id IN
+        <foreach collection="list" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <delete id="deleteClassesByTeacherId" parameterType="int">
+        DELETE FROM class WHERE teacher_id = #{teacherId}
+    </delete>
+
+</mapper>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--<configuration>-->
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            <dataSource type=""POOLED">-->
+<!--                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql://localhost:3306/testdb?useSSL=false&amp;serverTimezone=UTC"/>-->
+<!--                <property name="username" value="root"/>-->
+<!--                <property name="password" value="abc,123"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+
+<!--    <mappers>-->
+<!--        <mapper resource="com/example/mapper/UserMapper.xml"/>-->
+<!--    </mappers>-->
+<!--</configuration>-->
+<configuration>
+ <settings>
+        <!-- 方式1：使用标准输出显示SQL（类似Hibernate的show_sql=true） -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+
+        <!-- 其他常用设置 -->
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <!-- 配置数据库连接信息 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver" />
+                <property name="url" value="jdbc:mysql://localhost:3306/testdb?useSSL=false&amp;serverTimezone=UTC" />
+                <property name="username" value="root" />
+                <property name="password" value="abc,123" />
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!-- 注册userMapper.xml文件，
+         userMapper.xml位于me.gacl.mapping这个包下，所以resource写成me/gacl/mapping/userMapper.xml-->
+<!--        <mapper resource="me/gacl/mapping/classMapper.xml"/>-->
+
+        <mapper resource="ssm/test/userMapper.xml"/>
+                <mapper resource="ssm/test/orderMapper.xml"/>
+                <mapper resource="ssm/test/classMapper.xml"/>
+        <mapper resource="ssm/test/BookMapper.xml"/>
+        <mapper class="me.gacl.mapping.UserMapperI"/>
+
+
+        <!--                <mapper resource="com/example/mapper/UserMapper.xml"/>-->
+        <mapper resource="me/gacl/mapping/userMapper.xml"/>
+    </mappers>
+</configuration>
