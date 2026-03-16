@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- VoteServlet：启动时加载，确保实例提前存入Context -->
+    <servlet>
+        <servlet-name>VoteServlet</servlet-name>
+        <servlet-class>com.vote.servlet.VoteServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VoteServlet</servlet-name>
+        <url-pattern>/vote</url-pattern>
+    </servlet-mapping>
+
+    <!-- ResultServlet：处理结果展示 -->
+    <servlet>
+        <servlet-name>ResultServlet</servlet-name>
+        <servlet-class>com.vote.servlet.ResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResultServlet</servlet-name>
+        <url-pattern>/result</url-pattern>
+    </servlet-mapping>
+
+    <!-- 默认首页：直接访问项目根路径跳转到投票页面 -->
+    <welcome-file-list>
+        <welcome-file>vote.html</welcome-file>
+    </welcome-file-list>
+</web-app>

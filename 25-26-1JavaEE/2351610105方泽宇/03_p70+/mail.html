@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .registration-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        .required {
+            color: #e74c3c;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        .options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 5px;
+        }
+        
+        .option-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .option-item input {
+            width: auto;
+            margin-right: 5px;
+        }
+        
+        textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        .error {
+            color: #e74c3c;
+            font-size: 12px;
+            margin-top: 5px;
+            min-height: 18px;
+        }
+        
+        .success {
+            color: #2ecc71;
+            font-size: 12px;
+            margin-top: 5px;
+            min-height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <h2>用户注册</h2>
+        <form id="registerForm">
+            <!-- 用户名 -->
+            <div class="form-group">
+                <label>用户名 <span class="required">*</span></label>
+                <input type="text" id="username" placeholder="3-20个字符，字母数字下划线">
+                <div class="error" id="usernameError"></div>
+            </div>
+
+            <!-- 密码 -->
+            <div class="form-group">
+                <label>密码 <span class="required">*</span></label>
+                <input type="password" id="password" placeholder="至少6位，包含字母和数字">
+                <div class="error" id="passwordError"></div>
+            </div>
+
+            <!-- 确认密码 -->
+            <div class="form-group">
+                <label>确认密码 <span class="required">*</span></label>
+                <input type="password" id="confirmPassword" placeholder="再次输入密码">
+                <div class="error" id="confirmPasswordError"></div>
+            </div>
+
+            <!-- 性别 -->
+            <div class="form-group">
+                <label>性别</label>
+                <div class="options">
+                    <div class="option-item">
+                        <input type="radio" name="gender" value="male" checked>
+                        <label>男</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="gender" value="female">
+                        <label>女</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 兴趣爱好 -->
+            <div class="form-group">
+                <label>兴趣爱好</label>
+                <div class="options">
+                    <div class="option-item">
+                        <input type="checkbox" name="hobby" value="sports">
+                        <label>运动</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="checkbox" name="hobby" value="reading">
+                        <label>阅读</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="checkbox" name="hobby" value="music">
+                        <label>音乐</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="checkbox" name="hobby" value="travel">
+                        <label>旅游</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 简历 -->
+            <div class="form-group">
+                <label>个人简介</label>
+                <textarea id="resume" placeholder="简单介绍一下自己..."></textarea>
+            </div>
+
+            <!-- 提交按钮 -->
+            <button type="submit">注册</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('registerForm');
+        const username = document.getElementById('username');
+        const password = document.getElementById('password');
+        const confirmPassword = document.getElementById('confirmPassword');
+        
+        const usernameError = document.getElementById('usernameError');
+        const passwordError = document.getElementById('passwordError');
+        const confirmPasswordError = document.getElementById('confirmPasswordError');
+
+        // 显示错误
+        function showError(element, message) {
+            element.textContent = message;
+            element.className = 'error';
+        }
+
+        // 显示成功
+        function showSuccess(element, message = '✓') {
+            element.textContent = message;
+            element.className = 'success';
+        }
+
+        // 清除提示
+        function clearError(element) {
+            element.textContent = '';
+        }
+
+        // 验证用户名
+        function validateUsername() {
+            const value = username.value.trim();
+            
+            if (value === '') {
+                showError(usernameError, '用户名不能为空');
+                return false;
+            }
+            
+            if (value.length < 3 || value.length > 20) {
+                showError(usernameError, '用户名长度3-20个字符');
+                return false;
+            }
+            
+            if (!/^[a-zA-Z0-9_]+$/.test(value)) {
+                showError(usernameError, '只能包含字母、数字和下划线');
+                return false;
+            }
+            
+            showSuccess(usernameError);
+            return true;
+        }
+
+        // 验证密码
+        function validatePassword() {
+            const value = password.value;
+            
+            if (value === '') {
+                showError(passwordError, '密码不能为空');
+                return false;
+            }
+            
+            if (value.length < 6) {
+                showError(passwordError, '密码长度不能少于6位');
+                return false;
+            }
+            
+            if (!/[a-zA-Z]/.test(value) || !/\d/.test(value)) {
+                showError(passwordError, '密码必须包含字母和数字');
+                return false;
+            }
+            
+            showSuccess(passwordError);
+            return true;
+        }
+
+        // 验证确认密码
+        function validateConfirmPassword() {
+            const value = confirmPassword.value;
+            
+            if (value === '') {
+                showError(confirmPasswordError, '请确认密码');
+                return false;
+            }
+            
+            if (value !== password.value) {
+                showError(confirmPasswordError, '两次输入的密码不一致');
+                return false;
+            }
+            
+            showSuccess(confirmPasswordError);
+            return true;
+        }
+
+        // 事件监听
+        username.addEventListener('blur', validateUsername);
+        password.addEventListener('blur', validatePassword);
+        confirmPassword.addEventListener('blur', validateConfirmPassword);
+        
+        password.addEventListener('input', function() {
+            if (confirmPassword.value) {
+                validateConfirmPassword();
+            }
+        });
+
+        // 表单提交
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const isUsernameValid = validateUsername();
+            const isPasswordValid = validatePassword();
+            const isConfirmPasswordValid = validateConfirmPassword();
+            
+            if (isUsernameValid && isPasswordValid && isConfirmPasswordValid) {
+                // 收集表单数据
+                const formData = {
+                    username: username.value.trim(),
+                    password: password.value,
+                    gender: document.querySelector('input[name="gender"]:checked').value,
+                    hobbies: Array.from(document.querySelectorAll('input[name="hobby"]:checked'))
+                                .map(cb => cb.value),
+                    resume: document.getElementById('resume').value
+                };
+                
+                console.log('注册数据:', formData);
+                alert('注册成功！');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>摄氏温度转华氏温度</title>
+    <style>
+        body { font-family: "宋体"; padding: 20px; font-size: 16px; }
+        .input-box { margin: 10px 0; }
+        input { padding: 5px; margin-right: 10px; }
+        button { padding: 5px 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+<h3>摄氏温度转华氏温度</h3>
+<div class="input-box">
+    <!-- 表单提交到Servlet的映射路径/tempconvert1 -->
+    <form action="tempconvert1" method="get">
+        摄氏温度：<input type="text" name="ctemp" placeholder="请输入数字" required>
+        <button type="submit">转换为华氏温度</button>
+        <button type="reset">清空</button>
+    </form>
+</div>
+</body>
+</html>

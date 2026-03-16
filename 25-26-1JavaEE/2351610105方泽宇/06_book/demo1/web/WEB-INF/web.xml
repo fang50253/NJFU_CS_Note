@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- 1. 注册Servlet -->
+    <servlet>
+        <servlet-name>SessionInfoServlet</servlet-name> <!-- 自定义名称 -->
+        <servlet-class>com.example.servlet.SessionInfoServlet</servlet-class> <!-- 全类名 -->
+    </servlet>
+
+    <!-- 2. 配置Servlet访问路径（浏览器通过该路径访问） -->
+    <servlet-mapping>
+        <servlet-name>SessionInfoServlet</servlet-name> <!-- 与注册名称一致 -->
+        <url-pattern>/getSessionInfo</url-pattern> <!-- 访问路径，可自定义 -->
+    </servlet-mapping>
+
+    <!-- 3. 设置默认首页（访问项目根路径时，自动打开sessionInfo.jsp） -->
+    <welcome-file-list>
+        <welcome-file>sessionInfo.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

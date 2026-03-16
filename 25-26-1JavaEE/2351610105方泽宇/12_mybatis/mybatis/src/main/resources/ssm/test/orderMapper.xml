@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的
+例如namespace="ssm.test.userMapper"就是ssm.test(包名)+userMapper(userMapper.xml文件去除后缀)
+ -->
+<mapper namespace="ssm.test.orderMapper">
+    
+    <!-- 
+        根据id查询得到一个order对象，使用这个查询是查询不到我们想要的结果的，
+        这主要是因为实体类的属性名和数据库的字段名对应不上的原因，因此无法查询出对应的记录
+     -->
+    <select id="getOrderById" parameterType="int" 
+        resultType="ssm.test.Order">
+        select * from orders where order_id=#{id}
+    </select>
+    
+    <!-- 
+        根据id查询得到一个order对象，使用这个查询是可以正常查询到我们想要的结果的，
+        这是因为我们将查询的字段名都起一个和实体类属性名相同的别名，这样实体类的属性名和查询结果中的字段名就可以一一对应上
+     -->
+    <select id="selectOrder" parameterType="int" 
+        resultType="ssm.test.Order">
+        select order_id id, order_no orderNo,order_price price from orders where order_id=#{id}
+    </select>
+    
+    <!-- 
+    根据id查询得到一个order对象，使用这个查询是可以正常查询到我们想要的结果的，
+    这是因为我们通过<resultMap>映射实体类属性名和表的字段名一一对应关系 -->
+    <select id="selectOrderResultMap" parameterType="int" resultMap="orderResultMap">
+        select * from orders where order_id=#{id}
+    </select>
+    <!--通过<resultMap>映射实体类属性名和表的字段名对应关系 -->
+    <resultMap type="ssm.test.Order" id="orderResultMap">
+        <!-- 用id属性来映射主键字段 -->
+        <id property="id" column="order_id"/>
+        <!-- 用result属性来映射非主键字段 -->
+        <result property="orderNo" column="order_no"/>
+        <result property="price" column="order_price"/>
+    </resultMap>
+    
+</mapper>

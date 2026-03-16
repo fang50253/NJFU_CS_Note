@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+</head>
+<body>
+    <div>
+        <form id="formregister">
+            <tr>
+                <td>用户名：<input type="text" name="username" class="username" onblur="username_onblur()"></td>
+                <br>
+                <td>密码：<input type="password" name="psd" class="psd"></td>
+                <br>
+                <td>重复密码：<input type="password" name="psd2" class="psd" onblur="psd2_onblur()"></td>
+                <br>
+                <td>性别：
+                    <input type="radio" name="sex" class="sex">男
+                    <input type="radio" name="sex" class="sex">女
+                </td>
+                <br>
+                <td>兴趣爱好：
+                    <input type="checkbox" name="hobby" class="hobby">运动
+                    <input type="checkbox" name="hobby" class="hobby">阅读
+                    <input type="checkbox" name="hobby" class="hobby">音乐
+                    <input type="checkbox" name="hobby" class="hobby">旅行
+                </td>
+                <br>
+                <td>兴趣爱好
+                    <input type="text" name="intro" class="intro">
+                </td>
+                <br>
+                <td><input type="submit"></td>
+            </tr>
+
+
+        </form>
+    </div>
+</body>
+<script>
+    // 使用标志变量防止重复弹窗
+    let usernameAlertShown = false;
+    let passwordAlertShown = false;
+
+    function username_onblur() {
+        const username = document.querySelector('input[name="username"]').value.trim();
+        const usernameRegex = /^[a-zA-Z0-9_]+$/;
+        const forbiddenUsernames = ['admin', 'test', 'user123'];
+
+        if (username && (!usernameRegex.test(username) || forbiddenUsernames.includes(username.toLowerCase()))) {
+            if (!usernameAlertShown) {
+                alert('用户名只能包含字母、数字和下划线，且不能使用admin、test或user123');
+                usernameAlertShown = true;
+            }
+            document.querySelector('input[name="username"]').focus();
+            return false;
+        }
+        // 重置标志
+        usernameAlertShown = false;
+        return true;
+    }
+
+    function psd2_onblur() {
+        const password = document.querySelector('input[name="psd"]').value;
+        const confirmPassword = document.querySelector('input[name="psd2"]').value;
+
+        const hasLetter = /[a-zA-Z]/.test(password);
+        const hasNumber = /[0-9]/.test(password);
+
+        if (password && confirmPassword) {
+            if (password !== confirmPassword) {
+                if (!passwordAlertShown) {
+                    alert('您两次输入的密码不一致');
+                    passwordAlertShown = true;
+                }
+                document.querySelector('input[name="psd2"]').focus();
+                return false;
+            }
+
+            if (!hasLetter || !hasNumber) {
+                if (!passwordAlertShown) {
+                    alert('密码必须包含字母和数字');
+                    passwordAlertShown = true;
+                }
+                document.querySelector('input[name="psd"]').focus();
+                return false;
+            }
+        }
+        // 重置标志
+        passwordAlertShown = false;
+        return true;
+    }
+</script>
+</html>

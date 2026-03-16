@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>投票系统</title>
+    <style>
+        body { font-family: 宋体; padding: 20px; }
+        .tip { color: red; display: none; }
+    </style>
+    <script>
+        // 页面加载检查Cookie，禁用已投票用户的投票按钮
+        window.onload = function() {
+            if (document.cookie.indexOf("voted=true") !== -1) {
+                document.querySelector(".tip").style.display = "block";
+                document.getElementsByName("option").forEach(r => r.disabled = true);
+                document.querySelector("[value='我要投票']").disabled = true;
+            }
+        }
+    </script>
+</head>
+<body>
+<h3>如果有后悔药吃，你最想做啥事情？</h3>
+<p class="tip">您已投过票，感谢参与！</p>
+
+<!-- 投票表单：两个按钮分别提交不同action -->
+<form action="vote" method="post">
+    <input type="radio" name="option" value="family" required> 对家人好点<br>
+    <input type="radio" name="option" value="job" required> 找个自己喜欢的工作<br>
+    <input type="radio" name="option" value="emotion" required> 控制自己的情绪<br><br>
+
+    <!-- 投票按钮：需要选选项 -->
+    <input type="submit" name="action" value="我要投票">
+    <!-- 查看结果按钮：独立提交，无需选选项 -->
+    <input type="submit" name="action" value="查看投票结果" onclick="this.form.removeAttribute('required'); return true;">
+</form>
+</body>
+</html>

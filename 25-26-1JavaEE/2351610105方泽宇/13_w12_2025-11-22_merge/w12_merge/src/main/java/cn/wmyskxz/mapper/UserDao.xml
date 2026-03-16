@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="cn.wmyskxz.dao.UserDao">
+
+    <select id="findUserById" resultType="cn.wmyskxz.entity.User" parameterType="int">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+
+
+    <select id="getUser" parameterType="int"
+            resultType="cn.wmyskxz.entity.User">
+        select * from user where id=#{id}
+    </select>
+
+
+    <!-- 创建用户(Create) -->
+    <insert id="addUser" parameterType="cn.wmyskxz.entity.User">
+        insert into user(username,isbn,author) values(#{username},#{isbn},#{author})
+    </insert>
+
+    <!-- 删除用户(Remove) -->
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id=#{id}
+    </delete>
+
+    <delete id="deleteMuchByIds" parameterType="java.util.List">
+        delete from user where id in
+         <foreach  close=")"   collection="lists" index="index" item="item" open="("  separator=","  >
+            #{item,jdbcType=VARCHAR}
+         </foreach>
+
+    </delete>
+
+    <!-- 修改用户(Update) -->
+    <update id="updateUser" parameterType="cn.wmyskxz.entity.User">
+        update user set username=#{username} isbn=#{isbn} ,author=#{author} where id=#{id}
+    </update>
+
+    <!-- 查询全部用户-->
+    <select id="getAllUsers" resultType="cn.wmyskxz.entity.User">
+        select * from user
+    </select>
+
+
+</mapper>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ssm.test.BlogMapper">
+
+    <resultMap id="BlogResultMap" type="ssm.test.Blog">
+        <id column="id" property="id"/>
+        <result column="title" property="title"/>
+        <result column="content" property="content"/>
+        <result column="author" property="author"/>
+        <result column="publish_time" property="publishTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="read_count" property="readCount"/>
+        <result column="status" property="status"/>
+    </resultMap>
+
+    <!-- 新增博客 -->
+    <insert id="insert" parameterType="ssm.test.Blog" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO blog (title, content, author, publish_time, update_time, read_count, status)
+        VALUES (#{title}, #{content}, #{author}, #{publishTime}, #{updateTime}, #{readCount}, #{status})
+    </insert>
+
+    <!-- 根据ID删除 -->
+    <delete id="deleteById" parameterType="long">
+        DELETE FROM blog WHERE id = #{id}
+    </delete>
+
+    <!-- 动态更新 -->
+    <update id="update" parameterType="ssm.test.Blog">
+        UPDATE blog
+        <set>
+            <if test="title != null and title != ''">title = #{title},</if>
+            <if test="content != null">content = #{content},</if>
+            <if test="author != null and author != ''">author = #{author},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="readCount != null">read_count = #{readCount},</if>
+            update_time = NOW()  <!-- 每次更新自动刷新时间 -->
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <!-- 根据ID查询 -->
+    <select id="selectById" parameterType="long" resultMap="BlogResultMap">
+        SELECT * FROM blog WHERE id = #{id}
+    </select>
+
+    <!-- 查询所有 -->
+    <select id="selectAll" resultMap="BlogResultMap">
+        SELECT * FROM blog ORDER BY publish_time DESC
+    </select>
+
+    <!-- 条件查询 -->
+    <select id="selectByCondition" resultMap="BlogResultMap">
+        SELECT * FROM blog
+        <where>
+            <if test="title != null and title != ''">
+                AND title LIKE CONCAT('%', #{title}, '%')
+            </if>
+            <if test="author != null and author != ''">
+                AND author = #{author}
+            </if>
+            AND status = 1  <!-- 只查询已发布 -->
+        </where>
+        ORDER BY publish_time DESC
+    </select>
+
+    <!-- 批量删除 -->
+    <delete id="batchDelete">
+        DELETE FROM blog WHERE id IN
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+</mapper>
