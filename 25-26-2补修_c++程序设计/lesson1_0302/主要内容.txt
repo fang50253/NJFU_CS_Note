@@ -1,0 +1,10 @@
+主要内容：
+1.C++输入输出机制：cin,cout,console,file,iostream;
+2.C++安全机制：命名空间，变量返回（作用域问题），栈空间
+3.C++主要三个特性：封装、继承、多态
+4.程序运行机制
+5.C语言基础：变量内存溢出问题、作用域问题举例
+
+新建工程File -> Project -> VC++ ->win32 console 
+编译：Bulid -> Bulid Solution
+执行：Debug -> Start without debugging
