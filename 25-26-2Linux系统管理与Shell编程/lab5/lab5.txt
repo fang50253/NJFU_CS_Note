@@ -1,0 +1,894 @@
+{\rtf1\ansi\ansicpg936\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red180\green36\blue25;\red74\green0\blue255;
+\red159\green160\blue28;\red111\green111\blue111;\red47\green180\blue29;\red44\green238\blue235;\red64\green11\blue217;
+}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c76411\c21697\c12527;\cssrgb\c36733\c20484\c100000;
+\cssrgb\c68469\c68012\c14211;\cssrgb\c51167\c51167\c51167;\cssrgb\c20241\c73898\c14950;\cssrgb\c15687\c93977\c93914;\cssrgb\c32309\c18666\c88229;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Sat Apr 25 14:51:01 on ttys001\
+(base) fang50253@MacBook-Pro ~ % npm install -g cf\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \cf4 code\cf2  EACCES\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \cf4 syscall\cf2  mkdir\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \cf4 path\cf2  /usr/local/lib/node_modules/cf\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \cf4 errno\cf2  \cf5 -13\cf2 \
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/cf'\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \cf6     at async mkdir (node:internal/fs/promises:858:10)\cf2 \
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async /usr/local/lib/node_modules/\ul npm\ulnone /node_modules/\ul @npmcli\ulnone /arborist/lib/arborist/reify.js:624:20\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async Promise.allSettled (index 0)\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async [reifyPackages] (/usr/local/lib/node_modules/\ul npm\ulnone /node_modules/\ul @npmcli\ulnone /arborist/lib/arborist/reify.js:325:11)\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async Arborist.reify (/usr/local/lib/node_modules/\ul npm\ulnone /node_modules/\ul @npmcli\ulnone /arborist/lib/arborist/reify.js:142:5)\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async Install.exec (/usr/local/lib/node_modules/\ul npm\ulnone /lib/commands/install.js:150:5)\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async Npm.exec (/usr/local/lib/node_modules/\ul npm\ulnone /lib/npm.js:207:9)\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async module.exports (/usr/local/lib/node_modules/\ul npm\ulnone /lib/cli/entry.js:74:5) \{\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2    errno: \cf5 -13\cf2 ,\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2    code: \cf7 'EACCES'\cf2 ,\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2    syscall: \cf7 'mkdir'\cf2 ,\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2    path: \cf7 '/usr/local/lib/node_modules/cf'\cf2 \
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \}\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2 \
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  The operation was rejected by your operating system.\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  It is likely you do not have the permissions to access this file as the current user\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2 \
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  If you believe this might be a permissions issue, please double-check the\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  permissions of the file and its containing directories, or try running\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  the command again as root/Administrator.\
+
+\f1\b npm
+\f0\b0  \cf8 notice\cf2 \
+
+\f1\b npm
+\f0\b0  \cf8 notice\cf2  New \cf3 major\cf2  version of npm available! \cf3 10.9.2\cf2  -> \cf9 11.13.0\cf2 \
+
+\f1\b npm
+\f0\b0  \cf8 notice\cf2  Changelog: \cf9 https://github.com/npm/cli/releases/tag/v11.13.0\cf2 \
+
+\f1\b npm
+\f0\b0  \cf8 notice\cf2  To update run: \ul npm install -g npm@11.13.0\ulnone \
+
+\f1\b npm
+\f0\b0  \cf8 notice\cf2 \
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  A complete log of this run can be found in: /Users/fang50253/.npm/_logs/2026-04-27T08_05_57_781Z-debug-0.log\
+(base) fang50253@MacBook-Pro ~ % npm install -g cf\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \cf4 code\cf2  EACCES\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \cf4 syscall\cf2  mkdir\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \cf4 path\cf2  /usr/local/lib/node_modules/cf\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \cf4 errno\cf2  \cf5 -13\cf2 \
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/cf'\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \cf6     at async mkdir (node:internal/fs/promises:858:10)\cf2 \
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async /usr/local/lib/node_modules/\ul npm\ulnone /node_modules/\ul @npmcli\ulnone /arborist/lib/arborist/reify.js:624:20\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async Promise.allSettled (index 0)\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async [reifyPackages] (/usr/local/lib/node_modules/\ul npm\ulnone /node_modules/\ul @npmcli\ulnone /arborist/lib/arborist/reify.js:325:11)\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async Arborist.reify (/usr/local/lib/node_modules/\ul npm\ulnone /node_modules/\ul @npmcli\ulnone /arborist/lib/arborist/reify.js:142:5)\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async Install.exec (/usr/local/lib/node_modules/\ul npm\ulnone /lib/commands/install.js:150:5)\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async Npm.exec (/usr/local/lib/node_modules/\ul npm\ulnone /lib/npm.js:207:9)\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2      at async module.exports (/usr/local/lib/node_modules/\ul npm\ulnone /lib/cli/entry.js:74:5) \{\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2    errno: \cf5 -13\cf2 ,\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2    code: \cf7 'EACCES'\cf2 ,\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2    syscall: \cf7 'mkdir'\cf2 ,\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2    path: \cf7 '/usr/local/lib/node_modules/cf'\cf2 \
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  \}\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2 \
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  The operation was rejected by your operating system.\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  It is likely you do not have the permissions to access this file as the current user\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2 \
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  If you believe this might be a permissions issue, please double-check the\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  permissions of the file and its containing directories, or try running\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  the command again as root/Administrator.\
+
+\f1\b npm
+\f0\b0  \cf3 error\cf2  A complete log of this run can be found in: /Users/fang50253/.npm/_logs/2026-04-27T08_07_36_489Z-debug-0.log\
+(base) fang50253@MacBook-Pro ~ % sudo npm install -g cf\
+Password:\
+\
+added 37 packages in 2s\
+\
+14 packages are looking for funding\
+  run `npm fund` for details\
+(base) fang50253@MacBook-Pro ~ % sudo npm install -g cf\
+\
+changed 37 packages in 342ms\
+\
+14 packages are looking for funding\
+  run `npm fund` for details\
+(base) fang50253@MacBook-Pro ~ % ssh 2351610105@150.158.24.225 -p 6001\
+2351610105@150.158.24.225's password: \
+Linux raspberrypi 5.10.103-v7l+ #1529 SMP Tue Mar 8 12:24:00 GMT 2022 armv7l\
+\
+The programs included with the Debian GNU/Linux system are free software;\
+the exact distribution terms for each program are described in the\
+individual files in /usr/share/doc/*/copyright.\
+\
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent\
+permitted by applicable law.\
+Last login: Sat Apr 25 14:24:50 2026 from 127.0.0.1\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~ $
+\f0\b0 \cf2  ls\
+
+\f1\b \cf9 labs
+\f0\b0 \cf2 \
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~ $
+\f0\b0 \cf2  cd labs\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs $
+\f0\b0 \cf2  ls\
+
+\f1\b \cf9 lab0
+\f0\b0 \cf2   
+\f1\b \cf9 lab1
+\f0\b0 \cf2   
+\f1\b \cf9 lab2
+\f0\b0 \cf2   
+\f1\b \cf9 lab3
+\f0\b0 \cf2   
+\f1\b \cf9 lab4
+\f0\b0 \cf2 \
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs $
+\f0\b0 \cf2  mkdir lab5\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs $
+\f0\b0 \cf2  ls\
+
+\f1\b \cf9 lab0
+\f0\b0 \cf2   
+\f1\b \cf9 lab1
+\f0\b0 \cf2   
+\f1\b \cf9 lab2
+\f0\b0 \cf2   
+\f1\b \cf9 lab3
+\f0\b0 \cf2   
+\f1\b \cf9 lab4
+\f0\b0 \cf2   
+\f1\b \cf9 lab5
+\f0\b0 \cf2 \
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs $
+\f0\b0 \cf2  cd lab5\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat > task1.sh << "#!/bash/bin\
+-bash: !/bash/bin: event not found\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  # task1.sh\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  getconf PAGE_SIZ^C\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat > task1.sh << "EOF"\
+> #!/bash/bin\
+> # task1.sh\
+> getconf PAGE_SIZE\
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  ls\
+task1.sh\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat task1.sh\
+#!/bash/bin\
+# task1.sh\
+getconf PAGE_SIZE\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat > task2.sh << "#!/bin/bash\
+-bash: !/bin/bash: event not found\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  # task2.sh\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  while read cmd; do\
+>     # \uc0\u33719 \u21462  PID \u26368 \u23567 \u30340 \u36827 \u31243 \u30340  NI \u20540 \
+>     result=$(ps -C "$cmd" -o pid,ni --sort=pid | awk 'NR==2 \{print $2\}')\
+>     if [ -z "$result" ]; then\
+>         echo "$cmd NOTFOUND"\
+>     else\
+>         echo "$cmd $result"\
+>     fi\
+> done^C\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat > task2.sh << "EOF"\
+> #!/bin/bash\
+> # task2.sh\
+> while read cmd; do\
+>     # \uc0\u33719 \u21462  PID \u26368 \u23567 \u30340 \u36827 \u31243 \u30340  NI \u20540 \
+>     result=$(ps -C "$cmd" -o pid,ni --sort=pid | awk 'NR==2 \{print $2\}')\
+>     if [ -z "$result" ]; then\
+>         echo "$cmd NOTFOUND"\
+>     else\
+>         echo "$cmd $result"\
+>     fi\
+> done\
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat task2.sh\
+#!/bin/bash\
+# task2.sh\
+while read cmd; do\
+    # \uc0\u33719 \u21462  PID \u26368 \u23567 \u30340 \u36827 \u31243 \u30340  NI \u20540 \
+    result=$(ps -C "$cmd" -o pid,ni --sort=pid | awk 'NR==2 \{print $2\}')\
+    if [ -z "$result" ]; then\
+        echo "$cmd NOTFOUND"\
+    else\
+        echo "$cmd $result"\
+    fi\
+done\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat > task3.sh << "EOF"\
+> #!/bin/bash\
+> # task3.sh\
+> while read filepath; do\
+>     # \uc0\u25429 \u33719  strace \u20013  openat \u30340 \u36755 \u20986 \u34892 \
+>     error=$(strace -e openat cat "$filepath" 2>&1 | grep "openat.*= -1" | sed -n 's/.*-1 \\([A-Z]*\\).*/\\1/p')\
+>     \
+>     if [ -z "$error" ]; then\
+>         echo "$filepath NO_ENOENT"\
+>     else\
+>         echo "$filepath $error"\
+>     fi\
+> done\
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat > task4.sh << "EOF"\
+> #!/bin/bash\
+> # task4.sh\
+> while read lib; do\
+>     # lsof -p $$ \uc0\u21015 \u20986 \u24403 \u21069 \u36827 \u31243 \u25171 \u24320 \u30340 \u25991 \u20214 \
+>     if lsof -p $$ | grep -q "$lib"; then\
+>         echo "$lib yes"\
+>     else\
+>         echo "$lib no"\
+>     fi\
+> done\
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat > task5.sh << "EOF"\
+> #!/bin/bash\
+> # task5.sh\
+> while read cmd; do\
+>     # \uc0\u33719 \u21462  PID \u26368 \u23567 \u30340 \u36827 \u31243 \u30340 \u32447 \u31243 \u25968 \
+>     thcount=$(ps -C "$cmd" -o pid,thcount --sort=pid | awk 'NR==2 \{print $2\}')\
+>     \
+>     if [ -z "$thcount" ]; then\
+>         echo "$cmd NOTFOUND"\
+>     elif [ "$thcount" -gt 1 ]; then\
+>         echo "$cmd multithreaded"\
+>     else\
+>         echo "$cmd single-threaded"\
+>     fi\
+> done\
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat > task6.sh << "#!/bin/bash\
+-bash: !/bin/bash: event not found\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  # task6.sh\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  free -k | awk '/^Mem:/ \{print $2\}'^C\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat > task6.sh << "EOF"\
+> #!/bin/bash\
+> # task6.sh\
+> free -k | awk '/^Mem:/ \{print $2\}'\
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat > task7.sh << "EOF"\
+> #!/bin/bash\
+> # task7.sh\
+> while read cmd; do\
+>     # \uc0\u33719 \u21462  PID \u26368 \u23567 \u30340 \u36827 \u31243 \u30340 \u29992 \u25143 \
+>     user=$(ps -C "$cmd" -o pid,user --sort=pid | awk 'NR==2 \{print $2\}')\
+>     \
+>     if [ -z "$user" ]; then\
+>         echo "$cmd NOTFOUND"\
+>     else\
+>         echo "$cmd $user"\
+>     fi\
+> done\
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  ls\
+task1.sh  task2.sh  task3.sh  task4.sh  task5.sh  task6.sh  task7.sh\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  chmod +x task*.sh\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  ls\
+
+\f1\b \cf7 task1.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task2.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task3.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task4.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task5.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task6.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task7.sh
+\f0\b0 \cf2 \
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  mkdir test_cases\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  ls\
+
+\f1\b \cf7 task1.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task3.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task5.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task7.sh
+\f0\b0 \cf2 \
+
+\f1\b \cf7 task2.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task4.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task6.sh
+\f0\b0 \cf2   
+\f1\b \cf9 test_cases
+\f0\b0 \cf2 \
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cd test_cases\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/test_cases $
+\f0\b0 \cf2  ls\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/test_cases $
+\f0\b0 \cf2  cat > task1.in << "EOF"\
+> placeholder\
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/test_cases $
+\f0\b0 \cf2  cat > task2.in << "EOF"\
+> systemd\
+> cron\
+> sshd\
+> rsyslogd\
+> nonexistent-daemon\
+> \
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/test_cases $
+\f0\b0 \cf2  cat > task3.in << "EOF"\
+> /tmp/not_a_file_123\
+> /etc/shadow_fake\
+> /var/log/missing.log\
+> \
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/test_cases $
+\f0\b0 \cf2  cat > task4.in << "EOF"\
+> libc.so\
+> libtinfo.so\
+> libm.so\
+> libfake.so\
+> \
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/test_cases $
+\f0\b0 \cf2  cat > task5.in << "EOF"\
+> systemd\
+> bash\
+> rsyslogd\
+> dbus-daemon\
+> fake-daemon\
+> \
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/test_cases $
+\f0\b0 \cf2  cat > task6.in << "EOF"\
+> placeholder\
+> \
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/test_cases $
+\f0\b0 \cf2  cat > task7.in << "systemd\
+> cron\
+> sshd\
+> rsyslogd\
+> fake-daemon\
+> ^C\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/test_cases $
+\f0\b0 \cf2  cat > task7.in <<"EOF"\
+> systemd\
+> cron\
+> sshd\
+> rsyslogd\
+> fake-daemon\
+> \
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/test_cases $
+\f0\b0 \cf2  ls\
+task1.in  task2.in  task3.in  task4.in  task5.in  task6.in  task7.in\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/test_cases $
+\f0\b0 \cf2  cd ../\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  ls\
+
+\f1\b \cf7 task1.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task3.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task5.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task7.sh
+\f0\b0 \cf2 \
+
+\f1\b \cf7 task2.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task4.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task6.sh
+\f0\b0 \cf2   
+\f1\b \cf9 test_cases
+\f0\b0 \cf2 \
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  ls -R\
+.:\
+
+\f1\b \cf7 task1.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task3.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task5.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task7.sh
+\f0\b0 \cf2 \
+
+\f1\b \cf7 task2.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task4.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task6.sh
+\f0\b0 \cf2   
+\f1\b \cf9 test_cases
+\f0\b0 \cf2 \
+\
+./test_cases:\
+task1.in  task2.in  task3.in  task4.in  task5.in  task6.in  task7.in\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  cat > run_tests.sh << "EOF"\
+> #!/bin/bash\
+> \
+> # 1. \uc0\u21019 \u24314 \u36755 \u20986 \u25991 \u20214 \u22841 \u65288 \u22914 \u26524 \u19981 \u23384 \u22312 \u65289 \
+> mkdir -p output\
+> \
+> # 2. \uc0\u24490 \u29615 \u22788 \u29702  task1 \u21040  task7\
+> for i in \{1..7\}\
+> do\
+>     SCRIPT="task$i.sh"\
+>     INPUT="test_cases/task$i.in"\
+>     OUTPUT="output/task$i.out"\
+> \
+>     # \uc0\u26816 \u26597 \u33050 \u26412 \u21644 \u36755 \u20837 \u25991 \u20214 \u26159 \u21542 \u23384 \u22312 \
+>     if [[ -f "$SCRIPT" && -f "$INPUT" ]]; then\
+>         echo "\uc0\u27491 \u22312 \u36816 \u34892  $SCRIPT ..."\
+>         \
+>         # \uc0\u30830 \u20445 \u33050 \u26412 \u26377 \u25191 \u34892 \u26435 \u38480 \
+>         chmod +x "$SCRIPT"\
+>         \
+>         # \uc0\u36816 \u34892 \u33050 \u26412 \u24182 \u23558 \u32467 \u26524 \u37325 \u23450 \u21521 \u21040 \u36755 \u20986 \u25991 \u20214 \
+>         ./"$SCRIPT" < "$INPUT" > "$OUTPUT"\
+>         \
+>         echo "\uc0\u9989  \u23436 \u25104 \u65306 \u32467 \u26524 \u24050 \u20445 \u23384 \u33267  $OUTPUT"\
+>     else\
+>         echo "\uc0\u9888 \u65039  \u36339 \u36807 \u65306 \u26410 \u25214 \u21040  $SCRIPT \u25110  $INPUT"\
+>     fi\
+> done\
+> \
+> echo "---------------------------------------"\
+> echo "\uc0\u25152 \u26377 \u27979 \u35797 \u36816 \u34892 \u23436 \u27605 \u12290 \u35831 \u26597 \u30475  output/ \u30446 \u24405 \u12290 "\
+> EOF\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  chmod run_tests.sh\
+chmod: missing operand after \'91run_tests.sh\'92\
+Try 'chmod --help' for more information.\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  chmod run_test.sh\
+chmod: missing operand after \'91run_test.sh\'92\
+Try 'chmod --help' for more information.\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  ls\
+run_tests.sh  
+\f1\b \cf7 task2.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task4.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task6.sh
+\f0\b0 \cf2   
+\f1\b \cf9 test_cases
+\f0\b0 \cf2 \
+
+\f1\b \cf7 task1.sh
+\f0\b0 \cf2       
+\f1\b \cf7 task3.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task5.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task7.sh
+\f0\b0 \cf2 \
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  chmod +x run_tests.sh\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  ./run_tests.sh\
+\uc0\u27491 \u22312 \u36816 \u34892  task1.sh ...\
+./run_tests.sh: ./task1.sh: /bash/bin: bad interpreter: No such file or directory\
+\uc0\u9989  \u23436 \u25104 \u65306 \u32467 \u26524 \u24050 \u20445 \u23384 \u33267  output/task1.out\
+\uc0\u27491 \u22312 \u36816 \u34892  task2.sh ...\
+error: list of command names must follow -C\
+\
+Usage:\
+ ps [options]\
+\
+ Try 'ps --help <simple|list|output|threads|misc|all>'\
+  or 'ps --help <s|l|o|t|m|a>'\
+ for additional help text.\
+\
+For more details see ps(1).\
+\uc0\u9989  \u23436 \u25104 \u65306 \u32467 \u26524 \u24050 \u20445 \u23384 \u33267  output/task2.out\
+\uc0\u27491 \u22312 \u36816 \u34892  task3.sh ...\
+\uc0\u9989  \u23436 \u25104 \u65306 \u32467 \u26524 \u24050 \u20445 \u23384 \u33267  output/task3.out\
+\uc0\u27491 \u22312 \u36816 \u34892  task4.sh ...\
+\uc0\u9989  \u23436 \u25104 \u65306 \u32467 \u26524 \u24050 \u20445 \u23384 \u33267  output/task4.out\
+\uc0\u27491 \u22312 \u36816 \u34892  task5.sh ...\
+error: list of command names must follow -C\
+\
+Usage:\
+ ps [options]\
+\
+ Try 'ps --help <simple|list|output|threads|misc|all>'\
+  or 'ps --help <s|l|o|t|m|a>'\
+ for additional help text.\
+\
+For more details see ps(1).\
+\uc0\u9989  \u23436 \u25104 \u65306 \u32467 \u26524 \u24050 \u20445 \u23384 \u33267  output/task5.out\
+\uc0\u27491 \u22312 \u36816 \u34892  task6.sh ...\
+\uc0\u9989  \u23436 \u25104 \u65306 \u32467 \u26524 \u24050 \u20445 \u23384 \u33267  output/task6.out\
+\uc0\u27491 \u22312 \u36816 \u34892  task7.sh ...\
+error: list of command names must follow -C\
+\
+Usage:\
+ ps [options]\
+\
+ Try 'ps --help <simple|list|output|threads|misc|all>'\
+  or 'ps --help <s|l|o|t|m|a>'\
+ for additional help text.\
+\
+For more details see ps(1).\
+\uc0\u9989  \u23436 \u25104 \u65306 \u32467 \u26524 \u24050 \u20445 \u23384 \u33267  output/task7.out\
+---------------------------------------\
+\uc0\u25152 \u26377 \u27979 \u35797 \u36816 \u34892 \u23436 \u27605 \u12290 \u35831 \u26597 \u30475  output/ \u30446 \u24405 \u12290 \
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2  ls\
+
+\f1\b \cf9 output
+\f0\b0 \cf2         
+\f1\b \cf7 task1.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task3.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task5.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task7.sh
+\f0\b0 \cf2 \
+
+\f1\b \cf7 run_tests.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task2.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task4.sh
+\f0\b0 \cf2   
+\f1\b \cf7 task6.sh
+\f0\b0 \cf2   
+\f1\b \cf9 test_cases
+\f0\b0 \cf2 \
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5 $
+\f0\b0 \cf2   cd output\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/output $
+\f0\b0 \cf2  cat task*.out\
+systemd 0\
+cron 0\
+sshd 0\
+rsyslogd 0\
+nonexistent-daemon NOTFOUND\
+ NOTFOUND\
+/tmp/not_a_file_123 ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+/etc/shadow_fake ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+/var/log/missing.log ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+ ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+ENOENT\
+libc.so no\
+libtinfo.so yes\
+libm.so no\
+libfake.so no\
+ yes\
+systemd single-threaded\
+bash single-threaded\
+rsyslogd multithreaded\
+dbus-daemon single-threaded\
+fake-daemon NOTFOUND\
+ NOTFOUND\
+3878088\
+systemd root\
+cron root\
+sshd root\
+rsyslogd root\
+fake-daemon NOTFOUND\
+ NOTFOUND\
+
+\f1\b \cf7 2351610105@raspberrypi
+\f0\b0 \cf2 :
+\f1\b \cf9 ~/labs/lab5/output $
+\f0\b0 \cf2  Connection to 150.158.24.225 closed by remote host.\
+Connection to 150.158.24.225 closed.\
+(base) fang50253@MacBook-Pro ~ % \
+}

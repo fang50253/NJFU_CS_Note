@@ -1,0 +1,10 @@
+2026-03-31 19:51:45,996 [INFO] Running: 
+    fastp     -i /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/2026-03-31林木生物信息学/week5/task2/data/SRR13324544_1.fastq     -I /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/2026-03-31林木生物信息学/week5/task2/data/SRR13324544_2.fastq     -o /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/2026-03-31林木生物信息学/week5/task2/results/qc/SRR13324544_clean_1.fastq     -O /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/2026-03-31林木生物信息学/week5/task2/results/qc/SRR13324544_clean_2.fastq     -h /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/2026-03-31林木生物信息学/week5/task2/results/qc/SRR13324544.html
+    
+2026-03-31 19:51:46,004 [ERROR] /bin/sh: line 1: fastp: command not found
+
+2026-03-31 19:55:53,883 [INFO] Running: 
+    fastp     -i /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/2026-03-31林木生物信息学/week5/task2/data/SRR13324544_1.fastq     -I /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/2026-03-31林木生物信息学/week5/task2/data/SRR13324544_2.fastq     -o /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/2026-03-31林木生物信息学/week5/task2/results/qc/SRR13324544_clean_1.fastq     -O /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/2026-03-31林木生物信息学/week5/task2/results/qc/SRR13324544_clean_2.fastq     -h /Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/2026-03-31林木生物信息学/week5/task2/results/qc/SRR13324544.html
+    
+2026-03-31 19:55:53,890 [ERROR] /bin/sh: line 1: fastp: command not found
+

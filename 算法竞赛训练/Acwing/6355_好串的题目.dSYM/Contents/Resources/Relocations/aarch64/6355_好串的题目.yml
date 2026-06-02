@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "6355_好串的题目"
+relocations:     []
+...

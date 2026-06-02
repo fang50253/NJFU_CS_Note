@@ -1,0 +1,4 @@
+ssh tcp
+domain udp
+http tcp
+not-a-service tcp

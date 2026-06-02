@@ -1,0 +1,4 @@
+# Example system crontab
+17 *    * * *   root    cd / && run-parts --report /etc/cron.hourly
+25 6    * * *   backup  /usr/local/bin/backup-home
+47 6    * * 7   root    test -x /usr/sbin/anacron || run-parts --report /etc/cron.weekly

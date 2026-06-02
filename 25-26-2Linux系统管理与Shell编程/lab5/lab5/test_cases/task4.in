@@ -1,0 +1,4 @@
+libc.so
+libtinfo.so
+libm.so
+libfake.so

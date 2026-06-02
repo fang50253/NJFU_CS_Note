@@ -1,0 +1,12 @@
+/dev/disk10s1 /Volumes/LX
+/dev/disk1s1 /System/Volumes/iSCPreboot
+/dev/disk1s2 /System/Volumes/xarts
+/dev/disk1s3 /System/Volumes/Hardware
+/dev/disk3s1 /System/Volumes/Data
+/dev/disk3s2 /System/Volumes/Update
+/dev/disk3s3s1 /
+/dev/disk3s4 /System/Volumes/Preboot
+/dev/disk3s6 /System/Volumes/VM
+/dev/disk5s1 /Library/Developer/CoreSimulator/Cryptex/Images/bundle/SimRuntimeBundle-82C70BD7-157C-4F29-8286-36AA22EB29A8
+/dev/disk7s1 /Library/Developer/CoreSimulator/Volumes/iOS_22A3351
+/dev/disk9s1 /Library/Developer/CoreSimulator/Volumes/iOS_23C54
