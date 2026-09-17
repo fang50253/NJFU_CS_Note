@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>图书馆座位预约----powered by2351610105方泽宇</title>
+<style>
+:root {
+  --primary: #4a90d9;
+  --primary-dark: #357abd;
+  --success: #4caf50;
+  --success-dark: #43a047;
+  --danger: #f44336;
+  --danger-dark: #e53935;
+  --text: #333;
+  --muted: #666;
+  --border: #ddd;
+  --bg: #f0f2f5;
+  --card-bg: #fff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+.main { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.page-header { text-align: center; margin-bottom: 24px; }
+.page-header h1 { font-size: 1.8rem; color: var(--text); }
+.subtitle { color: var(--muted); margin-top: 6px; font-size: 0.95rem; }
+
+.status-banner {
+  padding: 12px 20px; border-radius: 8px; margin-bottom: 16px;
+  text-align: center; font-weight: 500; display: none;
+}
+.status-banner.show { display: block; }
+.status-banner.info { background: #e3f2fd; color: #1976d2; }
+.status-banner.success { background: #e8f5e9; color: #388e3c; }
+.status-banner.error { background: #ffebee; color: #d32f2f; }
+
+.card {
+  background: var(--card-bg); border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 20px 24px; margin-bottom: 16px;
+}
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px; }
+.card-header h2 { font-size: 1.15rem; }
+.card-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.btn {
+  padding: 9px 18px; border: none; border-radius: 8px;
+  font-size: 0.92rem; cursor: pointer; transition: all 0.2s; font-weight: 500;
+}
+.btn:disabled { opacity: 0.55; cursor: not-allowed; }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover:not(:disabled) { background: var(--primary-dark); }
+.btn-success { background: var(--success); color: #fff; }
+.btn-success:hover:not(:disabled) { background: var(--success-dark); }
+.btn-danger { background: var(--danger); color: #fff; }
+.btn-danger:hover:not(:disabled) { background: var(--danger-dark); }
+.btn-secondary { background: #f5f5f5; color: var(--text); }
+.btn-secondary:hover:not(:disabled) { background: #e0e0e0; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-large { padding: 12px 24px; font-size: 1rem; }
+.btn-small { padding: 5px 10px; font-size: 0.82rem; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { margin-bottom: 12px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: 500; color: #555; font-size: 0.88rem; }
+.form-control {
+  width: 100%; padding: 9px 12px; border: 1px solid var(--border);
+  border-radius: 8px; font-size: 0.92rem; transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form-control:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(74,144,217,0.12); }
+select.form-control { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 34px; cursor: pointer; }
+
+.creds-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+.auth-badge { padding: 5px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 500; }
+.auth-badge.valid { background: #e8f5e9; color: #388e3c; }
+.auth-badge.invalid { background: #ffebee; color: #d32f2f; }
+.auth-badge.unknown { background: #f5f5f5; color: #999; }
+.auth-user { color: var(--muted); font-size: 0.9rem; }
+
+.progress-box {
+  margin-top: 10px; padding: 10px 14px; background: #f5f9ff;
+  border: 1px solid #cfe3f7; border-radius: 8px; font-size: 0.9rem;
+  color: #1976d2; display: none;
+}
+.progress-box.show { display: block; }
+.progress-box.error { background: #ffebee; border-color: #f5b5b0; color: #d32f2f; }
+.progress-box.success { background: #e8f5e9; border-color: #b7dfb9; color: #388e3c; }
+
+.hint { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 10px 14px; color: #795548; font-size: 0.85rem; line-height: 1.7; margin-bottom: 12px; }
+
+.config-logs-row { display: grid; grid-template-columns: 1.15fr 1fr; gap: 16px; align-items: start; }
+
+.seat-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
+  gap: 6px; max-height: 320px; overflow-y: auto; margin: 10px 0;
+}
+.seat-item {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 6px 4px; border: 1px solid var(--border); border-radius: 6px;
+  cursor: pointer; transition: all 0.15s; min-width: 0;
+}
+.seat-item:hover { border-color: var(--primary); background: #f5f9ff; }
+.seat-item.selected { border-color: var(--success); background: #e8f5e9; }
+.seat-name { font-size: 0.78rem; font-weight: 600; }
+.seat-id { font-size: 0.68rem; color: #999; font-family: Menlo, Monaco, monospace; }
+.seat-tools { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+.polling-status { margin-top: 10px; padding: 10px 14px; background: #fff3e0; border-radius: 8px; color: #e65100; display: none; align-items: center; gap: 10px; font-size: 0.9rem; }
+.polling-status.show { display: flex; }
+.pulse { width: 10px; height: 10px; background: #ff9800; border-radius: 50%; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.25); } }
+.result-banner { margin-top: 10px; padding: 12px 14px; border-radius: 8px; font-weight: 600; font-size: 1rem; display: none; }
+.result-banner.show { display: block; }
+.result-banner.success { background: #e8f5e9; color: #2e7d32; }
+.result-banner.fail { background: #ffebee; color: #c62828; }
+
+.log-container {
+  max-height: 430px; overflow-y: auto; background: #1e1e1e;
+  border-radius: 8px; padding: 12px; font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: 0.82rem;
+}
+.log-item { padding: 3px 0; color: #d4d4d4; word-break: break-all; }
+.log-item.success { color: #4ec9b0; }
+.log-item.error { color: #f44747; }
+.log-item.info { color: #569cd6; }
+.log-item.warning { color: #dcdcaa; }
+.log-time { color: #888; margin-right: 8px; }
+.log-empty { color: #666; text-align: center; padding: 20px; }
+.log-toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+
+.notice { margin-top: 14px; padding: 10px 14px; background: #eef4fb; border: 1px solid #d4e3f5; border-radius: 8px; color: #4a6785; font-size: 0.82rem; line-height: 1.7; }
+
+@media (max-width: 900px) {
+  .config-logs-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; }
+  .btn-large { width: 100%; }
+}
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="page-header">
+    <h1>图书馆座位预约</h1>
+    <p class="subtitle">南京林业大学图书馆座位预约 · 自动抢座</p>
+  </div>
+
+  <div id="banner" class="status-banner"></div>
+
+  <!-- 凭证卡片 -->
+  <div class="card">
+    <div class="card-header">
+      <h2>🔐 登录与凭证</h2>
+      <div class="card-actions">
+        <button id="btnLogin" class="btn btn-primary" onclick="startLogin()">浏览器登录</button>
+        <button id="btnCancelLogin" class="btn btn-danger" style="display:none" onclick="cancelLogin()">取消登录</button>
+        <button class="btn btn-secondary" onclick="refreshStatus()">刷新状态</button>
+      </div>
+    </div>
+    <div class="creds-row">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span class="auth-badge unknown" id="authBadge">未检测</span>
+        <span class="auth-user" id="authUser"></span>
+      </div>
+    </div>
+    <div class="hint">💡 点击「<strong>浏览器登录</strong>」后，会在您电脑上<strong>自动弹出浏览器窗口</strong>。请在弹出窗口中完成登录（账号密码 / 扫码均可），凭证将<strong>自动抓取并保存</strong>，无需手动复制。登录后本页面自动刷新状态。</div>
+    <div id="progressBox" class="progress-box"></div>
+  </div>
+
+  <!-- 配置 + 日志 -->
+  <div class="config-logs-row">
+    <!-- 配置卡片 -->
+    <div class="card">
+      <div class="card-header">
+        <h2>⚙️ 预约配置</h2>
+        <div class="card-actions">
+          <button class="btn btn-primary" onclick="saveConfig()">保存配置</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>阅览室</label>
+        <select id="roomId" class="form-control"></select>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>预约日期 (YYYYMMDD)</label>
+          <input id="date" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>入座时间 (HH:MM)</label>
+          <input id="bookingTime" type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>预约时长 (分钟)</label>
+          <input id="bookingDuration" type="number" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>座位关键词过滤</label>
+          <input id="seatKeyword" type="text" placeholder="如 7F 或不填" class="form-control" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>轮询间隔 (秒)</label>
+          <input id="pollInterval" type="number" step="0.1" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>最大重试次数</label>
+          <input id="maxRetry" type="number" class="form-control" />
+        </div>
+      </div>
+
+      <div class="seat-tools">
+        <button class="btn btn-secondary" onclick="querySeats()">查询座位</button>
+        <label style="font-size:0.85rem;color:var(--muted);">已选 <span id="selectedCount" style="color:var(--success);font-weight:600;">0</span> 个座位</label>
+      </div>
+      <div id="seatGrid" class="seat-grid"></div>
+
+      <div class="card-actions" style="margin-top:14px;">
+        <button id="btnStart" class="btn btn-success btn-large" onclick="startReserve()" disabled>开始预约</button>
+        <button id="btnStop" class="btn btn-danger btn-large" onclick="stopReserve()" style="display:none">停止</button>
+      </div>
+      <div id="pollingStatus" class="polling-status"><span class="pulse"></span> 轮询进行中... 成功即自动停止</div>
+      <div id="resultBanner" class="result-banner"></div>
+
+      <div class="notice">⚠️ 预约成功后请按时入座，无法到场请提前在图书馆系统取消，避免违约被处罚。<br>预约接口仅支持今天或明天的日期。</div>
+    </div>
+
+    <!-- 日志卡片 -->
+    <div class="card">
+      <div class="card-header">
+        <h2>📋 日志</h2>
+        <button class="btn btn-secondary btn-small" onclick="clearLogDom()">清除</button>
+      </div>
+      <div class="log-container" id="logContainer">
+        <div class="log-empty" id="logEmpty">暂无日志</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// 状态
+// ============================================================
+const $ = id => document.getElementById(id);
+let selectedSeats = new Set();
+let loggedInOffset = 0;
+let logStartIndex = null;
+let loginPollTimer = null;
+let statusPollTimer = null;
+let logPollTimer = null;
+
+const rooms = [
+  { id: '100455344', name: '二层A区' },
+  { id: '100455346', name: '二层B区' },
+  { id: '100455350', name: '三层A区' },
+  { id: '100455352', name: '三层B区' },
+  { id: '100455354', name: '三层C区' },
+  { id: '111488386', name: '三层夹层' },
+  { id: '100455356', name: '四层A区' },
+  { id: '111488388', name: '四层夹层' },
+  { id: '100455358', name: '五层A区' },
+  { id: '100455360', name: '六层A区' },
+  { id: '106658017', name: '七层北侧' },
+  { id: '111488396', name: '七层南侧' },
+];
+
+// ============================================================
+// API 辅助
+// ============================================================
+async function api(path, opts = {}) {
+  const res = await fetch(path, {
+    headers: { 'Content-Type': 'application/json' },
+    ...opts,
+  });
+  if (!res.ok) {
+    let detail = '';
+    try { detail = (await res.json()).detail || ''; } catch (e) {}
+    throw new Error(detail || `HTTP ${res.status}`);
+  }
+  return res.json();
+}
+const apiGet = p => api(p);
+const apiPost = (p, body) => api(p, { method: 'POST', body: JSON.stringify(body || {}) });
+
+// ============================================================
+// 通用
+// ============================================================
+function showBanner(msg, type = 'info') {
+  const b = $('banner');
+  b.textContent = msg;
+  b.className = `status-banner ${type} show`;
+  clearTimeout(b._t);
+  b._t = setTimeout(() => b.classList.remove('show'), 5000);
+}
+
+function addLog(message, level = 'INFO') {
+  const box = $('logContainer');
+  const empty = $('logEmpty');
+  if (empty) empty.remove();
+  const now = new Date();
+  const hh = String(now.getHours()).padStart(2,'0');
+  const mm = String(now.getMinutes()).padStart(2,'0');
+  const ss = String(now.getSeconds()).padStart(2,'0');
+  const div = document.createElement('div');
+  div.className = `log-item ${level.toLowerCase()}`;
+  div.innerHTML = `<span class="log-time">${hh}:${mm}:${ss}</span>${escapeHtml(message)}`;
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
+function clearLogDom() {
+  $('logContainer').innerHTML = '<div class="log-empty" id="logEmpty">暂无日志</div>';
+  loggedInOffset = 0;
+  logStartIndex = null;
+}
+
+// ============================================================
+// 初始化
+// ============================================================
+function fillRooms(selectedId) {
+  const sel = $('roomId');
+  sel.innerHTML = rooms.map(r =>
+    `<option value="${r.id}" ${r.id === selectedId ? 'selected' : ''}>${r.name} (${r.id})</option>`
+  ).join('');
+}
+
+async function loadConfig() {
+  try {
+    const cfg = await apiGet('/api/config');
+    fillRooms(cfg.room_id);
+    $('date').value = cfg.date || '';
+    $('bookingTime').value = cfg.booking_time || '08:00';
+    $('bookingDuration').value = cfg.booking_duration || 120;
+    $('pollInterval').value = cfg.poll_interval || 0.3;
+    $('maxRetry').value = cfg.max_retry || 100;
+    $('seatKeyword').value = cfg.seat_keyword || '';
+  } catch (e) {
+    showBanner('加载配置失败: ' + e.message, 'error');
+  }
+}
+
+async function refreshStatus() {
+  try {
+    const st = await apiGet('/api/status');
+    const badge = $('authBadge');
+    if (st.authenticated) {
+      badge.textContent = '✅ 有效';
+      badge.className = 'auth-badge valid';
+      $('authUser').textContent = st.user
+        ? `用户: ${st.user.trueName} (${st.user.accNo}) token: ${st.user.token_masked}`
+        : '';
+    } else {
+      badge.textContent = '❌ 无效或未登录';
+      badge.className = 'auth-badge invalid';
+      $('authUser').textContent = '';
+    }
+    // 如果轮询在运行, 同步按钮态
+    if (st.reserve && st.reserve.running) {
+      $('btnStart').style.display = 'none';
+      $('btnStop').style.display = 'inline-block';
+    }
+  } catch (e) {
+    $('authBadge').textContent = '无法连接服务器';
+    $('authBadge').className = 'auth-badge unknown';
+  }
+}
+
+// ============================================================
+// 登录
+// ============================================================
+async function startLogin() {
+  try {
+    await apiPost('/api/login');
+    showBanner('浏览器即将弹出，请在弹出窗口中完成登录...', 'info');
+    $('btnLogin').disabled = true;
+    $('btnCancelLogin').style.display = 'inline-block';
+    pollLoginStatus();
+  } catch (e) {
+    if (e.message.includes('409')) showBanner('登录已在进行中', 'info');
+    else showBanner('启动登录失败: ' + e.message, 'error');
+  }
+}
+
+async function pollLoginStatus() {
+  try {
+    const st = await apiGet('/api/login/status');
+    const box = $('progressBox');
+    box.style.display = 'block';
+    box.className = 'progress-box show ' + (st.stage === 'error' ? 'error' : st.stage === 'done' ? 'success' : '');
+    box.textContent = `${st.message || ''}`;
+
+    if (st.stage === 'done') {
+      box.className = 'progress-box show success';
+      showBanner('✅ 登录成功，凭证已保存！', 'success');
+      $('btnLogin').disabled = false;
+      $('btnCancelLogin').style.display = 'none';
+      refreshStatus();
+      clearTimeout(loginPollTimer);
+      return;
+    }
+    if (st.stage === 'error') {
+      showBanner('登录已取消或失败', 'error');
+      $('btnLogin').disabled = false;
+      $('btnCancelLogin').style.display = 'none';
+      clearTimeout(loginPollTimer);
+      // 失败后停止轮询, 但留在页面
+      return;
+    }
+    if (!st.running && st.stage === 'idle') {
+      $('btnLogin').disabled = false;
+      $('btnCancelLogin').style.display = 'none';
+      clearTimeout(loginPollTimer);
+      return;
+    }
+    loginPollTimer = setTimeout(pollLoginStatus, 1500);
+  } catch (e) {
+    loginPollTimer = setTimeout(pollLoginStatus, 1500);
+  }
+}
+
+async function cancelLogin() {
+  try {
+    await apiPost('/api/login/cancel');
+    showBanner('已请求取消登录', 'info');
+  } catch (e) {
+    showBanner('取消失败: ' + e.message, 'error');
+  }
+}
+
+// ============================================================
+// 配置
+// ============================================================
+async function saveConfig() {
+  const body = {
+    room_id: $('roomId').value,
+    date: $('date').value.trim(),
+    booking_time: $('bookingTime').value.trim(),
+    booking_duration: parseInt($('bookingDuration').value, 10),
+    poll_interval: parseFloat($('pollInterval').value),
+    max_retry: parseInt($('maxRetry').value, 10),
+    seat_keyword: $('seatKeyword').value.trim(),
+  };
+  try {
+    const r = await apiPost('/api/config', body);
+    showBanner('✅ 配置已保存', 'success');
+    addLog('配置已保存: ' + JSON.stringify(r.config), 'INFO');
+  } catch (e) {
+    showBanner('保存失败: ' + e.message, 'error');
+  }
+}
+
+// ============================================================
+// 座位查询
+// ============================================================
+async function querySeats() {
+  const rid = $('roomId').value;
+  const d = $('date').value.trim();
+  if (!rid || !d) { showBanner('请填写房间和日期', 'error'); return; }
+  selectedSeats.clear();
+  updateSeatDisplay();
+  try {
+    const r = await apiGet(`/api/seats?room_id=${encodeURIComponent(rid)}&date=${encodeURIComponent(d)}`);
+    const keyword = ($('seatKeyword').value || '').trim();
+    let seats = r.seats || [];
+    if (keyword) seats = seats.filter(s => s.name.includes(keyword));
+    renderSeats(seats);
+    addLog(`查询到 ${seats.length} 个座位${keyword ? ` (过滤词: ${keyword})` : ''}`, 'INFO');
+  } catch (e) {
+    showBanner('查询失败: ' + e.message, 'error');
+    addLog('查询座位失败: ' + e.message, 'ERROR');
+  }
+}
+
+function renderSeats(seats) {
+  const grid = $('seatGrid');
+  if (seats.length === 0) {
+    grid.innerHTML = '<p style="color:#999;font-size:0.9rem;">未查询到座位，请检查日期。</p>';
+    return;
+  }
+  grid.innerHTML = '';
+  seats.forEach(s => {
+    const div = document.createElement('div');
+    div.className = 'seat-item';
+    div.title = `${s.name} | devId: ${s.id}`;
+    div.innerHTML = `<span class="seat-name">${escapeHtml(s.name)}</span><span class="seat-id">${escapeHtml(s.id)}</span>`;
+    div.onclick = () => {
+      if (selectedSeats.has(s.id)) selectedSeats.delete(s.id);
+      else selectedSeats.add(s.id);
+      div.classList.toggle('selected', selectedSeats.has(s.id));
+      updateSeatDisplay();
+    };
+    grid.appendChild(div);
+  });
+}
+
+function updateSeatDisplay() {
+  $('selectedCount').textContent = selectedSeats.size;
+  $('btnStart').disabled = selectedSeats.size === 0;
+}
+
+// ============================================================
+// 预约轮询
+// ============================================================
+async function startReserve() {
+  if (selectedSeats.size === 0) { showBanner('请先选择座位', 'error'); return; }
+  const body = {
+    seat_ids: [...selectedSeats],
+    interval: parseFloat($('pollInterval').value) || 0.3,
+    max_retry: parseInt($('maxRetry').value, 10) || 100,
+  };
+  try {
+    await apiPost('/api/reserve/start', body);
+    addLog(`🚀 开始预约 ${body.seat_ids.length} 个座位: ${body.seat_ids.join(', ')}`, 'INFO');
+    $('btnStart').style.display = 'none';
+    $('btnStop').style.display = 'inline-block';
+    $('pollingStatus').classList.add('show');
+    $('resultBanner').classList.remove('show');
+    pollReserveStatus();
+  } catch (e) {
+    showBanner('启动预约失败: ' + e.message, 'error');
+  }
+}
+
+async function pollReserveStatus() {
+  try {
+    const st = await apiGet('/api/reserve/status');
+    const banner = $('resultBanner');
+    if (!st.running) {
+      $('btnStart').style.display = 'inline-block';
+      $('btnStop').style.display = 'none';
+      $('pollingStatus').classList.remove('show');
+      if (st.success === true) {
+        banner.className = 'result-banner success show';
+        banner.textContent = '🎉 预约成功！请按时到达图书馆入座。';
+        showBanner('预约成功！', 'success');
+      } else if (st.success === false) {
+        banner.className = 'result-banner fail show';
+        banner.textContent = (st.message || '预约未成功') + '，请稍后重试。';
+        showBanner('预约未成功', 'error');
+      }
+      return;
+    }
+    setTimeout(pollReserveStatus, 2000);
+  } catch (e) {
+    setTimeout(pollReserveStatus, 2000);
+  }
+}
+
+async function stopReserve() {
+  try {
+    await apiPost('/api/reserve/stop');
+    showBanner('已请求停止轮询', 'info');
+  } catch (e) {
+    showBanner('停止失败: ' + e.message, 'error');
+  }
+}
+
+// ============================================================
+// 日志拉取 (增量: 只渲染新条目)
+// ============================================================
+async function pullLogs() {
+  try {
+    const r = await apiGet('/api/logs?n=200');
+    const logs = r.logs || [];
+    if (logStartIndex === null) {
+      // 首次: 存储当前日志条数的基线
+      logStartIndex = logs.length;
+      return;
+    }
+    if (logs.length < logStartIndex) {
+      logStartIndex = 0;  // 服务器清空后重置
+    }
+    for (let i = logStartIndex; i < logs.length; i++) {
+      addLog(logs[i].message, logs[i].level || 'INFO');
+    }
+    logStartIndex = logs.length;
+  } catch (e) { /* 静默, 下轮重试 */ }
+}
+
+// ============================================================
+// 启动
+// ============================================================
+(async function init() {
+  await loadConfig();
+  await refreshStatus();
+  await pullLogs();
+  statusPollTimer = setInterval(refreshStatus, 10000);
+  logPollTimer = setInterval(pullLogs, 3000);
+})();
+</script>
+</body>
+</html>

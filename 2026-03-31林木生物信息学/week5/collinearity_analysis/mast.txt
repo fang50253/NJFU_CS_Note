@@ -1,0 +1,3996 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.5.9 (Release date: Fri Nov 21 15:33:51 2025 -0800)
+
+	For further information on how to interpret these results please access https://meme-suite.org/meme.
+	To get a copy of the MAST software please access https://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE WRKY_protein_final.fasta (peptide)
+	Last updated on Fri May  1 05:18:38 2026
+	Database contains 149 sequences, 58619 residues
+
+	MOTIFS meme.xml (peptide)
+	MOTIF ID                                                 ALT ID  WIDTH BEST POSSIBLE MATCH
+	----- -------------------------------------------------- ------- ----- -------------------
+	    1 ILDDGYRWRKYGQKPVKGSPYP                             MEME-1     22 ILDDGYRWRKYGQKMVKGNPYP
+	    2 GCPVRKHVERASEDPSIVITTYEGKHNHP                      MEME-2     29 GCPVRKHVERCSHDPKMVITTYEGKHNHP
+	    3 DDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH          MEME-3     41 YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH
+	    4 RSYYRCTS                                           MEME-4      8 RSYYRCTS
+	    5 KKAEKRIREPRVVVQTKSEVD                              MEME-5     21 KKAEKRIREPRFVFQTKSEVD
+	    6 GQITEIVYKGEHNHPKPQPNRRS                            MEME-6     23 GHITEIIYKGEHNHPKPQPNRRY
+	    7 GFSFGMNQPGLANLAMAGLGQGQPKMPVMPIHPYLAQQHPGNEMGFMMPK MEME-7     50 GFSFGMNQPGFANMAMAGLGQGQPKMPVMPMHPYLAQQHPGNEMGFMMPK
+	    8 NPEIRSPYLTIPPGLSPTTLLESPVFLSN                      MEME-8     29 NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+	    9 TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF MEME-9     50 TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF
+	   10 MAGIDDNVAIIGDWVPPSPSPRAFFSAML                      MEME-10    29 MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2     3     4     5     6     7     8     9
+	----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+	   2   0.21
+	   3   0.59  0.25
+	   4   0.24  0.28  0.80
+	   5   0.14  0.24  0.12  0.26
+	   6   0.20  0.34  0.15  0.29  0.13
+	   7   0.10  0.08  0.07  0.18  0.19  0.13
+	   8   0.16  0.11  0.20  0.23  0.17  0.08  0.20
+	   9   0.12  0.16  0.08  0.19  0.20  0.14  0.13  0.14
+	  10   0.07  0.11  0.10  0.23  0.13  0.11  0.16  0.16  0.15
+	Correlations above 0.60 may cause some combined p-values and
+	E-values to be underestimates.
+	Removing motif 4 from the query may be advisable.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.073 C 0.018 D 0.052 E 0.062 F 0.040 G 0.069 H 0.022 I 0.056 K 0.058 
+	L 0.092 M 0.023 N 0.046 P 0.051 Q 0.041 R 0.052 S 0.074 T 0.059 V 0.064 
+	W 0.013 Y 0.033 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 149 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+XP_024437144.1                                                   3.8e-252    708
+XP_006378014.1                                                   4.9e-252    725
+XP_024437142.1                                                   4.9e-252    725
+XP_024437143.1                                                   4.9e-252    725
+XP_002300596.2                                                   1.7e-249    731
+XP_052310948.1                                                   1.7e-249    731
+XP_024441234.1                                                   1.7e-249    732
+XP_024441213.1                                                   1.9e-249    739
+XP_024441219.1                                                   1.9e-249    739
+XP_024441225.1                                                   1.9e-249    739
+XP_006381519.2                                                   4.1e-182    475
+XP_024459754.2                                                   4.1e-182    475
+XP_024459758.2                                                   4.1e-182    475
+XP_052309519.1                                                   4.1e-182    475
+XP_052309520.1                                                   4.1e-182    475
+XP_052309521.1                                                   4.1e-182    475
+XP_052309522.1                                                   4.1e-182    475
+XP_024443283.1                                                   4.4e-173    469
+XP_024443284.1                                                   4.4e-173    469
+XP_024443574.1                                                   2.1e-150    556
+XP_002298853.1                                                   2.1e-150    557
+XP_024437370.2                                                     1e-146    507
+XP_024437369.2                                                   1.8e-146    560
+XP_002319959.2                                                   5.5e-146    591
+XP_002323637.2                                                   7.2e-143    579
+XP_002326093.4                                                   1.6e-141    603
+XP_024458700.1                                                   1.9e-134    546
+XP_002312267.1                                                   9.3e-134    492
+XP_024444415.2                                                   2.6e-133    532
+XP_002315024.1                                                   1.6e-132    499
+XP_024454278.1                                                   6.1e-129    543
+XP_024438829.2                                                   1.3e-128    716
+XP_052301461.1                                                   1.9e-125    541
+XP_006375555.1                                                     6e-101    485
+XP_006375556.1                                                     6e-101    485
+XP_024440287.1                                                     6e-101    485
+XP_006369893.1                                                    3.5e-92    312
+XP_024466901.1                                                    3.8e-90    293
+XP_052312759.1                                                    3.8e-90    293
+XP_002301524.3                                                    3.1e-89    317
+XP_002311329.2                                                    3.3e-89    293
+XP_024461923.1                                                    3.3e-89    293
+XP_024461924.1                                                    3.3e-89    293
+XP_052311159.1                                                    3.3e-89    293
+XP_052311160.1                                                    3.3e-89    293
+XP_024450747.1                                                    8.1e-89    261
+XP_024462269.1                                                    6.1e-88    318
+XP_002312318.2                                                    1.2e-87    368
+XP_002320967.3                                                    6.1e-87    319
+XP_002314962.2                                                    9.2e-87    374
+XP_024446055.1                                                    9.5e-87    523
+XP_024446053.1                                                      1e-86    527
+XP_024436877.2                                                      2e-85    306
+XP_002306743.1                                                      2e-84    322
+XP_006375168.1                                                    3.3e-84    228
+XP_002302140.2                                                    7.9e-84    325
+XP_006373216.1                                                      1e-83    186
+XP_002301237.2                                                    1.3e-83    203
+XP_002301377.2                                                    1.3e-82    193
+XP_002300120.2                                                    1.3e-82    186
+XP_006368868.2                                                    1.9e-82    160
+XP_024460430.2                                                    9.6e-82    518
+XP_024460429.2                                                    1.1e-81    522
+XP_002320160.2                                                    4.6e-81    189
+XP_002304741.2                                                    7.2e-81    157
+XP_002322274.1                                                    5.1e-78    178
+XP_052308647.1                                                    2.4e-76    232
+XP_052308648.1                                                    2.4e-76    232
+XP_002310044.1                                                      3e-76    233
+XP_006382109.3                                                    8.4e-76    477
+XP_024446286.2                                                    1.8e-75    422
+XP_002318747.1                                                    1.9e-75    186
+XP_024446284.2                                                    8.2e-75    511
+XP_002301514.2                                                    4.4e-72    245
+XP_024451788.1                                                    4.4e-72    245
+XP_052306840.1                                                    7.6e-72    245
+XP_052306841.1                                                    7.6e-72    245
+XP_002308538.1                                                    2.7e-69    165
+XP_052303238.1                                                    7.9e-68    235
+XP_052303237.1                                                    1.8e-67    262
+XP_024449814.1                                                    3.1e-66    357
+XP_002301166.2                                                    3.2e-66    358
+XP_024455846.2                                                    1.8e-62    602
+XP_002306823.1                                                      2e-62    347
+XP_024457974.1                                                      2e-62    347
+XP_002302070.2                                                    4.6e-62    351
+XP_024440069.1                                                    1.3e-61    502
+XP_024467301.1                                                    1.5e-61    589
+XP_024461002.1                                                    1.6e-61    192
+XP_006389578.1                                                    1.6e-61    590
+XP_024467300.2                                                    1.7e-61    592
+XP_024467299.2                                                    1.7e-61    593
+XP_002309066.3                                                    2.4e-61    304
+XP_002321134.3                                                    3.2e-61    624
+XP_002319082.4                                                    1.1e-60    354
+XP_024441318.1                                                    3.7e-60    360
+XP_024441317.1                                                    3.8e-60    361
+XP_002297623.3                                                    1.5e-59    314
+XP_024456867.1                                                    7.3e-59    206
+XP_024465049.1                                                    1.5e-58    313
+XP_024450700.1                                                    2.1e-58    617
+XP_024452726.1                                                    1.3e-57    304
+XP_002302808.1                                                    1.5e-57    506
+XP_006382812.1                                                    3.6e-57    353
+XP_002323509.1                                                    6.2e-57    309
+XP_052301776.1                                                    5.4e-56    185
+XP_024466667.1                                                      6e-56    523
+XP_006380693.1                                                    9.7e-56    334
+XP_002310122.1                                                    9.9e-56    335
+XP_006383530.2                                                    3.6e-55    331
+XP_024456279.2                                                    3.6e-55    332
+XP_002324382.1                                                    5.2e-55    338
+XP_024454633.1                                                    6.6e-53    223
+XP_052303325.1                                                    1.4e-52    636
+XP_002304549.1                                                    2.1e-52    342
+XP_002305730.1                                                    2.2e-52    262
+XP_002325248.3                                                    3.6e-52    300
+XP_006368768.2                                                    4.5e-52    325
+XP_002308998.1                                                    4.5e-52    301
+XP_024458563.1                                                    1.8e-51    448
+XP_002317397.1                                                      2e-51    268
+XP_002323839.4                                                    2.7e-51    538
+XP_052301100.1                                                    1.8e-50    461
+XP_006375351.1                                                    1.8e-49    349
+XP_006386616.2                                                    2.7e-49    354
+XP_002318373.2                                                    1.1e-48    371
+XP_002305271.3                                                    1.4e-48    432
+XP_002303610.1                                                    1.7e-48    330
+XP_006372370.1                                                    4.8e-48    412
+XP_006371762.1                                                    1.5e-47    320
+XP_002297983.2                                                    2.3e-47    338
+XP_002320852.4                                                    9.3e-46    365
+XP_002303852.3                                                    3.9e-44    319
+XP_006368511.1                                                    1.1e-43    318
+XP_002308704.1                                                    1.5e-43    320
+XP_052305286.1                                                    2.2e-43    381
+XP_052306843.1                                                    5.6e-43    209
+XP_002302620.1                                                    7.9e-43    363
+XP_002324328.1                                                    1.5e-41    271
+XP_024439297.1                                                    2.2e-41    364
+XP_002309186.4                                                    1.1e-37    333
+XP_024452203.2                                                    5.4e-36    137
+XP_024452204.2                                                    1.4e-35    127
+XP_002323675.2                                                    7.9e-35    321
+XP_002319879.4                                                    3.3e-34    324
+XP_052302236.1                                                    3.3e-34    324
+XP_006368530.1                                                    3.1e-30    135
+XP_024459343.1                                                      1e-19    143
+XP_024450032.1                                                    4.1e-18    320
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [n]  occurrence of motif `n' with p-value less than 0.0001.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+XP_024437144.1                     3.8e-252  [10]-91-[8]-143-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-12-[5]-30-[7]-33
+XP_006378014.1                     4.9e-252  [10]-91-[8]-160-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-12-[5]-30-[7]-33
+XP_024437142.1                     4.9e-252  [10]-91-[8]-160-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-12-[5]-30-[7]-33
+XP_024437143.1                     4.9e-252  [10]-91-[8]-160-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-12-[5]-30-[7]-33
+XP_002300596.2                     1.7e-249  [10]-91-[8]-161-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-35
+XP_052310948.1                     1.7e-249  [10]-91-[8]-161-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-35
+XP_024441234.1                     1.7e-249  [10]-91-[8]-169-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-28
+XP_024441213.1                     1.9e-249  [10]-91-[8]-169-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-35
+XP_024441219.1                     1.9e-249  [10]-91-[8]-169-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-35
+XP_024441225.1                     1.9e-249  [10]-91-[8]-169-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-35
+XP_006381519.2                     4.1e-182  95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+XP_024459754.2                     4.1e-182  95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+XP_024459758.2                     4.1e-182  95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+XP_052309519.1                     4.1e-182  95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+XP_052309520.1                     4.1e-182  95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+XP_052309521.1                     4.1e-182  95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+XP_052309522.1                     4.1e-182  95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+XP_024443283.1                     4.4e-173  95-[9]-40-[3]-1-[6]-114-[5]-[1]-[4]-1-[2]-24
+XP_024443284.1                     4.4e-173  95-[9]-40-[3]-1-[6]-114-[5]-[1]-[4]-1-[2]-24
+XP_024443574.1                     2.1e-150  35-[8]-5-[5]-122-[3]-1-[6]-76-[5]-[1]-[4]-1-[2]-122
+XP_002298853.1                     2.1e-150  35-[8]-5-[5]-122-[3]-1-[6]-77-[5]-[1]-[4]-1-[2]-122
+XP_024437370.2                       1e-146  35-[8]-91-[3]-1-[6]-78-[5]-[1]-[4]-1-[2]-128
+XP_024437369.2                     1.8e-146  35-[8]-144-[3]-1-[6]-78-[5]-[1]-[4]-1-[2]-128
+XP_002319959.2                     5.5e-146  89-[8]-139-[3]-1-[6]-85-[5]-[1]-[4]-1-[2]-103
+XP_002323637.2                     7.2e-143  77-[8]-142-[3]-1-[6]-73-[5]-[1]-[4]-1-[2]-112
+XP_002326093.4                     1.6e-141  89-[8]-69-[9]-20-[3]-1-[6]-87-[5]-[1]-[4]-1-[2]-113
+XP_024458700.1                     1.9e-134  79-[8]-144-[3]-1-[6]-74-[5]-[1]-[4]-1-[2]-74
+XP_002312267.1                     9.3e-134  96-[8]-96-[3]-1-[6]-81-[5]-[1]-[4]-1-[2]-44
+XP_024444415.2                     2.6e-133  112-[8]-97-[3]-1-[6]-92-[5]-[1]-[4]-1-[2]-56
+XP_002315024.1                     1.6e-132  104-[8]-89-[3]-1-[6]-83-[5]-[1]-[4]-1-[2]-48
+XP_024454278.1                     6.1e-129  63-[9]-13-[8]-96-[3]-1-[6]-90-[5]-[1]-[4]-1-[2]-56
+XP_024438829.2                     1.3e-128  65-[8]-160-[3]-1-[6]-115-[5]-[1]-[4]-1-[2]-201
+XP_052301461.1                     1.9e-125  189-[3]-1-[6]-78-[5]-[1]-[4]-1-[2]-128
+XP_006375555.1                       6e-101  105-[3]-1-[6]-81-[5]-[1]-[4]-1-[2]-153
+XP_006375556.1                       6e-101  105-[3]-1-[6]-81-[5]-[1]-[4]-1-[2]-153
+XP_024440287.1                       6e-101  105-[3]-1-[6]-81-[5]-[1]-[4]-1-[2]-153
+XP_006369893.1                      3.5e-92  146-[5]-[1]-[4]-1-[2]-85
+XP_024466901.1                      3.8e-90  130-[5]-[1]-[4]-1-[2]-82
+XP_052312759.1                      3.8e-90  130-[5]-[1]-[4]-1-[2]-82
+XP_002301524.3                      3.1e-89  134-[5]-[1]-[4]-1-[2]-102
+XP_002311329.2                      3.3e-89  130-[5]-[1]-[4]-1-[2]-82
+XP_024461923.1                      3.3e-89  130-[5]-[1]-[4]-1-[2]-82
+XP_024461924.1                      3.3e-89  130-[5]-[1]-[4]-1-[2]-82
+XP_052311159.1                      3.3e-89  130-[5]-[1]-[4]-1-[2]-82
+XP_052311160.1                      3.3e-89  130-[5]-[1]-[4]-1-[2]-82
+XP_024450747.1                      8.1e-89  78-[5]-[1]-[4]-1-[2]-102
+XP_024462269.1                      6.1e-88  192-[5]-[1]-[4]-1-[2]-45
+XP_002312318.2                      1.2e-87  192-[5]-[1]-[4]-1-[2]-95
+XP_002320967.3                      6.1e-87  134-[5]-[1]-[4]-1-[2]-104
+XP_002314962.2                      9.2e-87  199-[5]-[1]-[4]-1-[2]-94
+XP_024446055.1                      9.5e-87  210-[3]-1-[6]-84-[5]-[1]-[4]-1-[2]-83
+XP_024446053.1                        1e-86  214-[3]-1-[6]-84-[5]-[1]-[4]-1-[2]-83
+XP_024436877.2                        2e-85  145-[5]-[1]-[4]-1-[2]-80
+XP_002306743.1                        2e-84  160-[5]-[1]-[4]-1-[2]-81
+XP_006375168.1                      3.3e-84  131-[5]-[1]-[4]-1-[2]-16
+XP_002302140.2                      7.9e-84  158-[5]-[1]-[4]-1-[2]-86
+XP_006373216.1                        1e-83  84-[5]-[1]-[4]-1-[2]-21
+XP_002301237.2                      1.3e-83  106-[5]-[1]-[4]-1-[2]-16
+XP_002301377.2                      1.3e-82  91-[5]-[1]-[4]-1-[2]-21
+XP_002300120.2                      1.3e-82  83-[5]-[1]-[4]-1-[2]-22
+XP_006368868.2                      1.9e-82  60-[5]-[1]-[4]-1-[2]-19
+XP_024460430.2                      9.6e-82  204-[3]-1-[6]-84-[5]-[1]-[4]-1-[2]-84
+XP_024460429.2                      1.1e-81  208-[3]-1-[6]-84-[5]-[1]-[4]-1-[2]-84
+XP_002320160.2                      4.6e-81  87-[5]-[1]-[4]-1-[2]-21
+XP_002304741.2                      7.2e-81  57-[5]-[1]-[4]-1-[2]-19
+XP_002322274.1                      5.1e-78  76-[5]-[1]-[4]-1-[2]-21
+XP_052308647.1                      2.4e-76  132-[5]-[1]-[4]-1-[2]-19
+XP_052308648.1                      2.4e-76  132-[5]-[1]-[4]-1-[2]-19
+XP_002310044.1                        3e-76  133-[5]-[1]-[4]-1-[2]-19
+XP_006382109.3                      8.4e-76  127-[3]-2-[6]-134-[1]-[4]-1-[2]-90
+XP_024446286.2                      1.8e-75  81-[3]-2-[6]-115-[5]-[1]-[4]-1-[2]-79
+XP_002318747.1                      1.9e-75  76-[5]-[1]-[4]-1-[2]-29
+XP_024446284.2                      8.2e-75  170-[3]-2-[6]-115-[5]-[1]-[4]-1-[2]-79
+XP_002301514.2                      4.4e-72  49-[1]-[4]-2-[2]-85-[10]-21
+XP_024451788.1                      4.4e-72  49-[1]-[4]-2-[2]-85-[10]-21
+XP_052306840.1                      7.6e-72  49-[1]-[4]-2-[2]-85-[10]-21
+XP_052306841.1                      7.6e-72  49-[1]-[4]-2-[2]-85-[10]-21
+XP_002308538.1                      2.7e-69  81-[5]-[1]-[4]-1-[2]-3
+XP_052303238.1                      7.9e-68  22-[1]-[4]-2-[2]-85-[10]-38
+XP_052303237.1                      1.8e-67  49-[1]-[4]-2-[2]-85-[10]-38
+XP_024449814.1                      3.1e-66  160-[8]-92-[1]-[4]-2-[2]-15
+XP_002301166.2                      3.2e-66  160-[8]-93-[1]-[4]-2-[2]-15
+XP_024455846.2                      1.8e-62  317-[5]-[1]-[4]-2-[2]-203
+XP_002306823.1                        2e-62  277-[1]-[4]-2-[2]-9
+XP_024457974.1                        2e-62  277-[1]-[4]-2-[2]-9
+XP_002302070.2                      4.6e-62  281-[1]-[4]-2-[2]-9
+XP_024440069.1                      1.3e-61  72-[9]-120-[5]-[1]-[4]-2-[2]-101-[2]-48
+XP_024467301.1                      1.5e-61  156-[2]-124-[5]-[1]-[4]-2-[2]-198
+XP_024461002.1                      1.6e-61  79-[5]-[1]-[4]-1-[2]-32
+XP_006389578.1                      1.6e-61  157-[2]-124-[5]-[1]-[4]-2-[2]-198
+XP_024467300.2                      1.7e-61  156-[2]-127-[5]-[1]-[4]-2-[2]-198
+XP_024467299.2                      1.7e-61  157-[2]-127-[5]-[1]-[4]-2-[2]-198
+XP_002309066.3                      2.4e-61  112-[1]-[4]-1-[2]-132
+XP_002321134.3                      3.2e-61  327-[5]-[1]-[4]-2-[2]-215
+XP_002319082.4                      1.1e-60  283-[1]-[4]-2-[2]-10
+XP_024441318.1                      3.7e-60  164-[8]-91-[1]-[4]-2-[2]-15
+XP_024441317.1                      3.8e-60  164-[8]-92-[1]-[4]-2-[2]-15
+XP_002297623.3                      1.5e-59  240-[1]-[4]-2-[2]-13
+XP_024456867.1                      7.3e-59  93-[5]-[1]-[4]-1-[2]-32
+XP_024465049.1                      1.5e-58  240-[1]-9-[2]-13
+XP_024450700.1                      2.1e-58  315-[5]-[1]-[4]-2-[2]-220
+XP_024452726.1                      1.3e-57  40-[5]-169-[1]-[4]-2-[2]-13
+XP_002302808.1                      1.5e-57  242-[5]-[1]-[4]-2-[2]-182
+XP_006382812.1                      3.6e-57  282-[1]-[4]-2-[2]-10
+XP_002323509.1                      6.2e-57  115-[1]-[4]-1-[2]-134
+XP_052301776.1                      5.4e-56  76-[5]-[1]-8-[2]-29
+XP_024466667.1                        6e-56  239-[5]-[1]-[4]-2-[2]-202
+XP_006380693.1                      9.7e-56  259-[1]-[4]-2-[2]-14
+XP_002310122.1                      9.9e-56  260-[1]-[4]-2-[2]-14
+XP_006383530.2                      3.6e-55  256-[1]-[4]-2-[2]-14
+XP_024456279.2                      3.6e-55  257-[1]-[4]-2-[2]-14
+XP_002324382.1                      5.2e-55  252-[1]-[4]-2-[2]-25
+XP_024454633.1                      6.6e-53  33-[1]-[4]-2-[2]-129
+XP_052303325.1                      1.4e-52  256-[5]-[1]-[4]-2-[2]-298
+XP_002304549.1                      2.1e-52  68-[5]-39-[1]-[4]-4-[2]-151
+XP_002305730.1                      2.2e-52  72-[1]-[4]-2-[2]-129
+XP_002325248.3                      3.6e-52  218-[1]-[4]-2-[2]-21
+XP_006368768.2                      4.5e-52  154-[1]-[4]-2-[2]-110
+XP_002308998.1                      4.5e-52  219-[1]-[4]-2-[2]-21
+XP_024458563.1                      1.8e-51  146-[8]-55-[1]-[4]-2-[2]-157
+XP_002317397.1                        2e-51  72-[1]-[4]-2-[2]-135
+XP_002323839.4                      2.7e-51  184-[5]-[1]-[4]-2-[2]-272
+XP_052301100.1                      1.8e-50  154-[8]-55-[1]-[4]-2-[2]-162
+XP_006375351.1                      1.8e-49  161-[1]-[4]-2-[2]-127
+XP_006386616.2                      2.7e-49  166-[1]-[4]-2-[2]-127
+XP_002318373.2                      1.1e-48  131-[1]-[4]-4-[2]-177
+XP_002305271.3                      1.4e-48  206-[1]-[4]-2-[2]-165
+XP_002303610.1                      1.7e-48  150-[1]-[4]-2-[2]-119
+XP_006372370.1                      4.8e-48  219-[1]-[4]-2-[2]-132
+XP_006371762.1                      1.5e-47  149-[4]-5-[1]-[4]-2-[2]-97
+XP_002297983.2                      2.3e-47  128-[1]-[4]-4-[2]-147
+XP_002320852.4                      9.3e-46  126-[1]-[4]-4-[2]-176
+XP_002303852.3                      3.9e-44  162-[1]-[4]-2-[2]-96
+XP_006368511.1                      1.1e-43  161-[1]-[4]-2-[2]-96
+XP_002308704.1                      1.5e-43  161-[1]-[4]-2-[2]-98
+XP_052305286.1                      2.2e-43  197-[1]-[4]-4-[2]-121
+XP_052306843.1                      5.6e-43  35-[4]-2-[2]-85-[10]-21
+XP_002302620.1                      7.9e-43  126-[1]-[4]-4-[2]-174
+XP_002324328.1                      1.5e-41  100-[1]-[4]-2-[2]-110
+XP_024439297.1                      2.2e-41  182-[1]-[4]-4-[2]-119
+XP_002309186.4                      1.1e-37  130-[1]-[4]-4-[2]-140
+XP_024452203.2                      5.4e-36  42-[1]-[4]-13-[6]-29
+XP_024452204.2                      1.4e-35  32-[1]-[4]-13-[6]-29
+XP_002323675.2                      7.9e-35  127-[1]-[4]-4-[2]-131
+XP_002319879.4                      3.3e-34  129-[1]-[4]-4-[2]-132
+XP_052302236.1                      3.3e-34  129-[1]-[4]-4-[2]-132
+XP_006368530.1                      3.1e-30  33-[1]-[4]-13-[6]-36
+XP_024459343.1                        1e-19  81-[5]-[1]-19
+XP_024450032.1                      4.1e-18  105-[4]-4-[2]-174
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence,
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif, and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+XP_024437144.1
+  LENGTH = 708  COMBINED P-VALUE = 2.58e-254  E-VALUE = 3.8e-252
+  DIAGRAM: [10]-91-[8]-143-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-12-[5]-30-[7]-33
+
+     [10]
+     1.3e-36
+     MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+     +++++++++++++++++++++++++++++
+1    MAGIDDNVAIIGDWVPPSPSPRAFFSAMLGDDINSRTIPESPGEKRNEGLYLGQPEQMATGNSEKKDGAQTSGVQ
+
+                                                  [8]
+                                                  5.3e-36
+                                                  NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                                  +++++++++++++++++++++++++++++
+76   LTELGTFSEQKSNFRGGLVERIAARAGFNAPRLNTESIRSTESSMNPEIRSPYLTIPPGLSPTTLLESPVFLSNL
+
+                                                                        [3]
+                                                                        4.9e-52
+                                                                        YDGYNWRK
+                                                                        ++++++++
+226  RNSLHFRAEFSKLTTEKDNGCITVADQRTFDTVAGNAEHSSPLAEQQDEEGDQRASEDSMAAGGTPSEDAYNWRK
+
+                                       [6]
+                                       6.1e-27
+     YGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     +++++++++++++++++++++++++++++++++ +++++++++++++++++ +++++
+301  YGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSHEGHITEIIYKGAHNHPKPPPNRRSATGSMDTQLDIPEQAGPQ
+
+                                    [5]                  [1]                   [
+                                    2.0e-20              1.3e-27               1
+                                    KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPR
+                                     +++++++++++++++++++++++++++++++++++++++++++
+451  DRATHGSVGYDGEGEESESKRRKVETYATEMSGATRAIREPRVVVQTTSEVDILDDGYRWRKYGQKVVKGNPNPR
+
+     4]      [2]                                      [5]
+     .4e-10  4.2e-31                                  6.0e-05
+     SYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP            KKAEKRIREPRFVFQTKSEVD
+     +++++++ ++++++++++++++++ ++++++++++++            + + ++  ++ +++++
+526  SYYKCTSAGCTVRKHVERASHDLKSVITTYEGKHNHDVPAARNSNHVNSGTSNATPAQAGIAVQTQVHRPEASQV
+
+                              [7]
+                              3.4e-63
+                              GFSFGMNQPGFANMAMAGLGQGQPKMPVMPMHPYLAQQHPGNEMGFMMPK
+                              ++++++++++++++++++++++++++++++++++++++++++++++++++
+601  HNSMTSRFERPPAFGSFRQQLGPSAGFSFGMNQPGFANMGMAGLGPGQPRMPVMPMHPYLAQQRAVNEMGLMMPK
+
+
+XP_006378014.1
+  LENGTH = 725  COMBINED P-VALUE = 3.28e-254  E-VALUE = 4.9e-252
+  DIAGRAM: [10]-91-[8]-160-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-12-[5]-30-[7]-33
+
+     [10]
+     1.3e-36
+     MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+     +++++++++++++++++++++++++++++
+1    MAGIDDNVAIIGDWVPPSPSPRAFFSAMLGDDINSRTIPESPGEKRNEGLYLGQPEQMATGNSEKKDGAQTSGVQ
+
+                                                  [8]
+                                                  5.3e-36
+                                                  NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                                  +++++++++++++++++++++++++++++
+76   LTELGTFSEQKSNFRGGLVERIAARAGFNAPRLNTESIRSTESSMNPEIRSPYLTIPPGLSPTTLLESPVFLSNL
+
+              [3]                                       [6]
+              4.9e-52                                   6.1e-27
+              YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+              +++++++++++++++++++++++++++++++++++++++++ +++++++++++++++++ +++++
+301  SMAAGGTPSEDAYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSHEGHITEIIYKGAHNHPKPPPNRRSA
+
+                                                     [5]                  [1]
+                                                     2.0e-20              1.3e-2
+                                                     KKAEKRIREPRFVFQTKSEVDILDDGY
+                                                      ++++++++++++++++++++++++++
+451  SADAVDASSTFSNDEDDDRATHGSVGYDGEGEESESKRRKVETYATEMSGATRAIREPRVVVQTTSEVDILDDGY
+
+                     [4]      [2]                                      [5]
+     7               1.4e-10  4.2e-31                                  6.0e-05
+     RWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP            KKAEKRIRE
+     ++++++++++++++++++++++++ ++++++++++++++++ ++++++++++++            + + ++  +
+526  RWRKYGQKVVKGNPNPRSYYKCTSAGCTVRKHVERASHDLKSVITTYEGKHNHDVPAARNSNHVNSGTSNATPAQ
+
+                                               [7]
+                                               3.4e-63
+     PRFVFQTKSEVD                              GFSFGMNQPGFANMAMAGLGQGQPKMPVMPMHP
+     + +++++                                   +++++++++++++++++++++++++++++++++
+601  AGIAVQTQVHRPEASQVHNSMTSRFERPPAFGSFRQQLGPSAGFSFGMNQPGFANMGMAGLGPGQPRMPVMPMHP
+
+     
+     
+     YLAQQHPGNEMGFMMPK
+     +++++++++++++++++
+676  YLAQQRAVNEMGLMMPKGEAKVEPVTEANMSLSSNNPTVYQQIMSRLPQM
+
+
+XP_024437142.1
+  LENGTH = 725  COMBINED P-VALUE = 3.28e-254  E-VALUE = 4.9e-252
+  DIAGRAM: [10]-91-[8]-160-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-12-[5]-30-[7]-33
+
+     [10]
+     1.3e-36
+     MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+     +++++++++++++++++++++++++++++
+1    MAGIDDNVAIIGDWVPPSPSPRAFFSAMLGDDINSRTIPESPGEKRNEGLYLGQPEQMATGNSEKKDGAQTSGVQ
+
+                                                  [8]
+                                                  5.3e-36
+                                                  NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                                  +++++++++++++++++++++++++++++
+76   LTELGTFSEQKSNFRGGLVERIAARAGFNAPRLNTESIRSTESSMNPEIRSPYLTIPPGLSPTTLLESPVFLSNL
+
+              [3]                                       [6]
+              4.9e-52                                   6.1e-27
+              YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+              +++++++++++++++++++++++++++++++++++++++++ +++++++++++++++++ +++++
+301  SMAAGGTPSEDAYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSHEGHITEIIYKGAHNHPKPPPNRRSA
+
+                                                     [5]                  [1]
+                                                     2.0e-20              1.3e-2
+                                                     KKAEKRIREPRFVFQTKSEVDILDDGY
+                                                      ++++++++++++++++++++++++++
+451  SADAVDASSTFSNDEDDDRATHGSVGYDGEGEESESKRRKVETYATEMSGATRAIREPRVVVQTTSEVDILDDGY
+
+                     [4]      [2]                                      [5]
+     7               1.4e-10  4.2e-31                                  6.0e-05
+     RWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP            KKAEKRIRE
+     ++++++++++++++++++++++++ ++++++++++++++++ ++++++++++++            + + ++  +
+526  RWRKYGQKVVKGNPNPRSYYKCTSAGCTVRKHVERASHDLKSVITTYEGKHNHDVPAARNSNHVNSGTSNATPAQ
+
+                                               [7]
+                                               3.4e-63
+     PRFVFQTKSEVD                              GFSFGMNQPGFANMAMAGLGQGQPKMPVMPMHP
+     + +++++                                   +++++++++++++++++++++++++++++++++
+601  AGIAVQTQVHRPEASQVHNSMTSRFERPPAFGSFRQQLGPSAGFSFGMNQPGFANMGMAGLGPGQPRMPVMPMHP
+
+     
+     
+     YLAQQHPGNEMGFMMPK
+     +++++++++++++++++
+676  YLAQQRAVNEMGLMMPKGEAKVEPVTEANMSLSSNNPTVYQQIMSRLPQM
+
+
+XP_024437143.1
+  LENGTH = 725  COMBINED P-VALUE = 3.28e-254  E-VALUE = 4.9e-252
+  DIAGRAM: [10]-91-[8]-160-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-12-[5]-30-[7]-33
+
+     [10]
+     1.3e-36
+     MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+     +++++++++++++++++++++++++++++
+1    MAGIDDNVAIIGDWVPPSPSPRAFFSAMLGDDINSRTIPESPGEKRNEGLYLGQPEQMATGNSEKKDGAQTSGVQ
+
+                                                  [8]
+                                                  5.3e-36
+                                                  NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                                  +++++++++++++++++++++++++++++
+76   LTELGTFSEQKSNFRGGLVERIAARAGFNAPRLNTESIRSTESSMNPEIRSPYLTIPPGLSPTTLLESPVFLSNL
+
+              [3]                                       [6]
+              4.9e-52                                   6.1e-27
+              YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+              +++++++++++++++++++++++++++++++++++++++++ +++++++++++++++++ +++++
+301  SMAAGGTPSEDAYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSHEGHITEIIYKGAHNHPKPPPNRRSA
+
+                                                     [5]                  [1]
+                                                     2.0e-20              1.3e-2
+                                                     KKAEKRIREPRFVFQTKSEVDILDDGY
+                                                      ++++++++++++++++++++++++++
+451  SADAVDASSTFSNDEDDDRATHGSVGYDGEGEESESKRRKVETYATEMSGATRAIREPRVVVQTTSEVDILDDGY
+
+                     [4]      [2]                                      [5]
+     7               1.4e-10  4.2e-31                                  6.0e-05
+     RWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP            KKAEKRIRE
+     ++++++++++++++++++++++++ ++++++++++++++++ ++++++++++++            + + ++  +
+526  RWRKYGQKVVKGNPNPRSYYKCTSAGCTVRKHVERASHDLKSVITTYEGKHNHDVPAARNSNHVNSGTSNATPAQ
+
+                                               [7]
+                                               3.4e-63
+     PRFVFQTKSEVD                              GFSFGMNQPGFANMAMAGLGQGQPKMPVMPMHP
+     + +++++                                   +++++++++++++++++++++++++++++++++
+601  AGIAVQTQVHRPEASQVHNSMTSRFERPPAFGSFRQQLGPSAGFSFGMNQPGFANMGMAGLGPGQPRMPVMPMHP
+
+     
+     
+     YLAQQHPGNEMGFMMPK
+     +++++++++++++++++
+676  YLAQQRAVNEMGLMMPKGEAKVEPVTEANMSLSSNNPTVYQQIMSRLPQM
+
+
+XP_002300596.2
+  LENGTH = 731  COMBINED P-VALUE = 1.14e-251  E-VALUE = 1.7e-249
+  DIAGRAM: [10]-91-[8]-161-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-35
+
+     [10]
+     3.2e-36
+     MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+     +++++++++++++++++++++++++++++
+1    MAGIDDNVAIIGDWVPPSPSPRAFFSVMLGDDINSSTITEPPGENRTKGLFLGQPEQMTTGNAEKKDGARTSGAQ
+
+                                                  [8]
+                                                  5.3e-36
+                                                  NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                                  +++++++++++++++++++++++++++++
+76   LTELGSFSEQKSNSRGGLVERMAARAGFNAPRLNTESIRSAETSLNPEIRSPYLTIPPGLSPTTLLESPVFLSNL
+
+               [3]                                       [6]
+               1.2e-48                                   4.5e-26
+               YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+               +++++++++++++++++++++++++++++++ +++++++++ +++++++++++++++++++++++
+301  DSMAAGGTPSDKGYNFRKYGQKQVKGSEYPRSYYKCTHPNCSVKKKVERSLEGHITEIIYKGAHSHPKPLPNRRS
+
+                                                      [5]                  [1]
+                                                      2.0e-20              1.3e-
+                                                      KKAEKRIREPRFVFQTKSEVDILDDG
+                                                       +++++++++++++++++++++++++
+451  ESADAIDASSTFSNDEDDDRATHGSVGYDGEGEESESKRRKIETYATEMSGATRAIREPRVVVQTTSEVDILDDG
+
+                      [4]      [2]
+     27               1.4e-10  4.2e-31
+     YRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++ ++++++++++++++++ ++++++++++++
+526  YRWRKYGQKVVKGNPNPRSYYKCTSAGCTVRKHVERASHDLKSVITTYEGKHNHDVPAARNSSHVNSGTSNATPG
+
+                                                   [7]
+                                                   6.8e-66
+                                                   GFSFGMNQPGFANMAMAGLGQGQPKMPVM
+                                                   +++++++++++++++++++++++++++++
+601  QAAVAVQTHVHRHESSQVHNSMARFERPPAFGSFSLPGRQQLGPSPGFSFGMNQPGLANLAMAGLGQGQPKMPVM
+
+     
+     
+     PMHPYLAQQHPGNEMGFMMPK
+     +++++++++++++++++++++
+676  PIHPYLAQQHPGNEMGFMMPKEEPKVGPVTEPSLNLSNNRTLYQQIMSRLPLGPQM
+
+
+XP_052310948.1
+  LENGTH = 731  COMBINED P-VALUE = 1.14e-251  E-VALUE = 1.7e-249
+  DIAGRAM: [10]-91-[8]-161-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-35
+
+     [10]
+     3.2e-36
+     MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+     +++++++++++++++++++++++++++++
+1    MAGIDDNVAIIGDWVPPSPSPRAFFSVMLGDDINSSTITEPPGENRTKGLFLGQPEQMTTGNAEKKDGARTSGAQ
+
+                                                  [8]
+                                                  5.3e-36
+                                                  NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                                  +++++++++++++++++++++++++++++
+76   LTELGSFSEQKSNSRGGLVERMAARAGFNAPRLNTESIRSAETSLNPEIRSPYLTIPPGLSPTTLLESPVFLSNL
+
+               [3]                                       [6]
+               1.2e-48                                   4.5e-26
+               YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+               +++++++++++++++++++++++++++++++ +++++++++ +++++++++++++++++++++++
+301  DSMAAGGTPSDKGYNFRKYGQKQVKGSEYPRSYYKCTHPNCSVKKKVERSLEGHITEIIYKGAHSHPKPLPNRRS
+
+                                                      [5]                  [1]
+                                                      2.0e-20              1.3e-
+                                                      KKAEKRIREPRFVFQTKSEVDILDDG
+                                                       +++++++++++++++++++++++++
+451  ESADAIDASSTFSNDEDDDRATHGSVGYDGEGEESESKRRKIETYATEMSGATRAIREPRVVVQTTSEVDILDDG
+
+                      [4]      [2]
+     27               1.4e-10  4.2e-31
+     YRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++ ++++++++++++++++ ++++++++++++
+526  YRWRKYGQKVVKGNPNPRSYYKCTSAGCTVRKHVERASHDLKSVITTYEGKHNHDVPAARNSSHVNSGTSNATPG
+
+                                                   [7]
+                                                   6.8e-66
+                                                   GFSFGMNQPGFANMAMAGLGQGQPKMPVM
+                                                   +++++++++++++++++++++++++++++
+601  QAAVAVQTHVHRHESSQVHNSMARFERPPAFGSFSLPGRQQLGPSPGFSFGMNQPGLANLAMAGLGQGQPKMPVM
+
+     
+     
+     PMHPYLAQQHPGNEMGFMMPK
+     +++++++++++++++++++++
+676  PIHPYLAQQHPGNEMGFMMPKEEPKVGPVTEPSLNLSNNRTLYQQIMSRLPLGPQM
+
+
+XP_024441234.1
+  LENGTH = 732  COMBINED P-VALUE = 1.16e-251  E-VALUE = 1.7e-249
+  DIAGRAM: [10]-91-[8]-169-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-28
+
+     [10]
+     3.2e-36
+     MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+     +++++++++++++++++++++++++++++
+1    MAGIDDNVAIIGDWVPPSPSPRAFFSVMLGDDINSSTITEPPGENRTKGLFLGQPEQMTTGNAEKKDGARTSGAQ
+
+                                                  [8]
+                                                  5.3e-36
+                                                  NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                                  +++++++++++++++++++++++++++++
+76   LTELGSFSEQKSNSRGGLVERMAARAGFNAPRLNTESIRSAETSLNPEIRSPYLTIPPGLSPTTLLESPVFLSNL
+
+                       [3]                                       [6]
+                       1.2e-48                                   4.5e-26
+                       YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHP
+                       +++++++++++++++++++++++++++++++ +++++++++ +++++++++++++++
+301  EGDQRASGDSMAAGGTPSDKGYNFRKYGQKQVKGSEYPRSYYKCTHPNCSVKKKVERSLEGHITEIIYKGAHSHP
+
+     
+     
+     KPQPNRRY
+     ++++++++
+376  KPLPNRRSAVGSLDTQLDIPEQVVPQIGSVNDSAWAGTQKGIAAGTSDWRRDNVEVTSSASGGPGPEFGNPSSSV
+
+                                                              [5]
+                                                              2.0e-20
+                                                              KKAEKRIREPRFVFQTKS
+                                                               +++++++++++++++++
+451  QAQSGTPFESADAIDASSTFSNDEDDDRATHGSVGYDGEGEESESKRRKIETYATEMSGATRAIREPRVVVQTTS
+
+        [1]                   [4]      [2]
+        1.3e-27               1.4e-10  4.2e-31
+     EVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++++ ++++++++++++++++ ++++++++++++
+526  EVDILDDGYRWRKYGQKVVKGNPNPRSYYKCTSAGCTVRKHVERASHDLKSVITTYEGKHNHDVPAARNSSHVNS
+
+                                                           [7]
+                                                           6.8e-66
+                                                           GFSFGMNQPGFANMAMAGLGQ
+                                                           +++++++++++++++++++++
+601  GTSNATPGQAAVAVQTHVHRHESSQVHNSMARFERPPAFGSFSLPGRQQLGPSPGFSFGMNQPGLANLAMAGLGQ
+
+     
+     
+     GQPKMPVMPMHPYLAQQHPGNEMGFMMPK
+     +++++++++++++++++++++++++++++
+676  GQPKMPVMPIHPYLAQQHPGNEMGFMMPKEEPKVGPVTEPSLNLSNNRTLYQQIMRK
+
+
+XP_024441213.1
+  LENGTH = 739  COMBINED P-VALUE = 1.27e-251  E-VALUE = 1.9e-249
+  DIAGRAM: [10]-91-[8]-169-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-35
+
+     [10]
+     3.2e-36
+     MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+     +++++++++++++++++++++++++++++
+1    MAGIDDNVAIIGDWVPPSPSPRAFFSVMLGDDINSSTITEPPGENRTKGLFLGQPEQMTTGNAEKKDGARTSGAQ
+
+                                                  [8]
+                                                  5.3e-36
+                                                  NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                                  +++++++++++++++++++++++++++++
+76   LTELGSFSEQKSNSRGGLVERMAARAGFNAPRLNTESIRSAETSLNPEIRSPYLTIPPGLSPTTLLESPVFLSNL
+
+                       [3]                                       [6]
+                       1.2e-48                                   4.5e-26
+                       YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHP
+                       +++++++++++++++++++++++++++++++ +++++++++ +++++++++++++++
+301  EGDQRASGDSMAAGGTPSDKGYNFRKYGQKQVKGSEYPRSYYKCTHPNCSVKKKVERSLEGHITEIIYKGAHSHP
+
+     
+     
+     KPQPNRRY
+     ++++++++
+376  KPLPNRRSAVGSLDTQLDIPEQVVPQIGSVNDSAWAGTQKGIAAGTSDWRRDNVEVTSSASGGPGPEFGNPSSSV
+
+                                                              [5]
+                                                              2.0e-20
+                                                              KKAEKRIREPRFVFQTKS
+                                                               +++++++++++++++++
+451  QAQSGTPFESADAIDASSTFSNDEDDDRATHGSVGYDGEGEESESKRRKIETYATEMSGATRAIREPRVVVQTTS
+
+        [1]                   [4]      [2]
+        1.3e-27               1.4e-10  4.2e-31
+     EVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++++ ++++++++++++++++ ++++++++++++
+526  EVDILDDGYRWRKYGQKVVKGNPNPRSYYKCTSAGCTVRKHVERASHDLKSVITTYEGKHNHDVPAARNSSHVNS
+
+                                                           [7]
+                                                           6.8e-66
+                                                           GFSFGMNQPGFANMAMAGLGQ
+                                                           +++++++++++++++++++++
+601  GTSNATPGQAAVAVQTHVHRHESSQVHNSMARFERPPAFGSFSLPGRQQLGPSPGFSFGMNQPGLANLAMAGLGQ
+
+     
+     
+     GQPKMPVMPMHPYLAQQHPGNEMGFMMPK
+     +++++++++++++++++++++++++++++
+676  GQPKMPVMPIHPYLAQQHPGNEMGFMMPKEEPKVGPVTEPSLNLSNNRTLYQQIMSRLPLGPQM
+
+
+XP_024441219.1
+  LENGTH = 739  COMBINED P-VALUE = 1.27e-251  E-VALUE = 1.9e-249
+  DIAGRAM: [10]-91-[8]-169-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-35
+
+     [10]
+     3.2e-36
+     MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+     +++++++++++++++++++++++++++++
+1    MAGIDDNVAIIGDWVPPSPSPRAFFSVMLGDDINSSTITEPPGENRTKGLFLGQPEQMTTGNAEKKDGARTSGAQ
+
+                                                  [8]
+                                                  5.3e-36
+                                                  NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                                  +++++++++++++++++++++++++++++
+76   LTELGSFSEQKSNSRGGLVERMAARAGFNAPRLNTESIRSAETSLNPEIRSPYLTIPPGLSPTTLLESPVFLSNL
+
+                       [3]                                       [6]
+                       1.2e-48                                   4.5e-26
+                       YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHP
+                       +++++++++++++++++++++++++++++++ +++++++++ +++++++++++++++
+301  EGDQRASGDSMAAGGTPSDKGYNFRKYGQKQVKGSEYPRSYYKCTHPNCSVKKKVERSLEGHITEIIYKGAHSHP
+
+     
+     
+     KPQPNRRY
+     ++++++++
+376  KPLPNRRSAVGSLDTQLDIPEQVVPQIGSVNDSAWAGTQKGIAAGTSDWRRDNVEVTSSASGGPGPEFGNPSSSV
+
+                                                              [5]
+                                                              2.0e-20
+                                                              KKAEKRIREPRFVFQTKS
+                                                               +++++++++++++++++
+451  QAQSGTPFESADAIDASSTFSNDEDDDRATHGSVGYDGEGEESESKRRKIETYATEMSGATRAIREPRVVVQTTS
+
+        [1]                   [4]      [2]
+        1.3e-27               1.4e-10  4.2e-31
+     EVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++++ ++++++++++++++++ ++++++++++++
+526  EVDILDDGYRWRKYGQKVVKGNPNPRSYYKCTSAGCTVRKHVERASHDLKSVITTYEGKHNHDVPAARNSSHVNS
+
+                                                           [7]
+                                                           6.8e-66
+                                                           GFSFGMNQPGFANMAMAGLGQ
+                                                           +++++++++++++++++++++
+601  GTSNATPGQAAVAVQTHVHRHESSQVHNSMARFERPPAFGSFSLPGRQQLGPSPGFSFGMNQPGLANLAMAGLGQ
+
+     
+     
+     GQPKMPVMPMHPYLAQQHPGNEMGFMMPK
+     +++++++++++++++++++++++++++++
+676  GQPKMPVMPIHPYLAQQHPGNEMGFMMPKEEPKVGPVTEPSLNLSNNRTLYQQIMSRLPLGPQM
+
+
+XP_024441225.1
+  LENGTH = 739  COMBINED P-VALUE = 1.27e-251  E-VALUE = 1.9e-249
+  DIAGRAM: [10]-91-[8]-169-[3]-1-[6]-124-[5]-[1]-[4]-1-[2]-66-[7]-35
+
+     [10]
+     3.2e-36
+     MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+     +++++++++++++++++++++++++++++
+1    MAGIDDNVAIIGDWVPPSPSPRAFFSVMLGDDINSSTITEPPGENRTKGLFLGQPEQMTTGNAEKKDGARTSGAQ
+
+                                                  [8]
+                                                  5.3e-36
+                                                  NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                                  +++++++++++++++++++++++++++++
+76   LTELGSFSEQKSNSRGGLVERMAARAGFNAPRLNTESIRSAETSLNPEIRSPYLTIPPGLSPTTLLESPVFLSNL
+
+                       [3]                                       [6]
+                       1.2e-48                                   4.5e-26
+                       YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHP
+                       +++++++++++++++++++++++++++++++ +++++++++ +++++++++++++++
+301  EGDQRASGDSMAAGGTPSDKGYNFRKYGQKQVKGSEYPRSYYKCTHPNCSVKKKVERSLEGHITEIIYKGAHSHP
+
+     
+     
+     KPQPNRRY
+     ++++++++
+376  KPLPNRRSAVGSLDTQLDIPEQVVPQIGSVNDSAWAGTQKGIAAGTSDWRRDNVEVTSSASGGPGPEFGNPSSSV
+
+                                                              [5]
+                                                              2.0e-20
+                                                              KKAEKRIREPRFVFQTKS
+                                                               +++++++++++++++++
+451  QAQSGTPFESADAIDASSTFSNDEDDDRATHGSVGYDGEGEESESKRRKIETYATEMSGATRAIREPRVVVQTTS
+
+        [1]                   [4]      [2]
+        1.3e-27               1.4e-10  4.2e-31
+     EVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++++ ++++++++++++++++ ++++++++++++
+526  EVDILDDGYRWRKYGQKVVKGNPNPRSYYKCTSAGCTVRKHVERASHDLKSVITTYEGKHNHDVPAARNSSHVNS
+
+                                                           [7]
+                                                           6.8e-66
+                                                           GFSFGMNQPGFANMAMAGLGQ
+                                                           +++++++++++++++++++++
+601  GTSNATPGQAAVAVQTHVHRHESSQVHNSMARFERPPAFGSFSLPGRQQLGPSPGFSFGMNQPGLANLAMAGLGQ
+
+     
+     
+     GQPKMPVMPMHPYLAQQHPGNEMGFMMPK
+     +++++++++++++++++++++++++++++
+676  GQPKMPVMPIHPYLAQQHPGNEMGFMMPKEEPKVGPVTEPSLNLSNNRTLYQQIMSRLPLGPQM
+
+
+XP_006381519.2
+  LENGTH = 475  COMBINED P-VALUE = 2.76e-184  E-VALUE = 4.1e-182
+  DIAGRAM: 95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+
+                         [9]
+                         4.7e-64
+                         TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF
+                         ++++++++++++++++++++++++++++++++++++++++++++++++++
+76   LSGTAVSNSFNKASSTDSKATIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNFSSQLT
+
+                                                 [3]
+                                                 5.5e-54
+                                                 YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNC
+                                                 +++++++++++++++++++++++++++++++
+151  SNPHQNIPSPAEADHTTEPLRLTSLNQEEDPKTLSHASNGDRPSYDGYNWRKYGQKQVKGSEYPRSYYKCTYPNC
+
+                [6]
+                1.7e-26
+     PVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++++++++ +++++++++++++++++++++++
+226  PVKKKVERSFDGQIAEIVYKGEHNHSKPQPPKRNSSGTQGLSDGNATDRNSIPLWSNQLNERNEGSEGREENQNE
+
+                                                                           [5]
+                                                                           2.7e-
+                                                                           KKAEK
+                                                                           +++++
+301  IGLPVHSIYQGKAPPSYDPAGTGTINAGTGTSDNSCGVSGECDDGSKGLEGANDEPKSKRRKTEIQSTEGGMSGE
+
+                     [1]                   [4]      [2]
+     13              1.9e-25               1.7e-11  9.5e-30
+     RIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNH
+     ++++++++++  ++ +++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++
+376  GVQEPRVVVQSSTDSEILGDGFRWRKYGQKIVKGNPYPRSYYRCTSIKCNVRKHVERVSDDPRAFITTYEGKHNH
+
+     
+     
+     P
+     +
+451  EIPLKSTNLAAFEPDSQAPTTRVKQ
+
+
+XP_024459754.2
+  LENGTH = 475  COMBINED P-VALUE = 2.76e-184  E-VALUE = 4.1e-182
+  DIAGRAM: 95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+
+                         [9]
+                         4.7e-64
+                         TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF
+                         ++++++++++++++++++++++++++++++++++++++++++++++++++
+76   LSGTAVSNSFNKASSTDSKATIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNFSSQLT
+
+                                                 [3]
+                                                 5.5e-54
+                                                 YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNC
+                                                 +++++++++++++++++++++++++++++++
+151  SNPHQNIPSPAEADHTTEPLRLTSLNQEEDPKTLSHASNGDRPSYDGYNWRKYGQKQVKGSEYPRSYYKCTYPNC
+
+                [6]
+                1.7e-26
+     PVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++++++++ +++++++++++++++++++++++
+226  PVKKKVERSFDGQIAEIVYKGEHNHSKPQPPKRNSSGTQGLSDGNATDRNSIPLWSNQLNERNEGSEGREENQNE
+
+                                                                           [5]
+                                                                           2.7e-
+                                                                           KKAEK
+                                                                           +++++
+301  IGLPVHSIYQGKAPPSYDPAGTGTINAGTGTSDNSCGVSGECDDGSKGLEGANDEPKSKRRKTEIQSTEGGMSGE
+
+                     [1]                   [4]      [2]
+     13              1.9e-25               1.7e-11  9.5e-30
+     RIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNH
+     ++++++++++  ++ +++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++
+376  GVQEPRVVVQSSTDSEILGDGFRWRKYGQKIVKGNPYPRSYYRCTSIKCNVRKHVERVSDDPRAFITTYEGKHNH
+
+     
+     
+     P
+     +
+451  EIPLKSTNLAAFEPDSQAPTTRVKQ
+
+
+XP_024459758.2
+  LENGTH = 475  COMBINED P-VALUE = 2.76e-184  E-VALUE = 4.1e-182
+  DIAGRAM: 95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+
+                         [9]
+                         4.7e-64
+                         TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF
+                         ++++++++++++++++++++++++++++++++++++++++++++++++++
+76   LSGTAVSNSFNKASSTDSKATIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNFSSQLT
+
+                                                 [3]
+                                                 5.5e-54
+                                                 YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNC
+                                                 +++++++++++++++++++++++++++++++
+151  SNPHQNIPSPAEADHTTEPLRLTSLNQEEDPKTLSHASNGDRPSYDGYNWRKYGQKQVKGSEYPRSYYKCTYPNC
+
+                [6]
+                1.7e-26
+     PVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++++++++ +++++++++++++++++++++++
+226  PVKKKVERSFDGQIAEIVYKGEHNHSKPQPPKRNSSGTQGLSDGNATDRNSIPLWSNQLNERNEGSEGREENQNE
+
+                                                                           [5]
+                                                                           2.7e-
+                                                                           KKAEK
+                                                                           +++++
+301  IGLPVHSIYQGKAPPSYDPAGTGTINAGTGTSDNSCGVSGECDDGSKGLEGANDEPKSKRRKTEIQSTEGGMSGE
+
+                     [1]                   [4]      [2]
+     13              1.9e-25               1.7e-11  9.5e-30
+     RIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNH
+     ++++++++++  ++ +++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++
+376  GVQEPRVVVQSSTDSEILGDGFRWRKYGQKIVKGNPYPRSYYRCTSIKCNVRKHVERVSDDPRAFITTYEGKHNH
+
+     
+     
+     P
+     +
+451  EIPLKSTNLAAFEPDSQAPTTRVKQ
+
+
+XP_052309519.1
+  LENGTH = 475  COMBINED P-VALUE = 2.76e-184  E-VALUE = 4.1e-182
+  DIAGRAM: 95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+
+                         [9]
+                         4.7e-64
+                         TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF
+                         ++++++++++++++++++++++++++++++++++++++++++++++++++
+76   LSGTAVSNSFNKASSTDSKATIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNFSSQLT
+
+                                                 [3]
+                                                 5.5e-54
+                                                 YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNC
+                                                 +++++++++++++++++++++++++++++++
+151  SNPHQNIPSPAEADHTTEPLRLTSLNQEEDPKTLSHASNGDRPSYDGYNWRKYGQKQVKGSEYPRSYYKCTYPNC
+
+                [6]
+                1.7e-26
+     PVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++++++++ +++++++++++++++++++++++
+226  PVKKKVERSFDGQIAEIVYKGEHNHSKPQPPKRNSSGTQGLSDGNATDRNSIPLWSNQLNERNEGSEGREENQNE
+
+                                                                           [5]
+                                                                           2.7e-
+                                                                           KKAEK
+                                                                           +++++
+301  IGLPVHSIYQGKAPPSYDPAGTGTINAGTGTSDNSCGVSGECDDGSKGLEGANDEPKSKRRKTEIQSTEGGMSGE
+
+                     [1]                   [4]      [2]
+     13              1.9e-25               1.7e-11  9.5e-30
+     RIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNH
+     ++++++++++  ++ +++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++
+376  GVQEPRVVVQSSTDSEILGDGFRWRKYGQKIVKGNPYPRSYYRCTSIKCNVRKHVERVSDDPRAFITTYEGKHNH
+
+     
+     
+     P
+     +
+451  EIPLKSTNLAAFEPDSQAPTTRVKQ
+
+
+XP_052309520.1
+  LENGTH = 475  COMBINED P-VALUE = 2.76e-184  E-VALUE = 4.1e-182
+  DIAGRAM: 95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+
+                         [9]
+                         4.7e-64
+                         TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF
+                         ++++++++++++++++++++++++++++++++++++++++++++++++++
+76   LSGTAVSNSFNKASSTDSKATIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNFSSQLT
+
+                                                 [3]
+                                                 5.5e-54
+                                                 YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNC
+                                                 +++++++++++++++++++++++++++++++
+151  SNPHQNIPSPAEADHTTEPLRLTSLNQEEDPKTLSHASNGDRPSYDGYNWRKYGQKQVKGSEYPRSYYKCTYPNC
+
+                [6]
+                1.7e-26
+     PVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++++++++ +++++++++++++++++++++++
+226  PVKKKVERSFDGQIAEIVYKGEHNHSKPQPPKRNSSGTQGLSDGNATDRNSIPLWSNQLNERNEGSEGREENQNE
+
+                                                                           [5]
+                                                                           2.7e-
+                                                                           KKAEK
+                                                                           +++++
+301  IGLPVHSIYQGKAPPSYDPAGTGTINAGTGTSDNSCGVSGECDDGSKGLEGANDEPKSKRRKTEIQSTEGGMSGE
+
+                     [1]                   [4]      [2]
+     13              1.9e-25               1.7e-11  9.5e-30
+     RIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNH
+     ++++++++++  ++ +++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++
+376  GVQEPRVVVQSSTDSEILGDGFRWRKYGQKIVKGNPYPRSYYRCTSIKCNVRKHVERVSDDPRAFITTYEGKHNH
+
+     
+     
+     P
+     +
+451  EIPLKSTNLAAFEPDSQAPTTRVKQ
+
+
+XP_052309521.1
+  LENGTH = 475  COMBINED P-VALUE = 2.76e-184  E-VALUE = 4.1e-182
+  DIAGRAM: 95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+
+                         [9]
+                         4.7e-64
+                         TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF
+                         ++++++++++++++++++++++++++++++++++++++++++++++++++
+76   LSGTAVSNSFNKASSTDSKATIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNFSSQLT
+
+                                                 [3]
+                                                 5.5e-54
+                                                 YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNC
+                                                 +++++++++++++++++++++++++++++++
+151  SNPHQNIPSPAEADHTTEPLRLTSLNQEEDPKTLSHASNGDRPSYDGYNWRKYGQKQVKGSEYPRSYYKCTYPNC
+
+                [6]
+                1.7e-26
+     PVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++++++++ +++++++++++++++++++++++
+226  PVKKKVERSFDGQIAEIVYKGEHNHSKPQPPKRNSSGTQGLSDGNATDRNSIPLWSNQLNERNEGSEGREENQNE
+
+                                                                           [5]
+                                                                           2.7e-
+                                                                           KKAEK
+                                                                           +++++
+301  IGLPVHSIYQGKAPPSYDPAGTGTINAGTGTSDNSCGVSGECDDGSKGLEGANDEPKSKRRKTEIQSTEGGMSGE
+
+                     [1]                   [4]      [2]
+     13              1.9e-25               1.7e-11  9.5e-30
+     RIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNH
+     ++++++++++  ++ +++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++
+376  GVQEPRVVVQSSTDSEILGDGFRWRKYGQKIVKGNPYPRSYYRCTSIKCNVRKHVERVSDDPRAFITTYEGKHNH
+
+     
+     
+     P
+     +
+451  EIPLKSTNLAAFEPDSQAPTTRVKQ
+
+
+XP_052309522.1
+  LENGTH = 475  COMBINED P-VALUE = 2.76e-184  E-VALUE = 4.1e-182
+  DIAGRAM: 95-[9]-49-[3]-1-[6]-111-[5]-[1]-[4]-1-[2]-24
+
+                         [9]
+                         4.7e-64
+                         TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF
+                         ++++++++++++++++++++++++++++++++++++++++++++++++++
+76   LSGTAVSNSFNKASSTDSKATIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNFSSQLT
+
+                                                 [3]
+                                                 5.5e-54
+                                                 YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNC
+                                                 +++++++++++++++++++++++++++++++
+151  SNPHQNIPSPAEADHTTEPLRLTSLNQEEDPKTLSHASNGDRPSYDGYNWRKYGQKQVKGSEYPRSYYKCTYPNC
+
+                [6]
+                1.7e-26
+     PVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++++++++ +++++++++++++++++++++++
+226  PVKKKVERSFDGQIAEIVYKGEHNHSKPQPPKRNSSGTQGLSDGNATDRNSIPLWSNQLNERNEGSEGREENQNE
+
+                                                                           [5]
+                                                                           2.7e-
+                                                                           KKAEK
+                                                                           +++++
+301  IGLPVHSIYQGKAPPSYDPAGTGTINAGTGTSDNSCGVSGECDDGSKGLEGANDEPKSKRRKTEIQSTEGGMSGE
+
+                     [1]                   [4]      [2]
+     13              1.9e-25               1.7e-11  9.5e-30
+     RIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNH
+     ++++++++++  ++ +++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++
+376  GVQEPRVVVQSSTDSEILGDGFRWRKYGQKIVKGNPYPRSYYRCTSIKCNVRKHVERVSDDPRAFITTYEGKHNH
+
+     
+     
+     P
+     +
+451  EIPLKSTNLAAFEPDSQAPTTRVKQ
+
+
+XP_024443283.1
+  LENGTH = 469  COMBINED P-VALUE = 2.95e-175  E-VALUE = 4.4e-173
+  DIAGRAM: 95-[9]-40-[3]-1-[6]-114-[5]-[1]-[4]-1-[2]-24
+
+                         [9]
+                         1.5e-55
+                         TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF
+                         ++++++++++++++++++++ +++++++++++++ +++++++++++++++
+76   LSGTTLSNSSNRVSSTDSKTTVIYKPQAKFVSKATVSLLASMGNFNTNSQQMLQSVEARPQCPKQNKQNFSSQLT
+
+                                        [3]
+                                        5.5e-54
+                                        YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERS
+                                        ++++++++++++++++++++++++++++++++++++++++
+151  SNLHQNIPSHAVLLTSQNQEDPKALSHASNGDRASYDGYNWRKYGQKQVKGSEYPRSYYKCTYPNCPVKKKVERS
+
+       [6]
+       1.7e-26
+     H GHITEIIYKGEHNHPKPQPNRRY
+     + +++++++++++++++++++++++
+226  FDGQIAEIVYKGEHNHSKPQPPKRNSSGTQGLGAVSDSNAQDRYTTPLWSNQLIERNEGSEGREENQIETGLQVH
+
+                                                                     [5]
+                                                                     1.1e-12
+                                                                     KKAEKRIREPR
+                                                                     + +++++++++
+301  SIYQGKPPPSCDRAGTGSINAGAGTSDNSCGLNGECNDGSKGLEGDDDEPRNKRRKAGIQSNKGGISGEGVQEPR
+
+               [1]                   [4]      [2]
+               3.3e-24               1.7e-11  6.4e-31
+     FVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++  ++ +++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+376  VVVQSSTDSEILGDGFRWRKYGQKIVRGNPYPRSYYRCTSLKCNVRKHVERASDDPKAFITTYEGKHNHEMPLKS
+
+
+XP_024443284.1
+  LENGTH = 469  COMBINED P-VALUE = 2.95e-175  E-VALUE = 4.4e-173
+  DIAGRAM: 95-[9]-40-[3]-1-[6]-114-[5]-[1]-[4]-1-[2]-24
+
+                         [9]
+                         1.5e-55
+                         TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF
+                         ++++++++++++++++++++ +++++++++++++ +++++++++++++++
+76   LSGTTLSNSSNRVSSTDSKTTVIYKPQAKFVSKATVSLLASMGNFNTNSQQMLQSVEARPQCPKQNKQNFSSQLT
+
+                                        [3]
+                                        5.5e-54
+                                        YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERS
+                                        ++++++++++++++++++++++++++++++++++++++++
+151  SNLHQNIPSHAVLLTSQNQEDPKALSHASNGDRASYDGYNWRKYGQKQVKGSEYPRSYYKCTYPNCPVKKKVERS
+
+       [6]
+       1.7e-26
+     H GHITEIIYKGEHNHPKPQPNRRY
+     + +++++++++++++++++++++++
+226  FDGQIAEIVYKGEHNHSKPQPPKRNSSGTQGLGAVSDSNAQDRYTTPLWSNQLIERNEGSEGREENQIETGLQVH
+
+                                                                     [5]
+                                                                     1.1e-12
+                                                                     KKAEKRIREPR
+                                                                     + +++++++++
+301  SIYQGKPPPSCDRAGTGSINAGAGTSDNSCGLNGECNDGSKGLEGDDDEPRNKRRKAGIQSNKGGISGEGVQEPR
+
+               [1]                   [4]      [2]
+               3.3e-24               1.7e-11  6.4e-31
+     FVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++  ++ +++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+376  VVVQSSTDSEILGDGFRWRKYGQKIVRGNPYPRSYYRCTSLKCNVRKHVERASDDPKAFITTYEGKHNHEMPLKS
+
+
+XP_024443574.1
+  LENGTH = 556  COMBINED P-VALUE = 1.39e-152  E-VALUE = 2.1e-150
+  DIAGRAM: 35-[8]-5-[5]-122-[3]-1-[6]-76-[5]-[1]-[4]-1-[2]-122
+
+                                        [8]                               [5]
+                                        2.8e-28                           9.9e-0
+                                        NPEIRSPYLTIPPGLSPTTLLESPVFLSN     KKAEKR
+                                        +++++++++++++++++++++++++++++      +++ +
+1    MDNNTSRSEVSDCGDPTRPESGGGGARYKLMSPAKLPISRSACITIPPGLSPTSFLESPVLLSNVKAEPSPTTGT
+
+     
+     5
+     IREPRFVFQTKSEVD
+     +++++ +    +
+76   FTKPRTALGSLSSTPYSATTVSSTACGERKSDYFEFRPYARSNMVSADINHQRSTQCAQVQSQCHSQSFASPPLV
+
+                                                                   [3]
+                                                                   2.2e-49
+                                                                   YDGYNWRKYGQKQ
+                                                                   +++++++++++++
+151  KGEMEVSTNELSLSASLHMVTSVASAPAEVDSDELNQTGLSSSGLQASQSDHRAGTAPSMSSDDGYNWRKYGQKH
+
+                                  [6]
+                                  1.7e-26
+     VKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++++++++++++++++++++++++++ +++++++++++++++++++++++
+226  VKGSEFPRSYYKCTHPNCEVKKLFERSHDGQITEIIYKGTHDHPKPQPSRRYASGSVLSMQEDRFDKSSSLPNQD
+
+                                                          [5]                  [
+                                                          2.7e-18              7
+                                                          KKAEKRIREPRFVFQTKSEVDI
+                                                          +++ ++++++++++++ +++++
+301  KSPGAYGQVPHAIEPNGALELSTGANDDTGEGAEDDDDPFSKRRRLDAGGFDVTPVVKPIREPRVVVQTLSEVDI
+
+     1]                   [4]      [2]
+     .1e-26               3.4e-10  9.9e-35
+     LDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+376  LDDGYRWRKYGQKVVRGNPNPRSYYKCTNAGCPVRKHVERASHDPKAVITTYEGKHNHDVPTARTNSHDMAGPSA
+
+
+XP_002298853.1
+  LENGTH = 557  COMBINED P-VALUE = 1.41e-152  E-VALUE = 2.1e-150
+  DIAGRAM: 35-[8]-5-[5]-122-[3]-1-[6]-77-[5]-[1]-[4]-1-[2]-122
+
+                                        [8]                               [5]
+                                        2.8e-28                           9.9e-0
+                                        NPEIRSPYLTIPPGLSPTTLLESPVFLSN     KKAEKR
+                                        +++++++++++++++++++++++++++++      +++ +
+1    MDNNTSRSEVSDCGDPTRPESGGGGARYKLMSPAKLPISRSACITIPPGLSPTSFLESPVLLSNVKAEPSPTTGT
+
+     
+     5
+     IREPRFVFQTKSEVD
+     +++++ +    +
+76   FTKPRTALGSLSSTPYSATTVSSTACGERKSDYFEFRPYARSNMVSADINHQRSTQCAQVQSQCHSQSFASPPLV
+
+                                                                   [3]
+                                                                   2.2e-49
+                                                                   YDGYNWRKYGQKQ
+                                                                   +++++++++++++
+151  KGEMEVSTNELSLSASLHMVTSVASAPAEVDSDELNQTGLSSSGLQASQSDHRAGTAPSMSSDDGYNWRKYGQKH
+
+                                  [6]
+                                  1.7e-26
+     VKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++++++++++++++++++++++++++ +++++++++++++++++++++++
+226  VKGSEFPRSYYKCTHPNCEVKKLFERSHDGQITEIIYKGTHDHPKPQPSRRYASGSVLSMQEDRFDKSSSLPNQG
+
+                                                           [5]
+                                                           2.7e-18
+                                                           KKAEKRIREPRFVFQTKSEVD
+                                                           +++ ++++++++++++ ++++
+301  DKSPGAYGQVPHAIEPNGALELSTGANDDTGEGAEDDDDPFSKRRRLDAGGFDVTPVVKPIREPRVVVQTLSEVD
+
+     [1]                   [4]      [2]
+     7.1e-26               3.4e-10  9.9e-35
+     ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+376  ILDDGYRWRKYGQKVVRGNPNPRSYYKCTNAGCPVRKHVERASHDPKAVITTYEGKHNHDVPTARTNSHDMAGPS
+
+
+XP_024437370.2
+  LENGTH = 507  COMBINED P-VALUE = 6.81e-149  E-VALUE =   1e-146
+  DIAGRAM: 35-[8]-91-[3]-1-[6]-78-[5]-[1]-[4]-1-[2]-128
+
+                                        [8]
+                                        2.1e-25
+                                        NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                        +++++++++++ +++++++++++++++++
+1    MDNINSRSEVPDGSDPTRPDTCGGGARYKLMSPAKLPISRSACTMISPGLSPTSFLESPVLLSNVKVSADMNHQR
+
+          [3]                                       [6]
+          7.0e-48                                   1.7e-26
+          YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+          +++++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++
+151  PTVSSDDGYKWRKYGQKHVKGSEFPRSYYKCTHPNCEVKKLFECSHDGQITEIIYKGTHDHPKPQPSRRYASGSG
+
+                                                                              [5
+                                                                              1.
+                                                                              KK
+                                                                              ++
+226  LFMLEERFDKFSSLPSQDDKSPGAYGQVSHAIEPDGAPELSPGTTNDDTGEGAEDDKDPFSKRRRLDAGGFDVTP
+
+     ]                  [1]                   [4]      [2]
+     4e-18              7.1e-26               3.4e-10  9.9e-35
+     AEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGK
+     + ++++++++++++ ++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++
+301  VIKPIREPRVVVQTQSEVDILDDGYRWRKYGQKVVRGNPNPRSYYKCTNAGCPVRKHVERASHDPKAVITTYEGK
+
+     
+     
+     HNHP
+     ++++
+376  HNHDVPTARTNSHDTAGPSAVNGTSRTRPDKNETISLDLGVGISSTSENLSSDQQQALHAELVRFENQSSSGSSF
+
+
+XP_024437369.2
+  LENGTH = 560  COMBINED P-VALUE = 1.21e-148  E-VALUE = 1.8e-146
+  DIAGRAM: 35-[8]-144-[3]-1-[6]-78-[5]-[1]-[4]-1-[2]-128
+
+                                        [8]
+                                        2.1e-25
+                                        NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                        +++++++++++ +++++++++++++++++
+1    MDNINSRSEVPDGSDPTRPDTCGGGARYKLMSPAKLPISRSACTMISPGLSPTSFLESPVLLSNVKAEPSPTTGT
+
+                                                               [3]
+                                                               7.0e-48
+                                                               YDGYNWRKYGQKQVKGS
+                                                               +++++++++++++++++
+151  KGEMAVCTNELTLSTPLHMVTSGSSVPAEVDSDELNQMGLSSSGLRASQSGSAPTVSSDDGYKWRKYGQKHVKGS
+
+                              [6]
+                              1.7e-26
+     EYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++++++++++++++++++++++ +++++++++++++++++++++++
+226  EFPRSYYKCTHPNCEVKKLFECSHDGQITEIIYKGTHDHPKPQPSRRYASGSGLFMLEERFDKFSSLPSQDDKSP
+
+                                                        [5]                  [1]
+                                                        1.4e-18              7.1
+                                                        KKAEKRIREPRFVFQTKSEVDILD
+                                                        +++ ++++++++++++ +++++++
+301  GAYGQVSHAIEPDGAPELSPGTTNDDTGEGAEDDKDPFSKRRRLDAGGFDVTPVIKPIREPRVVVQTQSEVDILD
+
+                        [4]      [2]
+     e-26               3.4e-10  9.9e-35
+     DGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+376  DGYRWRKYGQKVVRGNPNPRSYYKCTNAGCPVRKHVERASHDPKAVITTYEGKHNHDVPTARTNSHDTAGPSAVN
+
+
+XP_002319959.2
+  LENGTH = 591  COMBINED P-VALUE = 3.69e-148  E-VALUE = 5.5e-146
+  DIAGRAM: 89-[8]-139-[3]-1-[6]-85-[5]-[1]-[4]-1-[2]-103
+
+                   [8]
+                   5.7e-26
+                   NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                   +++++++++++++++++++++++++++++
+76   KFKSTPPPSLPLSPPPVSPSYYFAIPPGLSPTELLDSPVLLNPSNILPSPTTGTFPGQGLNWKSSSGNIQQNVKK
+
+                                     [3]                                       [
+                                     6.0e-49                                   3
+                                     YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH G
+                                     +++++++++++++++++++++++++++ +++++++++++++ +
+226  AIQANPQSNNGFQSDHGNQPQQYQSVREQKRSDDGYNWRKYGQKQVKGSENPRSYYKCTFPNCPTKKKVERSLDG
+
+     6]
+     .6e-25
+     HITEIIYKGEHNHPKPQPNRRY
+     +++++++++++++++++ ++++
+301  QITEIVYKGSHNHPKPQSTRRSSSTGSNPAMIPAPNSNSNEIQDQSYVTHGNGQMDSSVATPDNSSISIGDDDFD
+
+                                     [5]                  [1]
+                                     4.8e-17              1.3e-27
+                                     KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYP
+                                      ++ +++++++++++++++++++++++++++++++++++++++
+376  SQKSKSVGGDDLDEDEPEAKRWKRERDNEGISAPGSRTVREPRVVVQTTSDIDILDDGYRWRKYGQKVVKGNPNP
+
+     [4]      [2]
+     7.0e-10  7.6e-33
+     RSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++  +++++++++++++++++++++++++++++
+451  RSYYKCTFQGCPVRKHVERASHDLRAVITTYEGKHNHDVPAARGSGSRSLQDHSNNGNNNAAMAIRPSTVNHVSN
+
+
+XP_002323637.2
+  LENGTH = 579  COMBINED P-VALUE = 4.85e-145  E-VALUE = 7.2e-143
+  DIAGRAM: 77-[8]-142-[3]-1-[6]-73-[5]-[1]-[4]-1-[2]-112
+
+       [8]
+       3.7e-25
+       NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+       ++++++ ++++++++++++++++++++++
+76   SPPPVSPSSYFAIPPGLSPTELLDSPVLFPTSNGLASPTTGAFAGQTFNWRGNSNDNQQGVSGEEKNYSDFSFPT
+
+                            [3]                                       [6]
+                            1.5e-50                                   1.3e-23
+                            YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKG
+                            +++++++++++++++++++++++++++++++++++++++++ ++++++++++
+226  TAAQPSFNQYNQSAHYMRENKRSDDGYNWRKYGQKQVKGSENPRSYYKCTYPNCPTKKKVERSLDGQITEIVYKG
+
+     
+     
+     EHNHPKPQPNRRY
+     ++++++ + ++++
+301  SHNHPKLQSSRRSSSQLVQPSGGASSEISDQSIAPIESSMMQEDSSISLGEDEFDQSSSMNSGEEDNANEPDAKR
+
+                [5]                  [1]                   [4]      [2]
+                1.6e-16              1.3e-27               1.4e-10  4.2e-31
+                KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCS
+                + + +++++++++++++++++++++++++++++++++++++++++++++++ ++++++++++++
+376  WQGQNENESILGAGSRTVREPRIVVQTTSDIDILDDGYRWRKYGQKVVKGNPNPRSYYKCTSVGCPVRKHVERAS
+
+     
+     
+     HDPKMVITTYEGKHNHP
+      ++++++++++++++++
+451  QDLRAVITTYEGKHNHDVPAARGSGYMNKAPSIANSTANAPIPIRPSVMANHSNQTSYPNSLHSTRSLPASGSQA
+
+
+XP_002326093.4
+  LENGTH = 603  COMBINED P-VALUE = 1.10e-143  E-VALUE = 1.6e-141
+  DIAGRAM: 89-[8]-69-[9]-20-[3]-1-[6]-87-[5]-[1]-[4]-1-[2]-113
+
+                   [8]
+                   3.8e-23
+                   NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                   ++++++ +++++ ++++ +++++++++++
+76   KFKSIPPPSLPLSPPPVSPSSYFAIPAGLSPAELLDSPVLLNPSNILPSPTTGTFPAQAFNWKSSYGNSLQNVKK
+
+                                          [9]
+                                          5.0e-05
+                                          TIIYKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVET
+                                          +      ++                + ++ +   +  +
+151  EDKTFSDFSFQQPARPPTTSTAMFQSSNATIQPEQQQTWGFQESAKQGAFVSGKSSMVKMEYNSNSMQSFSPEIA
+
+                                     [3]                                       [
+                                     2.4e-48                                   3
+     RPQLSKQDKHNF                    YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH G
+       +   +    +                    +++++++++++++++++++++++++++++++++++++++++ +
+226  AIQTNPQSNNGFQSDYGNQQQQYQSVREQRRSEDGYNWRKYGQKQVKGSENPRSYYKCTYPNCPTKKILERSLEG
+
+     6]
+     .6e-24
+     HITEIIYKGEHNHPKPQPNRRY
+     +++++++++++++++++ ++++
+301  QVTEIVYKGSHNHPKPQSTRRSSSSTTASNLGMIPAPNSNPNEIQEQSYVTHGSGQMDSSVATPENSSISIGDDD
+
+                                       [5]                  [1]
+                                       3.4e-17              1.3e-27
+                                       KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNP
+                                        ++ +++++++++++++++++++++++++++++++++++++
+376  FDSQRSRSGGGDDFDEDEPEAKRWKREGDNEGISAPGSKAVREPRVVVQTTSDIDILDDGYRWRKYGQKVVKGNP
+
+       [4]      [2]
+       5.4e-10  7.6e-33
+     YPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++ +++++++++++++++++++++++++++++
+451  NPRSYYKCTYQGCPVRKHVERASHDLRAVITTYEGKHNHDVPAARGTGSRSLPGHNNNGNNNGNNNSNHAVMAIR
+
+
+XP_024458700.1
+  LENGTH = 546  COMBINED P-VALUE = 1.26e-136  E-VALUE = 1.9e-134
+  DIAGRAM: 79-[8]-144-[3]-1-[6]-74-[5]-[1]-[4]-1-[2]-74
+
+         [8]
+         1.8e-23
+         NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+         ++++++ ++++++ +++++++++++++++
+76   PLSPPPVSPSSYWAIPPRLSPTELLDSPVLFPTSYALASPTSGFFAGQTFNWRSNSNDNQRGVSGEEKDCSDFSF
+
+                                [3]                                       [6]
+                                1.5e-45                                   2.8e-2
+                                YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEI
+                                ++ ++++++++++++++++++++++++++++ +++++++++ ++++++
+226  MQNSTAPQPSYNQYNQAGHYMRENGRSEDRYKWRKYGQKQVKGSENPRSYYKCTYPNCTTKKKVERSLDGQITEI
+
+     
+     4
+     IYKGEHNHPKPQPNRRY
+     ++++++++++++ ++++
+301  VYKGSHNHSKPQSTRRSSSQSVYPSGGANSEISYQSGAPMESGMMQEDSSISLGEDDIDHSSPISNSGGEDNENE
+
+                     [5]                  [1]                   [4]      [2]
+                     6.2e-15              7.1e-26               1.4e-10  1.1e-31
+                     KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKH
+                     + + +++++ +++++++++++++++++++++++++++++++++++++++++ +++++++
+376  PDAKRWLGQNENESILGAGSKTVRESRIVVQTTSDIDILDDGYRWRKYGQKVVRGNPNPRSYYKCTSAGCPVRKH
+
+     
+     
+     VERCSHDPKMVITTYEGKHNHP
+     +++++++++ ++++++++++++
+451  VERASHDLRSVITTYEGKHNHDVPAARGRGNVNKAPSNANSTANAPIPIRPSVMASHSNQTRYHPNSLHSTRLLP
+
+
+XP_002312267.1
+  LENGTH = 492  COMBINED P-VALUE = 6.22e-136  E-VALUE = 9.3e-134
+  DIAGRAM: 96-[8]-96-[3]-1-[6]-81-[5]-[1]-[4]-1-[2]-44
+
+                          [8]
+                          1.5e-18
+                          NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                           +++++++++++ +++++++ +++++ ++
+76   PNFKPTDDKSSAGDFSRPGNLSIVPPSPMFTMPLGLCPVALPDSPGFELFSPEGFGMIHQQALAQVTAQAAQANS
+
+                                                                            [3]
+                                                                            7.0e
+                                                                            YDGY
+                                                                            ++++
+151  NMHVQQEYSTSAMSSTQFLTSINNSAAQQQQQQQMAGSVTDSRVTVQELSGIPHADRIRSESSSLAVDKPTDDGY
+
+                                           [6]
+     -53                                   2.6e-23
+     NWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     +++++++++++++++++++++++++++++++++++++ ++++++++++++++ +++++++
+226  NWRKYGQKQVKGSEFPRSYYKCTHPNCPVKKKVERSLDGQVTEIIYKGQHNHEPPQPNKRGKEGINGNSNSQGNF
+
+                                                                        [5]
+                                                                        1.5e-14
+                                                                        KKAEKRIR
+                                                                          ++++++
+301  EMATLQSGYVRKTRDRKDQESSQATPEHVSGMSDSEEVSDTETGGRIDEDEPGHKRRITTEVRVTEPASSHRTVT
+
+                  [1]                   [4]      [2]
+                  5.3e-27               3.8e-10  4.8e-28
+     EPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     + +++++++++++++++++++++++++++++++++++++++++ ++ +++++++++ +++++++ ++++++++
+376  ESRIVVQTTSEVDLLDDGYRWRKYGQKVVKGNPYPRSYYKCTTPGCKVRKHVERAAADPRAVITAYEGKHNHDVP
+
+
+XP_024444415.2
+  LENGTH = 532  COMBINED P-VALUE = 1.74e-135  E-VALUE = 2.6e-133
+  DIAGRAM: 112-[8]-97-[3]-1-[6]-92-[5]-[1]-[4]-1-[2]-56
+
+                                          [8]
+                                          5.0e-22
+                                          NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                          +++++++++++++++++ +++ +++++++
+76   AFFNDHSIPSNNTNTATATATATSSKDDGFRQSRPMNLVVARSPLFTVPPGLSPSGLLNSPGFFPPQSPFGMSHQ
+
+                  [3]                                       [6]
+                  5.3e-46                                   3.6e-25
+                  YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPN
+                   +++++++++++ +++++++++++++++ +++++++++++  +++++++++++++++ ++++
+226  RKYQPPAAVDKPTHDGYNWRKYGQKPIKGSEYPRSYYKCTHLNCPVKKKVERSSDGQITEIIYKGQHNHDLPQPN
+
+     
+     
+     RRY
+     +++
+301  KRSKDCNDSNGSIHLQSKPEVGSQAQAGNAIKLTETLPAHSVIGRDQESTQADPSEPPGPSDSEEAGDAAVQEEE
+
+                         [5]                  [1]                   [4]      [2]
+                         3.2e-14              1.1e-26               1.4e-10  1.2
+                         KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCP
+                         +  ++++++++++++++++++++++++++++++++++++++++++++++++ +++
+376  RGDDEPNPKRRQVDVVTSEATLPHKTVTEPKIIVQTRSEVDLLDDGYRWRKYGQKVVKGNPHPRSYYKCTSAGCN
+
+     
+     e-30
+     VRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++ ++++++++++++++++
+451  VRKHVERAAADPKAVVTTYEGKHNHDVPAARNSSHNTANTSASQVKPQKVVTEKHPLHKGMEFGNNDQRPVLLQL
+
+
+XP_002315024.1
+  LENGTH = 499  COMBINED P-VALUE = 1.04e-134  E-VALUE = 1.6e-132
+  DIAGRAM: 104-[8]-89-[3]-1-[6]-83-[5]-[1]-[4]-1-[2]-48
+
+                                  [8]
+                                  4.7e-17
+                                  NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                                   ++++ +++ ++ +++++++ +++++ ++
+76   LLAGAIASPNFKPPDDKSSAGDFSSSSSLSIVPPPPMFSMPLGLSPVSLPDSPGFGLFSPQGFGMTHQQALAQVT
+
+                                                                             [3]
+                                                                             1.1
+                                                                             YDG
+                                                                              ++
+151  AQAAQANSIMHVQPEYSTPAMSSTFTSTQGAHQQQQKVRSVADSRVKIQELSDFSRSDQRSESSSLAVDKPANDG
+
+                                            [6]
+     e-51                                   3.9e-22
+     YNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++++++++++++++++++++++++++++++++++++ ++++++++++++++ +++ +++
+226  YNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSLDGQVTEIIYKGQHNHQPPQSNKRGKDTGGLNGNSNSH
+
+                                                                           [5]
+                                                                           2.3e-
+                                                                           KKAEK
+                                                                             +++
+301  GNSELDSRFQSGNVSKERDRKDQESSQATPEHISGMSDSEEVGDTEAGGEVDEDEPDPKRRSTEVRVTEPASSHR
+
+                     [1]                   [4]      [2]
+     15              5.3e-27               3.8e-10  2.6e-30
+     RIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNH
+     ++++++++++++++++++++++++++++++++++++++++++++++ ++ +++++++++ +++++++++++++++
+376  TVTEPRIIVQTTSEVDLLDDGYRWRKYGQKVVKGNPYPRSYYKCTTAGCKVRKHVERAAADPKAVITTYEGKHNH
+
+     
+     
+     P
+     +
+451  DVPAAKNSSHNTVNSNASQLKPQTLEKHASNNSNSQPAARLRLKEEQIT
+
+
+XP_024454278.1
+  LENGTH = 543  COMBINED P-VALUE = 4.06e-131  E-VALUE = 6.1e-129
+  DIAGRAM: 63-[9]-13-[8]-96-[3]-1-[6]-90-[5]-[1]-[4]-1-[2]-56
+
+                                                                    [9]
+                                                                    4.4e-05
+                                                                    TIIYKPQAKLVS
+     
+1    MAEKQENPTTAAPAKPTITLPPRPSMETLFTGGLSPGPMTLVSSFFADTPYPESDYPSFSQLLAGAMASPIARPA
+
+                                                        [8]
+                                                        2.5e-23
+     KATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF             NPEIRSPYLTIPPGLSPTTLLESP
+       +  +  +  + +++         +    ++ +  +              +++++++++++++++++ ++++++
+76   FFTDNLIPNNNNTNTNTNTNTNTTTTAIPSSKEDGINCNSNLGFKPSRPTNLVVARSPLFTVPPGLSPSGLLDSP
+
+     
+     
+     VFLSN
+      ++++
+151  AFFSPRSSFGMSHQQALVQVTAQAALFAQSQMHMQAQYQPSSVTAAKELLTQYPSFNPGEALQQQQLMPPSTSDA
+
+                               [3]                                       [6]
+                               6.0e-46                                   4.3e-17
+                               YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEII
+                               ++++++++++++ +++++++++++++++ ++ ++++++++  +++++++
+226  QNSMVEPAEFSHSERKYQPPAGDKPTDDGYNWRKYGQKPIKGSEYPRSYYKCTHLNCLVKKKVERSSDGQITEII
+
+     
+     
+     YKGEHNHPKPQPNRRY
+     ++++++++   +
+301  YKGQHNHDQLNKLSKDGDDSNGSIHSQSKPEVVSQAHAGNVNKLTETLPAHSVTRRDQESTQADPSEPPGSSDNE
+
+                                    [5]                  [1]                   [
+                                    1.6e-14              1.1e-26               1
+                                    KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPR
+                                    +  +++++++++++++++++++++++++++++++++++++++++
+376  EAGNAAVQEEERGDDEPIPKRRQIDVVTSEVTLPHKTITEPKIIVQTRSEVDLLDDGYRWRKYGQKVVKGNPHPR
+
+     4]      [2]
+     .4e-10  1.4e-31
+     SYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++ ++++++++++++ ++++++++++++++++
+451  SYYKCTSAGCNVRKHVERAAADPKAVITTYEGKHNHDVPAARNSSHNTANTNAAPLKPQKVVAEKHPMLKGMDFG
+
+
+XP_024438829.2
+  LENGTH = 716  COMBINED P-VALUE = 9.06e-131  E-VALUE = 1.3e-128
+  DIAGRAM: 65-[8]-160-[3]-1-[6]-115-[5]-[1]-[4]-1-[2]-201
+
+                                                                      [8]
+                                                                      1.1e-20
+                                                                      NPEIRSPYLT
+                                                                          ++++++
+1    MDNNPAAEYKTLLWVPNLETKSSNGGVGGDNNRGISIAERRAAKCGFKMKAERINTARFRTTSPLTSPLRSPFIT
+
+     
+     
+     IPPGLSPTTLLESPVFLSN
+     ++ ++++++++++++++++
+76   IPSGISPTALLDSPIMLSNSHVQPSPTTGTFPLSPLKYESESLLRCGDGERGSNAGGLSFRFRFKHLGNSLPLSE
+
+                                  [3]                                       [6]
+                                  1.3e-45                                   6.6e
+                                  YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHIT
+                                  ++++++++++++++++++++++++++ + ++ ++++ ++ + ++++
+226  TIHGENVASCRLMEEIKRTLPATTIGRSSEDGYNWRKYGQKQVKGSEYPRSYYKCNHANCLVKKKIECAHEGQIT
+
+     
+     -23
+     EIIYKGEHNHPKPQPNRRY
+     +++++++++++++++++
+301  EIIYKGSHNHPKPQPSCGAPPGPASSLDGTPEMDQGESVQKNTKSGFKDIKVQSDWRTDGPQRTSSTSAVTELSS
+
+                                                                [5]
+                                                                1.1e-14
+                                                                KKAEKRIREPRFVFQT
+                                                                  +++++++++++++
+376  TTQIKSLETYESTKTPELSSTLASHDDDGVTQGSSFGADADDESESKRRKIESCLVETNMASRAAIREPRVVVQI
+
+          [1]                   [4]      [2]
+          1.3e-27               1.4e-10  4.5e-29
+     KSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+      ++++++++++++++++++++++++++++++++++ ++ +++++++++++++ ++++++++++++
+451  ESEVDILDDGYRWRKYGQKVVKGNPNPRSYYKCTSAGCSVRKHVERASHDLKYVIITYEGKHNHEVPAARNSSHG
+
+
+XP_052301461.1
+  LENGTH = 541  COMBINED P-VALUE = 1.29e-127  E-VALUE = 1.9e-125
+  DIAGRAM: 189-[3]-1-[6]-78-[5]-[1]-[4]-1-[2]-128
+
+                                            [3]
+                                            7.0e-48
+                                            YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKK
+                                            ++++++++++++++++++++++++++++++++++++
+151  VTSGSSVPAEVDSDELNQMGLSSSGLRASQSGSAPTVSSDDGYKWRKYGQKHVKGSEFPRSYYKCTHPNCEVKKL
+
+           [6]
+           1.7e-26
+     VERSH GHITEIIYKGEHNHPKPQPNRRY
+     +++++ +++++++++++++++++++++++
+226  FECSHDGQITEIIYKGTHDHPKPQPSRRYASGSGLFMLEERFDKFSSLPSQDDKSPGAYGQVSHAIEPDGAPELS
+
+                                     [5]                  [1]
+                                     1.4e-18              7.1e-26
+                                     KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYP
+                                     +++ ++++++++++++ ++++++++++++++++++++++++++
+301  PGTTNDDTGEGAEDDKDPFSKRRRLDAGGFDVTPVIKPIREPRVVVQTQSEVDILDDGYRWRKYGQKVVRGNPNP
+
+     [4]      [2]
+     3.4e-10  9.9e-35
+     RSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++ +++++++++++++++++++++++++++++
+376  RSYYKCTNAGCPVRKHVERASHDPKAVITTYEGKHNHDVPTARTNSHDTAGPSAVNGTSRTRPDKNETISLDLGV
+
+
+XP_006375555.1
+  LENGTH = 485  COMBINED P-VALUE = 4.03e-103  E-VALUE =   6e-101
+  DIAGRAM: 105-[3]-1-[6]-81-[5]-[1]-[4]-1-[2]-153
+
+                                   [3]                                       [6]
+                                   1.1e-43                                   4.0
+                                   YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHI
+                                   +++++++++++++++++++++++++++++++++++++++++ +++
+76   RKVSHTPGSDLRSLQSGQEGRTPIMREKVSEDGYHWRKYGQKFVKGNEFIRSYYKCTHPSCQAKKQLECSHDGKL
+
+     
+     e-19
+     TEIIYKGEHNHPKPQPNRRY
+     ++++++++++++++++++ +
+151  ADIVYLGEHEHPKPQHNLPQAVGCVLSVVEEKPDHLLFTGVEESHEPHPIESTNTPQISSVTSSEDVKRVLSEPK
+
+                               [5]                  [1]                   [4]
+                               2.9e-13              1.3e-23               2.4e-1
+                               KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRC
+                               +++  +  +++ +++++++++++++++++++++++ +++++++++++++
+226  RIRDEVDVDDDQRSKRRKKSSCNDSSTPVDTPTSEPRLVIQTKSEVDIVSDGYRWRKYGQKLVKGNPNPRSYYRC
+
+        [2]
+     0  1.6e-28
+     TS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++ ++++++++++++++++ +++ ++++++++
+301  SSPGCPVKKHVERASHDPKLVITSYEGQHDHDMPPSRTITHNTTGLNTCTTTIQNGELGTKSGESNAISLEMVVY
+
+
+XP_006375556.1
+  LENGTH = 485  COMBINED P-VALUE = 4.03e-103  E-VALUE =   6e-101
+  DIAGRAM: 105-[3]-1-[6]-81-[5]-[1]-[4]-1-[2]-153
+
+                                   [3]                                       [6]
+                                   1.1e-43                                   4.0
+                                   YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHI
+                                   +++++++++++++++++++++++++++++++++++++++++ +++
+76   RKVSHTPGSDLRSLQSGQEGRTPIMREKVSEDGYHWRKYGQKFVKGNEFIRSYYKCTHPSCQAKKQLECSHDGKL
+
+     
+     e-19
+     TEIIYKGEHNHPKPQPNRRY
+     ++++++++++++++++++ +
+151  ADIVYLGEHEHPKPQHNLPQAVGCVLSVVEEKPDHLLFTGVEESHEPHPIESTNTPQISSVTSSEDVKRVLSEPK
+
+                               [5]                  [1]                   [4]
+                               2.9e-13              1.3e-23               2.4e-1
+                               KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRC
+                               +++  +  +++ +++++++++++++++++++++++ +++++++++++++
+226  RIRDEVDVDDDQRSKRRKKSSCNDSSTPVDTPTSEPRLVIQTKSEVDIVSDGYRWRKYGQKLVKGNPNPRSYYRC
+
+        [2]
+     0  1.6e-28
+     TS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++ ++++++++++++++++ +++ ++++++++
+301  SSPGCPVKKHVERASHDPKLVITSYEGQHDHDMPPSRTITHNTTGLNTCTTTIQNGELGTKSGESNAISLEMVVY
+
+
+XP_024440287.1
+  LENGTH = 485  COMBINED P-VALUE = 4.03e-103  E-VALUE =   6e-101
+  DIAGRAM: 105-[3]-1-[6]-81-[5]-[1]-[4]-1-[2]-153
+
+                                   [3]                                       [6]
+                                   1.1e-43                                   4.0
+                                   YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHI
+                                   +++++++++++++++++++++++++++++++++++++++++ +++
+76   RKVSHTPGSDLRSLQSGQEGRTPIMREKVSEDGYHWRKYGQKFVKGNEFIRSYYKCTHPSCQAKKQLECSHDGKL
+
+     
+     e-19
+     TEIIYKGEHNHPKPQPNRRY
+     ++++++++++++++++++ +
+151  ADIVYLGEHEHPKPQHNLPQAVGCVLSVVEEKPDHLLFTGVEESHEPHPIESTNTPQISSVTSSEDVKRVLSEPK
+
+                               [5]                  [1]                   [4]
+                               2.9e-13              1.3e-23               2.4e-1
+                               KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRC
+                               +++  +  +++ +++++++++++++++++++++++ +++++++++++++
+226  RIRDEVDVDDDQRSKRRKKSSCNDSSTPVDTPTSEPRLVIQTKSEVDIVSDGYRWRKYGQKLVKGNPNPRSYYRC
+
+        [2]
+     0  1.6e-28
+     TS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++ ++++++++++++++++ +++ ++++++++
+301  SSPGCPVKKHVERASHDPKLVITSYEGQHDHDMPPSRTITHNTTGLNTCTTTIQNGELGTKSGESNAISLEMVVY
+
+
+XP_006369893.1
+  LENGTH = 312  COMBINED P-VALUE = 2.35e-94  E-VALUE =  3.5e-92
+  DIAGRAM: 146-[5]-[1]-[4]-1-[2]-85
+
+                                                                            [5]
+                                                                            7.5e
+                                                                            KKAE
+                                                                            ++++
+76   SSIEESSRPVEARDLDGGNSTDQVPATPNSSVSFSSSEAGGDEDSGKTKKETQPEKPEDGGENSDKKDKAKKKAE
+
+                      [1]                   [4]      [2]
+     -20              3.4e-25               1.0e-10  1.9e-28
+     KRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHN
+     +++ +++++++++++++++++++++++++++++++++++++++++++ ++++++++++++ ++++++++++++++
+151  KRQKEPRFAFMTKSEVDHLEDGYRWRKYGQKAVKNSPYPRSYYRCTTQKCTVKKRVERSFQDPSIVITTYEGQHN
+
+     
+     
+     HP
+     ++
+226  HPIPTTLRGSASAMFSHSMLAPAPMASGPSFPHHQGYNFVQIPDAMNNQNMGAYPQNVNQHVHQQYQVPDYGLLQ
+
+
+XP_024466901.1
+  LENGTH = 293  COMBINED P-VALUE = 2.58e-92  E-VALUE =  3.8e-90
+  DIAGRAM: 130-[5]-[1]-[4]-1-[2]-82
+
+                                                            [5]
+                                                            1.1e-21
+                                                            KKAEKRIREPRFVFQTKSEV
+                                                            ++++++++++++++++++++
+76   IQRSSAAGPARSSGRGSRDVSTTNYPSVSSSSSEDPPEKSTDSGGKPPEIPSTVKKKGQKRIRQPRFAFMTKSEV
+
+      [1]                   [4]      [2]
+      1.0e-24               8.0e-11  5.3e-29
+     DILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+151  DHLEDGYRWRKYGQKAVKNSPFPRSYYRCTNSKCTVKKRVERSSEDPTIVITTYEGQHCHHTVGFPRGGIICHQA
+
+
+XP_052312759.1
+  LENGTH = 293  COMBINED P-VALUE = 2.58e-92  E-VALUE =  3.8e-90
+  DIAGRAM: 130-[5]-[1]-[4]-1-[2]-82
+
+                                                            [5]
+                                                            1.1e-21
+                                                            KKAEKRIREPRFVFQTKSEV
+                                                            ++++++++++++++++++++
+76   IQRSSAAGPARSSGRGSRDVSTTNYPSVSSSSSEDPPEKSTDSGGKPPEIPSTVKKKGQKRIRQPRFAFMTKSEV
+
+      [1]                   [4]      [2]
+      1.0e-24               8.0e-11  5.3e-29
+     DILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+151  DHLEDGYRWRKYGQKAVKNSPFPRSYYRCTNSKCTVKKRVERSSEDPTIVITTYEGQHCHHTVGFPRGGIICHQA
+
+
+XP_002301524.3
+  LENGTH = 317  COMBINED P-VALUE = 2.08e-91  E-VALUE =  3.1e-89
+  DIAGRAM: 134-[5]-[1]-[4]-1-[2]-102
+
+                                                                [5]
+                                                                2.2e-19
+                                                                KKAEKRIREPRFVFQT
+                                                                +  +++++++++++++
+76   QVATEVVDSPPEVLNQPATPNSSSISSASSEGLNDEPANKGVDNEVEEQGKTKKELKPKKTNQKRQREPRFAFMT
+
+          [1]                   [4]      [2]
+          1.0e-24               1.0e-10  1.6e-25
+     KSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++++++  +++++++++++ ++++++++++++++++
+151  KSEVDHLEDGYRWRKYGQKAVKNSPFPRSYYRCTTASCNVKKRVERSFSDPSVVVTTYEGQHTHPSPVMPRPNFT
+
+
+XP_002311329.2
+  LENGTH = 293  COMBINED P-VALUE = 2.24e-91  E-VALUE =  3.3e-89
+  DIAGRAM: 130-[5]-[1]-[4]-1-[2]-82
+
+                                                            [5]
+                                                            1.1e-21
+                                                            KKAEKRIREPRFVFQTKSEV
+                                                            ++++++++++++++++++++
+76   IQRLQGASPAGSGGGGADVSTSNYPSVSSSSSEDQPDKSTGSGGKPPEIPSTKVKKKGQKRIRQPRFAFMTKSEV
+
+      [1]                   [4]      [2]
+      1.0e-24               8.0e-11  1.4e-28
+     DILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+151  DHLEDGYRWRKYGQKAVKNSPFPRSYYRCTNSKCTVKKRVERSSEDPAIVITTYEGQHCHHTVGFPRGGIISHEA
+
+
+XP_024461923.1
+  LENGTH = 293  COMBINED P-VALUE = 2.24e-91  E-VALUE =  3.3e-89
+  DIAGRAM: 130-[5]-[1]-[4]-1-[2]-82
+
+                                                            [5]
+                                                            1.1e-21
+                                                            KKAEKRIREPRFVFQTKSEV
+                                                            ++++++++++++++++++++
+76   IQRLQGASPAGSGGGGADVSTSNYPSVSSSSSEDQPDKSTGSGGKPPEIPSTKVKKKGQKRIRQPRFAFMTKSEV
+
+      [1]                   [4]      [2]
+      1.0e-24               8.0e-11  1.4e-28
+     DILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+151  DHLEDGYRWRKYGQKAVKNSPFPRSYYRCTNSKCTVKKRVERSSEDPAIVITTYEGQHCHHTVGFPRGGIISHEA
+
+
+XP_024461924.1
+  LENGTH = 293  COMBINED P-VALUE = 2.24e-91  E-VALUE =  3.3e-89
+  DIAGRAM: 130-[5]-[1]-[4]-1-[2]-82
+
+                                                            [5]
+                                                            1.1e-21
+                                                            KKAEKRIREPRFVFQTKSEV
+                                                            ++++++++++++++++++++
+76   IQRLQGASPAGSGGGGADVSTSNYPSVSSSSSEDQPDKSTGSGGKPPEIPSTKVKKKGQKRIRQPRFAFMTKSEV
+
+      [1]                   [4]      [2]
+      1.0e-24               8.0e-11  1.4e-28
+     DILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+151  DHLEDGYRWRKYGQKAVKNSPFPRSYYRCTNSKCTVKKRVERSSEDPAIVITTYEGQHCHHTVGFPRGGIISHEA
+
+
+XP_052311159.1
+  LENGTH = 293  COMBINED P-VALUE = 2.24e-91  E-VALUE =  3.3e-89
+  DIAGRAM: 130-[5]-[1]-[4]-1-[2]-82
+
+                                                            [5]
+                                                            1.1e-21
+                                                            KKAEKRIREPRFVFQTKSEV
+                                                            ++++++++++++++++++++
+76   IQRLQGASPAGSGGGGADVSTSNYPSVSSSSSEDQPDKSTGSGGKPPEIPSTKVKKKGQKRIRQPRFAFMTKSEV
+
+      [1]                   [4]      [2]
+      1.0e-24               8.0e-11  1.4e-28
+     DILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+151  DHLEDGYRWRKYGQKAVKNSPFPRSYYRCTNSKCTVKKRVERSSEDPAIVITTYEGQHCHHTVGFPRGGIISHEA
+
+
+XP_052311160.1
+  LENGTH = 293  COMBINED P-VALUE = 2.24e-91  E-VALUE =  3.3e-89
+  DIAGRAM: 130-[5]-[1]-[4]-1-[2]-82
+
+                                                            [5]
+                                                            1.1e-21
+                                                            KKAEKRIREPRFVFQTKSEV
+                                                            ++++++++++++++++++++
+76   IQRLQGASPAGSGGGGADVSTSNYPSVSSSSSEDQPDKSTGSGGKPPEIPSTKVKKKGQKRIRQPRFAFMTKSEV
+
+      [1]                   [4]      [2]
+      1.0e-24               8.0e-11  1.4e-28
+     DILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++
+151  DHLEDGYRWRKYGQKAVKNSPFPRSYYRCTNSKCTVKKRVERSSEDPAIVITTYEGQHCHHTVGFPRGGIISHEA
+
+
+XP_024450747.1
+  LENGTH = 261  COMBINED P-VALUE = 5.43e-91  E-VALUE =  8.1e-89
+  DIAGRAM: 78-[5]-[1]-[4]-1-[2]-102
+
+        [5]                  [1]                   [4]      [2]
+        2.2e-19              1.0e-24               1.0e-10  1.6e-25
+        KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVIT
+        +  ++++++++++++++++++++++++++++++++++++++++++++++++  +++++++++++ +++++++
+76   KPKKTNQKRQREPRFAFMTKSEVDHLEDGYRWRKYGQKAVKNSPFPRSYYRCTTASCNVKKRVERSFSDPSVVVT
+
+     
+     
+     TYEGKHNHP
+     +++++++++
+151  TYEGQHTHPSPVMPRPNFTGSTSDSGFSSTAAFAMPMQRRLSLYQQHQSQQQPPFPLVSLSPLGFGYNGSTTNAA
+
+
+XP_024462269.1
+  LENGTH = 318  COMBINED P-VALUE = 4.09e-90  E-VALUE =  6.1e-88
+  DIAGRAM: 192-[5]-[1]-[4]-1-[2]-45
+
+                                               [5]                  [1]
+                                               2.2e-19              5.7e-26
+                                               KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYG
+                                               + ++++ ++++++++++++++++++++++++++
+151  NSSASISSSSNEAGEDAFQQVKAGDQEEEQDQDKNKKQLKPKKRSQKRLREPRFAFMTKSEVDHLDDGYRWRKYG
+
+               [4]      [2]
+               1.7e-11  1.3e-27
+     QKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++++++++++ ++ +++++++++++++++++++++++ ++
+226  QKAVKNSPYPRSYYRCTSAGCGVKKRVERSSDDPSIVVTTYEGQHIHPSPIIRGSIGIFADSSGFGAATSSFVFP
+
+
+XP_002312318.2
+  LENGTH = 368  COMBINED P-VALUE = 7.90e-90  E-VALUE =  1.2e-87
+  DIAGRAM: 192-[5]-[1]-[4]-1-[2]-95
+
+                                               [5]                  [1]
+                                               2.2e-19              5.7e-26
+                                               KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYG
+                                               + ++++ ++++++++++++++++++++++++++
+151  NSSASISSSSNEAGEDAFQQVKAGDQEEEQDQDKNKKQLKPKKRSQKRLREPRFAFMTKSEVDHLDDGYRWRKYG
+
+               [4]      [2]
+               1.7e-11  1.3e-27
+     QKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++++++++++ ++ +++++++++++++++++++++++ ++
+226  QKAVKNSPYPRSYYRCTSAGCGVKKRVERSSDDPSIVVTTYEGQHIHPSPIIRGSIGIFADSSGFGAATSSFVFP
+
+
+XP_002320967.3
+  LENGTH = 319  COMBINED P-VALUE = 4.07e-89  E-VALUE =  6.1e-87
+  DIAGRAM: 134-[5]-[1]-[4]-1-[2]-104
+
+                                                                [5]
+                                                                2.2e-19
+                                                                KKAEKRIREPRFVFQT
+                                                                +  +++++++++++++
+76   PNVQVVTESPPELLNQPATPNSSSISSASSEGLNDEPVNKSVDDEVEEQEKNKKELKPKKTNQKRQREPRFAFMT
+
+          [1]                   [4]      [2]
+          1.0e-24               1.0e-10  1.6e-25
+     KSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++++++++++++  +++++++++++ ++++++++++++++++
+151  KSEVDHLEDGYRWRKYGQKAVKNSPFPRSYYRCTTASCNVKKRVERSFSDPSVVVTTYEGQHTHPSPVMPRPNFT
+
+
+XP_002314962.2
+  LENGTH = 374  COMBINED P-VALUE = 6.18e-89  E-VALUE =  9.2e-87
+  DIAGRAM: 199-[5]-[1]-[4]-1-[2]-94
+
+                                                      [5]                  [1]
+                                                      8.1e-21              7.2e-
+                                                      KKAEKRIREPRFVFQTKSEVDILDDG
+                                                      ++ +++++++++++++++++++++++
+151  LNNPATPNSSASISSSSNEAGNDAFQQVKTGDQEEEQDHDKTKKQLKPKKKNQKRQREPRFAFMTKSEVDHLDDG
+
+                      [4]      [2]
+     25               1.7e-11  3.2e-26
+     YRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++++ ++ +++++++++++ +++++++++++ ++
+226  FRWRKYGQKAVKNSPYPRSYYRCTSAGCGVKKRVERSSDDSSIVVTTYEGQHIHPSPLTPRGSIGILSDSTGFGA
+
+
+XP_024446055.1
+  LENGTH = 523  COMBINED P-VALUE = 6.39e-89  E-VALUE =  9.5e-87
+  DIAGRAM: 210-[3]-1-[6]-84-[5]-[1]-[4]-1-[2]-83
+
+                                                                 [3]
+                                                                 3.9e-40
+                                                                 YDGYNWRKYGQKQVK
+                                                                 +++++++++++++++
+151  SLSELSPTSVTQPISSAPSPTPPVKKLSPPEVKNACISEAGNQSSAELKALYVPVAKTSIPDGYNWRKYGQKQVK
+
+                                [6]
+                                5.7e-18
+     GSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+      + + ++++++++++++++++++ ++ +++++++ +++++++++ +++
+226  SPRGSRSYYKCTYFDCCAKKIECSDHSGHVIEIVNKGMHSHDPPRKNKSTRKSRTGLSVGPILQTTVTEHTVRML
+
+                                                                [5]
+                                                                5.0e-06
+                                                                KKAEKRIREPRFVFQT
+                                                                + + ++  ++++++ +
+301  KDSEPATLSIELVQETSAISERKRQSSSSSDENKETQIKEENTSEPEPKRRLKGNLECSKAVLKPGKKPKFVVHA
+
+          [1]                   [4]      [2]
+          2.8e-25               1.9e-10  1.7e-22
+     KSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+       ++ + ++++++++++++++++++++++++++++ +++++++ + + +   ++++++ + ++++
+376  AGDVGISGDGYRWRKYGQKMVKGNPHPRNYYRCTSAGCPVRKHIETAVDNTNALIITYKGVHDHDMPVPKKRHGP
+
+
+XP_024446053.1
+  LENGTH = 527  COMBINED P-VALUE = 6.81e-89  E-VALUE =    1e-86
+  DIAGRAM: 214-[3]-1-[6]-84-[5]-[1]-[4]-1-[2]-83
+
+                                                                     [3]
+                                                                     3.9e-40
+                                                                     YDGYNWRKYGQ
+                                                                     +++++++++++
+151  VCPTSLSELSPTSVTQPISSAPSPTPPVKKLSPPEVKNACISEAGNQSSAELKALYVPVAKTSIPDGYNWRKYGQ
+
+                                    [6]
+                                    5.7e-18
+     KQVKGSEYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++++ + + ++++++++++++++++++ ++ +++++++ +++++++++ +++
+226  KQVKSPRGSRSYYKCTYFDCCAKKIECSDHSGHVIEIVNKGMHSHDPPRKNKSTRKSRTGLSVGPILQTTVTEHT
+
+                                                                    [5]
+                                                                    5.0e-06
+                                                                    KKAEKRIREPRF
+                                                                    + + ++  ++++
+301  VRMLKDSEPATLSIELVQETSAISERKRQSSSSSDENKETQIKEENTSEPEPKRRLKGNLECSKAVLKPGKKPKF
+
+              [1]                   [4]      [2]
+              2.8e-25               1.9e-10  1.7e-22
+     VFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++ +  ++ + ++++++++++++++++++++++++++++ +++++++ + + +   ++++++ + ++++
+376  VVHAAGDVGISGDGYRWRKYGQKMVKGNPHPRNYYRCTSAGCPVRKHIETAVDNTNALIITYKGVHDHDMPVPKK
+
+
+XP_024436877.2
+  LENGTH = 306  COMBINED P-VALUE = 1.36e-87  E-VALUE =    2e-85
+  DIAGRAM: 145-[5]-[1]-[4]-1-[2]-80
+
+                                                                           [5]
+                                                                           1.0e-
+                                                                           KKAEK
+                                                                           ++++
+76   SIEGNSKPMEAGVLGCGNSTDHIPATPNSSLSFSSSEVGGDEDSGKTKKETQPSRPEDGGECSDKKDKAKKKAEQ
+
+                     [1]                   [4]      [2]
+     16              5.2e-24               1.0e-10  1.9e-28
+     RIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNH
+     +  +++++++++++++++++++++++++++++++++++++++++++ ++++++++++++ +++++++++++++++
+151  RKKEPRFAFMTKSEVDHLEDGYRWRKYGQKAVRNSPYPRSYYRCTTQKCTVKKRVERSFQDPSIVITTYEGQHNH
+
+     
+     
+     P
+     +
+226  PIPTTIRGSASAMFSHSMLTPAPLATGPRRFPAHLQGYNLVQMPAATSNKNLGEYPQNVNQVPDYGLLQDIVPSK
+
+
+XP_002306743.1
+  LENGTH = 322  COMBINED P-VALUE = 1.35e-86  E-VALUE =    2e-84
+  DIAGRAM: 160-[5]-[1]-[4]-1-[2]-81
+
+               [5]                  [1]                   [4]      [2]
+               2.2e-16              3.4e-25               1.0e-10  3.5e-27
+               KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSH
+               ++ ++++ ++++++ ++++++++++++++++++++++++++++++++++++ ++ +++++++++
+151  DGDAKKVSKTKKKEKRQKEPRFAFLTKSEIDHLEDGYRWRKYGQKAVKNSPYPRSYYRCTTQKCMVKKRVERSFQ
+
+     
+     
+     DPKMVITTYEGKHNHP
+     ++++++++++++++++
+226  DPSIVITTYEGQHNHHCPATLRGNAAGMLSPSLLASTSIGQSFPQDFLTRLLPPSNQGDQTSIFYQNHDPQYQHQ
+
+
+XP_006375168.1
+  LENGTH = 228  COMBINED P-VALUE = 2.19e-86  E-VALUE =  3.3e-84
+  DIAGRAM: 131-[5]-[1]-[4]-1-[2]-16
+
+                                                             [5]
+                                                             3.5e-18
+                                                             KKAEKRIREPRFVFQTKSE
+                                                              +++++ ++++++++++++
+76   NANTTTTNNTHMGFSHNDQQVGALDPKASSDENCTGNANNDGNNSWWRSSSADKNKLKVRRKLREPRFCFQTRSE
+
+       [1]                   [4]      [2]
+       1.5e-22               4.3e-11  2.0e-26
+     VDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++ ++++++++++  + +++++++++++ +++++++++++++
+151  VDVLDDGYKWRKYGQKVVKNSLHPRSYYRCTHNNCRVKKRVERLSEDCRMVITTYEGRHNHSPCDDSNSSEHECF
+
+
+XP_002302140.2
+  LENGTH = 325  COMBINED P-VALUE = 5.30e-86  E-VALUE =  7.9e-84
+  DIAGRAM: 158-[5]-[1]-[4]-1-[2]-86
+
+             [5]                  [1]                   [4]      [2]
+             2.2e-16              2.3e-23               1.7e-11  3.5e-27
+             KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDP
+             ++ ++++ ++++++ ++++++ +++++++++++++++++++++++++++++ ++++++++++++ ++
+151  DAKKVSKTKKKEKRQKEPRFAFLTKSEIDNLEDGYRWRKYGQKAVKNSPYPRSYYRCTSQKCTVKKRVERSFQDP
+
+     
+     
+     KMVITTYEGKHNHP
+     + ++++++++++++
+226  SLVITTYEGQHNHHCPATLRGNATGMLPPSLLASTSIGQSFPQDLLTRLLPASNQQGDQTSMFYHSLAPQNQQLQ
+
+
+XP_006373216.1
+  LENGTH = 186  COMBINED P-VALUE = 7.03e-86  E-VALUE =    1e-83
+  DIAGRAM: 84-[5]-[1]-[4]-1-[2]-21
+
+              [5]                  [1]                   [4]      [2]
+              5.3e-19              1.6e-25               1.9e-10  1.1e-24
+              KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHD
+              +++++++++++++++++++++++++++++++++++++++++++++++++++ +++++++++++  +
+76   SPTELKAAKKKGEKKVRKPRYAFQTRSQVDILDDGYRWRKYGQKAVKNNKFPRSYYRCTYQGCTVKKQVQRLTKD
+
+     
+     
+     PKMVITTYEGKHNHP
+       ++++++++++ ++
+151  EGVVVTTYEGMHSHPIEKSNDNFEHILSQMQIYTPF
+
+
+XP_002301237.2
+  LENGTH = 203  COMBINED P-VALUE = 8.42e-86  E-VALUE =  1.3e-83
+  DIAGRAM: 106-[5]-[1]-[4]-1-[2]-16
+
+                                    [5]                  [1]                   [
+                                    1.2e-17              1.5e-22               4
+                                    KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPR
+                                     +++++ +++++++++++++++++++++++++++++++++ +++
+76   PKPSSDENCTGNANNDGNNSWWRSSSSEKNRLKVRRKLREPRFCFQTRSDVDVLDDGYKWRKYGQKVVKNSLHPR
+
+     4]      [2]
+     .3e-11  2.0e-26
+     SYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++  + +++++++++++ +++++++++++++
+151  SYYRCTHNNCRVKKRVERLSEDCRMVITTYEGRHNHSPCEDSNSSEHECFTSF
+
+
+XP_002301377.2
+  LENGTH = 193  COMBINED P-VALUE = 8.42e-85  E-VALUE =  1.3e-82
+  DIAGRAM: 91-[5]-[1]-[4]-1-[2]-21
+
+                     [5]                  [1]                   [4]      [2]
+                     3.2e-13              1.6e-25               4.3e-11  9.4e-25
+                     KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKH
+                     ++ +++ + +++++++++  +++++++++++++++++++++++++++++++  ++++++
+76   AENGAEEERGNKDEKKGGRMKKATRPRFAFQTRSADDILDDGYRWRKYGQKAVKNSKYPRSYYRCTHHTCNVKKQ
+
+     
+     
+     VERCSHDPKMVITTYEGKHNHP
+     +++++ + +++++++++ ++++
+151  VQRLSKDTSIVVTTYEGVHDHPCEKLMETLTPLLKQMQFLARF
+
+
+XP_002300120.2
+  LENGTH = 186  COMBINED P-VALUE = 8.90e-85  E-VALUE =  1.3e-82
+  DIAGRAM: 83-[5]-[1]-[4]-1-[2]-22
+
+             [5]                  [1]                   [4]      [2]
+             7.4e-18              1.6e-25               1.9e-10  2.2e-25
+             KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDP
+             +++++++++++++++++++++++++++++++++++++++++++++++++++ +++++++++++  +
+76   ETEPQAAKKKGEKKIRKPKYAFQTRSQVDILDDGYRWRKYGQKAVKNNKFPRSYYRCTYQGCNVKKQVQRLTKDE
+
+     
+     
+     KMVITTYEGKHNHP
+      +++++++++++++
+151  GVVVTTYEGMHTHPIEKPNDNFEHILSQMQIYSTPF
+
+
+XP_006368868.2
+  LENGTH = 160  COMBINED P-VALUE = 1.24e-84  E-VALUE =  1.9e-82
+  DIAGRAM: 60-[5]-[1]-[4]-1-[2]-19
+
+                                                                 [5]
+                                                                 6.7e-17
+                                                                 KKAEKRIREPRFVFQ
+                                                                 + +++++++++++++
+1    MSLNMVPNSYASTDLEGAKGNGFLGLMQEMEAPAASLNVDNISQNRGFVGSITSEGRLEKKRGEKKIRKPKYAFQ
+
+           [1]                   [4]      [2]
+           1.6e-25               4.3e-11  5.7e-24
+     TKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++++++++++++++++++++++++++++ +++++++++++  +  ++++++++ + +
+76   TRSQVDILDDGYRWRKYGQKAVKNNKFPRSYYRCTHQGCNVKKQVQRLTKDEGIVVTTYEGTHSHQIEKSTDNFE
+
+
+XP_024460430.2
+  LENGTH = 518  COMBINED P-VALUE = 6.41e-84  E-VALUE =  9.6e-82
+  DIAGRAM: 204-[3]-1-[6]-84-[5]-[1]-[4]-1-[2]-84
+
+                                                           [3]
+                                                           3.6e-40
+                                                           YDGYNWRKYGQKQVKGSEYPR
+                                                           +++++++++++++++ +++ +
+151  LTSVTQPISSAPSPTPPEKRLSPPEVKNACIPEAGHQSSAKLKALHVPVARTSIPDGYNWRKYGQKQVKSPKGSR
+
+                          [6]
+                          2.6e-13
+     SYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     +++++++ +++++++++ ++ +++++++ ++++++++   +  +
+226  SYYKCTYSDCCAKKIECSDHSGRVIEIVNKGMHSHPPRKNNSTRESRSGLSVGPILQTTVTERTVRMLKDSEPVT
+
+                                                          [5]                  [
+                                                          3.8e-05              2
+                                                          KKAEKRIREPRFVFQTKSEVDI
+                                                          + + ++  + ++++ +  ++ +
+301  LSIEPAQETPTVSERKRQSSSSSDENKETQIKEEDVGEPEPKRRLKKGNLECSKAALKPGKKTKFVVHAAGDVGI
+
+     1]                   [4]      [2]
+     .8e-25               1.9e-10  1.4e-22
+     LDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+      ++++++++++++++++++++++++++++ +++++++ + + +   ++++++ + ++++
+376  SGDGYRWRKYGQKMVKGNPHPRNYYRCTSAGCPVRKHIETAVDNTNAVIITYKGVHDHDMPVPKKRHGPPSAPPA
+
+
+XP_024460429.2
+  LENGTH = 522  COMBINED P-VALUE = 7.21e-84  E-VALUE =  1.1e-81
+  DIAGRAM: 208-[3]-1-[6]-84-[5]-[1]-[4]-1-[2]-84
+
+                                                               [3]
+                                                               3.6e-40
+                                                               YDGYNWRKYGQKQVKGS
+                                                               +++++++++++++++ +
+151  SELSLTSVTQPISSAPSPTPPEKRLSPPEVKNACIPEAGHQSSAKLKALHVPVARTSIPDGYNWRKYGQKQVKSP
+
+                              [6]
+                              2.6e-13
+     EYPRSYYKCTHPNCPVKKKVERSH GHITEIIYKGEHNHPKPQPNRRY
+     ++ ++++++++ +++++++++ ++ +++++++ ++++++++   +  +
+226  KGSRSYYKCTYSDCCAKKIECSDHSGRVIEIVNKGMHSHPPRKNNSTRESRSGLSVGPILQTTVTERTVRMLKDS
+
+                                                              [5]
+                                                              3.8e-05
+                                                              KKAEKRIREPRFVFQTKS
+                                                              + + ++  + ++++ +
+301  EPVTLSIEPAQETPTVSERKRQSSSSSDENKETQIKEEDVGEPEPKRRLKKGNLECSKAALKPGKKTKFVVHAAG
+
+        [1]                   [4]      [2]
+        2.8e-25               1.9e-10  1.4e-22
+     EVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++ + ++++++++++++++++++++++++++++ +++++++ + + +   ++++++ + ++++
+376  DVGISGDGYRWRKYGQKMVKGNPHPRNYYRCTSAGCPVRKHIETAVDNTNAVIITYKGVHDHDMPVPKKRHGPPS
+
+
+XP_002320160.2
+  LENGTH = 189  COMBINED P-VALUE = 3.07e-83  E-VALUE =  4.6e-81
+  DIAGRAM: 87-[5]-[1]-[4]-1-[2]-21
+
+                 [5]                  [1]                   [4]      [2]
+                 1.4e-13              2.8e-24               4.3e-11  3.1e-25
+                 KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERC
+                 ++ +++ + +++++++++  +++++++++++++++++++++++++++++++  ++++++++++
+76   ENGAEEEKDKKKGGRMKKTTRPRFAFQTRSADDVLDDGYRWRKYGQKAVKNSKYPRSYYRCTHHTCNVKKQVQRL
+
+     
+     
+     SHDPKMVITTYEGKHNHP
+     + + +++++++++ ++++
+151  SKDTSIVVTTYEGIHNHPCEKMMETLTPLLKQMQFLARF
+
+
+XP_002304741.2
+  LENGTH = 157  COMBINED P-VALUE = 4.85e-83  E-VALUE =  7.2e-81
+  DIAGRAM: 57-[5]-[1]-[4]-1-[2]-19
+
+                                                              [5]
+                                                              1.1e-15
+                                                              KKAEKRIREPRFVFQTKS
+                                                               +++++++++++++++++
+1    MSLNMINSYASTDFEGTRGNGLLGLMQEMQAPASLNFDDISQNRGFVGSGIEGKLGKNKGEKKIRKPKYAFQTRS
+
+        [1]                   [4]      [2]
+        1.6e-25               4.3e-11  6.3e-24
+     EVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+      ++++++++++++++++++++++++++++++++ +++++++++++  +  ++++++++++ +
+76   RVDILDDGYRWRKYGQKAVKNNKFPRSYYRCTHQGCNVKKQVQRLTKDEGVVVTTYEGMHSHQIEKSPDNFEHIL
+
+
+XP_002322274.1
+  LENGTH = 178  COMBINED P-VALUE = 3.45e-80  E-VALUE =  5.1e-78
+  DIAGRAM: 76-[5]-[1]-[4]-1-[2]-21
+
+      [5]                  [1]                   [4]      [2]
+      3.2e-13              5.2e-22               1.7e-11  1.0e-26
+      KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTY
+      ++    +++++++++++++++++++++++++++++ ++ ++++++++++++ ++++++++++ + +  ++++++
+76   RGGDSDDFRKHRYAFQTRSQVDILDDGYRWRKYGQKTVKSSKFPRSYYRCTSTGCNVKKQVQRNSKDEGIVVTTY
+
+     
+     
+     EGKHNHP
+     +++++++
+151  EGMHNHPTERSSENFEDILRQIQTYTPF
+
+
+XP_052308647.1
+  LENGTH = 232  COMBINED P-VALUE = 1.61e-78  E-VALUE =  2.4e-76
+  DIAGRAM: 132-[5]-[1]-[4]-1-[2]-19
+
+                                                              [5]
+                                                              5.4e-17
+                                                              KKAEKRIREPRFVFQTKS
+                                                               +++++++++++++++ +
+76   KQREDTIASDLGGPHLLSLQRSSANLWAWGEVNECLNSKRSGSGGDHLGVSTIKLKKIKARRKVREPRFCFKTLS
+
+        [1]                   [4]      [2]
+        9.3e-22               7.0e-10  7.6e-26
+     EVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++  +++++++++   + +++++++++++++++++++++++ +
+151  DVDVLDDGYKWRKYGQKVVKNTQHPRSYYRCTQDNCRVKKRVERLAEDPRMVITTYEGRHAHSPSHDLEESQTPS
+
+
+XP_052308648.1
+  LENGTH = 232  COMBINED P-VALUE = 1.61e-78  E-VALUE =  2.4e-76
+  DIAGRAM: 132-[5]-[1]-[4]-1-[2]-19
+
+                                                              [5]
+                                                              5.4e-17
+                                                              KKAEKRIREPRFVFQTKS
+                                                               +++++++++++++++ +
+76   KQREDTIASDLGGPHLLSLQRSSANLWAWGEVNECLNSKRSGSGGDHLGVSTIKLKKIKARRKVREPRFCFKTLS
+
+        [1]                   [4]      [2]
+        9.3e-22               7.0e-10  7.6e-26
+     EVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++  +++++++++   + +++++++++++++++++++++++ +
+151  DVDVLDDGYKWRKYGQKVVKNTQHPRSYYRCTQDNCRVKKRVERLAEDPRMVITTYEGRHAHSPSHDLEESQTPS
+
+
+XP_002310044.1
+  LENGTH = 233  COMBINED P-VALUE = 2.00e-78  E-VALUE =    3e-76
+  DIAGRAM: 133-[5]-[1]-[4]-1-[2]-19
+
+                                                               [5]
+                                                               9.3e-17
+                                                               KKAEKRIREPRFVFQTK
+                                                                +++++++++++++++
+76   HKQREGTFASDLGGPHLLSLQRSRANLWAWGEVNECLSRKRSGSGEDHLGLSSIKMKKIKARRKVREPRFCFKTM
+
+         [1]                   [4]      [2]
+         9.3e-22               7.0e-10  7.6e-26
+     SEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++++++++++++++  +++++++++   + +++++++++++++++++++++++ +
+151  SDVDVLDDGYKWRKYGQKVVKNTQHPRSYYRCTQDNCRVKKRVERLAEDPRMVITTYEGRHAHSPSLDLEESQAP
+
+
+XP_006382109.3
+  LENGTH = 477  COMBINED P-VALUE = 5.61e-78  E-VALUE =  8.4e-76
+  DIAGRAM: 127-[3]-2-[6]-134-[1]-[4]-1-[2]-90
+
+                                                         [3]
+                                                         1.5e-39
+                                                         YDGYNWRKYGQKQVKGSEYPRSY
+                                                         ++++++++++++ ++++++ +++
+76   EALSVIPAAISVPHSASVTQKPMSKCELGLVIDQQNSHHETGLPRVVMDAPFADGYNWRKYGQKPVKGSKNSRSY
+
+                         [6]
+                         2.5e-16
+     YKCTHPNCPVKKKVERSH  GHITEIIYKGEHNHPKPQPNRRY
+     + ++++++++++++++++  +++++++++++++++++  ++++
+151  YRCVHCSCYAKKKVQHCCQSGRVVDVVYIGDHNHDPPHRKCIRVISSAKPTVGSQIVDPSVQKLDGSDISVCSAD
+
+                                [1]                   [4]      [2]
+                                1.0e-18               1.7e-11  8.3e-22
+                                ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKM
+                                  +++++++++++++ +++ + ++++++++  ++++++++++++ ++
+301  KERSAAHSVPVLKKEPEIAVHTVPDEGSSNDGYRWRKYGQKMLKGNSFIRSYYRCTSSACPARKHVERAADEATS
+
+     
+     
+     VITTYEGKHNHP
+       +++++++++
+376  TTITYEGKHDHGMPAPKKRHEHDIPVPKKRHGSESCLISPAASADNACCKKNRSLSSRRPSSKCSMDSEVDIMGE
+
+
+XP_024446286.2
+  LENGTH = 422  COMBINED P-VALUE = 1.24e-77  E-VALUE =  1.8e-75
+  DIAGRAM: 81-[3]-2-[6]-115-[5]-[1]-[4]-1-[2]-79
+
+           [3]                                        [6]
+           4.3e-38                                    2.3e-17
+           YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH  GHITEIIYKGEHNHPKPQPNRRY
+           ++++++++++ + ++++++ ++++ +++ +++++++++++   +++++++++++++++++++++++
+76   VVESPPADGYNWRKYGRKLVKGSKNLRSYYRCVYSSCYAKKKVQHCDRSGRVVDVVYIGDHHHDPPQKKRIRVVS
+
+                                          [5]                  [1]
+                                          4.9e-05              5.8e-18
+                                          KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVK
+                                           ++ +++ ++ ++  + ++    +++++++++++++ +
+226  GPQQNGSCGIASTQVQEKHGAEPRLKIRIKERSAPCSVPVLKTMKEPEIIRHTVSDDGSSNDGYRWRKYGQKMLK
+
+          [4]      [2]
+          2.4e-10  7.9e-23
+     GNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++   ++++++++  +++ ++++++ ++++   ++++++++++
+301  GNSLVRSYYRCSSSACPAHKHVERATDDASSTTVTYEGKHDHDMPAPKKRQCSESRLISPAASTDDARCKKNRSL
+
+
+XP_002318747.1
+  LENGTH = 186  COMBINED P-VALUE = 1.28e-77  E-VALUE =  1.9e-75
+  DIAGRAM: 76-[5]-[1]-[4]-1-[2]-29
+
+      [5]                  [1]                   [4]      [2]
+      6.2e-13              6.1e-24               8.0e-11  1.2e-25
+      KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTY
+      ++    +++++++++++++++++++++++++++++ +++++++++++++++ ++++++++++ + +  ++++++
+76   RGGDNNEFRKHKYAFQTRSQVDILDDGYRWRKYGQKTVKNSKFPRSYYRCTNNGCNVKKQVQRNSKDEEIVVTTY
+
+     
+     
+     EGKHNHP
+     +++++++
+151  EGMHTHPIEKCTDNIEDILRQMQTYTPFEIMPGHFL
+
+
+XP_024446284.2
+  LENGTH = 511  COMBINED P-VALUE = 5.53e-77  E-VALUE =  8.2e-75
+  DIAGRAM: 170-[3]-2-[6]-115-[5]-[1]-[4]-1-[2]-79
+
+                         [3]                                        [6]
+                         4.3e-38                                    2.3e-17
+                         YDGYNWRKYGQKQVKGSEYPRSYYKCTHPNCPVKKKVERSH  GHITEIIYKGEH
+                         ++++++++++ + ++++++ ++++ +++ +++++++++++   ++++++++++++
+151  INQQKSDCETRHPHVVESPPADGYNWRKYGRKLVKGSKNLRSYYRCVYSSCYAKKKVQHCDRSGRVVDVVYIGDH
+
+     
+     
+     NHPKPQPNRRY
+     +++++++++++
+226  HHDPPQKKRIRVVSSAKHTIGSQVVDPSVQKLVGLDISVCSADGRHSSLHVPESEQQSSSISNGNAGARIKEKSD
+
+                                                        [5]                  [1]
+                                                        4.9e-05              5.8
+                                                        KKAEKRIREPRFVFQTKSEVDILD
+                                                         ++ +++ ++ ++  + ++    +
+301  DEAESKRCSGSSAVGPQQNGSCGIASTQVQEKHGAEPRLKIRIKERSAPCSVPVLKTMKEPEIIRHTVSDDGSSN
+
+                        [4]      [2]
+     e-18               2.4e-10  7.9e-23
+     DGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++++ +++   ++++++++  +++ ++++++ ++++   ++++++++++
+376  DGYRWRKYGQKMLKGNSLVRSYYRCSSSACPAHKHVERATDDASSTTVTYEGKHDHDMPAPKKRQCSESRLISPA
+
+
+XP_002301514.2
+  LENGTH = 245  COMBINED P-VALUE = 2.97e-74  E-VALUE =  4.4e-72
+  DIAGRAM: 49-[1]-[4]-2-[2]-85-[10]-21
+
+                                                      [1]                   [4]
+                                                      5.2e-22               6.2e
+                                                      ILDDGYRWRKYGQKMVKGNPYPRSYY
+                                                      ++++++++++++++++++++++++++
+1    MDGSPSRKLDSNVSEHTQEIQTSKRRKVVEKTVVRVRIGKNAGKLKNEGPPSDFWSWRKYGQKPIKGSPHPRGYY
+
+           [2]
+     -10   2.5e-25
+     RCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++  ++ ++++++++++++++++++++ +++++
+76   RCSTSKGCSAKKQVERCRTDASVLIITYTSNHNHPGPDLHESSLNQQSKDPETPPTDHVDHPTTPKQEKPEEETE
+
+                                                  [10]
+                                                  2.2e-27
+                                                  MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+                                                  +++++++++++++++++++++++++++++
+151  EGHGHPIVPSADENASEGNSFHYLQSPIRISQDIMISQEDPFAENPEKSHDTLGIVLDEEPISCSRLMTFSAPKS
+
+
+XP_024451788.1
+  LENGTH = 245  COMBINED P-VALUE = 2.97e-74  E-VALUE =  4.4e-72
+  DIAGRAM: 49-[1]-[4]-2-[2]-85-[10]-21
+
+                                                      [1]                   [4]
+                                                      5.2e-22               6.2e
+                                                      ILDDGYRWRKYGQKMVKGNPYPRSYY
+                                                      ++++++++++++++++++++++++++
+1    MDGSPSRKLDSNVSEHTQEIQTSKRRKVVEKTVVRVRIGKNAGKLKNEGPPSDFWSWRKYGQKPIKGSPHPRGYY
+
+           [2]
+     -10   2.5e-25
+     RCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++  ++ ++++++++++++++++++++ +++++
+76   RCSTSKGCSAKKQVERCRTDASVLIITYTSNHNHPGPDLHESSLNQQSKDPETPPTDHVDHPTTPKQEKPEEETE
+
+                                                  [10]
+                                                  2.2e-27
+                                                  MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+                                                  +++++++++++++++++++++++++++++
+151  EGHGHPIVPSADENASEGNSFHYLQSPIRISQDIMISQEDPFAENPEKSHDTLGIVLDEEPISCSRLMTFSAPKS
+
+
+XP_052306840.1
+  LENGTH = 245  COMBINED P-VALUE = 5.13e-74  E-VALUE =  7.6e-72
+  DIAGRAM: 49-[1]-[4]-2-[2]-85-[10]-21
+
+                                                      [1]                   [4]
+                                                      5.2e-22               6.2e
+                                                      ILDDGYRWRKYGQKMVKGNPYPRSYY
+                                                      ++++++++++++++++++++++++++
+1    MVLHLENWTLMFQSTPKKFRHPKEGRKVVEKTVVRVRIGKNAGKLKNEGPPSDFWSWRKYGQKPIKGSPHPRGYY
+
+           [2]
+     -10   2.5e-25
+     RCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++  ++ ++++++++++++++++++++ +++++
+76   RCSTSKGCSAKKQVERCRTDASVLIITYTSNHNHPGPDLHESSLNQQSKDPETPPTDHVDHPTTPKQEKPEEETE
+
+                                                  [10]
+                                                  2.2e-27
+                                                  MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+                                                  +++++++++++++++++++++++++++++
+151  EGHGHPIVPSADENASEGNSFHYLQSPIRISQDIMISQEDPFAENPEKSHDTLGIVLDEEPISCSRLMTFSAPKS
+
+
+XP_052306841.1
+  LENGTH = 245  COMBINED P-VALUE = 5.13e-74  E-VALUE =  7.6e-72
+  DIAGRAM: 49-[1]-[4]-2-[2]-85-[10]-21
+
+                                                      [1]                   [4]
+                                                      5.2e-22               6.2e
+                                                      ILDDGYRWRKYGQKMVKGNPYPRSYY
+                                                      ++++++++++++++++++++++++++
+1    MVLHLENWTLMFQSTPKKFRHPKEGRKVVEKTVVRVRIGKNAGKLKNEGPPSDFWSWRKYGQKPIKGSPHPRGYY
+
+           [2]
+     -10   2.5e-25
+     RCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++  ++ ++++++++++++++++++++ +++++
+76   RCSTSKGCSAKKQVERCRTDASVLIITYTSNHNHPGPDLHESSLNQQSKDPETPPTDHVDHPTTPKQEKPEEETE
+
+                                                  [10]
+                                                  2.2e-27
+                                                  MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+                                                  +++++++++++++++++++++++++++++
+151  EGHGHPIVPSADENASEGNSFHYLQSPIRISQDIMISQEDPFAENPEKSHDTLGIVLDEEPISCSRLMTFSAPKS
+
+
+XP_002308538.1
+  LENGTH = 165  COMBINED P-VALUE = 1.83e-71  E-VALUE =  2.7e-69
+  DIAGRAM: 81-[5]-[1]-[4]-1-[2]-3
+
+           [5]                  [1]                   [4]      [2]
+           1.3e-12              3.1e-23               2.4e-09  4.2e-26
+           KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKM
+            + +++  + +++++++++++++++++++++++ ++++++++++++++++  ++++++++++ +++++
+76   SGGEGEEGREKKEAKERVAFKTKSEIEILDDGYKWRKYGKKMVKNSPNPRNYYRCSVEGCPVKKRVERDRDDPRY
+
+     
+     
+     VITTYEGKHNHP
+     +++++++ +++
+151  VITTYEGIHTHQSFS
+
+
+XP_052303238.1
+  LENGTH = 235  COMBINED P-VALUE = 5.32e-70  E-VALUE =  7.9e-68
+  DIAGRAM: 22-[1]-[4]-2-[2]-85-[10]-38
+
+                           [1]                   [4]       [2]
+                           3.6e-22               6.2e-10   2.2e-25
+                           ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITT
+                           ++++++++++++++++++++++++++++++  ++ ++++++++++++++++++
+1    MVEKIVVRVRIGENAVKLKNEGPPSDFWSWRKYGQKPIKGSPYPRGYYRCSTSKGCSAKKQVERCRTDASVLIVT
+
+     
+     
+     YEGKHNHP
+     ++ +++++
+76   YTSNHNHPGPDLHDSNVNQQPRDPETPPTDLVDHPITPKQEKPEEETGERHDHPIMPSTDEDVSEGHNFHYLESP
+
+                       [10]
+                       4.9e-22
+                       MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+                        ++++++++++ +++++ +++++++++++
+151  IRIPQDIMISQDYPFTENSEKSHDTLGIVFDEEPICCSRLMTFSAPKSEENNDFFDELEELPTSSSFTSFVRGNF
+
+
+XP_052303237.1
+  LENGTH = 262  COMBINED P-VALUE = 1.19e-69  E-VALUE =  1.8e-67
+  DIAGRAM: 49-[1]-[4]-2-[2]-85-[10]-38
+
+                                                      [1]                   [4]
+                                                      3.6e-22               6.2e
+                                                      ILDDGYRWRKYGQKMVKGNPYPRSYY
+                                                      ++++++++++++++++++++++++++
+1    MDSSPSRKLDSNVSELTPETQTSKRRKMVEKIVVRVRIGENAVKLKNEGPPSDFWSWRKYGQKPIKGSPYPRGYY
+
+           [2]
+     -10   2.2e-25
+     RCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++  ++ ++++++++++++++++++++ +++++
+76   RCSTSKGCSAKKQVERCRTDASVLIVTYTSNHNHPGPDLHDSNVNQQPRDPETPPTDLVDHPITPKQEKPEEETG
+
+                                                  [10]
+                                                  4.9e-22
+                                                  MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+                                                   ++++++++++ +++++ +++++++++++
+151  ERHDHPIMPSTDEDVSEGHNFHYLESPIRIPQDIMISQDYPFTENSEKSHDTLGIVFDEEPICCSRLMTFSAPKS
+
+
+XP_024449814.1
+  LENGTH = 357  COMBINED P-VALUE = 2.09e-68  E-VALUE =  3.1e-66
+  DIAGRAM: 160-[8]-92-[1]-[4]-2-[2]-15
+
+               [8]
+               1.9e-15
+               NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+               ++++++++++   ++++++ +++++++++
+151  PIHRLPPLPHNQQQKSPLLVTKKGLSDRNEIPTTINFSNSPSISSATSFMSSLTGETDGFQRSMPSRFHFTQPSA
+
+                                                             [1]
+                                                             2.3e-23
+                                                             ILDDGYRWRKYGQKMVKGN
+                                                             +++++++++++++++++++
+226  GKPPLSSSSLKRKCNSMDDAALKCGSSSGRCHCSKKRKSRAKRVVRVPAISNKMADIPPDDYSWRKYGQKPIKGS
+
+        [4]       [2]
+        7.0e-10   1.9e-29
+     PYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++  ++++++++++++++ +++++++++++++
+301  PHPRGYYKCSSVRGCPARKHVERALDDSMMLIVTYEGEHNHSHPFDDAPAALVPESS
+
+
+XP_002301166.2
+  LENGTH = 358  COMBINED P-VALUE = 2.14e-68  E-VALUE =  3.2e-66
+  DIAGRAM: 160-[8]-93-[1]-[4]-2-[2]-15
+
+               [8]
+               1.9e-15
+               NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+               ++++++++++   ++++++ +++++++++
+151  PIHRLPPLPHNQQQKSPLLVTKKGLSDRNEIPTTINFSNSPSISSATSFMSSLTGETDGFQRSMPSRFHFTQPSA
+
+                                                              [1]
+                                                              2.3e-23
+                                                              ILDDGYRWRKYGQKMVKG
+                                                              ++++++++++++++++++
+226  GKPPLSSSSLKRKCNSMDDAALKCGSSSGRCHCSKKSRKSRAKRVVRVPAISNKMADIPPDDYSWRKYGQKPIKG
+
+         [4]       [2]
+         7.0e-10   1.9e-29
+     NPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++++  ++++++++++++++ +++++++++++++
+301  SPHPRGYYKCSSVRGCPARKHVERALDDSMMLIVTYEGEHNHSHPFDDAPAALVPESS
+
+
+XP_024455846.2
+  LENGTH = 602  COMBINED P-VALUE = 1.20e-64  E-VALUE =  1.8e-62
+  DIAGRAM: 317-[5]-[1]-[4]-2-[2]-203
+
+                      [5]                  [1]                   [4]       [2]
+                      3.0e-12              3.6e-22               1.4e-10   1.4e-
+                      KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVR
+                      + ++++++++++ +++++++ ++++++++++++++++++++++++++++++  +++++
+301  NKVQKLNPASSANKAIEQSAEATMRKARVSVRARSEAPMISDGCQWRKYGQKMAKGNPCPRAYYRCTMAVGCPVR
+
+     
+     30
+     KHVERCSHDPKMVITTYEGKHNHP
+     +++++++++ ++++++++++++++
+376  KQVQRCAEDKTILITTYEGNHNHPLPPAAMTMASTTTAAATMLLSGSMSSADGMMNPNLLARAILPGCSSSMATI
+
+
+XP_002306823.1
+  LENGTH = 347  COMBINED P-VALUE = 1.36e-64  E-VALUE =    2e-62
+  DIAGRAM: 277-[1]-[4]-2-[2]-9
+
+                                                         [1]                   [
+                                                         2.3e-23               7
+                                                         ILDDGYRWRKYGQKMVKGNPYPR
+                                                         +++++++++++++++++++++++
+226  QSSQQHKRKCSGRGEDGSMKCGSSVRCHCSKKRKHRVKRSIKVPAISNKLADIPPDDYSWRKYGQKPIKGSPHPR
+
+     4]       [2]
+     .0e-10   2.9e-34
+     SYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++  +++++++++++++++++++++++++++++
+301  GYYKCSSMRGCPARKHVERCLEDPSMLIVTYEGEHNHPRIPAQSTNT
+
+
+XP_024457974.1
+  LENGTH = 347  COMBINED P-VALUE = 1.36e-64  E-VALUE =    2e-62
+  DIAGRAM: 277-[1]-[4]-2-[2]-9
+
+                                                         [1]                   [
+                                                         2.3e-23               7
+                                                         ILDDGYRWRKYGQKMVKGNPYPR
+                                                         +++++++++++++++++++++++
+226  QSSQQHKRKCSGRGEDGSMKCGSSVRCHCSKKRKHRVKRSIKVPAISNKLADIPPDDYSWRKYGQKPIKGSPHPR
+
+     4]       [2]
+     .0e-10   2.9e-34
+     SYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++  +++++++++++++++++++++++++++++
+301  GYYKCSSMRGCPARKHVERCLEDPSMLIVTYEGEHNHPRIPAQSTNT
+
+
+XP_002302070.2
+  LENGTH = 351  COMBINED P-VALUE = 3.11e-64  E-VALUE =  4.6e-62
+  DIAGRAM: 281-[1]-[4]-2-[2]-9
+
+                                                             [1]
+                                                             2.3e-23
+                                                             ILDDGYRWRKYGQKMVKGN
+                                                             +++++++++++++++++++
+226  RSSDQSSQQHKRKCSGRGEDGSVKCGSSGRCHCSKKRKHRVKRSIKVPAISNKLADIPPDDYSWRKYGQKPIKGS
+
+        [4]       [2]
+        7.0e-10   2.9e-34
+     PYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++  +++++++++++++++++++++++++++++
+301  PHPRGYYKCSSMRGCPARKHVERCLEDPSMLIVTYEGEHNHPRIPAQSANT
+
+
+XP_024440069.1
+  LENGTH = 502  COMBINED P-VALUE = 8.79e-64  E-VALUE =  1.3e-61
+  DIAGRAM: 72-[9]-120-[5]-[1]-[4]-2-[2]-101-[2]-48
+
+                                                                             [9]
+                                                                             2.5
+                                                                             TII
+                                                                               +
+1    MDKQGRELVFFHSGDFLRQNPGVSDHTNDSSGDHTRSITKEVDFFSTDRTSELPGTDQEKRISTIGSSSLVDSSI
+
+     
+     e-05
+     YKPQAKLVSKATVSLLANMGNFNTNSQQMLQPVETRPQLSKQDKHNF
+           + +   ++  ++  +   +    ++    +
+76   NTGLNLLTSNSGISIIANVKNPDNNELSGLQGELERLHDENKKLRSLLDQITKSYRDLQAQLIMATQKQTQGNRI
+
+                      [5]                  [1]                   [4]       [2]
+                      1.3e-09              4.1e-22               1.4e-10   1.4e-
+                      KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVR
+                      +  + +++++++ +++++++ ++++++++++++++++++++++++++++++  +++++
+226  SWGSSKSPKLEHEKPDEQTPEVPFRKARVSVRARSDAPLISDGCQWRKYGQKMAKGNPCPRAYYRCTMAVGCPVR
+
+     
+     30
+     KHVERCSHDPKMVITTYEGKHNHP
+     +++++++++ ++++++++++++++
+301  KQVQRCAEDKTILITTYEGNHNHPLPPAATAMASTTSAAAAMLLSGSTTSKEGLSSSSSFYPSFPYASTMATLSA
+
+                                                       [2]
+                                                       9.1e-05
+                                                       GCPVRKHVERCSHDPKMVITTYEGK
+                                                       + ++   ++     ++++ +
+376  SAPFPTITLDLTQGPNTTMPFHRTSPSPATFPLPLHGFPQLLGHPMYASPKLPAIPSVQLGQRHASMVETVTAAI
+
+     
+     
+     HNHP
+        +
+451  ASDPNFTAALAAAISTFMGTPRSSDGANNHNAPSGIPGSPQLPQSCTTFSTN
+
+
+XP_024467301.1
+  LENGTH = 589  COMBINED P-VALUE = 1.03e-63  E-VALUE =  1.5e-61
+  DIAGRAM: 156-[2]-124-[5]-[1]-[4]-2-[2]-198
+
+           [2]
+           6.9e-05
+           GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                   +++ + +  + + +     +
+151  AQLQMELQKMNTENQRLKDMLGQVTTSYSALQMHFAALMQQHQQQNHGKESNKEQQGKSSEEKKHEDVVVPRQFM
+
+              [5]                  [1]                   [4]       [2]
+              5.9e-12              8.3e-22               1.4e-10   3.4e-31
+              KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSH
+              + ++++++++++ +++++++ ++ +++++++++++++++++++++++++++  +++++++++++++
+301  ASPANKAIEQSTEATMRKARVSVRARSEAPMITDGCQWRKYGQKMAKGNPCPRAYYRCTMAVGCPVRKQVQRCAE
+
+     
+     
+     DPKMVITTYEGKHNHP
+     + ++++++++++++++
+376  DRTILITTYEGNHNHPLPPAAMAMASTTAAAASMLLSGSMSSADGIMNPNLLARAILPAGSSNMATISASAPFPT
+
+
+XP_024461002.1
+  LENGTH = 192  COMBINED P-VALUE = 1.04e-63  E-VALUE =  1.6e-61
+  DIAGRAM: 79-[5]-[1]-[4]-1-[2]-32
+
+         [5]                  [1]                   [4]      [2]
+         9.6e-13              1.2e-20               1.3e-09  4.9e-22
+         KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKHVERCSHDPKMVI
+          +  ++  +++++++++++ +++++++++++++ + +++++++++++++++ ++++++++++ +++ + +
+76   CKNGVKKNKTEVEHRVAFRTKSELEIMDDGFKWRKYGKKSVKNSPNPRNYYKCSSGGCNVKKRVERDREDSRYVL
+
+     
+     
+     TTYEGKHNHP
+     + + + ++++
+151  TSYDGVHNHESPCMVYYNNQMPLMASNAWTLQPSSLHSSSFS
+
+
+XP_006389578.1
+  LENGTH = 590  COMBINED P-VALUE = 1.05e-63  E-VALUE =  1.6e-61
+  DIAGRAM: 157-[2]-124-[5]-[1]-[4]-2-[2]-198
+
+            [2]
+            6.9e-05
+            GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                    +++ + +  + + +     +
+151  LAQLQMELQKMNTENQRLKDMLGQVTTSYSALQMHFAALMQQHQQQNHGKESNKEQQGKSSEEKKHEDVVVPRQF
+
+               [5]                  [1]                   [4]       [2]
+               5.9e-12              8.3e-22               1.4e-10   3.4e-31
+               KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCS
+               + ++++++++++ +++++++ ++ +++++++++++++++++++++++++++  ++++++++++++
+301  PASPANKAIEQSTEATMRKARVSVRARSEAPMITDGCQWRKYGQKMAKGNPCPRAYYRCTMAVGCPVRKQVQRCA
+
+     
+     
+     HDPKMVITTYEGKHNHP
+     ++ ++++++++++++++
+376  EDRTILITTYEGNHNHPLPPAAMAMASTTAAAASMLLSGSMSSADGIMNPNLLARAILPAGSSNMATISASAPFP
+
+
+XP_024467300.2
+  LENGTH = 592  COMBINED P-VALUE = 1.14e-63  E-VALUE =  1.7e-61
+  DIAGRAM: 156-[2]-127-[5]-[1]-[4]-2-[2]-198
+
+           [2]
+           6.9e-05
+           GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                   +++ + +  + + +     +
+151  AQLQMELQKMNTENQRLKDMLGQVTTSYSALQMHFAALMQQHQQQNHGKESNKEQQNFQGKSSEEKKHEDVVVPR
+
+                 [5]                  [1]                   [4]       [2]
+                 5.9e-12              8.3e-22               1.4e-10   3.4e-31
+                 KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVER
+                 + ++++++++++ +++++++ ++ +++++++++++++++++++++++++++  ++++++++++
+301  TDPASPANKAIEQSTEATMRKARVSVRARSEAPMITDGCQWRKYGQKMAKGNPCPRAYYRCTMAVGCPVRKQVQR
+
+     
+     
+     CSHDPKMVITTYEGKHNHP
+     ++++ ++++++++++++++
+376  CAEDRTILITTYEGNHNHPLPPAAMAMASTTAAAASMLLSGSMSSADGIMNPNLLARAILPAGSSNMATISASAP
+
+
+XP_024467299.2
+  LENGTH = 593  COMBINED P-VALUE = 1.15e-63  E-VALUE =  1.7e-61
+  DIAGRAM: 157-[2]-127-[5]-[1]-[4]-2-[2]-198
+
+            [2]
+            6.9e-05
+            GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                    +++ + +  + + +     +
+151  LAQLQMELQKMNTENQRLKDMLGQVTTSYSALQMHFAALMQQHQQQNHGKESNKEQQNFQGKSSEEKKHEDVVVP
+
+                  [5]                  [1]                   [4]       [2]
+                  5.9e-12              8.3e-22               1.4e-10   3.4e-31
+                  KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVE
+                  + ++++++++++ +++++++ ++ +++++++++++++++++++++++++++  +++++++++
+301  KTDPASPANKAIEQSTEATMRKARVSVRARSEAPMITDGCQWRKYGQKMAKGNPCPRAYYRCTMAVGCPVRKQVQ
+
+     
+     
+     RCSHDPKMVITTYEGKHNHP
+     +++++ ++++++++++++++
+376  RCAEDRTILITTYEGNHNHPLPPAAMAMASTTAAAASMLLSGSMSSADGIMNPNLLARAILPAGSSNMATISASA
+
+
+XP_002309066.3
+  LENGTH = 304  COMBINED P-VALUE = 1.59e-63  E-VALUE =  2.4e-61
+  DIAGRAM: 112-[1]-[4]-1-[2]-132
+
+                                          [1]                   [4]      [2]
+                                          1.2e-21               8.0e-11  9.5e-23
+                                          ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVRKH
+                                          + ++++++++++++ +++++++++++++++  + ++++
+76   EDQSQAVSQARISLLQKGLSKMENNKYTLKLKRCGDGMADDGYKWRKYGQKSIKNSPHPRSYYRCTNARCSAKKQ
+
+     
+     
+     VERCSHDPKMVITTYEGKHNHP
+     ++++++++  +++++++ + +
+151  VERCSEDPDTLVITYEGLHLHFTYPYFLSNQPQHDDPPSKKPKGTISEAEFQAHATQRTPEQAQEYSAHVTSPGS
+
+
+XP_002321134.3
+  LENGTH = 624  COMBINED P-VALUE = 2.13e-63  E-VALUE =  3.2e-61
+  DIAGRAM: 327-[5]-[1]-[4]-2-[2]-215
+
+                                [5]                  [1]                   [4]
+                                1.0e-11              2.8e-21               1.4e-
+                                KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYR
+                                  ++++++++++ ++++++  ++++++++++++++ ++++++++++++
+301  GADHREDSPGQGWASNKVARLNSAKTIDQTEATIRKARVSVRARSEDAMISDGCQWRKYGQKLAKGNPCPRAYYR
+
+          [2]
+     10   3.4e-31
+     CTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++  ++++++++++++++ ++++++++++++++
+376  CTMAAGCPVRKQVQRCAEDRTILITTYEGNHNHPLPPAAMAMASTTSSAARMLLSGSMSSADGLLNSNFLTRTLL
+
+
+XP_002319082.4
+  LENGTH = 354  COMBINED P-VALUE = 7.08e-63  E-VALUE =  1.1e-60
+  DIAGRAM: 283-[1]-[4]-2-[2]-10
+
+                                                               [1]
+                                                               7.9e-23
+                                                               ILDDGYRWRKYGQKMVK
+                                                               ++++ ++++++++++++
+226  MPHSSDHISQQTRRRCSGRGEDGNAKCSSSGKCHCSKRRKLRVKRSIKVPAISNKVADIPPDEYSWRKYGQKPIK
+
+          [4]       [2]
+          7.0e-10   1.3e-32
+     GNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++  ++++++++++++++++++++++++++++
+301  GSPHPRGYYKCSSLRGCPARKHVERCLEDPSMLIVTYEGEHNHSRLISSQSAHT
+
+
+XP_024441318.1
+  LENGTH = 360  COMBINED P-VALUE = 2.52e-62  E-VALUE =  3.7e-60
+  DIAGRAM: 164-[8]-91-[1]-[4]-2-[2]-15
+
+                   [8]
+                   5.9e-08
+                   NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                     ++   +++   ++++++   +++++ +
+151  VYQPTPIHRLPPLPHNQQQKTLLVTKNGLSDRNEMATTINFANSPTISAPSFLSSLTGETDSFQCSKSSGFQFTQ
+
+                                                                [1]
+                                                                2.3e-23
+                                                                ILDDGYRWRKYGQKMV
+                                                                ++++++++++++++++
+226  PSAGKPPLSSSSLKRKCNSMDDAALKCGSSSSRCHCSKKRKSRIKRVVRVPAISSKMADIPPDDYSWRKYGQKPI
+
+           [4]       [2]
+           7.0e-10   1.9e-29
+     KGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++++++  ++++++++++++++ +++++++++++++
+301  KGSPHPRGYYKCSSVRGCPARKHVERALDDSMMLIVTYEGEHNHSHPIDEAPGALVLESS
+
+
+XP_024441317.1
+  LENGTH = 361  COMBINED P-VALUE = 2.58e-62  E-VALUE =  3.8e-60
+  DIAGRAM: 164-[8]-92-[1]-[4]-2-[2]-15
+
+                   [8]
+                   5.9e-08
+                   NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+                     ++   +++   ++++++   +++++ +
+151  VYQPTPIHRLPPLPHNQQQKTLLVTKNGLSDRNEMATTINFANSPTISAPSFLSSLTGETDSFQCSKSSGFQFTQ
+
+                                                                 [1]
+                                                                 2.3e-23
+                                                                 ILDDGYRWRKYGQKM
+                                                                 +++++++++++++++
+226  PSAGKPPLSSSSLKRKCNSMDDAALKCGSSSSRCHCSKKSRKSRIKRVVRVPAISSKMADIPPDDYSWRKYGQKP
+
+            [4]       [2]
+            7.0e-10   1.9e-29
+     VKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++  ++++++++++++++ +++++++++++++
+301  IKGSPHPRGYYKCSSVRGCPARKHVERALDDSMMLIVTYEGEHNHSHPIDEAPGALVLESS
+
+
+XP_002297623.3
+  LENGTH = 314  COMBINED P-VALUE = 1.03e-61  E-VALUE =  1.5e-59
+  DIAGRAM: 240-[1]-[4]-2-[2]-13
+
+                    [1]                   [4]       [2]
+                    4.6e-22               6.2e-10   2.1e-30
+                    ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNH
+                    ++++++ +++++++++++++++++++++++  ++++++++++++++++++++++++++++
+226  KKVIKVPASSTKPADIPPDDHYWRKYGQKPIKGSPYPRSYYKCSSTRGCPARKHVERSLEDPTMLVVTYEGEHNH
+
+     
+     
+     P
+     
+301  SKIQSPNPDIMLHI
+
+
+XP_024456867.1
+  LENGTH = 206  COMBINED P-VALUE = 4.92e-61  E-VALUE =  7.3e-59
+  DIAGRAM: 93-[5]-[1]-[4]-1-[2]-32
+
+                       [5]                  [1]                   [4]      [2]
+                       8.8e-11              3.3e-20               1.3e-09  1.3e-
+                       KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPVR
+                        +  +    ++++++++++ +++++++++++++ + +++++++++++++++ ++ ++
+76   SGYSGATSRNNSIKCKNGVKKNKIEGGHRVAFRTKSELEVMDDGFKWRKYGKKSVKNSPHPRNYYKCSSGGCDVK
+
+     
+     22
+     KHVERCSHDPKMVITTYEGKHNHP
+     +++++  ++ + +++++ + ++++
+151  KRVERDGEDSAYVITTYDGVHNHESPCMVYYNNQIPLAVPNAWTFQDSSPHSSSSS
+
+
+XP_024465049.1
+  LENGTH = 313  COMBINED P-VALUE = 1.01e-60  E-VALUE =  1.5e-58
+  DIAGRAM: 240-[1]-9-[2]-13
+
+                    [1]                            [2]
+                    4.6e-22                        2.1e-30
+                    ILDDGYRWRKYGQKMVKGNPYP         GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                    ++++++ +++++++++++++++         ++++++++++++++++++++++++++++
+226  KKVIKVPASSTKPADIPPDDHYWRKYGQKPIKGSPYPSYYKCSSTRGCPARKHVERSLEDPTMLVVTYEGEHNHS
+
+
+XP_024450700.1
+  LENGTH = 617  COMBINED P-VALUE = 1.43e-60  E-VALUE =  2.1e-58
+  DIAGRAM: 315-[5]-[1]-[4]-2-[2]-220
+
+                    [5]                  [1]                   [4]       [2]
+                    1.0e-11              1.0e-21               1.4e-10   2.7e-27
+                    KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKH
+                      ++++++++++ ++++++   +++++++++++++++++++++++++++++  +++++++
+301  WGSNKAARFNSTKTVDQTEATIRKARVSVRARSEDATISDGCQWRKYGQKMAKGNPCPRAYYRCTMAAGCPVRKQ
+
+     
+     
+     VERCSHDPKMVITTYEGKHNHP
+     +++++++ +++ +++++++ ++
+376  VQRCAEDRTILTTTYEGNHSHPLPPAATAMASTTSSAARMLLSGSMSSTDGLMNSNFLTRTILPCSSSLATISAS
+
+
+XP_024452726.1
+  LENGTH = 304  COMBINED P-VALUE = 8.58e-60  E-VALUE =  1.3e-57
+  DIAGRAM: 40-[5]-169-[1]-[4]-2-[2]-13
+
+                                             [5]
+                                             9.6e-05
+                                             KKAEKRIREPRFVFQTKSEVD
+                                               ++ ++ + +  ++   + +
+1    MTPRWDFKIHEVAQSSFRHAHNLFSCISDKNQKRSIQEVSLIAQDAVNEFRNLVRILDDSEQSDCKRIRKGPLPH
+
+          [1]                   [4]       [2]
+          1.5e-22               6.2e-10   3.6e-28
+          ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+          ++++++++++++++++++++++++++++++  ++++++++++++++++++++ +++++++
+226  TKLADIPPDDHSWRKYGQKPIKGSPYPRSYYKCSSKRGCPARKHVERSLEDPTMLVVAYEGEHNHSKIAFQSPNM
+
+
+XP_002302808.1
+  LENGTH = 506  COMBINED P-VALUE = 9.84e-60  E-VALUE =  1.5e-57
+  DIAGRAM: 242-[5]-[1]-[4]-2-[2]-182
+
+                      [5]                  [1]                   [4]       [2]
+                      3.0e-09              4.1e-22               6.2e-10   1.4e-
+                      KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVR
+                      +  + +++++++ +++++++ ++++++++++++++++++++++++++++++  +++++
+226  SLGSPKSPRLEEEKPNEQVPEVPFRKARVSVRARSEAPLISDGCQWRKYGQKMAKGNPCPRAYYRCSMTVGCPVR
+
+     
+     30
+     KHVERCSHDPKMVITTYEGKHNHP
+     +++++++++ ++++++++++++++
+301  KQVQRCAEDKTILITTYEGNHNHPLPPAATVMANTTSAAATMLLSGSTSSRESLSSSSGFYPSLPYASTMATISA
+
+
+XP_006382812.1
+  LENGTH = 353  COMBINED P-VALUE = 2.41e-59  E-VALUE =  3.6e-57
+  DIAGRAM: 282-[1]-[4]-2-[2]-10
+
+                                                              [1]
+                                                              7.9e-23
+                                                              ILDDGYRWRKYGQKMVKG
+                                                              ++++ +++++++++++++
+226  PHSSDHISQQTRRKCSGKGEDGNAKCASGGKCHCSKRRKLRVKRSIKVPAISNKVADIPPDEYSWRKYGQKPIKG
+
+         [4]       [2]
+         7.0e-10   7.4e-29
+     NPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++++  +++++++++++++ ++++++++++ +++
+301  SPHPRGYYKCSSLRGCPARKHVERCLEEPSMLIVTYEGDHNHSRLISSQSAHT
+
+
+XP_002323509.1
+  LENGTH = 309  COMBINED P-VALUE = 4.13e-59  E-VALUE =  6.2e-57
+  DIAGRAM: 115-[1]-[4]-1-[2]-134
+
+                                             [1]                   [4]      [2]
+                                             1.6e-19               8.0e-11  4.1e
+                                             ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS GCPV
+                                             + ++++++++++++ ++++ ++++++++++  + +
+76   TSRRDQPQPVSQARFSLLQKGLSKIENNKYTVKLKSCDNGVAGDGYKWRKYGQKSIKNSTHPRSYYRCTNRRCGA
+
+     
+     -22
+     RKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++  +++++++ + +
+151  KKQVERSSEDPDTLVITYEGLHLHFSHPYFLSNQPQHVDPPSKKPKRTISEDEFQAHETRQPPEQGQECSTHVTS
+
+
+XP_052301776.1
+  LENGTH = 185  COMBINED P-VALUE = 3.66e-58  E-VALUE =  5.4e-56
+  DIAGRAM: 76-[5]-[1]-8-[2]-29
+
+      [5]                  [1]                           [2]
+      6.2e-13              6.1e-24                       1.2e-25
+      KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYP        GCPVRKHVERCSHDPKMVITTYE
+      ++    +++++++++++++++++++++++++++++ +++++++        ++++++++++ + +  +++++++
+76   RGGDNNEFRKHKYAFQTRSQVDILDDGYRWRKYGQKTVKNSKFPSYYRCTNNGCNVKKQVQRNSKDEEIVVTTYE
+
+     
+     
+     GKHNHP
+     ++++++
+151  GMHTHPIEKCTDNIEDILRQMQTYTPFEIMPGHFL
+
+
+XP_024466667.1
+  LENGTH = 523  COMBINED P-VALUE = 4.06e-58  E-VALUE =    6e-56
+  DIAGRAM: 239-[5]-[1]-[4]-2-[2]-202
+
+                   [5]                  [1]                   [4]       [2]
+                   5.0e-07              3.2e-21               8.9e-10   3.8e-30
+                   KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHV
+                    ++  + +++++ ++++ ++  ++++++++++++++++++++++++++++   ++++++++
+226  NNQRTDLGGAGITAHGASLANRKARVSVRARCQAATMNDGCQWRKYGQKIAKGNPCPRAYYRCTVSPGCPVRKQV
+
+     
+     
+     ERCSHDPKMVITTYEGKHNHP
+     ++++++ +++++++++ ++++
+301  QRCLEDMSILITTYEGTHNHPLPVGATAMASTASAAASFMLLNSSNPLSDGMITTGQANSLPYHAWNPQYSSNFR
+
+
+XP_006380693.1
+  LENGTH = 334  COMBINED P-VALUE = 6.49e-58  E-VALUE =  9.7e-56
+  DIAGRAM: 259-[1]-[4]-2-[2]-14
+
+                                       [1]                   [4]       [2]
+                                       2.3e-23               7.0e-10   9.5e-30
+                                       ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVE
+                                       ++++++++++++++++++++++++++++++  +++++++++
+226  GKCGSPGRCHCSKKRKMRLKRVVRVPAISLKMSDIPPDDYSWRKYGQKPIKGSPHPRGYYKCSSVRGCPARKHVE
+
+     
+     
+     RCSHDPKMVITTYEGKHNHP
+     +++++++++++++++ +++
+301  RALDDPSMLVVTYEGDHNHTISVAETSNLILESS
+
+
+XP_002310122.1
+  LENGTH = 335  COMBINED P-VALUE = 6.63e-58  E-VALUE =  9.9e-56
+  DIAGRAM: 260-[1]-[4]-2-[2]-14
+
+                                        [1]                   [4]       [2]
+                                        2.3e-23               7.0e-10   9.5e-30
+                                        ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHV
+                                        ++++++++++++++++++++++++++++++  ++++++++
+226  GKCGSPGRCHCSKKSRKMRLKRVVRVPAISLKMSDIPPDDYSWRKYGQKPIKGSPHPRGYYKCSSVRGCPARKHV
+
+     
+     
+     ERCSHDPKMVITTYEGKHNHP
+     ++++++++++++++++ +++
+301  ERALDDPSMLVVTYEGDHNHTISVAETSNLILESS
+
+
+XP_006383530.2
+  LENGTH = 331  COMBINED P-VALUE = 2.39e-57  E-VALUE =  3.6e-55
+  DIAGRAM: 256-[1]-[4]-2-[2]-14
+
+                                    [1]                   [4]       [2]
+                                    2.3e-23               7.0e-10   7.4e-29
+                                    ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCS
+                                    ++++++++++++++++++++++++++++++  ++++++++++++
+226  ASSGRCRCSKKRKMRLKRVVRVPAISLKMSDIPPDDYSWRKYGQKPIKGSPHPRGYYKCSSVRGCPARKHVERAL
+
+     
+     
+     HDPKMVITTYEGKHNHP
+     ++++++++++++++ +
+301  DDPSMLVVTYEGEHSHTISVAETSNLILESS
+
+
+XP_024456279.2
+  LENGTH = 332  COMBINED P-VALUE = 2.45e-57  E-VALUE =  3.6e-55
+  DIAGRAM: 257-[1]-[4]-2-[2]-14
+
+                                     [1]                   [4]       [2]
+                                     2.3e-23               7.0e-10   7.4e-29
+                                     ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERC
+                                     ++++++++++++++++++++++++++++++  +++++++++++
+226  ASSGRCRCSKKSRKMRLKRVVRVPAISLKMSDIPPDDYSWRKYGQKPIKGSPHPRGYYKCSSVRGCPARKHVERA
+
+     
+     
+     SHDPKMVITTYEGKHNHP
+     +++++++++++++++ +
+301  LDDPSMLVVTYEGEHSHTISVAETSNLILESS
+
+
+XP_002324382.1
+  LENGTH = 338  COMBINED P-VALUE = 3.49e-57  E-VALUE =  5.2e-55
+  DIAGRAM: 252-[1]-[4]-2-[2]-25
+
+                                [1]                   [4]       [2]
+                                5.3e-23               1.2e-09   1.1e-29
+                                ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPK
+                                ++++ +++++++++++++++++++++++++  +++++++++++ ++++
+226  CHCSSKRRKNRVKKTIRVPAISSKIADIPPDEYSWRKYGQKPIKGSPYPRGYYKCSTMRGCPARKHVERATDDPA
+
+     
+     
+     MVITTYEGKHNHP
+     ++++++++++++
+301  MLIVTYEGEHCHTQGAMEGNMAAGTVNLVFESTMMVGE
+
+
+XP_024454633.1
+  LENGTH = 223  COMBINED P-VALUE = 4.41e-55  E-VALUE =  6.6e-53
+  DIAGRAM: 33-[1]-[4]-2-[2]-129
+
+                                      [1]                   [4]       [2]
+                                      1.2e-21               2.9e-10   3.5e-25
+                                      ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVER
+                                      ++++ +++++++++++++++++++++++++  ++++++++++
+1    MSMLVFKKAMQKRIVSVPIKDLEGPRLKGENASPPSDSWAWRKYGQKPIKGSPYPRGYYRCSSSKGCPARKQVER
+
+     
+     
+     CSHDPKMVITTYEGKHNHP
+     +  +++++++++ ++++++
+76   SKLDPTMLVVTYSCEHNHPWPPPSRSTHHHNSSPKHNTTKPEVSATQPENPESEPEEKFTDLGNGEPLISNTTTS
+
+
+XP_052303325.1
+  LENGTH = 636  COMBINED P-VALUE = 9.17e-55  E-VALUE =  1.4e-52
+  DIAGRAM: 256-[5]-[1]-[4]-2-[2]-298
+
+                                    [5]                  [1]                   [
+                                    3.7e-07              3.2e-21               8
+                                    KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYPR
+                                     + + +  ++++ ++++ +   ++++++++++++++++++++++
+226  PVNSFGEPKEEAGETWPPSKALKTMRGGDDEVPQQNPAKKARVSVRARCDTPTMNDGCQWRKYGQKIAKGNPCPR
+
+     4]       [2]
+     .9e-10   1.5e-26
+     SYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++    +++++++++++++ +++ +++++ ++++
+301  AYYRCTVAPSCPVRKQVQRCAEDMSILTTTYEGTHNHPLPISATAMASTTSAAASMLLSGSSSSSAGTAGFNNSG
+
+
+XP_002304549.1
+  LENGTH = 342  COMBINED P-VALUE = 1.44e-54  E-VALUE =  2.1e-52
+  DIAGRAM: 68-[5]-39-[1]-[4]-4-[2]-151
+
+                                                                         [5]
+                                                                         6.9e-05
+                                                                         KKAEKRI
+                                                                          ++ +++
+1    MESGLCWEQQTLIAELVQGMELAKQLRAHLNATSSVESRDELLQRILASYERALLILNWGGSMGQPQSVGVSAGV
+
+                                                          [1]
+                                                          1.8e-20
+     REPRFVFQTKSEVD                                       ILDDGYRWRKYGQKMVKGNPYP
+      +  + +   +  +                                       + ++++++++++++ +++++++
+76   PESPISINGSSRSDEFDGGVKDNQGYNEASKKRKTTPRWTDHVRVSPENGLEGPHDDGYSWRKYGQKDILGAKYP
+
+     [4]         [2]
+     1.9e-10     2.4e-22
+     RSYYRCTS    GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++     +++ +++++++++++++ +++ + +++
+151  RSYYRCTYRNTQNCWATKQVQRSDEDPTIFEITYRGTHTCAHGNQSIPSPSSPEKQEKKQKNTNNNYQQQQSQQA
+
+
+XP_002305730.1
+  LENGTH = 262  COMBINED P-VALUE = 1.46e-54  E-VALUE =  2.2e-52
+  DIAGRAM: 72-[1]-[4]-2-[2]-129
+
+                                                                             [1]
+                                                                             1.2
+                                                                             ILD
+                                                                             +++
+1    MDSRFIINPLICEQEENDNSTQESGPESSPSNDMKMASTSSPKRSKKAMQKRIVSVPIKDLEGPRLKGENASPPS
+
+                        [4]       [2]
+     e-21               2.9e-10   3.5e-25
+     DGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     + +++++++++++++++++++++++++  +++++++++++  +++++++++ ++++++
+76   DSWAWRKYGQKPIKGSPYPRGYYRCSSSKGCPARKQVERSKLDPTMLVVTYSCEHNHPWPPPSRSTHHHNSSPKH
+
+
+XP_002325248.3
+  LENGTH = 300  COMBINED P-VALUE = 2.42e-54  E-VALUE =  3.6e-52
+  DIAGRAM: 218-[1]-[4]-2-[2]-21
+
+                                                                         [1]
+                                                                         1.5e-21
+                                                                         ILDDGYR
+                                                                         ++ + ++
+151  GSSSLFGTHPRPTGKPPLSSIHRKKCHDHTLSTSKISSSGGSCHCSKRRKSRVKRTIRVPAISSKVADIPADEFS
+
+                    [4]       [2]
+                    7.0e-10   2.2e-28
+     WRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++++++++++++++  +++++++++++ ++++++++++++++ +
+226  WRKYGQKPIKGSPYPRGYYKCSSVRGCPARKHVERAVDDPAMLIVTYEGEHRHSHAPLPENVTANSAMRHVFQST
+
+
+XP_006368768.2
+  LENGTH = 325  COMBINED P-VALUE = 2.99e-54  E-VALUE =  4.5e-52
+  DIAGRAM: 154-[1]-[4]-2-[2]-110
+
+         [1]                   [4]       [2]
+         1.6e-21               2.4e-10   9.4e-25
+         ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+         + ++ +++++++++++++++++++++++++  +++++++++++++++++++++++ ++ +
+151  KEDGLSSDMWAWRKYGQKPIKGSPYPRSYYRCSSLKGCLARKQVERSSTDPSIFIITYTAEHSHAHPTRRSSLAG
+
+
+XP_002308998.1
+  LENGTH = 301  COMBINED P-VALUE = 3.02e-54  E-VALUE =  4.5e-52
+  DIAGRAM: 219-[1]-[4]-2-[2]-21
+
+                                                                          [1]
+                                                                          3.2e-2
+                                                                          ILDDGY
+                                                                          ++ + +
+151  KQGGSSLFGTQARSTGKPPLSSTHRKKCHDHALSARKISSGGSCHCSKRRKSRVKRTIRVPAVSSKIADIPADEY
+
+                     [4]       [2]
+     2               7.0e-10   6.9e-27
+     RWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++++++++++++++++  +++++++++++ ++ +++++++++++ +
+226  SWRKYGQKPIKGSPYPRGYYKCSSVRGCPARKHVERAVDDSAMLIVTYEGEHRHSHTPLPGDVTASAAMRHVFHS
+
+
+XP_024458563.1
+  LENGTH = 448  COMBINED P-VALUE = 1.18e-53  E-VALUE =  1.8e-51
+  DIAGRAM: 146-[8]-55-[1]-[4]-2-[2]-157
+
+                                                                            [8]
+                                                                            1.6e
+                                                                            NPEI
+                                                                            ++++
+76   SADHVLGATSVDHDHTSSFVGANSATTSSSSSILAHQRVFEDHEIHKAATPPPAPCNIFSRIQISPNNPPKLPVS
+
+     
+     -05
+     RSPYLTIPPGLSPTTLLESPVFLSN
+     +    ++  + +++++  +    +
+151  PCNSPVIATGSSPRGFKASAMVSSDIINVNNSKGCLMENTGQVQISSPRNMGIKRRKSQAKKVVCIPAPAAANSR
+
+          [1]                   [4]       [2]
+          1.2e-21               2.9e-10   1.2e-25
+          ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+          ++++ +++++++++++++++++++++++++  ++ ++++++++++++ +++++++ +++++
+226  PGGEVVPSDLWAWRKYGQKPIKGSPYPRGYYRCSSSKGCSARKQVERSRTDPNMLVITYTSEHNHPWPTQRNALA
+
+
+XP_002317397.1
+  LENGTH = 268  COMBINED P-VALUE = 1.34e-53  E-VALUE =    2e-51
+  DIAGRAM: 72-[1]-[4]-2-[2]-135
+
+                                                                             [1]
+                                                                             1.2
+                                                                             ILD
+                                                                             +++
+1    MDRRFNINPLITEQEENDNSAQESGPESPPSNDMKMPSTSSPKRSKKAMQKRVVSVPIKDLEGSRLKGENASPPS
+
+                        [4]       [2]
+     e-21               2.9e-10   6.1e-25
+     DGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     + +++++++++++++++++++++++++  +++++++++++  +++++++++ ++++++
+76   DSWAWRKYGQKPIKGSPYPRGYYRCSSSKGCPARKQVERSKVDPTMLVITYSCEHNHPWPPPSRSHNHHKNHHNS
+
+
+XP_002323839.4
+  LENGTH = 538  COMBINED P-VALUE = 1.80e-53  E-VALUE =  2.7e-51
+  DIAGRAM: 184-[5]-[1]-[4]-2-[2]-272
+
+                                       [5]                  [1]
+                                       1.3e-06              3.3e-20
+                                       KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNP
+                                          +     ++++++++ +   ++++++++++++++ ++++
+151  NPSPAESVEEPKEEAGETWPPSKIIPKRNGDHDEAAQQSQAKRARVCVRTRCETPTMNDGCQWRKYGQKISKGNP
+
+       [4]       [2]
+       8.9e-10   1.2e-27
+     YPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++    +++++++++++++ +++++++++ ++++
+226  CPRAYYRCTVAPLCPVRKQVQRCAEDTSILITTYEGTHNHPLPVSATAMASTTSAAASMLLSGSSTSQQGLGSHI
+
+
+XP_052301100.1
+  LENGTH = 461  COMBINED P-VALUE = 1.21e-52  E-VALUE =  1.8e-50
+  DIAGRAM: 154-[8]-55-[1]-[4]-2-[2]-162
+
+         [8]
+         2.3e-05
+         NPEIRSPYLTIPPGLSPTTLLESPVFLSN
+         +++++    ++    +++++ ++    +
+151  NPTKLPVSPCNSPVIAACSSPRGFRPSAMVSSDVINVNNSKGCLIDNAGSVQISSPTNLGIKRRKSQAKKVVCIP
+
+                  [1]                   [4]       [2]
+                  1.2e-21               2.9e-10   7.6e-25
+                  ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                  ++++ +++++++++++++++++++++++++  ++ +++++++++ ++ +++++++ +++++
+226  APAAANSRSSGEVVPSDLWAWRKYGQKPIKGSPYPRGYYRCSSSKGCSARKQVERSRNDPNMLVITYTSEHNHPW
+
+
+XP_006375351.1
+  LENGTH = 349  COMBINED P-VALUE = 1.19e-51  E-VALUE =  1.8e-49
+  DIAGRAM: 161-[1]-[4]-2-[2]-127
+
+                [1]                   [4]       [2]
+                2.0e-21               2.9e-10   4.9e-25
+                ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                + ++ +++++++++++++++++++++++++  ++++++++++ + ++ +++++++ +++++
+151  LKKVCQVPAEALSSDVWAWRKYGQKPIKGSPYPRGYYRCSSSKGCLARKQVERNRSDPGMFIVTYTAEHNHPAPT
+
+
+XP_006386616.2
+  LENGTH = 354  COMBINED P-VALUE = 1.84e-51  E-VALUE =  2.7e-49
+  DIAGRAM: 166-[1]-[4]-2-[2]-127
+
+                     [1]                   [4]       [2]
+                     2.0e-21               2.9e-10   4.9e-25
+                     ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHN
+                     + ++ +++++++++++++++++++++++++  ++++++++++ + ++ +++++++ +++
+151  RRKNQLKKVCQVPAEALSSDVWAWRKYGQKPIKGSPYPRGYYRCSSSKGCLARKQVERNRSDPGMFIVTYTAEHN
+
+     
+     
+     HP
+     ++
+226  HPAPTHRNSLAGSTRQKTSTPQAGTSNDSNKPSSPAQPTCSSPATSLEDELLVQSTTDTELSREEKDITEDDDED
+
+
+XP_002318373.2
+  LENGTH = 371  COMBINED P-VALUE = 7.40e-51  E-VALUE =  1.1e-48
+  DIAGRAM: 131-[1]-[4]-4-[2]-177
+
+                                                             [1]
+                                                             2.0e-21
+                                                             ILDDGYRWRKYGQKMVKGN
+                                                             +++++++++++++++++++
+76   IRNSESPPSHSGSPRSEDSDRDTRDQRQIDYGSSSRKSMPRWTKQVRVNPGMGLEGPLDDGFSWRKYGQKAILGA
+
+        [4]         [2]
+        5.3e-11     4.1e-23
+     PYPRSYYRCTS    GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++    ++++ +++++++++++++ +++ +++++
+151  KYPRGYYRCTHRNVQGCLATKQVQRSDEDPTIFEITYRGRHTCTQASNLLPLTQLRENQGPSTNITIEPQQNQPD
+
+
+XP_002305271.3
+  LENGTH = 432  COMBINED P-VALUE = 9.52e-51  E-VALUE =  1.4e-48
+  DIAGRAM: 206-[1]-[4]-2-[2]-165
+
+                                                             [1]
+                                                             2.3e-21
+                                                             ILDDGYRWRKYGQKMVKGN
+                                                             + ++ ++++++++++++++
+151  QKQPQHVQQQQNQRRQLHQQGTSTSSLFPLRTTQSQTPRKKKSNQKRLISHVTAENLSNDVWAWRKYGQKPIKGS
+
+        [4]       [2]
+        7.7e-10   9.4e-24
+     PYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++++++  ++ ++++++++ +++ ++++ +++ ++++
+226  PYPRNYYRCSSSKGCAARKQVERSNTDPNMFIVCYTGDHTHPRPTHRNSLAGSTRNKVQQPAQKPENKESEHPIS
+
+
+XP_002303610.1
+  LENGTH = 330  COMBINED P-VALUE = 1.17e-50  E-VALUE =  1.7e-48
+  DIAGRAM: 150-[1]-[4]-2-[2]-119
+
+     [1]                   [4]       [2]
+     1.6e-21               2.4e-10   3.1e-22
+     ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     + ++ +++++++++++++++++++++++++  +++++++ ++++++++ ++++++ ++ +
+151  LSSDMWAWRKYGQKPIKGSPYPRSYYRCSSLKGCLARKQMERSRTDPSTFIITYTAEHSHAHPTRRSSLAGSTRI
+
+
+XP_006372370.1
+  LENGTH = 412  COMBINED P-VALUE = 3.21e-50  E-VALUE =  4.8e-48
+  DIAGRAM: 219-[1]-[4]-2-[2]-132
+
+                                                                          [1]
+                                                                          2.3e-2
+                                                                          ILDDGY
+                                                                          + ++ +
+151  VSISPRFNNSQQQPQHIVQQQQNQRRQLHQLVTSTSSMFPLRTTQSQTPRSRKKKSNQKKLVLHVTAENLSNDVW
+
+                     [4]       [2]
+     1               7.7e-10   1.0e-23
+     RWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++++++++++++++++  ++ ++++++++ +++ ++++ +++ ++++
+226  AWRKYGQKPIKGSPYPRNYYRCSSSKGCAARKQVERSNTDPNMFIVSYTGDHTHPRPTHRNSLAGSTRNKVQQAV
+
+
+XP_006371762.1
+  LENGTH = 320  COMBINED P-VALUE = 1.03e-49  E-VALUE =  1.5e-47
+  DIAGRAM: 149-[4]-5-[1]-[4]-2-[2]-97
+
+                                                                               [
+                                                                               2
+                                                                               R
+                                                                               +
+76   VCDNYMALQKHLADLVSKNSVKEISTPISSRKRKAESEDYSIVINGISGGNAESSSIDEESSKRPKENLKSKISR
+
+     4]          [1]                   [4]       [2]
+     .2e-05      4.4e-19               2.2e-09   2.0e-25
+     SYYRCTS     ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+      +++ +      ++ ++++++++++++ + ++ ++++++++    +++++ ++++++++++++ ++++++++
+151  TYFRTSESDASLVVKDGYQWRKYGQKVTRDNPSPRAYYKCSFAPSCPVKKKVQRSAEDPSILVATYEGEHNHASH
+
+
+XP_002297983.2
+  LENGTH = 338  COMBINED P-VALUE = 1.56e-49  E-VALUE =  2.3e-47
+  DIAGRAM: 128-[1]-[4]-4-[2]-147
+
+                                                          [1]
+                                                          3.0e-20
+                                                          ILDDGYRWRKYGQKMVKGNPYP
+                                                          + ++++++++++++ +++++++
+76   PESPRSINGSSRSDDFDGSVKDNQGYNEASKKRKTTPRWTDQVRVSTDNGLEGHHDDGFSWRKYGQKDILGAKYP
+
+     [4]         [2]
+     7.7e-10     1.5e-21
+     RSYYRCTS    GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++     +++ +++++++++++++ +++ + + +
+151  RSYYRCSYRNTQNCWATKQVQRSDEDPTVFEITYRGTHSCAHGNQSVPSPEKQEKKRKNTNNNCQQQQSQQALFN
+
+
+XP_002320852.4
+  LENGTH = 365  COMBINED P-VALUE = 6.22e-48  E-VALUE =  9.3e-46
+  DIAGRAM: 126-[1]-[4]-4-[2]-176
+
+                                                        [1]                   [4
+                                                        1.7e-20               5.
+                                                        ILDDGYRWRKYGQKMVKGNPYPRS
+                                                        ++++++++++++++ ++++ ++++
+76   PLHSFANSSPRSEVSDQDCKEECNKDVYKKRKIQPRWTEQVKDCSGTGLEGPLDDGYSWRKYGQKDILGANFPRG
+
+     ]         [2]
+     3e-11     6.4e-22
+     YYRCTS    GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++    ++++ +++++++++ +++ +++ +++++
+151  YYRCTHRHSQGCLATKQVQRSDEDHSIFEVTYRGRHTCNQASPSPVASPSPKNDCSKQSKYHRKQQQQRQEKPKP
+
+
+XP_002303852.3
+  LENGTH = 319  COMBINED P-VALUE = 2.61e-46  E-VALUE =  3.9e-44
+  DIAGRAM: 162-[1]-[4]-2-[2]-96
+
+                 [1]                   [4]       [2]
+                 1.0e-19               6.8e-09   1.1e-23
+                 ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                 ++ ++++++++++++ + ++ ++++++++    +++++ ++++ ++ ++++ +++++++++
+151  AYVRTEAGDTSLIVKDGYQWRKYGQKVTRDNPSPRAYFKCSFAPSCPVKKKVQRSIDDQSVLVATYEGEHNHPHP
+
+
+XP_006368511.1
+  LENGTH = 318  COMBINED P-VALUE = 7.50e-46  E-VALUE =  1.1e-43
+  DIAGRAM: 161-[1]-[4]-2-[2]-96
+
+                [1]                   [4]       [2]
+                1.0e-19               6.8e-09   1.1e-23
+                ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                ++ ++++++++++++ + ++ ++++++++    +++++ ++++ ++ ++++ +++++++++
+151  YVKTEAGDKSLIVKDGYQWRKYGQKVTRDNPSPRAYFKCSFAPSCPVKKKVQRSIDDQSVLVATYEGEHNHPHPS
+
+
+XP_002308704.1
+  LENGTH = 320  COMBINED P-VALUE = 9.86e-46  E-VALUE =  1.5e-43
+  DIAGRAM: 161-[1]-[4]-2-[2]-98
+
+                [1]                   [4]       [2]
+                9.5e-19               6.8e-09   1.0e-22
+                ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                ++ ++++++++++++ + ++ ++++++++    +++++ ++ +++ +++++ ++++++++
+151  YFPTNASDTSLVVRDGYQWRKYGQKVTRDNPSPRAYFKCSFAPSCPVKKKVQKSAENPSILVATYEGEHNHASHS
+
+
+XP_052305286.1
+  LENGTH = 381  COMBINED P-VALUE = 1.49e-45  E-VALUE =  2.2e-43
+  DIAGRAM: 197-[1]-[4]-4-[2]-121
+
+                                                    [1]                   [4]
+                                                    4.9e-20               2.4e-1
+                                                    ILDDGYRWRKYGQKMVKGNPYPRSYYRC
+                                                    ++++++++++++++ +++++++++++++
+151  RSDVQAVDASDSGRGSSSSSKRPRIRNDDAEKRTVRVPAQQFGNTEIPPEDGFSWRKYGQKEILGSKFPRAYYRC
+
+           [2]
+     0     7.4e-21
+     TS    GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++     ++++++++++++++  + + + ++++++
+226  TNQNLYHCPAKKQVQRLDDDPCRLEVVYRGEHTCHLSATAPSAPPPAPGITQEMAQTMIGQPQPSTATSLGRWVL
+
+
+XP_052306843.1
+  LENGTH = 209  COMBINED P-VALUE = 3.75e-45  E-VALUE =  5.6e-43
+  DIAGRAM: 35-[4]-2-[2]-85-[10]-21
+
+                                        [4]       [2]
+                                        6.2e-10   2.5e-25
+                                        RSYYRCTS  GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                                        ++++++++  ++ ++++++++++++++++++++ +++++
+1    MFQKTAFFCHCNFSMIIFPVQNKSTYQLSLFFMPCRGYYRCSTSKGCSAKKQVERCRTDASVLIITYTSNHNHPG
+
+              [10]
+              2.2e-27
+              MAGIDDNVAIIGDWVPPSCSPRMFFSAML
+              +++++++++++++++++++++++++++++
+151  SQEDPFAENPEKSHDTLGIVLDEEPISCSRLMTFSAPKSEENNDFFDELEELPHIFVFH
+
+
+XP_002302620.1
+  LENGTH = 363  COMBINED P-VALUE = 5.29e-45  E-VALUE =  7.9e-43
+  DIAGRAM: 126-[1]-[4]-4-[2]-174
+
+                                                        [1]                   [4
+                                                        8.6e-20               5.
+                                                        ILDDGYRWRKYGQKMVKGNPYPRS
+                                                        ++++++++++++++ ++++ ++++
+76   SPHSFSNSSPWSEVSDQDCKEEWNKDVNKKRKTQPRRTEQVKVCPGTGLEGPLDDGHSWRKYGQKDILGANFPRG
+
+     ]         [2]
+     3e-11     2.3e-21
+     YYRCTS    GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++    ++++ ++++++++  +++ +++ +++++
+151  YYRCTHRHSQGCLATKQVQRSDENHSIFEVTYRGRHTCKQASTPPVASPSLENDFSKQSKYHSQQQHEEKPKPSK
+
+
+XP_002324328.1
+  LENGTH = 271  COMBINED P-VALUE = 1.04e-43  E-VALUE =  1.5e-41
+  DIAGRAM: 100-[1]-[4]-2-[2]-110
+
+                              [1]                   [4]       [2]
+                              2.3e-20               3.1e-09   6.4e-22
+                              ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS  GCPVRKHVERCSHDPKMV
+                              ++ ++++++++++++ + ++ +++++++++   +++++ ++++ ++ +++
+76   RARFEVPITKASRILVRSHSNDKSLIVKDGYQWRKYGQKVTKDNPSPRAYFRCSMAPNCPVKKKVQRCVEDDSVL
+
+     
+     
+     ITTYEGKHNHP
+     +  + ++++++
+151  VASYDGEHNHEPNGSHGQYLCSPHTSSSKISITNHVLKCPIEIPPLQPSIALDLTLSSPSNQQKENPSKRSMEDC
+
+
+XP_024439297.1
+  LENGTH = 364  COMBINED P-VALUE = 1.49e-43  E-VALUE =  2.2e-41
+  DIAGRAM: 182-[1]-[4]-4-[2]-119
+
+                                     [1]                   [4]         [2]
+                                     1.4e-18               1.4e-10     8.0e-21
+                                     ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS    GCPVRKHVE
+                                     ++++++ +++++++ ++++ ++++++++++     ++++++++
+151  SSSSSQRPRRRKDDAERRTVRVPAQQFGNTEIPPEDGFTWRKYGQKEILGSRFPRAYYRCTHQKLYHCLAKKQVQ
+
+     
+     
+     RCSHDPKMVITTYEGKHNHP
+     ++++++  + + + ++++++
+226  RLDDDPYTFEVAYRGEHTCHMSATAPSVPPAAADIAQEMAQTMSAQPQPSAATSLARWLEFSLGSGGSAGCSSSS
+
+
+XP_002309186.4
+  LENGTH = 333  COMBINED P-VALUE = 7.20e-40  E-VALUE =  1.1e-37
+  DIAGRAM: 130-[1]-[4]-4-[2]-140
+
+                                                            [1]
+                                                            5.4e-20
+                                                            ILDDGYRWRKYGQKMVKGNP
+                                                            + ++++++++++++++++++
+76   TPATTKVCSPLWDGRKSSEDSGESSKSTATVKVKDRRGCYKRRRSSHSWTNETSTLTDDGHAWRKYGQKMILNAK
+
+       [4]         [2]
+       2.9e-10     9.4e-18
+     YPRSYYRCTS    GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++++     + + ++++++ + +    +++ + +++
+151  FPRNYYRCTHKFDQHCQATKQVQRVEEEPPLYRTTYHGYHTCKNLLKASDQFVLDPIDHFHTDSSTLMSFNNSSN
+
+
+XP_024452203.2
+  LENGTH = 137  COMBINED P-VALUE = 3.63e-38  E-VALUE =  5.4e-36
+  DIAGRAM: 42-[1]-[4]-13-[6]-29
+
+                                               [1]                   [4]
+                                               7.5e-16               2.2e-08
+                                               ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS
+                                               ++++++ + +++++ ++     ++++++
+1    MYPALPPFRFSIKATIYEIHPMETDQEGREEQDTDRGGQRLVLPEDGHGWKKYGQKFIKKIGKFRSYFKCQKQNC
+
+               [6]
+               6.4e-13
+               GHITEIIYKGEHNHPKPQPNRRY
+                  + +++ +++++        +
+76   VAKKRVEWSNPDYIRIWYEGSHNHASSIQGTSSSAAANQYSLYAQVFGSDQPAASRTHHQDA
+
+
+XP_024452204.2
+  LENGTH = 127  COMBINED P-VALUE = 9.20e-38  E-VALUE =  1.4e-35
+  DIAGRAM: 32-[1]-[4]-13-[6]-29
+
+                                     [1]                   [4]
+                                     7.5e-16               2.2e-08
+                                     ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS
+                                     ++++++ + +++++ ++     ++++++
+1    MSEASSTRETSMETDQEGREEQDTDRGGQRLVLPEDGHGWKKYGQKFIKKIGKFRSYFKCQKQNCVAKKRVEWSN
+
+     [6]
+     6.4e-13
+     GHITEIIYKGEHNHPKPQPNRRY
+        + +++ +++++        +
+76   PDYIRIWYEGSHNHASSIQGTSSSAAANQYSLYAQVFGSDQPAASRTHHQDA
+
+
+XP_002323675.2
+  LENGTH = 321  COMBINED P-VALUE = 5.31e-37  E-VALUE =  7.9e-35
+  DIAGRAM: 127-[1]-[4]-4-[2]-131
+
+                                                         [1]                   [
+                                                         3.7e-20               2
+                                                         ILDDGYRWRKYGQKMVKGNPYPR
+                                                         + +++++++++++++++++++++
+76   IPQVGSPCWDGRKSSKDSGESGRGTAELKVKDRRGCYKRRKSSHSRTDDSTTLTDDGHAWRKYGQKVILNAKYPR
+
+     4]         [2]
+     .2e-09     1.6e-16
+     SYYRCTS    GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     +++++++     + + +++++  + +    +++ + +++
+151  NYFRCTHKYDQQCQAIKQVQRIQEEPPLYRTTYYGHHTCKNLLKASQFVLDPSDHHDIDSSILISFKSNGDHASN
+
+
+XP_002319879.4
+  LENGTH = 324  COMBINED P-VALUE = 2.24e-36  E-VALUE =  3.3e-34
+  DIAGRAM: 129-[1]-[4]-4-[2]-132
+
+                                                           [1]
+                                                           4.2e-18
+                                                           ILDDGYRWRKYGQKMVKGNPY
+                                                            +++ +++++++++ ++++++
+76   ICQNLASSLGDSACYDDRRSEDSGESKKRPATTKDRRGCYKRKKISQSWTTVCPTIEDSHAWRKYGQKGILNAKY
+
+      [4]         [2]
+      6.1e-09     6.4e-19
+     PRSYYRCTS    GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++     ++ + +++++  + +    +++ + +++
+151  PRSYFRCSRKYEQGCKATKQVQRMEDNPDLYHTTYIGSHTCRNIPEAPQIITDSDPWESYNLTSSVISSHSKIPR
+
+
+XP_052302236.1
+  LENGTH = 324  COMBINED P-VALUE = 2.24e-36  E-VALUE =  3.3e-34
+  DIAGRAM: 129-[1]-[4]-4-[2]-132
+
+                                                           [1]
+                                                           4.2e-18
+                                                           ILDDGYRWRKYGQKMVKGNPY
+                                                            +++ +++++++++ ++++++
+76   ICQNLASSLGDSACYDDRRSEDSGESKKRPATTKDRRGCYKRKKISQSWTTVCPTIEDSHAWRKYGQKGILNAKY
+
+      [4]         [2]
+      6.1e-09     6.4e-19
+     PRSYYRCTS    GCPVRKHVERCSHDPKMVITTYEGKHNHP
+     ++++++++     ++ + +++++  + +    +++ + +++
+151  PRSYFRCSRKYEQGCKATKQVQRMEDNPDLYHTTYIGSHTCRNIPEAPQIITDSDPWESYNLTSSVISSHSKIPR
+
+
+XP_006368530.1
+  LENGTH = 135  COMBINED P-VALUE = 2.06e-32  E-VALUE =  3.1e-30
+  DIAGRAM: 33-[1]-[4]-13-[6]-36
+
+                                      [1]                   [4]
+                                      1.5e-16               1.5e-08
+                                      ILDDGYRWRKYGQKMVKGNPYPRSYYRCTS
+                                      ++++++ + +++++ +++    ++++++
+1    MSEVSPTRETSMETEEDKEEQQQHTDRGRRRLVLPEDGFEWKKYGQKFIKNIGKFRGYFRCQKRNCMAKKRAEWS
+
+      [6]
+      2.1e-09
+      GHITEIIYKGEHNHPKPQPNRRY
+           +++ +++++        +
+76   NPENLRIVYEGSHSHASSTQDSSSASSQGTPSSSAANQYNLYTQFFGNQPASSTHDQDHT
+
+
+XP_024459343.1
+  LENGTH = 143  COMBINED P-VALUE = 6.75e-22  E-VALUE =    1e-19
+  DIAGRAM: 81-[5]-[1]-19
+
+           [5]                  [1]
+           1.3e-12              3.1e-23
+           KKAEKRIREPRFVFQTKSEVDILDDGYRWRKYGQKMVKGNPYP
+            + +++  + +++++++++++++++++++++++ +++++++++
+76   SGGEGEEGREKKEAKERVAFKTKSEIEILDDGYKWRKYGKKMVKNSPNPRIMCLLPGITTGARLKAAL
+
+
+XP_024450032.1
+  LENGTH = 320  COMBINED P-VALUE = 2.76e-20  E-VALUE =  4.1e-18
+  DIAGRAM: 105-[4]-4-[2]-174
+
+                                   [4]         [2]
+                                   5.3e-11     2.3e-21
+                                   RSYYRCTS    GCPVRKHVERCSHDPKMVITTYEGKHNHP
+                                   ++++++++    ++++ ++++++++  +++ +++ +++++
+76   SPHSFSNSSPWSEVSDQDCKEEWNKDVNKKRGYYRCTHRHSQGCLATKQVQRSDENHSIFEVTYRGRHTCKQAST
+
+********************************************************************************
+
+
+CPU: noble-meme.grid.gs.washington.edu
+Time 0.188 secs.
+
+mast -oc . -nostatus meme.xml WRKY_protein_final.fasta

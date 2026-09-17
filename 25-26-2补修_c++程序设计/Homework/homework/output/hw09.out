@@ -1,0 +1,50 @@
+测试基类 BaseString
+
+创建对象 obj1 (无参构造)
+BaseString 构造函数被调用
+字符串内容: 
+字符串长度: 1 (包括结束符)
+实际字符数: 0
+
+调用 Input() 函数
+请输入字符串 (最多49个字符): 字符串内容: HelloWorld
+字符串长度: 11 (包括结束符)
+实际字符数: 10
+
+调用 GetData() 函数
+通过GetData获取的字符串: HelloWorld
+
+创建对象 obj2 (带参构造)
+BaseString 带参数构造函数被调用
+字符串内容: Hello World
+字符串长度: 12 (包括结束符)
+实际字符数: 11
+
+测试 GetLength()
+obj2的字符串长度: 12
+
+测试继承关系中的构造和析构调用顺序
+
+创建派生类对象 derived1 (无参构造)
+BaseString 构造函数被调用
+DerivedString 构造函数被调用
+字符串内容: 
+字符串长度: 1 (包括结束符)
+实际字符数: 0
+额外数据: 
+
+创建派生类对象 derived2 (带参构造)
+BaseString 带参数构造函数被调用
+DerivedString 带参数构造函数被调用
+字符串内容: Base String
+字符串长度: 12 (包括结束符)
+实际字符数: 11
+额外数据: Extra Info
+
+对象即将销毁，观察析构顺序
+DerivedString 析构函数被调用
+BaseString 析构函数被调用
+DerivedString 析构函数被调用
+BaseString 析构函数被调用
+BaseString 析构函数被调用
+BaseString 析构函数被调用

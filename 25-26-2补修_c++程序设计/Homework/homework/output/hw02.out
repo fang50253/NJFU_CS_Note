@@ -1,0 +1,7 @@
+x = 1 y = 2
+x = 4 y = 6
+x = -2 y = -2
+lefttop = 1 rightbottom = 2 righttop = 3 leftbottom = 4
+lefttop = 6 rightbottom = 8 righttop = 10 leftbottom = 12
+lefttop = -4 rightbottom = -4 righttop = -4 leftbottom = -4
+lefttop = 29 rightbottom = 40 righttop = 27 leftbottom = 42

@@ -1,31 +1,31 @@
-python3 -u "/Users/fang50253/Desktop/Files/Documents/NJFU_My_Github/NJFU_CS_Note/2026-03-31林木生物信息学/week5/task1/main.py"
-(base) fang50253@MacBook-Pro task1 % pytho
-n3 -u "/Users/fang50253/Desktop/Files/Docu
-ments/NJFU_My_Github/NJFU_CS_Note/2026-03-
-31林木生物信息学/week5/task1/main.py"
 
  trees/tree_001.nwk
 strict: False
+  reason: 目标样本缺失: ['A1']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A1'}
 
  trees/tree_002.nwk
 strict: False
+  reason: 目标样本缺失: ['A9']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A9'}
 
  trees/tree_003.nwk
 strict: False
+  reason: 目标样本缺失: ['A1', 'A3']（纯净分支包含8个目标样本）
 tolerant: True
 missing samples: {'A3', 'A1'}
 
  trees/tree_004.nwk
 strict: False
+  reason: 目标样本缺失: ['A4', 'A9']（纯净分支包含8个目标样本）
 tolerant: True
 missing samples: {'A4', 'A9'}
 
  trees/tree_005.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
@@ -36,6 +36,7 @@ missing samples: set()
 
  trees/tree_007.nwk
 strict: False
+  reason: 目标样本缺失: ['A5']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A5'}
 
@@ -46,18 +47,21 @@ missing samples: set()
 
  trees/tree_009.nwk
 strict: False
+  reason: 目标样本缺失: ['A7']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A7'}
 
  trees/tree_010.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
  trees/tree_011.nwk
 strict: False
+  reason: 目标样本缺失: ['A3', 'A8']（纯净分支包含8个目标样本）
 tolerant: True
-missing samples: {'A8', 'A3'}
+missing samples: {'A3', 'A8'}
 
  trees/tree_012.nwk
 strict: True
@@ -71,11 +75,13 @@ missing samples: set()
 
  trees/tree_014.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
  trees/tree_015.nwk
 strict: False
+  reason: 目标样本缺失: ['A3']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A3'}
 
@@ -86,6 +92,7 @@ missing samples: set()
 
  trees/tree_017.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
@@ -96,6 +103,7 @@ missing samples: set()
 
  trees/tree_019.nwk
 strict: False
+  reason: 目标样本缺失: ['A6']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A6'}
 
@@ -106,6 +114,7 @@ missing samples: set()
 
  trees/tree_021.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B7']
 tolerant: False
 missing samples: set()
 
@@ -121,21 +130,25 @@ missing samples: set()
 
  trees/tree_024.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B3']
 tolerant: False
 missing samples: set()
 
  trees/tree_025.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
  trees/tree_026.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
  trees/tree_027.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B3']
 tolerant: False
 missing samples: set()
 
@@ -146,6 +159,7 @@ missing samples: set()
 
  trees/tree_029.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
@@ -156,8 +170,9 @@ missing samples: set()
 
  trees/tree_031.nwk
 strict: False
+  reason: 目标样本缺失: ['A10', 'A2']（纯净分支包含8个目标样本）
 tolerant: True
-missing samples: {'A2', 'A10'}
+missing samples: {'A10', 'A2'}
 
  trees/tree_032.nwk
 strict: True
@@ -176,8 +191,9 @@ missing samples: set()
 
  trees/tree_035.nwk
 strict: False
+  reason: 目标样本缺失: ['A2', 'A7']（纯净分支包含8个目标样本）
 tolerant: True
-missing samples: {'A2', 'A7'}
+missing samples: {'A7', 'A2'}
 
  trees/tree_036.nwk
 strict: True
@@ -196,16 +212,19 @@ missing samples: set()
 
  trees/tree_039.nwk
 strict: False
+  reason: 目标样本缺失: ['A5']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A5'}
 
  trees/tree_040.nwk
 strict: False
+  reason: 目标样本缺失: ['A1']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A1'}
 
  trees/tree_041.nwk
 strict: False
+  reason: 目标样本缺失: ['A10']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A10'}
 
@@ -216,11 +235,13 @@ missing samples: set()
 
  trees/tree_043.nwk
 strict: False
+  reason: 目标样本缺失: ['A10', 'A9']（纯净分支包含8个目标样本）
 tolerant: True
-missing samples: {'A10', 'A9'}
+missing samples: {'A9', 'A10'}
 
  trees/tree_044.nwk
 strict: False
+  reason: 目标样本缺失: ['A1', 'A5']（纯净分支包含8个目标样本）
 tolerant: True
 missing samples: {'A5', 'A1'}
 
@@ -236,11 +257,13 @@ missing samples: set()
 
  trees/tree_047.nwk
 strict: False
+  reason: 目标样本缺失: ['A1']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A1'}
 
  trees/tree_048.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B10', 'B2', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
@@ -251,6 +274,7 @@ missing samples: set()
 
  trees/tree_050.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
@@ -281,21 +305,25 @@ missing samples: set()
 
  trees/tree_056.nwk
 strict: False
+  reason: 目标样本缺失: ['A3']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A3'}
 
  trees/tree_057.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
  trees/tree_058.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
  trees/tree_059.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
@@ -311,6 +339,7 @@ missing samples: set()
 
  trees/tree_062.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
@@ -326,16 +355,19 @@ missing samples: set()
 
  trees/tree_065.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B2', 'B4', 'B5']
 tolerant: False
 missing samples: set()
 
  trees/tree_066.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
  trees/tree_067.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
@@ -351,6 +383,7 @@ missing samples: set()
 
  trees/tree_070.nwk
 strict: False
+  reason: 目标样本缺失: ['A4']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A4'}
 
@@ -361,16 +394,19 @@ missing samples: set()
 
  trees/tree_072.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
  trees/tree_073.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
  trees/tree_074.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
@@ -381,8 +417,9 @@ missing samples: set()
 
  trees/tree_076.nwk
 strict: False
+  reason: 目标样本缺失: ['A4', 'A5']（纯净分支包含8个目标样本）
 tolerant: True
-missing samples: {'A5', 'A4'}
+missing samples: {'A4', 'A5'}
 
  trees/tree_077.nwk
 strict: True
@@ -391,11 +428,13 @@ missing samples: set()
 
  trees/tree_078.nwk
 strict: False
+  reason: 目标样本缺失: ['A1', 'A10']（纯净分支包含8个目标样本）
 tolerant: True
 missing samples: {'A10', 'A1'}
 
  trees/tree_079.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
@@ -411,21 +450,25 @@ missing samples: set()
 
  trees/tree_082.nwk
 strict: False
+  reason: 目标样本缺失: ['A10', 'A8']（纯净分支包含8个目标样本）
 tolerant: True
 missing samples: {'A8', 'A10'}
 
  trees/tree_083.nwk
 strict: False
+  reason: 目标样本缺失: ['A4']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A4'}
 
  trees/tree_084.nwk
 strict: False
+  reason: 目标样本缺失: ['A6']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A6'}
 
  trees/tree_085.nwk
 strict: False
+  reason: 目标样本缺失: ['A5']（纯净分支包含9个目标样本）
 tolerant: True
 missing samples: {'A5'}
 
@@ -436,6 +479,7 @@ missing samples: set()
 
  trees/tree_087.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B2', 'B7']
 tolerant: False
 missing samples: set()
 
@@ -451,8 +495,9 @@ missing samples: set()
 
  trees/tree_090.nwk
 strict: False
+  reason: 目标样本缺失: ['A5', 'A6']（纯净分支包含8个目标样本）
 tolerant: True
-missing samples: {'A5', 'A6'}
+missing samples: {'A6', 'A5'}
 
  trees/tree_091.nwk
 strict: True
@@ -471,6 +516,7 @@ missing samples: set()
 
  trees/tree_094.nwk
 strict: False
+  reason: 目标样本缺失: ['A10', 'A8']（纯净分支包含8个目标样本）
 tolerant: True
 missing samples: {'A8', 'A10'}
 
@@ -486,21 +532,25 @@ missing samples: set()
 
  trees/tree_097.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B3', 'B4', 'B5']
 tolerant: False
 missing samples: set()
 
  trees/tree_098.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
  trees/tree_099.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B1', 'B10', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9']
 tolerant: False
 missing samples: set()
 
  trees/tree_100.nwk
 strict: False
+  reason: 包含全部目标样本的节点中混入了非目标样本: ['B7']
 tolerant: False
 missing samples: set()
 
@@ -520,4 +570,9 @@ A8 3
 A6 3
 A7 2
 A2 2
-(base) fang50253@MacBook-Pro task1 % 
+
+柱状图已保存到: output/bar_chart.png
+条形图已保存到: output/horizontal_bar_chart.png
+饼图已保存到: output/pie_chart.png
+统计表格已保存到: output/statistics_table.txt
+CSV统计表格已保存到: output/statistics_table.csv

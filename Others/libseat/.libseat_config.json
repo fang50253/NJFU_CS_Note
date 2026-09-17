@@ -1,0 +1,23 @@
+{
+  "room_id": "111488396",
+  "date": "20260909",
+  "seat_ids": [
+    "7F-B075"
+  ],
+  "poll_interval": 0.3,
+  "start_now": true,
+  "start_hour": 22,
+  "start_minute": 0,
+  "api_base": "https://libseat.njfu.edu.cn/ic-web",
+  "auth_url": "https://uia.njfu.edu.cn/authserver/login",
+  "cookies_file": "/Users/fang50253/Desktop/libseat/.libseat_credentials.json",
+  "app_acc_no": "143925511",
+  "timeout": 10,
+  "max_retry": 100,
+  "chromedriver": "",
+  "headless": "false",
+  "booking_time": "07:30",
+  "booking_duration": 120,
+  "seat_keyword": "",
+  "browser_profile": ""
+}

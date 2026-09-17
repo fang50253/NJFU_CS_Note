@@ -1,0 +1,104 @@
+@startuml
+' ============================================================
+' 南京林业大学淮安校区直播网络拓扑图
+' 适用场景：操场直播 / 报告厅直播
+' 本图对应《直播完全指南》第三节第10条的网络结构
+' ============================================================
+
+title 南京林业大学淮安校区直播网络拓扑图
+caption 操场直播需经校园网二次转发；报告厅直播可直接连网推流
+
+' ================= 图例 =================
+legend right
+  摄像机    - 视频信号源（USB / HDMI / 采集卡接入）
+  笔记本电脑 - 运行 OBS Studio 或 SRS 的电脑
+  路由器    - 局域网核心（拥有内网 + 外网两个 IP）
+  实线箭头  - 视频流 / 网络数据传输方向
+endlegend
+
+' ================= 操场直播（左侧） =================
+package "操场主席台（无法直连互联网）" as outdoor {
+
+    actor "相机 01\n(索尼 α6700)" as cam01
+    actor "相机 02\n(DJI Mavic Air3)" as cam02
+    actor "相机 03\n(DJI Mavic Air2)" as cam03
+    actor "相机 04\n(DJI Osmo Pocket3)" as cam04
+    actor "相机 05\n(佳能 EOS R8)" as cam05
+
+    node "OBS 切换笔记本电脑\n(场景切换 / 推流)" as obs_pc
+
+    node "SRS 服务器电脑\n(安装 SRS 软件)" as srs_pc
+
+    node "路由器\n(小米 AX3000T)\n内网 IP: 192.168.31.*\n外网 IP: 10.58.3.161" as router_out
+
+    cam01 -down-> obs_pc : USB / HDMI / 采集卡
+    cam02 -down-> obs_pc : WiFi (DJI 拉流)
+    cam03 -down-> obs_pc : WiFi (DJI 拉流)
+    cam04 -down-> obs_pc : USB
+    cam05 -down-> obs_pc : HDMI 采集卡
+    obs_pc -down-> srs_pc : RTMP 推流\n(rtmp://192.168.31.*/livestream/00)
+    srs_pc -down-> router_out : 网线连接
+}
+
+' ================= 校园网（中间桥梁） =================
+package "校园网（宿舍区 / 教学楼）" as campus {
+
+    node "校园网交换机\n(操场看台下方最南侧教室)" as switch1
+
+    node "12栋以外宿舍\n(网口 8 线全通)" as dorm
+
+    node "转发笔记本电脑\n(OBS + 媒体源拉流)\n单显卡机型" as relay_pc
+}
+
+' ================= 报告厅直播（右侧） =================
+package "教学主楼 A 报告厅（可直连互联网）" as indoor {
+
+    actor "报告厅相机\n(单机位或额外机位)" as cam_indoor
+
+    node "报告厅 OBS 电脑\n(可兼作 SRS)" as obs_indoor
+
+    node "报告厅路由器 / 网口" as router_indoor
+
+    cam_indoor -down-> obs_indoor : USB / HDMI 采集卡
+    obs_indoor -down-> router_indoor : RTMP 推流
+}
+
+' ================= 互联网与平台（顶部） =================
+cloud "Internet" as internet {
+    node "直播平台\n(微信视频号 / B站 / 抖音等)" as platform
+}
+
+' ================= 连接关系 =================
+
+' --- 操场直播链路 ---
+router_out -right-> switch1 : 网线接入校园网
+switch1 -right-> dorm : 校园网链路
+dorm -down-> relay_pc : 网口 8 线全通
+relay_pc -up-> internet : 拉流后二次推流\n(rtmp://10.58.3.161/livestream/*)
+relay_pc -left-> router_out : 拉流\nrtmp://10.58.3.161/livestream/00
+
+' --- 报告厅直播链路 ---
+router_indoor -right-> internet : 直连互联网\n无需二次转发
+
+' ================= 注解说明 =================
+note top of router_out
+  **关键点**：室外路由器拥有 2 个 IP，
+  内网 IP (192.168.31.*) 与 外网 IP (10.58.3.161)
+  完全等价，一个对内一个对外。
+end note
+
+note right of relay_pc
+  **转发原理**：
+  操场电脑无法直接连互联网，
+  但操场与宿舍在同一校园网内，
+  于是由宿舍的笔记本电脑
+  从 SRS 拉流后再推送到外网平台。
+end note
+
+note right of obs_indoor
+  **报告厅优势**：
+  可直接连接互联网，
+  无需宿舍转发环节。
+end note
+
+@enduml

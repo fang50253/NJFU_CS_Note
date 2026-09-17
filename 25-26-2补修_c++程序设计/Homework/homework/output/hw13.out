@@ -1,0 +1,176 @@
+测试多重继承构造函数调用顺序:
+
+创建 NewString 对象 (无参构造):
+BaseString 构造函数被调用
+ReString 构造函数被调用
+CopyString 构造函数被调用
+CmpString 构造函数被调用
+NewString 构造函数被调用
+
+创建 NewString 对象 (带参构造):
+BaseString 带参数构造函数被调用, 参数: MultiInheritance
+ReString 带参数构造函数被调用, 参数: MultiInheritance
+CopyString 带参数构造函数被调用, 参数: MultiInheritance
+CmpString 带参数构造函数被调用, 参数: MultiInheritance
+NewString 带参数构造函数被调用, 参数: MultiInheritance
+
+测试三种解决二义性的方法:
+BaseString 带参数构造函数被调用, 参数: Hello World
+ReString 带参数构造函数被调用, 参数: Hello World
+CopyString 带参数构造函数被调用, 参数: Hello World
+CmpString 带参数构造函数被调用, 参数: Hello World
+NewString 带参数构造函数被调用, 参数: Hello World
+
+使用作用域分辨符解决二义性:
+调用 ReString::Display(): 
+字符串内容: Hello World
+字符串长度: 12 (包括结束符)
+实际字符数: 11
+调用 CopyString::Display(): 
+字符串内容: Hello World
+字符串长度: 12 (包括结束符)
+实际字符数: 11
+调用 CmpString::Display(): 
+字符串内容: Hello World
+字符串长度: 12 (包括结束符)
+实际字符数: 11
+
+重新定义函数解决二义性:
+选择使用 ReString 的显示功能: 
+字符串内容: Hello World
+字符串长度: 12 (包括结束符)
+实际字符数: 11
+
+使用 using 声明解决二义性:
+字符串内容: Hello World
+字符串长度: 12 (包括结束符)
+实际字符数: 11
+
+测试所有类功能:
+
+BaseString 功能测试:
+BaseString 构造函数被调用
+请输入字符串 (最多49个字符): 字符串内容: BaseInput
+字符串长度: 10 (包括结束符)
+实际字符数: 9
+
+ReString 功能测试:
+BaseString 带参数构造函数被调用, 参数: ABC
+ReString 带参数构造函数被调用, 参数: ABC
+倒置前: 字符串内容: ABC
+字符串长度: 4 (包括结束符)
+实际字符数: 3
+字符串已倒置
+倒置后: 字符串内容: CBA
+字符串长度: 4 (包括结束符)
+实际字符数: 3
+
+CopyString 功能测试:
+BaseString 带参数构造函数被调用, 参数: Source
+CopyString 带参数构造函数被调用, 参数: Source
+BaseString 构造函数被调用
+CopyString 构造函数被调用
+copy1: 字符串内容: Source
+字符串长度: 7 (包括结束符)
+实际字符数: 6
+字符串拷贝完成 (从CopyString对象)
+copy2拷贝后: 字符串内容: Source
+字符串长度: 7 (包括结束符)
+实际字符数: 6
+
+CmpString 功能测试:
+BaseString 带参数构造函数被调用, 参数: Short
+CmpString 带参数构造函数被调用, 参数: Short
+BaseString 带参数构造函数被调用, 参数: LongerString
+CmpString 带参数构造函数被调用, 参数: LongerString
+cmpA: 字符串内容: Short
+字符串长度: 6 (包括结束符)
+实际字符数: 5
+cmpB: 字符串内容: LongerString
+字符串长度: 13 (包括结束符)
+实际字符数: 12
+cmpA长度 < cmpB长度
+
+NewString 综合功能测试:
+BaseString 带参数构造函数被调用, 参数: TestString
+ReString 带参数构造函数被调用, 参数: TestString
+CopyString 带参数构造函数被调用, 参数: TestString
+CmpString 带参数构造函数被调用, 参数: TestString
+NewString 带参数构造函数被调用, 参数: TestString
+
+NewString 综合功能展示:
+
+ReString 功能 (倒置):
+倒置前: 字符串内容: TestString
+字符串长度: 11 (包括结束符)
+实际字符数: 10
+字符串已倒置
+倒置后: 字符串内容: gnirtStseT
+字符串长度: 11 (包括结束符)
+实际字符数: 10
+
+CopyString 功能 (拷贝):
+BaseString 带参数构造函数被调用, 参数: Target String
+CopyString 带参数构造函数被调用, 参数: Target String
+源对象: 字符串内容: Target String
+字符串长度: 14 (包括结束符)
+实际字符数: 13
+字符串拷贝完成 (从CopyString对象)
+拷贝后当前对象: 字符串内容: Target String
+字符串长度: 14 (包括结束符)
+实际字符数: 13
+
+CmpString 功能 (比较):
+BaseString 带参数构造函数被调用, 参数: ABC
+CmpString 带参数构造函数被调用, 参数: ABC
+BaseString 带参数构造函数被调用, 参数: ABCDEF
+CmpString 带参数构造函数被调用, 参数: ABCDEF
+cmp1: 字符串内容: ABC
+字符串长度: 4 (包括结束符)
+实际字符数: 3
+cmp2: 字符串内容: ABCDEF
+字符串长度: 7 (包括结束符)
+实际字符数: 6
+当前对象长度 > cmp2长度
+
+GetData 功能演示:
+通过 GetData() 获取的字符串: Target String
+CmpString 析构函数被调用
+BaseString 析构函数被调用
+CmpString 析构函数被调用
+BaseString 析构函数被调用
+CopyString 析构函数被调用
+BaseString 析构函数被调用
+
+对象销毁，观察析构顺序:
+NewString 析构函数被调用
+CmpString 析构函数被调用
+CopyString 析构函数被调用
+ReString 析构函数被调用
+BaseString 析构函数被调用
+CmpString 析构函数被调用
+BaseString 析构函数被调用
+CmpString 析构函数被调用
+BaseString 析构函数被调用
+CopyString 析构函数被调用
+BaseString 析构函数被调用
+CopyString 析构函数被调用
+BaseString 析构函数被调用
+ReString 析构函数被调用
+BaseString 析构函数被调用
+BaseString 析构函数被调用
+NewString 析构函数被调用
+CmpString 析构函数被调用
+CopyString 析构函数被调用
+ReString 析构函数被调用
+BaseString 析构函数被调用
+NewString 析构函数被调用
+CmpString 析构函数被调用
+CopyString 析构函数被调用
+ReString 析构函数被调用
+BaseString 析构函数被调用
+NewString 析构函数被调用
+CmpString 析构函数被调用
+CopyString 析构函数被调用
+ReString 析构函数被调用
+BaseString 析构函数被调用
