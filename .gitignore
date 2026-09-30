@@ -4,3 +4,6 @@
 .idea
 *ai*
 /2026-03-31林木生物信息学/week5/task2/data
+
+# 软件二进制离线包（约 880MB，由 Others/VPN_Builder/download_software.py 生成）
+/Others/VPN_Builder/downloads/

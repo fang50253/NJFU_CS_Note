@@ -1,0 +1,41 @@
+proxies:
+  - name: "RE-REALITY"
+    type: vless
+    server: 1.2.3.4
+    port: 443
+    uuid: "<REALITY_UUID>"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.microsoft.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "<REALITY_PASSWORD>"
+      short-id: "<REALITY_SHORT_ID>"
+
+  - name: "HY2"
+    type: hysteria2
+    server: hy2.example.com
+    port: 443
+    # ports: 20000-20100        # 端口跳跃，需要服务端也开了才生效
+    password: "<HY2_AUTH>"
+    obfs: salamander
+    obfs-password: "<HY2_OBFS>"
+    sni: hy2.example.com
+    skip-cert-verify: false    # 自签证书才改 true
+    up: "100 Mbps"
+    down: "500 Mbps"
+
+proxy-groups:
+  - name: "自动选择"
+    type: url-test
+    proxies: ["RE-REALITY", "HY2"]
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+
+rules:
+  - GEOIP,CN,DIRECT
+  - GEOSITE,category-ads-all,REJECT
+  - MATCH,自动选择

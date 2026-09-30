@@ -1,0 +1,41 @@
+{
+    "inbounds": [
+        {
+            "port": 10800,
+            "listen": "127.0.0.1",
+            "protocol": "socks",
+            "settings": {
+                "udp": true
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "tag": "proxy",
+            "protocol": "hysteria",
+            "settings": {
+                "address": "server ip",
+                "port": 11451,
+                "version": 2
+            },
+            "streamSettings": {
+                "network": "hysteria",
+                "security": "tls",
+                "tlsSettings": {
+                    "serverName": "114514" // SNI
+                },
+                "hysteriaSettings": {
+                    "version": 2,
+                    "auth": "114514" // Hysteria 密码
+                },
+                "finalmask": {
+                    "quicParams": {
+                        "congestion": "bbr", // 可改为 brutal，若如此做请自行修改下面宽带
+                        "brutalUp": "30 mbps",
+                        "brutalDown": "100 mbps"
+                    }
+                }
+            }
+        }
+    ]
+}

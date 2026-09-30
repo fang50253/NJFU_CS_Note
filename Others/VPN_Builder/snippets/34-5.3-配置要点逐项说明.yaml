@@ -1,0 +1,6 @@
+listen: :443
+
+tls:                       # 注意：tls 和 acme 二选一，不能同时出现
+  cert: /etc/hysteria/server.crt
+  key:  /etc/hysteria/server.key
+  # sniGuard: strict        # 严格校验客户端 SNI，默认 dns-san

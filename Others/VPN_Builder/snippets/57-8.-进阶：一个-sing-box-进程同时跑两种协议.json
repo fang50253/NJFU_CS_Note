@@ -1,0 +1,27 @@
+{
+  "log": { "level": "info", "timestamp": true },
+  "inbounds": [
+    {
+      "type": "vless", "tag": "in-reality", "listen": "0.0.0.0", "listen_port": 443,
+      "users": [{ "uuid": "<REALITY_UUID>", "name": "main" }],
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "reality": {
+          "enabled": true,
+          "handshake": { "server": "www.microsoft.com", "server_port": 443 },
+          "private_key": "<REALITY_PRIVATE_KEY>",
+          "short_id": ["<REALITY_SHORT_ID>"]
+        }
+      }
+    },
+    {
+      "type": "hysteria2", "tag": "in-hy2", "listen": "0.0.0.0", "listen_port": 443,
+      "users": [{ "password": "<HY2_AUTH>" }],
+      "obfs": { "type": "salamander", "password": "<HY2_OBFS>" },
+      "up_mbps": 100, "down_mbps": 500,
+      "tls": { "enabled": true, "server_name": "hy2.example.com", "certificate_path": "/etc/ssl/hy2/fullchain.pem", "key_path": "/etc/ssl/hy2/privkey.pem" }
+    }
+  ],
+  "outbounds": [ { "type": "direct", "tag": "direct" } ]
+}

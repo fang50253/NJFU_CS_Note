@@ -1,0 +1,1 @@
+A  hy2  →  <你的VPS_IP>   TTL=Auto   代理状态: DNS only（灰云）❗不要橙云

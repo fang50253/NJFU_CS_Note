@@ -1,0 +1,4 @@
+transport:
+  udp:
+    minHopInterval: 15s       # 最小间隔，最小 5s
+    maxHopInterval: 45s       # 最大间隔

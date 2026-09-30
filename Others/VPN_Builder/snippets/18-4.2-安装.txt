@@ -1,0 +1,6 @@
+/usr/local/bin/xray                     # 可执行文件
+/usr/local/etc/xray/config.json         # 主配置
+/usr/local/share/xray/geoip.dat         # 后面「禁回国流量」规则要用
+/usr/local/share/xray/geosite.dat
+/etc/systemd/system/xray.service        # 服务单元
+/var/log/xray/                          # ⚠️ 默认不写日志，要用 log 字段显式配置

@@ -1,0 +1,3 @@
+transport:
+  udp:
+    hopInterval: 30s          # 固定间隔，默认就是 30s，最小 5s

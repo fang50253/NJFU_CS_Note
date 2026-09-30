@@ -1,0 +1,2 @@
+# /etc/hysteria/config.yaml —— 服务端，只要这一行
+listen: :20000-20100        # 监听一个范围

@@ -1,0 +1,96 @@
+{
+    "log": {
+        "loglevel": "debug"
+    },
+    "inbounds": [
+        {
+            "listen": "127.0.0.1",
+            "tag": "dokodemo-in",
+            "port": 4431, // 任意空闲端口，如果要自己修改记得这里和下面的 reality 入站 dest 要同步修改
+            "protocol": "dokodemo-door",
+            "settings": {
+                // reality dest 的实际设置位置 和普通 reality 要求相同
+                // 这里演示 dest 设置为 cloudflare 不被偷跑流量所以设置为 speed.cloudflare.com 了
+                "address": "speed.cloudflare.com",
+                "port": 443,
+                "network": "tcp"
+            },
+            "sniffing": { // 这里的 sniffing 不是多余的，别乱动
+                "enabled": true,
+                "destOverride": [
+                    "tls"
+                ],
+                "routeOnly": true
+            }
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 443,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "" // uuid
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "realitySettings": {
+                    // 指向前面设置的 dokodemo-door 入站
+                    "dest": "127.0.0.1:4431",
+                    // serverNames 仍然需要在这里正常填写
+                    "serverNames": [
+                        "speed.cloudflare.com"
+                    ],
+                    "privateKey": "", // 运行 `xray x25519` 生成
+                    "shortIds": [
+                        "",
+                        "0123456789abcdef"
+                    ]
+                }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "routeOnly": true
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "routing": {
+        "rules": [
+            {
+                "inboundTag": [
+                    "dokodemo-in"
+                ],
+                // 重要，这个域名列表需要和 realitySettings 的 serverNames 保持一致
+                "domain": [
+                    "speed.cloudflare.com"
+                ],
+                "outboundTag": "direct"
+            },
+            {
+                "inboundTag": [
+                    "dokodemo-in"
+                ],
+                "outboundTag": "block"
+            }
+        ]
+    }
+}

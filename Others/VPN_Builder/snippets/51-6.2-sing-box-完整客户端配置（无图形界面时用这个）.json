@@ -1,0 +1,3 @@
+  "server_ports": ["20000:20100"],
+  "hop_interval": "30s",
+  "hop_interval_max": "45s"

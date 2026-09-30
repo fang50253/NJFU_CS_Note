@@ -1,0 +1,30 @@
+# /etc/hysteria/config.yaml
+# 监听地址。省略则默认 :443。只写端口号 = 同时监听 IPv4+IPv6；
+# 只想要 IPv4 就写 0.0.0.0:443
+listen: :443
+
+acme:
+  domains:
+    - hy2.example.com
+  email: you@example.com
+  # type: http   # 默认 http（HTTP-01，需要 80 端口通）
+  # type: dns    # 改用 DNS-01，不需要 80 端口，但要配 DNS provider 凭据
+
+auth:
+  type: password
+  password: "换成强密码"
+
+obfs:                      # Salamander 混淆：把 QUIC 包打乱成看似随机的字节流
+  type: salamander
+  salamander:
+    password: "换成另一个强密码"
+
+masquerade:                # 有人扫端口/发非 hy2 请求时，反代到这个正常网站
+  type: proxy
+  proxy:
+    url: https://www.bing.com/
+    rewriteHost: true
+
+bandwidth:                 # 不填则用 BBR 拥塞控制
+  up: 100 mbps             # VPS → 客户端
+  down: 500 mbps           # 客户端 → VPS

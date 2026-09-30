@@ -1,0 +1,9 @@
+Host vps
+    HostName <服务器IP>
+    User root
+    Port 22
+    ServerAliveInterval 30
+    ServerAliveCountMax 6
+    TCPKeepAlive yes
+    Compression yes
+    ExitOnForwardFailure yes
